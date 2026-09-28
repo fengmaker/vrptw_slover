@@ -1,0 +1,20 @@
+{
+  "C101": {"distance": 828.94, "vehicles": 10},
+  "C102": {"distance": 828.94, "vehicles": 10},
+  "C103": {"distance": 828.06, "vehicles": 10},
+  "C104": {"distance": 824.78, "vehicles": 10},
+  "C105": {"distance": 828.94, "vehicles": 10},
+  "C106": {"distance": 828.94, "vehicles": 10},
+  "C107": {"distance": 828.06, "vehicles": 10},
+  "C108": {"distance": 828.94, "vehicles": 10},
+  "C109": {"distance": 828.94, "vehicles": 10},
+  
+  "C201": {"distance": 591.56, "vehicles": 3},
+  "C202": {"distance": 591.56, "vehicles": 3},
+  "C203": {"distance": 591.17, "vehicles": 3},
+  "C204": {"distance": 590.60, "vehicles": 3},
+  "C205": {"distance": 588.88, "vehicles": 3},
+  "C206": {"distance": 588.49, "vehicles": 3},
+  "C207": {"distance": 588.29, "vehicles": 3},
+  "C208": {"distance": 588.32, "vehicles": 3}
+}
