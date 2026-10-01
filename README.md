@@ -97,3 +97,7 @@ print(report.feasible, report.vehicles, report.distance / 1000)
 在本机 C101 的固定种子 0、100 次/目标车数设置下，自研构造得到 12 辆、983.072；减车试探找到 **10 辆、828.937**，达到总需求给出的 10 辆容量下界。距离只作为本地参考，不宣称全局最优。批量实验和热点分析见 [M5 报告](benchmarks/M5_REPORT.md)。
 
 原始 TXT 位于 `data/*.txt`，其中 56 个实例均由测试覆盖。`data/data_vrp/*.vrp` 是另一种格式，当前不读取。完整数学与结果格式见 [SPEC.md](SPEC.md)；里程碑状态见 [PROJECT_PLAN.md](PROJECT_PLAN.md)。
+
+## PyVRP 对照实验
+
+本地 PyVRP 的 0.5 秒、56 实例、3 种子对照记录，以及以后运行 5/60 秒档和逐次比较自研求解器的命令，见 [PyVRP 对照基线](benchmarks/pyvrp/README.md)。这是独立实验工具；正常求解仍不依赖 PyVRP。
