@@ -1,0 +1,572 @@
+{
+  "schema_version": 1,
+  "status": "completed",
+  "started_at_utc": "2026-10-02T06:54:50.744538+00:00",
+  "finished_at_utc": "2026-10-02T06:55:06.516008+00:00",
+  "data_directory": "D:\\AAA-OR-Route\\solver\\vrptw_solver\\data",
+  "instances": [
+    "R211",
+    "RC101"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "time_limit_seconds": 0.5,
+  "max_iterations": null,
+  "threads": 1,
+  "numeric_rule": "solomon_exact_1000_v1",
+  "runner_sha256": "90dedb88523701bad6e6d2de9826e01a213bc7aefb94295c843153fd2e7e4266",
+  "input_sha256": {
+    "R211": "2965507e467a2f92acd59035975910e36ae11e4f49590d4c7d20a883939227ad",
+    "RC101": "ef6893ffd9746ad96de8e4da6e64e2c4ba6e08a1c7eb9457276a9f1caf01ca12"
+  },
+  "environment": {
+    "python": "3.12.4",
+    "platform": "Windows-11-10.0.22621-SP0",
+    "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+    "cpu_count": 16
+  },
+  "order": {
+    "case_definition": "sorted instance, then ascending seed",
+    "variant_rotation": "left rotation by case_index modulo five",
+    "cases": [
+      {
+        "case_index": 0,
+        "instance": "R211",
+        "seed": 0,
+        "variants": [
+          "baseline",
+          "cached",
+          "incremental",
+          "n20",
+          "n40"
+        ],
+        "results": {
+          "baseline": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:54:50.825846+00:00",
+            "finished_at_utc": "2026-10-02T06:54:51.343441+00:00",
+            "artifact": "baseline/R211/seed-0/solution.json",
+            "error": ""
+          },
+          "cached": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:54:51.345264+00:00",
+            "finished_at_utc": "2026-10-02T06:54:51.864713+00:00",
+            "artifact": "cached/R211/seed-0/solution.json",
+            "error": ""
+          },
+          "incremental": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:54:51.865716+00:00",
+            "finished_at_utc": "2026-10-02T06:54:52.385004+00:00",
+            "artifact": "incremental/R211/seed-0/solution.json",
+            "error": ""
+          },
+          "n20": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:54:52.385004+00:00",
+            "finished_at_utc": "2026-10-02T06:54:52.904609+00:00",
+            "artifact": "n20/R211/seed-0/solution.json",
+            "error": ""
+          },
+          "n40": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:54:52.906658+00:00",
+            "finished_at_utc": "2026-10-02T06:54:53.424586+00:00",
+            "artifact": "n40/R211/seed-0/solution.json",
+            "error": ""
+          }
+        }
+      },
+      {
+        "case_index": 1,
+        "instance": "R211",
+        "seed": 1,
+        "variants": [
+          "cached",
+          "incremental",
+          "n20",
+          "n40",
+          "baseline"
+        ],
+        "results": {
+          "cached": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:54:53.425589+00:00",
+            "finished_at_utc": "2026-10-02T06:54:53.942232+00:00",
+            "artifact": "cached/R211/seed-1/solution.json",
+            "error": ""
+          },
+          "incremental": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:54:53.943251+00:00",
+            "finished_at_utc": "2026-10-02T06:54:54.460757+00:00",
+            "artifact": "incremental/R211/seed-1/solution.json",
+            "error": ""
+          },
+          "n20": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:54:54.461758+00:00",
+            "finished_at_utc": "2026-10-02T06:54:54.978376+00:00",
+            "artifact": "n20/R211/seed-1/solution.json",
+            "error": ""
+          },
+          "n40": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:54:54.979540+00:00",
+            "finished_at_utc": "2026-10-02T06:54:55.497891+00:00",
+            "artifact": "n40/R211/seed-1/solution.json",
+            "error": ""
+          },
+          "baseline": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:54:55.498892+00:00",
+            "finished_at_utc": "2026-10-02T06:54:56.016236+00:00",
+            "artifact": "baseline/R211/seed-1/solution.json",
+            "error": ""
+          }
+        }
+      },
+      {
+        "case_index": 2,
+        "instance": "R211",
+        "seed": 2,
+        "variants": [
+          "incremental",
+          "n20",
+          "n40",
+          "baseline",
+          "cached"
+        ],
+        "results": {
+          "incremental": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:54:56.017238+00:00",
+            "finished_at_utc": "2026-10-02T06:54:56.537755+00:00",
+            "artifact": "incremental/R211/seed-2/solution.json",
+            "error": ""
+          },
+          "n20": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:54:56.538784+00:00",
+            "finished_at_utc": "2026-10-02T06:54:57.063468+00:00",
+            "artifact": "n20/R211/seed-2/solution.json",
+            "error": ""
+          },
+          "n40": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:54:57.064469+00:00",
+            "finished_at_utc": "2026-10-02T06:54:57.591170+00:00",
+            "artifact": "n40/R211/seed-2/solution.json",
+            "error": ""
+          },
+          "baseline": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:54:57.592171+00:00",
+            "finished_at_utc": "2026-10-02T06:54:58.114927+00:00",
+            "artifact": "baseline/R211/seed-2/solution.json",
+            "error": ""
+          },
+          "cached": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:54:58.115928+00:00",
+            "finished_at_utc": "2026-10-02T06:54:58.636127+00:00",
+            "artifact": "cached/R211/seed-2/solution.json",
+            "error": ""
+          }
+        }
+      },
+      {
+        "case_index": 3,
+        "instance": "RC101",
+        "seed": 0,
+        "variants": [
+          "n20",
+          "n40",
+          "baseline",
+          "cached",
+          "incremental"
+        ],
+        "results": {
+          "n20": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:54:58.642416+00:00",
+            "finished_at_utc": "2026-10-02T06:54:59.162399+00:00",
+            "artifact": "n20/RC101/seed-0/solution.json",
+            "error": ""
+          },
+          "n40": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:54:59.163401+00:00",
+            "finished_at_utc": "2026-10-02T06:54:59.683536+00:00",
+            "artifact": "n40/RC101/seed-0/solution.json",
+            "error": ""
+          },
+          "baseline": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:54:59.684536+00:00",
+            "finished_at_utc": "2026-10-02T06:55:00.204614+00:00",
+            "artifact": "baseline/RC101/seed-0/solution.json",
+            "error": ""
+          },
+          "cached": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:55:00.206621+00:00",
+            "finished_at_utc": "2026-10-02T06:55:00.728852+00:00",
+            "artifact": "cached/RC101/seed-0/solution.json",
+            "error": ""
+          },
+          "incremental": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:55:00.729521+00:00",
+            "finished_at_utc": "2026-10-02T06:55:01.255765+00:00",
+            "artifact": "incremental/RC101/seed-0/solution.json",
+            "error": ""
+          }
+        }
+      },
+      {
+        "case_index": 4,
+        "instance": "RC101",
+        "seed": 1,
+        "variants": [
+          "n40",
+          "baseline",
+          "cached",
+          "incremental",
+          "n20"
+        ],
+        "results": {
+          "n40": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:55:01.256766+00:00",
+            "finished_at_utc": "2026-10-02T06:55:01.777227+00:00",
+            "artifact": "n40/RC101/seed-1/solution.json",
+            "error": ""
+          },
+          "baseline": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:55:01.778228+00:00",
+            "finished_at_utc": "2026-10-02T06:55:02.298334+00:00",
+            "artifact": "baseline/RC101/seed-1/solution.json",
+            "error": ""
+          },
+          "cached": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:55:02.299880+00:00",
+            "finished_at_utc": "2026-10-02T06:55:02.817641+00:00",
+            "artifact": "cached/RC101/seed-1/solution.json",
+            "error": ""
+          },
+          "incremental": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:55:02.819197+00:00",
+            "finished_at_utc": "2026-10-02T06:55:03.341533+00:00",
+            "artifact": "incremental/RC101/seed-1/solution.json",
+            "error": ""
+          },
+          "n20": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:55:03.343534+00:00",
+            "finished_at_utc": "2026-10-02T06:55:03.862639+00:00",
+            "artifact": "n20/RC101/seed-1/solution.json",
+            "error": ""
+          }
+        }
+      },
+      {
+        "case_index": 5,
+        "instance": "RC101",
+        "seed": 2,
+        "variants": [
+          "baseline",
+          "cached",
+          "incremental",
+          "n20",
+          "n40"
+        ],
+        "results": {
+          "baseline": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:55:03.864142+00:00",
+            "finished_at_utc": "2026-10-02T06:55:04.384601+00:00",
+            "artifact": "baseline/RC101/seed-2/solution.json",
+            "error": ""
+          },
+          "cached": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:55:04.385602+00:00",
+            "finished_at_utc": "2026-10-02T06:55:04.905664+00:00",
+            "artifact": "cached/RC101/seed-2/solution.json",
+            "error": ""
+          },
+          "incremental": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:55:04.906667+00:00",
+            "finished_at_utc": "2026-10-02T06:55:05.426741+00:00",
+            "artifact": "incremental/RC101/seed-2/solution.json",
+            "error": ""
+          },
+          "n20": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:55:05.427744+00:00",
+            "finished_at_utc": "2026-10-02T06:55:05.953498+00:00",
+            "artifact": "n20/RC101/seed-2/solution.json",
+            "error": ""
+          },
+          "n40": {
+            "status": "ok",
+            "verified": true,
+            "started_at_utc": "2026-10-02T06:55:05.955499+00:00",
+            "finished_at_utc": "2026-10-02T06:55:06.475342+00:00",
+            "artifact": "n40/RC101/seed-2/solution.json",
+            "error": ""
+          }
+        }
+      }
+    ]
+  },
+  "sources": {
+    "m8": {
+      "sha256": "5d3f56a8df0d9ba91e368d7f3a64e9028fef5c9e1a9bdeff889848baf2b8ab27",
+      "package": "D:\\AAA-OR-Route\\solver\\vrptw_solver\\runs\\m8_isolated_recheck\\source\\5d3f56a8df0d9ba91e368d7f3a64e9028fef5c9e1a9bdeff889848baf2b8ab27\\vrptw",
+      "file_sha256": {
+        "__init__.py": "a7cfa72822098ff034fdb6692a6cab9e9aaba8e14fcbc0062d0f4638d0711b36",
+        "__main__.py": "cbff5854de83672e43badbdee38c7547599695cfda7811f5bcda97dcb2fd2966",
+        "cli.py": "4ce8b524685fda766313f0348f4b1d75bab797ded845037907c9df6c9b0183e0",
+        "construct.py": "4a5d81630b6e5e6cd5f4fbe74c01e1769fe461e60f1bcc22a400e8a7720e3f36",
+        "diagnostics.py": "04988e2347dc03ecea215530a04558b83174885c9276932fcfc8e8d7f80e40eb",
+        "evaluate.py": "8eb713c447eeaa5a08acf8af470f6c144db7d029089f552a622fc5fffd9c5dc3",
+        "fleet.py": "871336ff1a4102fc94657d241b8b78bd425792f7186f4856bbf2bd7363ad809a",
+        "ils.py": "8238e13d859651e95250d39fac11091be22532657dc59f061c2b41522d6587b9",
+        "local_search.py": "9ded16e1e1ecd19e4cbed202a0a8f601b1300bd1b82d165da4e2bb92d80beb73",
+        "neighbourhood.py": "a65b3281b7ed2ade1133b99e10fd0e8e0f3ac87b08c1896495230afd1b49ca22",
+        "problem.py": "eb15a19069a50f8d5126b9b2ec8e1d144f1757fb4f8742ce7b003fdb618c8fab",
+        "report.py": "4f8125c268926e65afe2437bf35e263ee1f24694c9219a1664f27045f8372113",
+        "route_cache.py": "5cbae8bdd5fcdc6e36d1056e9a5bcf381220ed7977a7b1ebdc051ea66b74fa50",
+        "solomon.py": "be9ec82788ae77be0c47e5d9577b7039506e08971b168023d0174541ed16565c",
+        "solve.py": "6163e7065152ef5ad21502ece1b557e34451205580fc606b2885bff6a89091f6"
+      },
+      "module_alias": "m8_frozen_5d3f56a8df0d"
+    },
+    "m7_baseline": {
+      "sha256": "bcdbfecac731779090e3a398702ae4d335968003d643f03bf90430cd1a9ec707",
+      "package": "D:\\AAA-OR-Route\\solver\\vrptw_solver\\benchmarks\\m7_delivery\\source\\bcdbfecac731779090e3a398702ae4d335968003d643f03bf90430cd1a9ec707\\vrptw",
+      "module_alias": "m7_frozen_delivery"
+    }
+  },
+  "variants": {
+    "baseline": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": 2,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false
+      },
+      "config_sha256": "e6dbfbf4af082d1931b05cdf5e6025870dea04a3e7f83089c123ae878bc463bb",
+      "code_sha256": "bcdbfecac731779090e3a398702ae4d335968003d643f03bf90430cd1a9ec707",
+      "status": "completed",
+      "started_at_utc": "2026-10-02T06:54:50.825846+00:00",
+      "finished_at_utc": "2026-10-02T06:55:04.384601+00:00",
+      "runs": 6,
+      "successful": 6,
+      "failed": 0,
+      "independently_verified": 6,
+      "batch_summary_sha256": "ee83f2451f7ed0ce2c48cf16821de0f6eed537891501d18d48fbe71e1a74d24f"
+    },
+    "cached": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": 2,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "cached",
+        "num_neighbours": null
+      },
+      "config_sha256": "9cb66bc4e34f3526423a8fc6e8ad3028cbe662de32f705502ffcbb2c3c63f117",
+      "code_sha256": "5d3f56a8df0d9ba91e368d7f3a64e9028fef5c9e1a9bdeff889848baf2b8ab27",
+      "status": "completed",
+      "started_at_utc": "2026-10-02T06:54:51.345264+00:00",
+      "finished_at_utc": "2026-10-02T06:55:04.905664+00:00",
+      "runs": 6,
+      "successful": 6,
+      "failed": 0,
+      "independently_verified": 6,
+      "batch_summary_sha256": "a14b388f9c2eeef1de6561f7173cd1688d9feb8e69d3c9020cc851ab18a7f781"
+    },
+    "incremental": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": 2,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null
+      },
+      "config_sha256": "034a9f2ddc1163af93aedef194b85dba0d917316921d81894ea9f955e988b8de",
+      "code_sha256": "5d3f56a8df0d9ba91e368d7f3a64e9028fef5c9e1a9bdeff889848baf2b8ab27",
+      "status": "completed",
+      "started_at_utc": "2026-10-02T06:54:51.865716+00:00",
+      "finished_at_utc": "2026-10-02T06:55:05.426741+00:00",
+      "runs": 6,
+      "successful": 6,
+      "failed": 0,
+      "independently_verified": 6,
+      "batch_summary_sha256": "cbe2cede3710b4fcd20f02fdd76dc30b02a6fd294822ec47e6160038fa54d4b7"
+    },
+    "n20": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": 2,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": 20
+      },
+      "config_sha256": "8bdcba27f35013acac39917d9deca95c4f3b8909144bcd1b328393b2f4b340fa",
+      "code_sha256": "5d3f56a8df0d9ba91e368d7f3a64e9028fef5c9e1a9bdeff889848baf2b8ab27",
+      "status": "completed",
+      "started_at_utc": "2026-10-02T06:54:52.385004+00:00",
+      "finished_at_utc": "2026-10-02T06:55:05.953498+00:00",
+      "runs": 6,
+      "successful": 6,
+      "failed": 0,
+      "independently_verified": 6,
+      "batch_summary_sha256": "d2e7f17850ba862dffe8fc0a1e0a5490eb22769b420046a476e922eae02c2831"
+    },
+    "n40": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": 2,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": 40
+      },
+      "config_sha256": "bfc53a57563f03cc026886fad87aa6f4a061d6391858b8ba0f958ac4b4f7a482",
+      "code_sha256": "5d3f56a8df0d9ba91e368d7f3a64e9028fef5c9e1a9bdeff889848baf2b8ab27",
+      "status": "completed",
+      "started_at_utc": "2026-10-02T06:54:52.906658+00:00",
+      "finished_at_utc": "2026-10-02T06:55:06.475342+00:00",
+      "runs": 6,
+      "successful": 6,
+      "failed": 0,
+      "independently_verified": 6,
+      "batch_summary_sha256": "b45f078ca36fdb19d94d25f0c7616dbccb9c864f2253edc80c8c2dbc0db37834"
+    }
+  },
+  "total_runs": 30,
+  "independently_verified": 30
+}

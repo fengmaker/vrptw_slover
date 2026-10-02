@@ -1,0 +1,968 @@
+{
+  "numeric_rule": "solomon_exact_1000_v1",
+  "budget_seconds": 0.5,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "percentile_definition": "nearest rank: sorted values[ceil(0.90*n)-1]",
+  "groups": {
+    "exploratory": {
+      "attempts10": {
+        "batch": "runs\\m7_ablation_seed012_0p5s\\attempts10",
+        "independently_verified": 168,
+        "phase_records": 0,
+        "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 10,
+          "fleet_time_fraction": 1.0,
+          "max_moves": 2,
+          "construction_order": "due",
+          "repair_order": "input",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 3,
+          "remove_max": 8,
+          "restart_after": 20,
+          "diagnostics": false
+        },
+        "exports_sha256": {
+          "exploratory_attempts10_runs.csv": "a09637d627b35fdf307e7bceffb00331c46712b82f34e9e0f177df90f586d147",
+          "exploratory_attempts10_summary.json": "12160e1af29c1bc17cdcab73f4bf6409d80e4b7a2372816e03ae91fdba01c0c6"
+        }
+      },
+      "baseline": {
+        "batch": "runs\\m7_ablation_seed012_0p5s\\baseline",
+        "independently_verified": 168,
+        "phase_records": 0,
+        "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 100,
+          "fleet_time_fraction": 1.0,
+          "max_moves": 2,
+          "construction_order": "due",
+          "repair_order": "input",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 3,
+          "remove_max": 8,
+          "restart_after": 20,
+          "diagnostics": false
+        },
+        "exports_sha256": {
+          "exploratory_baseline_runs.csv": "a11eae16eaa272fb7a912153b699e621aaf25ed34ac3002024214063286f17de",
+          "exploratory_baseline_summary.json": "52ab80ef0686ba9d10000524b92af7ae7dd8085e9d12db98655678aacd2375b7"
+        }
+      },
+      "construction_slack": {
+        "batch": "runs\\m7_ablation_seed012_0p5s\\construction_slack",
+        "independently_verified": 168,
+        "phase_records": 0,
+        "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 100,
+          "fleet_time_fraction": 1.0,
+          "max_moves": 2,
+          "construction_order": "slack",
+          "repair_order": "input",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 3,
+          "remove_max": 8,
+          "restart_after": 20,
+          "diagnostics": false
+        },
+        "exports_sha256": {
+          "exploratory_construction_slack_runs.csv": "2c3845e8115ba4a02b679b9ecc6c3a05686b3fc0e1b7b36c95561c5fd004a342",
+          "exploratory_construction_slack_summary.json": "212b8d8b27916d488157fc5598bc1d11d2c7700ae4515e9e0f6863ee35094434"
+        }
+      },
+      "moves8": {
+        "batch": "runs\\m7_ablation_seed012_0p5s\\moves8",
+        "independently_verified": 168,
+        "phase_records": 0,
+        "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 100,
+          "fleet_time_fraction": 1.0,
+          "max_moves": 8,
+          "construction_order": "due",
+          "repair_order": "input",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 3,
+          "remove_max": 8,
+          "restart_after": 20,
+          "diagnostics": false
+        },
+        "exports_sha256": {
+          "exploratory_moves8_runs.csv": "a8d4532b87a80e49a1bdc8c2fd85fbdf2fb6045551727b16991d4cd76089192f",
+          "exploratory_moves8_summary.json": "831c655e31efb46e73419c590d2329c72c93f8e4f1e0a5ba059c651249ea51b8"
+        }
+      },
+      "regret2": {
+        "batch": "runs\\m7_ablation_seed012_0p5s\\regret2",
+        "independently_verified": 168,
+        "phase_records": 0,
+        "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 100,
+          "fleet_time_fraction": 1.0,
+          "max_moves": 2,
+          "construction_order": "due",
+          "repair_order": "input",
+          "repair_strategy": "regret2",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 3,
+          "remove_max": 8,
+          "restart_after": 20,
+          "diagnostics": false
+        },
+        "exports_sha256": {
+          "exploratory_regret2_runs.csv": "0705eb9456cf7f81855b4d5854b506c236b01b3b2113bed9e856b44235eca7e0",
+          "exploratory_regret2_summary.json": "fa1feb902d556ac1f61bfddce7b25ff39cda7a89870cf3786586fee693064266"
+        }
+      },
+      "removal2": {
+        "batch": "runs\\m7_ablation_seed012_0p5s\\removal2",
+        "independently_verified": 168,
+        "phase_records": 0,
+        "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 100,
+          "fleet_time_fraction": 1.0,
+          "max_moves": 2,
+          "construction_order": "due",
+          "repair_order": "input",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 2,
+          "remove_max": 4,
+          "restart_after": 20,
+          "diagnostics": false
+        },
+        "exports_sha256": {
+          "exploratory_removal2_runs.csv": "6ebb15fc804a6012be56ae377569caf39c0fc46cb884f2a31d13123cec79b70f",
+          "exploratory_removal2_summary.json": "2283525bbaf96ceccfa0c7e478f84854984721134e377570079ca9ea0fd09267"
+        }
+      },
+      "repair_due": {
+        "batch": "runs\\m7_ablation_seed012_0p5s\\repair_due",
+        "independently_verified": 168,
+        "phase_records": 0,
+        "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 100,
+          "fleet_time_fraction": 1.0,
+          "max_moves": 2,
+          "construction_order": "due",
+          "repair_order": "due",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 3,
+          "remove_max": 8,
+          "restart_after": 20,
+          "diagnostics": false
+        },
+        "exports_sha256": {
+          "exploratory_repair_due_runs.csv": "5c9b8b16060f20ab75d0cc0338816b83b347bc42552aea9846d334975835da97",
+          "exploratory_repair_due_summary.json": "1168dac35d8fca7fb1c82487e2fbb3d8f728a8fa4249016f0385e0d3d3da16a2"
+        }
+      },
+      "repair_slack": {
+        "batch": "runs\\m7_ablation_seed012_0p5s\\repair_slack",
+        "independently_verified": 168,
+        "phase_records": 0,
+        "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 100,
+          "fleet_time_fraction": 1.0,
+          "max_moves": 2,
+          "construction_order": "due",
+          "repair_order": "slack",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 3,
+          "remove_max": 8,
+          "restart_after": 20,
+          "diagnostics": false
+        },
+        "exports_sha256": {
+          "exploratory_repair_slack_runs.csv": "4faf098ecdf0de8234fe0b0ec41eeacfcee3c92e3ac899f1d703888fcb6336f9",
+          "exploratory_repair_slack_summary.json": "b1645ccf0f8e017a24af81e1e6c5a205e6efc45b68f3ce490a88071f3d603879"
+        }
+      },
+      "reserve20": {
+        "batch": "runs\\m7_ablation_seed012_0p5s\\reserve20",
+        "independently_verified": 168,
+        "phase_records": 0,
+        "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 100,
+          "fleet_time_fraction": 0.8,
+          "max_moves": 2,
+          "construction_order": "due",
+          "repair_order": "input",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 3,
+          "remove_max": 8,
+          "restart_after": 20,
+          "diagnostics": false
+        },
+        "exports_sha256": {
+          "exploratory_reserve20_runs.csv": "19e8aec362c2368785b7043357c96c7d1ba7b8c700fdc332ff32ec560c466ebf",
+          "exploratory_reserve20_summary.json": "8458f6c3363143774c35a156439b9554890414711be4837781bb49feafd84138"
+        }
+      },
+      "restart5": {
+        "batch": "runs\\m7_ablation_seed012_0p5s\\restart5",
+        "independently_verified": 168,
+        "phase_records": 0,
+        "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 100,
+          "fleet_time_fraction": 1.0,
+          "max_moves": 2,
+          "construction_order": "due",
+          "repair_order": "input",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 3,
+          "remove_max": 8,
+          "restart_after": 5,
+          "diagnostics": false
+        },
+        "exports_sha256": {
+          "exploratory_restart5_runs.csv": "0296ca961ff2687100b8e212b905146d2da13f758f86d5f38bd8e86b9c499f4a",
+          "exploratory_restart5_summary.json": "f281053e89de245800ec34f348ddf01280634115020569f284b1d2dbff13992b"
+        }
+      }
+    },
+    "confirmation": {
+      "balanced": {
+        "batch": "runs\\m7_confirmation_seed012_0p5s\\balanced",
+        "independently_verified": 168,
+        "phase_records": 0,
+        "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 100,
+          "fleet_time_fraction": 0.95,
+          "max_moves": 2,
+          "construction_order": "due",
+          "repair_order": "due",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 3,
+          "remove_max": 8,
+          "restart_after": 20,
+          "diagnostics": false
+        },
+        "exports_sha256": {
+          "confirmation_balanced_runs.csv": "d1973a321a979496cb8fe16caff68a0d6072ee2890cf6635a7638435d517acf8",
+          "confirmation_balanced_summary.json": "7611f46027269aab22e3eb80e269fafb923fa21b5c54a0ad652ef66c394a2452"
+        }
+      },
+      "control": {
+        "batch": "runs\\m7_confirmation_seed012_0p5s\\control",
+        "independently_verified": 168,
+        "phase_records": 0,
+        "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 100,
+          "fleet_time_fraction": 1.0,
+          "max_moves": 2,
+          "construction_order": "due",
+          "repair_order": "input",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 3,
+          "remove_max": 8,
+          "restart_after": 20,
+          "diagnostics": false
+        },
+        "exports_sha256": {
+          "confirmation_control_runs.csv": "53663b85b9fc9c0b024e9aabb9077efbd725c1657d8e574abd84bffa8adb7d1a",
+          "confirmation_control_summary.json": "cad91a9d671ada2ec1d804755e3c0f143a43d7d365936d1478fe5355b9f4e5bc"
+        }
+      },
+      "fleet_95": {
+        "batch": "runs\\m7_confirmation_seed012_0p5s\\fleet_95",
+        "independently_verified": 168,
+        "phase_records": 0,
+        "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 100,
+          "fleet_time_fraction": 0.95,
+          "max_moves": 2,
+          "construction_order": "due",
+          "repair_order": "input",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 3,
+          "remove_max": 8,
+          "restart_after": 20,
+          "diagnostics": false
+        },
+        "exports_sha256": {
+          "confirmation_fleet_95_runs.csv": "45aa55b2ea545332fb539782be67a7ad58d2ae134a983a6b289d538732d149aa",
+          "confirmation_fleet_95_summary.json": "eb1444502014bd05f9113c9fa79cf7ea579a1b0f582b4f05d7ec35d717f3f2c8"
+        }
+      },
+      "repair_due": {
+        "batch": "runs\\m7_confirmation_seed012_0p5s\\repair_due",
+        "independently_verified": 168,
+        "phase_records": 0,
+        "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 100,
+          "fleet_time_fraction": 1.0,
+          "max_moves": 2,
+          "construction_order": "due",
+          "repair_order": "due",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 3,
+          "remove_max": 8,
+          "restart_after": 20,
+          "diagnostics": false
+        },
+        "exports_sha256": {
+          "confirmation_repair_due_runs.csv": "78362a711b06bea2ba3e871df7fa76157dbb2f5f91d16cd1c9fb49e535344dc4",
+          "confirmation_repair_due_summary.json": "1d9b3eada8d828dfdf039212947dfe4b55a8cf937e41dd99197dea346ecdba21"
+        }
+      }
+    },
+    "paired": {
+      "baseline": {
+        "batch": "runs\\m7_paired_balanced_seed012_0p5s\\baseline",
+        "independently_verified": 168,
+        "phase_records": 0,
+        "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 100,
+          "fleet_time_fraction": 1.0,
+          "max_moves": 2,
+          "construction_order": "due",
+          "repair_order": "input",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 3,
+          "remove_max": 8,
+          "restart_after": 20,
+          "diagnostics": false
+        },
+        "exports_sha256": {
+          "paired_baseline_runs.csv": "eaa8416f72abc3e4fcb750d7486e2b92dc40aeee17e5da4e8f382f1636cc2ec0",
+          "paired_baseline_summary.json": "49b88db680bcb7825bd3b77a5ea03c8e9890f82ca5458ca6b8b6a0e504be4000"
+        }
+      },
+      "candidate": {
+        "batch": "runs\\m7_paired_balanced_seed012_0p5s\\candidate",
+        "independently_verified": 168,
+        "phase_records": 0,
+        "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 100,
+          "fleet_time_fraction": 0.95,
+          "max_moves": 2,
+          "construction_order": "due",
+          "repair_order": "due",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 3,
+          "remove_max": 8,
+          "restart_after": 20,
+          "diagnostics": false
+        },
+        "exports_sha256": {
+          "paired_candidate_runs.csv": "7e7249133c1e2d7ea00644fb3b599a1f42d7c36a8ed866cf23b903f75c59eff0",
+          "paired_candidate_summary.json": "14b1393450b5c0748bebed159324599c6f99b5d4f3c78ec28d8baa16b94e40c9"
+        }
+      }
+    },
+    "screen": {
+      "attempts_10": {
+        "batch": "runs\\m7_screen_seed012_0p5s\\attempts_10",
+        "independently_verified": 12,
+        "phase_records": 0,
+        "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 10,
+          "fleet_time_fraction": 1.0,
+          "max_moves": 2,
+          "construction_order": "due",
+          "repair_order": "input",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 3,
+          "remove_max": 8,
+          "restart_after": 20,
+          "diagnostics": false
+        },
+        "exports_sha256": {
+          "screen_attempts_10_runs.csv": "ac5f53eca69f047b9f3d1c966d9d50e597bdfcc80d228439bde37db7212532d2",
+          "screen_attempts_10_summary.json": "819f08e8d8aec9b500450207ffbf60db701b4536b1d513a8e5f67715b5770cf2"
+        }
+      },
+      "construction_slack": {
+        "batch": "runs\\m7_screen_seed012_0p5s\\construction_slack",
+        "independently_verified": 12,
+        "phase_records": 0,
+        "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 100,
+          "fleet_time_fraction": 1.0,
+          "max_moves": 2,
+          "construction_order": "slack",
+          "repair_order": "input",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 3,
+          "remove_max": 8,
+          "restart_after": 20,
+          "diagnostics": false
+        },
+        "exports_sha256": {
+          "screen_construction_slack_runs.csv": "21f9fe5be50707e7f917271ee89c179e60a1c710ec6580d2e0fef450bd870af1",
+          "screen_construction_slack_summary.json": "f7cea3a222c7d00c157b63677ff25385742969004411f3a73226b2ab3297d2cf"
+        }
+      },
+      "control": {
+        "batch": "runs\\m7_screen_seed012_0p5s\\control",
+        "independently_verified": 12,
+        "phase_records": 0,
+        "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 100,
+          "fleet_time_fraction": 1.0,
+          "max_moves": 2,
+          "construction_order": "due",
+          "repair_order": "input",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 3,
+          "remove_max": 8,
+          "restart_after": 20,
+          "diagnostics": false
+        },
+        "exports_sha256": {
+          "screen_control_runs.csv": "e9f1d48b5f5282d7448f91cdfb6819de7bf638fe907f9b407af7f65fda5789b7",
+          "screen_control_summary.json": "042a9b17440a7d6f57eee7ea71fa38c91f8324bdb292a29b4bc75993b446b07e"
+        }
+      },
+      "fleet_85": {
+        "batch": "runs\\m7_screen_seed012_0p5s\\fleet_85",
+        "independently_verified": 12,
+        "phase_records": 0,
+        "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 100,
+          "fleet_time_fraction": 0.85,
+          "max_moves": 2,
+          "construction_order": "due",
+          "repair_order": "input",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 3,
+          "remove_max": 8,
+          "restart_after": 20,
+          "diagnostics": false
+        },
+        "exports_sha256": {
+          "screen_fleet_85_runs.csv": "02c3c12d19760e203f1a1fdca974ebbbb46f90727e8018a6fd11c77184ad8585",
+          "screen_fleet_85_summary.json": "5e902349c0b1b4d497cc34e5e530a384dfc7cbfe4db0ecb435024923f7c8c92e"
+        }
+      },
+      "fleet_95": {
+        "batch": "runs\\m7_screen_seed012_0p5s\\fleet_95",
+        "independently_verified": 12,
+        "phase_records": 0,
+        "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 100,
+          "fleet_time_fraction": 0.95,
+          "max_moves": 2,
+          "construction_order": "due",
+          "repair_order": "input",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 3,
+          "remove_max": 8,
+          "restart_after": 20,
+          "diagnostics": false
+        },
+        "exports_sha256": {
+          "screen_fleet_95_runs.csv": "07c0c87b595e2155f429254053f1c60fb099a43059621afbdcc7c5f6cd45835e",
+          "screen_fleet_95_summary.json": "6ec0994d620dc044e2ec7aeaf5777d86a8191e175efc05d0154e5fd427b8f048"
+        }
+      },
+      "moves_1": {
+        "batch": "runs\\m7_screen_seed012_0p5s\\moves_1",
+        "independently_verified": 12,
+        "phase_records": 0,
+        "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 100,
+          "fleet_time_fraction": 1.0,
+          "max_moves": 1,
+          "construction_order": "due",
+          "repair_order": "input",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 3,
+          "remove_max": 8,
+          "restart_after": 20,
+          "diagnostics": false
+        },
+        "exports_sha256": {
+          "screen_moves_1_runs.csv": "8dfd6643967fc4e76caefba6ce2661920bb1c6c794faea6574d20316b6e886f3",
+          "screen_moves_1_summary.json": "678a6a14acc25b8e893f73bc5406f1a7df3929a5c6b64330049878bc51348530"
+        }
+      },
+      "moves_4": {
+        "batch": "runs\\m7_screen_seed012_0p5s\\moves_4",
+        "independently_verified": 12,
+        "phase_records": 0,
+        "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 100,
+          "fleet_time_fraction": 1.0,
+          "max_moves": 4,
+          "construction_order": "due",
+          "repair_order": "input",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 3,
+          "remove_max": 8,
+          "restart_after": 20,
+          "diagnostics": false
+        },
+        "exports_sha256": {
+          "screen_moves_4_runs.csv": "985f3ff734071e444e24ec9f918e376c8b85ee2ae6f73fbf2da21cc6235e2d30",
+          "screen_moves_4_summary.json": "8297826742b081909b29160fcebc16520b972516c7f3aed79d23228bf9ad665a"
+        }
+      },
+      "remove_1_4": {
+        "batch": "runs\\m7_screen_seed012_0p5s\\remove_1_4",
+        "independently_verified": 12,
+        "phase_records": 0,
+        "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 100,
+          "fleet_time_fraction": 1.0,
+          "max_moves": 2,
+          "construction_order": "due",
+          "repair_order": "input",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 1,
+          "remove_max": 4,
+          "restart_after": 20,
+          "diagnostics": false
+        },
+        "exports_sha256": {
+          "screen_remove_1_4_runs.csv": "831fb536be1270712a9a5f48aeb16a2993e5d5e49dfbcabb5c7cf450b5f52838",
+          "screen_remove_1_4_summary.json": "7c13948ac4150a653c3bf5fd3bcd7823f20879a7f2c228d73a85c24616f70415"
+        }
+      },
+      "repair_due": {
+        "batch": "runs\\m7_screen_seed012_0p5s\\repair_due",
+        "independently_verified": 12,
+        "phase_records": 0,
+        "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 100,
+          "fleet_time_fraction": 1.0,
+          "max_moves": 2,
+          "construction_order": "due",
+          "repair_order": "due",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 3,
+          "remove_max": 8,
+          "restart_after": 20,
+          "diagnostics": false
+        },
+        "exports_sha256": {
+          "screen_repair_due_runs.csv": "3f25ebe2a101bbdf507eae29b8bcceac3f8e02839d5532f32da10554fcaaaa01",
+          "screen_repair_due_summary.json": "6466ca0c78b8492ba59c25be643fd46191f11f6a5d6bdec19fda4f890965b6fb"
+        }
+      },
+      "repair_slack": {
+        "batch": "runs\\m7_screen_seed012_0p5s\\repair_slack",
+        "independently_verified": 12,
+        "phase_records": 0,
+        "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 100,
+          "fleet_time_fraction": 1.0,
+          "max_moves": 2,
+          "construction_order": "due",
+          "repair_order": "slack",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 3,
+          "remove_max": 8,
+          "restart_after": 20,
+          "diagnostics": false
+        },
+        "exports_sha256": {
+          "screen_repair_slack_runs.csv": "512c76b7de455c6b58a8c7b6045b0c9c9ecb0a82800b93c1f18256e5f1cd9678",
+          "screen_repair_slack_summary.json": "98df5065b03fabc3f9b1501dc025941f06527a4fbd37fb26242da9dceed25a12"
+        }
+      },
+      "restart_5": {
+        "batch": "runs\\m7_screen_seed012_0p5s\\restart_5",
+        "independently_verified": 12,
+        "phase_records": 0,
+        "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 100,
+          "fleet_time_fraction": 1.0,
+          "max_moves": 2,
+          "construction_order": "due",
+          "repair_order": "input",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 3,
+          "remove_max": 8,
+          "restart_after": 5,
+          "diagnostics": false
+        },
+        "exports_sha256": {
+          "screen_restart_5_runs.csv": "2c334ed61998df1d6932e689133d61dd533bebea7ccd2cc3b63e41acd017940a",
+          "screen_restart_5_summary.json": "5911d43a128f8ee977c643d0f233838f8caec1676000628b438f984a61edeffa"
+        }
+      }
+    },
+    "diagnosis": {
+      "balanced": {
+        "batch": "runs\\m7_diagnostics_default_seed012_0p5s\\balanced",
+        "independently_verified": 12,
+        "phase_records": 96,
+        "code_sha256": "bcdbfecac731779090e3a398702ae4d335968003d643f03bf90430cd1a9ec707",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 100,
+          "fleet_time_fraction": 0.95,
+          "max_moves": 2,
+          "construction_order": "due",
+          "repair_order": "due",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 3,
+          "remove_max": 8,
+          "restart_after": 20,
+          "diagnostics": true
+        },
+        "exports_sha256": {
+          "diagnosis_balanced_runs.csv": "4d4bbc7aa506a46e263481c4a58d48f93bc11c6d8def162e4aab94f86af6f6af",
+          "diagnosis_balanced_summary.json": "f8aeaf86036f92ef64d2512dbebdca81dd5e71e77cd81657e7f5a11c365c84ad",
+          "diagnosis_balanced_phases.csv": "201988f61c5399cb8bec70cf3ce0dd3dd2bbc3abeea0a79c8ecc18b10369879a"
+        }
+      },
+      "control": {
+        "batch": "runs\\m7_diagnostics_default_seed012_0p5s\\control",
+        "independently_verified": 12,
+        "phase_records": 96,
+        "code_sha256": "bcdbfecac731779090e3a398702ae4d335968003d643f03bf90430cd1a9ec707",
+        "config": {
+          "seed": 0,
+          "max_iterations": null,
+          "time_limit_seconds": 0.5,
+          "fleet_attempts_per_k": 100,
+          "fleet_time_fraction": 1.0,
+          "max_moves": 2,
+          "construction_order": "due",
+          "repair_order": "input",
+          "repair_strategy": "cheapest",
+          "search_strategy": "first",
+          "operators": [
+            "relocate",
+            "swap",
+            "two_opt",
+            "two_opt_star"
+          ],
+          "remove_min": 3,
+          "remove_max": 8,
+          "restart_after": 20,
+          "diagnostics": true
+        },
+        "exports_sha256": {
+          "diagnosis_control_runs.csv": "af26fd3afee4f794b09898f0a1fa34aaadc661f4e7ebb83fef63167a067c939f",
+          "diagnosis_control_summary.json": "dc8fa935ae93a528aed237d0f69db532762b59088ae98d6f27b5a9c5ad82b0d1",
+          "diagnosis_control_phases.csv": "79b7149162576fb0269796293856c66dd60500efc034f508e99be686c11c3a4d"
+        }
+      }
+    }
+  },
+  "independently_verified": 3012,
+  "delivery": {
+    "batch": "runs\\m7_delivery_current_seed012_0p5s",
+    "independently_verified": 168,
+    "code_sha256": "bcdbfecac731779090e3a398702ae4d335968003d643f03bf90430cd1a9ec707",
+    "exports_sha256": {
+      "delivery_summary.csv": "b43f881e280356aef50869163fd276962e1f222b3da5d0e214f70866855d48d2",
+      "delivery_summary.json": "18e73eb6a1914fb71864573d900e3c9022651de19420e492244a5f00307d8338"
+    }
+  },
+  "pyvrp": {
+    "runs": 186,
+    "independently_verified": 177,
+    "not_found": 9,
+    "raw_sha256": "6b7c3043896c37a0cbe67a62869112a87d673196a8e5a5d9eba51947d3065367"
+  }
+}

@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+from datetime import datetime, timezone
 import hashlib
 import json
 import platform
@@ -26,6 +27,7 @@ sys.path.insert(0, str(PYVRP_DIR))
 from pyvrp import read, solve  # noqa: E402
 from pyvrp.stop import MaxRuntime  # noqa: E402
 from vrptw import read_solomon, validate_solution  # noqa: E402
+from vrptw.report import NUMERIC_RULE_ID, code_fingerprint  # noqa: E402
 
 
 COLUMNS = (
@@ -177,6 +179,24 @@ def main(argv: list[str] | None = None) -> int:
     pyvrp_version = tomllib.loads(
         (PYVRP_DIR / "pyproject.toml").read_text(encoding="utf-8")
     )["project"]["version"]
+    digest = hashlib.sha256()
+    for path in sorted((PYVRP_DIR / "pyvrp").rglob("*")):
+        if path.is_file() and path.suffix in (".py", ".cpp", ".h", ".hpp", ".pyd", ".so"):
+            digest.update(path.relative_to(PYVRP_DIR).as_posix().encode("utf-8"))
+            digest.update(path.read_bytes())
+    manifest = {
+        "started_at_utc": datetime.now(timezone.utc).isoformat(),
+        "python_version": platform.python_version(), "platform": platform.platform(),
+        "pyvrp_version": pyvrp_version, "pyvrp_code_sha256": digest.hexdigest(),
+        "validator_code_sha256": code_fingerprint(),
+        "script_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+        "numeric_rule": NUMERIC_RULE_ID, "budgets": args.budgets, "seeds": args.seeds,
+        "caps": {name: caps[name] for name in names},
+    }
+    # Preserve earlier invocation manifests when resuming a long benchmark.
+    manifest_path = args.out_dir / ("manifest-" + datetime.now(timezone.utc).strftime(
+        "%Y%m%dT%H%M%S%f") + ".json")
+    manifest_path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
 
     for budget in dict.fromkeys(args.budgets):
         budget_text = format(budget, "g")
@@ -234,6 +254,17 @@ def main(argv: list[str] | None = None) -> int:
                     )
                     if result.is_feasible() != verdict.feasible:
                         row["status"] = "validation_mismatch"
+                    if row["status"] == "ok":
+                        artifact = args.out_dir / "solutions" / f"{label}s" / name / f"seed-{seed}-cap-{cap}.json"
+                        artifact.parent.mkdir(parents=True, exist_ok=True)
+                        artifact.write_text(json.dumps({
+                            "instance": name, "seed": seed, "vehicle_cap": cap,
+                            "budget_seconds": budget, "input_sha256": input_sha256,
+                            "numeric_rule": NUMERIC_RULE_ID, "routes": routes,
+                            "vehicles": verdict.vehicles, "distance_ticks": verdict.distance,
+                            "pyvrp_code_sha256": manifest["pyvrp_code_sha256"],
+                            "validator_code_sha256": manifest["validator_code_sha256"],
+                        }, indent=2) + "\n", encoding="utf-8")
                 except Exception as exc:
                     row.update(status="error", solve_wall_seconds=round(monotonic() - started, 6),
                                error=f"{type(exc).__name__}: {exc}")
@@ -243,6 +274,8 @@ def main(argv: list[str] | None = None) -> int:
                       f"K={row['vehicles']} d={row['distance']} "
                       f"wall={row['solve_wall_seconds']}s", flush=True)
         _write_budget_summary(raw_path, budget)
+    manifest["finished_at_utc"] = datetime.now(timezone.utc).isoformat()
+    manifest_path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
     return 0
 
 

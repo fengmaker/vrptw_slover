@@ -1,0 +1,226 @@
+{
+  "R107": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 12
+  },
+  "R105": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 17
+  },
+  "R206": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 3
+  },
+  "RC207": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 4
+  },
+  "RC101": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 17
+  },
+  "C108": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 10
+  },
+  "R205": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 3
+  },
+  "C107": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 10
+  },
+  "RC205": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 4
+  },
+  "R203": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 3
+  },
+  "RC208": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 3
+  },
+  "R208": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 3
+  },
+  "RC108": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 13
+  },
+  "R103": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 14
+  },
+  "C204": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 3
+  },
+  "C203": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 3
+  },
+  "R210": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 3
+  },
+  "C205": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 3
+  },
+  "R211": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 3
+  },
+  "C109": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 10
+  },
+  "R204": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 3
+  },
+  "R111": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 12
+  },
+  "R110": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 13
+  },
+  "C101": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 10
+  },
+  "R209": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 3
+  },
+  "R106": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 14
+  },
+  "C105": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 10
+  },
+  "RC102": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 15
+  },
+  "R207": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 3
+  },
+  "RC103": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 12
+  },
+  "C106": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 10
+  },
+  "R202": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 4
+  },
+  "RC202": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 4
+  },
+  "C206": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 3
+  },
+  "C104": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 10
+  },
+  "C102": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 10
+  },
+  "RC105": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 16
+  },
+  "RC204": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 3
+  },
+  "C202": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 3
+  },
+  "R104": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 11
+  },
+  "R102": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 19
+  },
+  "R112": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 12
+  },
+  "R101": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 21
+  },
+  "C103": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 10
+  },
+  "R109": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 14
+  },
+  "C207": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 3
+  },
+  "RC104": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 11
+  },
+  "RC201": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 4
+  },
+  "RC106": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 15
+  },
+  "RC107": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 14
+  },
+  "R201": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 4
+  },
+  "C201": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 3
+  },
+  "RC203": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 3
+  },
+  "RC206": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 4
+  },
+  "C208": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 3
+  },
+  "R108": {
+    "source": "M8 final batch matching cap; fresh same-session control",
+    "vehicle_cap": 10
+  }
+}

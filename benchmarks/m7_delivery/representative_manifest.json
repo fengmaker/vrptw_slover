@@ -1,0 +1,30 @@
+{
+  "started_at_utc": "2026-10-02T06:03:31.860100+00:00",
+  "finished_at_utc": "2026-10-02T06:03:38.061362+00:00",
+  "config": {
+    "seed": 0,
+    "max_iterations": null,
+    "time_limit_seconds": 0.5,
+    "fleet_attempts_per_k": 100,
+    "fleet_time_fraction": 0.95,
+    "max_moves": 2,
+    "construction_order": "due",
+    "repair_order": "due",
+    "repair_strategy": "cheapest",
+    "search_strategy": "first",
+    "operators": [
+      "relocate",
+      "swap",
+      "two_opt",
+      "two_opt_star"
+    ],
+    "remove_min": 3,
+    "remove_max": 8,
+    "restart_after": 20,
+    "diagnostics": true
+  },
+  "code_sha256": "bcdbfecac731779090e3a398702ae4d335968003d643f03bf90430cd1a9ec707",
+  "runs": 12,
+  "independently_verified": 12,
+  "note": "Diagnostics have measurement overhead; do not use these objectives for quality promotion."
+}

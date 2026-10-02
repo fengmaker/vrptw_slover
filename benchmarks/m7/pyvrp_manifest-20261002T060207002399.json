@@ -1,0 +1,29 @@
+{
+  "started_at_utc": "2026-10-02T06:02:07.000457+00:00",
+  "python_version": "3.13.5",
+  "platform": "Windows-11-10.0.22621-SP0",
+  "pyvrp_version": "0.13.0a0",
+  "pyvrp_code_sha256": "23d876b8c4ea6e2e49837541d4c9ec474d333fdd9358a491f9dc02206f4ece90",
+  "validator_code_sha256": "bcdbfecac731779090e3a398702ae4d335968003d643f03bf90430cd1a9ec707",
+  "script_sha256": "1d1aa0006c822cd7aafa996fbc0a2a2b1f29c9402b31598a01ddbc4ad27bca04",
+  "numeric_rule": "solomon_exact_1000_v1",
+  "budgets": [
+    0.5
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "caps": {
+    "R104": {
+      "vehicle_cap": 10,
+      "source": "m7_smaller_cap"
+    },
+    "R108": {
+      "vehicle_cap": 10,
+      "source": "m7_smaller_cap"
+    }
+  },
+  "finished_at_utc": "2026-10-02T06:02:10.128212+00:00"
+}

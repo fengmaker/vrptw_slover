@@ -1,0 +1,33 @@
+{
+  "base": {
+    "fleet_attempts_per_k": 100,
+    "fleet_time_fraction": 1.0,
+    "max_moves": 2,
+    "construction_order": "due",
+    "repair_order": "input",
+    "repair_strategy": "cheapest",
+    "search_strategy": "first",
+    "operators": ["relocate", "swap", "two_opt", "two_opt_star"],
+    "remove_min": 3,
+    "remove_max": 8,
+    "restart_after": 20
+  },
+  "experiments": {
+    "control": {},
+    "fleet_85": {"fleet_time_fraction": 0.85},
+    "fleet_95": {"fleet_time_fraction": 0.95},
+    "fleet_80": {"fleet_time_fraction": 0.8},
+    "attempts_10": {"fleet_attempts_per_k": 10},
+    "moves_1": {"max_moves": 1},
+    "moves_4": {"max_moves": 4},
+    "moves_8": {"max_moves": 8},
+    "remove_1_4": {"remove_min": 1, "remove_max": 4},
+    "remove_2_4": {"remove_min": 2, "remove_max": 4},
+    "restart_5": {"restart_after": 5},
+    "repair_due": {"repair_order": "due"},
+    "repair_slack": {"repair_order": "slack"},
+    "regret2": {"repair_strategy": "regret2"},
+    "construction_slack": {"construction_order": "slack"},
+    "balanced": {"fleet_time_fraction": 0.95, "repair_order": "due"}
+  }
+}

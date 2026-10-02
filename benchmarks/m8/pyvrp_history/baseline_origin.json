@@ -1,0 +1,5 @@
+{
+  "source": "runs\\m6_pyvrp_seed012_0p5s",
+  "raw_sha256": "debd8eed7f7f777f19d595631a096f3711fdaa1335577a2efacadda13967f268",
+  "note": "Frozen M6 records and saved routes copied without altering originals; append only new M7 vehicle caps."
+}

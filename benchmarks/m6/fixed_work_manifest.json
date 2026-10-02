@@ -1,0 +1,27 @@
+{
+  "code_sha256": "3db77f4aec675bd9467937da2dc168bbd3d4632dc8e14fbee006ca51dd7fbfc9",
+  "config": {
+    "seed": 0,
+    "max_iterations": 1,
+    "time_limit_seconds": null,
+    "fleet_attempts_per_k": 10,
+    "max_moves": 1,
+    "construction_order": "due",
+    "search_strategy": "first",
+    "operators": [
+      "relocate",
+      "swap",
+      "two_opt",
+      "two_opt_star"
+    ],
+    "remove_min": 3,
+    "remove_max": 8,
+    "restart_after": 20,
+    "diagnostics": false
+  },
+  "repeats": 3,
+  "numeric_rule": "solomon_exact_1000_v1",
+  "python": "3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.22621-SP0",
+  "finished_at_utc": "2026-10-01T05:24:08.875567+00:00"
+}

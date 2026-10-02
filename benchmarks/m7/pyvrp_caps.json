@@ -1,0 +1,6 @@
+{
+  "R104": {"vehicle_cap": 10, "source": "m7_ablation_minimum"},
+  "R107": {"vehicle_cap": 11, "source": "m7_ablation_minimum"},
+  "R108": {"vehicle_cap": 10, "source": "m7_ablation_minimum"},
+  "R208": {"vehicle_cap": 2, "source": "m7_ablation_minimum"}
+}

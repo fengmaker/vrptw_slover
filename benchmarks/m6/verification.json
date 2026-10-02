@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "batch": "runs\\m6_diagnostics_seed012_0p5s",
+  "runs": 168,
+  "independently_verified": 168,
+  "batch_sha256": "b76b588c23362bc119cbd22b1bade074de8b0cc861bf0d2f9671828f17a87ecc",
+  "code_sha256": "3db77f4aec675bd9467937da2dc168bbd3d4632dc8e14fbee006ca51dd7fbfc9",
+  "runtime_median": 0.516894,
+  "runtime_max": 0.659108,
+  "first_feasible_median": 0.09202099999999999,
+  "first_feasible_max": 0.235487,
+  "ils_runs": 46,
+  "ils_iterations": 87,
+  "environment": {
+    "python": "3.12.4",
+    "platform": "Windows-11-10.0.22621-SP0",
+    "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+    "cpu_count": 16
+  },
+  "pyvrp": {
+    "runs": 168,
+    "independently_verified": 162,
+    "not_found": 6,
+    "raw_sha256": "debd8eed7f7f777f19d595631a096f3711fdaa1335577a2efacadda13967f268"
+  }
+}

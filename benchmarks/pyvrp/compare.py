@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import json
 from collections import Counter
 from pathlib import Path
 
@@ -65,19 +66,39 @@ def _family(name: str) -> str:
     return "RC" if name.startswith("RC") else name[0]
 
 
-def main() -> int:
+def _check_ours_budget(path: Path, rows: list[dict[str, str]], budget: float) -> None:
+    """Check CSV budgets, or the M5 sidecar for historical CSVs."""
+    sidecar = path.with_suffix(".json")
+    metadata = json.loads(sidecar.read_text(encoding="utf-8")) if sidecar.exists() else None
+    if metadata is not None and metadata.get("time_limit_seconds") != budget:
+        raise ValueError("own batch metadata has a different time budget")
+    if rows and "time_limit_seconds" in rows[0]:
+        if any(not row["time_limit_seconds"] or float(row["time_limit_seconds"]) != budget
+               for row in rows):
+            raise ValueError("own batch CSV has a different time budget")
+    elif metadata is None:
+        raise ValueError("own batch has no recorded time budget (CSV or JSON sidecar required)")
+
+
+def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--ours", required=True, type=Path,
                         help="batch_summary.csv from python -m vrptw batch")
     parser.add_argument("--pyvrp", type=Path,
                         help="PyVRP run-level CSV; defaults to results/<budget>s_runs.csv")
     parser.add_argument("--budget", type=float, default=0.5)
+    parser.add_argument("--caps", type=Path, default=RESULTS_DIR.parent / "caps.json",
+                        help="fixed baseline cap snapshot; smaller new caps require fresh PyVRP runs")
+    parser.add_argument("--require-complete", action="store_true",
+                        help="require a matching PyVRP row for every own instance/seed")
     parser.add_argument("--out", type=Path, help="optional per-run comparison CSV")
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
     budget_label = format(args.budget, "g").replace(".", "p")
     pyvrp_path = args.pyvrp or RESULTS_DIR / f"{budget_label}s_runs.csv"
 
     own_rows = _rows(args.ours)
+    _check_ours_budget(args.ours, own_rows, args.budget)
+    fixed_caps = json.loads(args.caps.read_text(encoding="utf-8"))
     own_index = {(row["instance"], row["seed"]): row for row in own_rows}
     if len(own_index) != len(own_rows):
         raise ValueError("own batch has duplicate instance/seed rows")
@@ -101,6 +122,11 @@ def main() -> int:
         available = [key[2] for key in py_index if key[0] == name]
         if available:
             target_caps[name] = max(available)
+    # A slower/new run may use more vehicles than the frozen baseline. Keep
+    # that original cap; only an improvement below it needs a new baseline.
+    for name, cap in target_caps.items():
+        if name in fixed_caps:
+            target_caps[name] = min(cap, int(fixed_caps[name]["vehicle_cap"]))
 
     selected: dict[tuple[str, str], dict[str, str]] = {}
     for name, seed in own_index:
@@ -117,6 +143,10 @@ def main() -> int:
             )
 
     matched = own_index.keys() & selected.keys()
+    if not matched:
+        raise ValueError("no matching instance/seed/cap runs")
+    if args.require_complete and matched != own_index.keys():
+        raise ValueError(f"missing PyVRP runs: {sorted(own_index.keys() - matched)}")
     for key in matched:
         ours, pyvrp = own_index[key], selected[key]
         if ours["input_sha256"] != pyvrp["input_sha256"]:

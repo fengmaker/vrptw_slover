@@ -1,0 +1,50 @@
+{
+  "instances": 56,
+  "runs": 168,
+  "successful": 168,
+  "failed": 0,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "time_limit_seconds": 0.5,
+  "max_iterations": null,
+  "fleet_attempts_per_k": 100,
+  "max_moves": 2,
+  "diagnostics_enabled": false,
+  "config": {
+    "seed": 0,
+    "max_iterations": null,
+    "time_limit_seconds": 0.5,
+    "fleet_attempts_per_k": 100,
+    "fleet_time_fraction": 0.95,
+    "max_moves": 2,
+    "construction_order": "due",
+    "repair_order": "due",
+    "repair_strategy": "cheapest",
+    "search_strategy": "first",
+    "operators": [
+      "relocate",
+      "swap",
+      "two_opt",
+      "two_opt_star"
+    ],
+    "remove_min": 3,
+    "remove_max": 8,
+    "restart_after": 20,
+    "diagnostics": false
+  },
+  "input_format": "solomon_txt",
+  "threads": 1,
+  "numeric_rule": "solomon_exact_1000_v1",
+  "code_sha256": "bcdbfecac731779090e3a398702ae4d335968003d643f03bf90430cd1a9ec707",
+  "started_at_utc": "2026-10-02T05:54:52.617752+00:00",
+  "finished_at_utc": "2026-10-02T05:56:54.001615+00:00",
+  "environment": {
+    "python": "3.12.4",
+    "platform": "Windows-11-10.0.22621-SP0",
+    "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+    "cpu_count": 16
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "instances": 56,
+  "runs": 168,
+  "successful": 168,
+  "failed": 0,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "time_limit_seconds": 0.5,
+  "max_iterations": null,
+  "fleet_attempts_per_k": 100,
+  "max_moves": 2,
+  "diagnostics_enabled": false,
+  "config": {
+    "seed": 0,
+    "max_iterations": null,
+    "time_limit_seconds": 0.5,
+    "fleet_attempts_per_k": 100,
+    "fleet_time_fraction": 0.95,
+    "max_moves": 2,
+    "construction_order": "due",
+    "repair_order": "due",
+    "repair_strategy": "cheapest",
+    "search_strategy": "first",
+    "operators": [
+      "relocate",
+      "swap",
+      "two_opt",
+      "two_opt_star"
+    ],
+    "remove_min": 3,
+    "remove_max": 8,
+    "restart_after": 20,
+    "diagnostics": false,
+    "evaluation_mode": "incremental",
+    "num_neighbours": null
+  },
+  "input_format": "solomon_txt",
+  "threads": 1,
+  "numeric_rule": "solomon_exact_1000_v1",
+  "code_sha256": "5d3f56a8df0d9ba91e368d7f3a64e9028fef5c9e1a9bdeff889848baf2b8ab27",
+  "started_at_utc": "2026-10-02T06:58:37.762428+00:00",
+  "finished_at_utc": "2026-10-02T07:00:53.821144+00:00",
+  "environment": {
+    "python": "3.12.4",
+    "platform": "Windows-11-10.0.22621-SP0",
+    "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+    "cpu_count": 16
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "baseline": {
+    "runs": 168,
+    "independently_verified": 168,
+    "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+    "config": {
+      "seed": 0,
+      "max_iterations": null,
+      "time_limit_seconds": 0.5,
+      "fleet_attempts_per_k": 100,
+      "fleet_time_fraction": 1.0,
+      "max_moves": 2,
+      "construction_order": "due",
+      "repair_order": "input",
+      "repair_strategy": "cheapest",
+      "search_strategy": "first",
+      "operators": [
+        "relocate",
+        "swap",
+        "two_opt",
+        "two_opt_star"
+      ],
+      "remove_min": 3,
+      "remove_max": 8,
+      "restart_after": 20,
+      "diagnostics": false
+    }
+  },
+  "candidate": {
+    "runs": 168,
+    "independently_verified": 168,
+    "code_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+    "config": {
+      "seed": 0,
+      "max_iterations": null,
+      "time_limit_seconds": 0.5,
+      "fleet_attempts_per_k": 100,
+      "fleet_time_fraction": 0.95,
+      "max_moves": 2,
+      "construction_order": "due",
+      "repair_order": "due",
+      "repair_strategy": "cheapest",
+      "search_strategy": "first",
+      "operators": [
+        "relocate",
+        "swap",
+        "two_opt",
+        "two_opt_star"
+      ],
+      "remove_min": 3,
+      "remove_max": 8,
+      "restart_after": 20,
+      "diagnostics": false
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "R104": {
+    "vehicle_cap": 10,
+    "source": "m7_smaller_cap"
+  },
+  "R108": {
+    "vehicle_cap": 10,
+    "source": "m7_smaller_cap"
+  }
+}

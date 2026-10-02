@@ -1,0 +1,140 @@
+{
+  "matrix": {
+    "base": {
+      "fleet_attempts_per_k": 100,
+      "fleet_time_fraction": 1.0,
+      "max_moves": 2,
+      "construction_order": "due",
+      "repair_order": "input",
+      "repair_strategy": "cheapest",
+      "search_strategy": "first",
+      "operators": [
+        "relocate",
+        "swap",
+        "two_opt",
+        "two_opt_star"
+      ],
+      "remove_min": 3,
+      "remove_max": 8,
+      "restart_after": 20
+    },
+    "experiments": {
+      "control": {},
+      "fleet_85": {
+        "fleet_time_fraction": 0.85
+      },
+      "fleet_95": {
+        "fleet_time_fraction": 0.95
+      },
+      "fleet_80": {
+        "fleet_time_fraction": 0.8
+      },
+      "attempts_10": {
+        "fleet_attempts_per_k": 10
+      },
+      "moves_1": {
+        "max_moves": 1
+      },
+      "moves_4": {
+        "max_moves": 4
+      },
+      "moves_8": {
+        "max_moves": 8
+      },
+      "remove_1_4": {
+        "remove_min": 1,
+        "remove_max": 4
+      },
+      "remove_2_4": {
+        "remove_min": 2,
+        "remove_max": 4
+      },
+      "restart_5": {
+        "restart_after": 5
+      },
+      "repair_due": {
+        "repair_order": "due"
+      },
+      "repair_slack": {
+        "repair_order": "slack"
+      },
+      "regret2": {
+        "repair_strategy": "regret2"
+      },
+      "construction_slack": {
+        "construction_order": "slack"
+      },
+      "balanced": {
+        "fleet_time_fraction": 0.95,
+        "repair_order": "due"
+      }
+    }
+  },
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "budget_seconds": 0.5,
+  "instances": [
+    "C101",
+    "C102",
+    "C103",
+    "C104",
+    "C105",
+    "C106",
+    "C107",
+    "C108",
+    "C109",
+    "C201",
+    "C202",
+    "C203",
+    "C204",
+    "C205",
+    "C206",
+    "C207",
+    "C208",
+    "R101",
+    "R102",
+    "R103",
+    "R104",
+    "R105",
+    "R106",
+    "R107",
+    "R108",
+    "R109",
+    "R110",
+    "R111",
+    "R112",
+    "R201",
+    "R202",
+    "R203",
+    "R204",
+    "R205",
+    "R206",
+    "R207",
+    "R208",
+    "R209",
+    "R210",
+    "R211",
+    "RC101",
+    "RC102",
+    "RC103",
+    "RC104",
+    "RC105",
+    "RC106",
+    "RC107",
+    "RC108",
+    "RC201",
+    "RC202",
+    "RC203",
+    "RC204",
+    "RC205",
+    "RC206",
+    "RC207",
+    "RC208"
+  ],
+  "diagnostics": false,
+  "source_sha256": "fb89464a08a8315316a993462b898339a1874a83f2825c9a1b6ff87072390d28",
+  "script_sha256": "fd083edf7b0d3380b59e0bcc9db71db7c00af0e282cbc9cd8b2f5ca081cd29db"
+}

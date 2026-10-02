@@ -1,0 +1,297 @@
+{
+  "solver": {
+    "baseline": {
+      "runs": 168,
+      "independently_verified": 168,
+      "code_sha256": "bcdbfecac731779090e3a398702ae4d335968003d643f03bf90430cd1a9ec707",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": 2,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false
+      },
+      "runtime_median": 0.500567,
+      "runtime_max": 0.501434,
+      "first_feasible_median": 0.1750185,
+      "first_feasible_max": 0.450633,
+      "ils_runs": 168,
+      "ils_iterations": 190,
+      "pyvrp": {
+        "same_vehicle_instances": 39,
+        "vehicles_worse": 17,
+        "distance_gap_median_percent": 31.299,
+        "distance_gap_p90_percent": 88.0718
+      },
+      "fresh_pyvrp": {
+        "same_vehicle_instances": 39,
+        "vehicles_worse": 17,
+        "distance_gap_median_percent": 31.299,
+        "distance_gap_p90_percent": 90.2105
+      }
+    },
+    "cached": {
+      "runs": 168,
+      "independently_verified": 168,
+      "code_sha256": "5d3f56a8df0d9ba91e368d7f3a64e9028fef5c9e1a9bdeff889848baf2b8ab27",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": 2,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "cached",
+        "num_neighbours": null
+      },
+      "runtime_median": 0.500558,
+      "runtime_max": 0.501269,
+      "first_feasible_median": 0.1725335,
+      "first_feasible_max": 0.439495,
+      "ils_runs": 168,
+      "ils_iterations": 200,
+      "pyvrp": {
+        "same_vehicle_instances": 39,
+        "vehicles_worse": 17,
+        "distance_gap_median_percent": 31.9754,
+        "distance_gap_p90_percent": 88.0718
+      },
+      "fresh_pyvrp": {
+        "same_vehicle_instances": 39,
+        "vehicles_worse": 17,
+        "distance_gap_median_percent": 31.9754,
+        "distance_gap_p90_percent": 90.2105
+      }
+    },
+    "incremental": {
+      "runs": 168,
+      "independently_verified": 168,
+      "code_sha256": "5d3f56a8df0d9ba91e368d7f3a64e9028fef5c9e1a9bdeff889848baf2b8ab27",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": 2,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null
+      },
+      "runtime_median": 0.5005470000000001,
+      "runtime_max": 0.50196,
+      "first_feasible_median": 0.17228100000000002,
+      "first_feasible_max": 0.445062,
+      "ils_runs": 168,
+      "ils_iterations": 250,
+      "pyvrp": {
+        "same_vehicle_instances": 39,
+        "vehicles_worse": 17,
+        "distance_gap_median_percent": 31.9602,
+        "distance_gap_p90_percent": 87.8469
+      },
+      "fresh_pyvrp": {
+        "same_vehicle_instances": 39,
+        "vehicles_worse": 17,
+        "distance_gap_median_percent": 31.9602,
+        "distance_gap_p90_percent": 86.6042
+      }
+    },
+    "n20": {
+      "runs": 168,
+      "independently_verified": 168,
+      "code_sha256": "5d3f56a8df0d9ba91e368d7f3a64e9028fef5c9e1a9bdeff889848baf2b8ab27",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": 2,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": 20
+      },
+      "runtime_median": 0.5011155,
+      "runtime_max": 0.522055,
+      "first_feasible_median": 0.171219,
+      "first_feasible_max": 0.432875,
+      "ils_runs": 80,
+      "ils_iterations": 166,
+      "pyvrp": {
+        "same_vehicle_instances": 39,
+        "vehicles_worse": 17,
+        "distance_gap_median_percent": 32.37,
+        "distance_gap_p90_percent": 87.8469
+      },
+      "fresh_pyvrp": {
+        "same_vehicle_instances": 39,
+        "vehicles_worse": 17,
+        "distance_gap_median_percent": 32.37,
+        "distance_gap_p90_percent": 86.6042
+      }
+    },
+    "n40": {
+      "runs": 168,
+      "independently_verified": 168,
+      "code_sha256": "5d3f56a8df0d9ba91e368d7f3a64e9028fef5c9e1a9bdeff889848baf2b8ab27",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": 2,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": 40
+      },
+      "runtime_median": 0.501142,
+      "runtime_max": 0.52677,
+      "first_feasible_median": 0.1760005,
+      "first_feasible_max": 0.463366,
+      "ils_runs": 79,
+      "ils_iterations": 156,
+      "pyvrp": {
+        "same_vehicle_instances": 39,
+        "vehicles_worse": 17,
+        "distance_gap_median_percent": 32.2672,
+        "distance_gap_p90_percent": 87.8469
+      },
+      "fresh_pyvrp": {
+        "same_vehicle_instances": 39,
+        "vehicles_worse": 17,
+        "distance_gap_median_percent": 32.2672,
+        "distance_gap_p90_percent": 86.6042
+      }
+    },
+    "delivery": {
+      "runs": 168,
+      "independently_verified": 168,
+      "code_sha256": "5d3f56a8df0d9ba91e368d7f3a64e9028fef5c9e1a9bdeff889848baf2b8ab27",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": 2,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null
+      },
+      "runtime_median": 0.5005045,
+      "runtime_max": 0.546175,
+      "first_feasible_median": 0.1237085,
+      "first_feasible_max": 0.405953,
+      "ils_runs": 168,
+      "ils_iterations": 290,
+      "pyvrp": {
+        "same_vehicle_instances": 39,
+        "vehicles_worse": 17,
+        "distance_gap_median_percent": 28.8956,
+        "distance_gap_p90_percent": 87.8469
+      },
+      "fresh_pyvrp": {
+        "same_vehicle_instances": 39,
+        "vehicles_worse": 17,
+        "distance_gap_median_percent": 28.8956,
+        "distance_gap_p90_percent": 86.6042
+      }
+    }
+  },
+  "throughput_routes_verified": 60,
+  "pyvrp": {
+    "runs": 186,
+    "independently_verified": 177,
+    "not_found": 9,
+    "raw_sha256": "a54486a3c88aeaaef7fad6fb5dac2e50a2ba777fe5710257e3ebb8b2edfd079a"
+  },
+  "fresh_pyvrp": {
+    "runs": 171,
+    "independently_verified": 165,
+    "not_found": 6,
+    "raw_sha256": "04114e562cc4978547a5c011c67fc0b81b2687eeb317b2c37be6ff97ce134174"
+  }
+}

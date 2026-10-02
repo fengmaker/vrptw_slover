@@ -1,0 +1,396 @@
+{
+  "schema_version": 1,
+  "experiment": "D:\\AAA-OR-Route\\solver\\vrptw_solver\\runs\\m8_ablation_corrected_seed012_0p5s",
+  "experiment_manifest_sha256": "16db1b4c649a0bc8e756a41c57f79a0b919bb80af5a6bb4b06f9c12291928547",
+  "independently_verified_runs": 840,
+  "variants": {
+    "baseline": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": 2,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false
+      },
+      "config_sha256": "e6dbfbf4af082d1931b05cdf5e6025870dea04a3e7f83089c123ae878bc463bb",
+      "code_sha256": "bcdbfecac731779090e3a398702ae4d335968003d643f03bf90430cd1a9ec707",
+      "runs": 168,
+      "comparison_vs_baseline": {
+        "better": 0,
+        "worse": 0,
+        "tie": 56,
+        "vehicles_better": 0,
+        "vehicles_worse": 0,
+        "vehicles_same": 56,
+        "same_vehicle_distance_better": 0,
+        "same_vehicle_distance_worse": 0,
+        "same_vehicle_distance_tie": 56
+      },
+      "runtime_and_iterations_by_family": {
+        "all": {
+          "runs": 168,
+          "runtime_median_seconds": 0.500567,
+          "runtime_p90_seconds_nearest_rank": 0.500998,
+          "runtime_mean_seconds": 0.5005712083333334,
+          "ils_runs": 168,
+          "ils_iterations": 190,
+          "iterations_mean": 1.130952380952381
+        },
+        "C": {
+          "runs": 51,
+          "runtime_median_seconds": 0.500642,
+          "runtime_p90_seconds_nearest_rank": 0.501223,
+          "runtime_mean_seconds": 0.5007146862745099,
+          "ils_runs": 51,
+          "ils_iterations": 69,
+          "iterations_mean": 1.3529411764705883
+        },
+        "R": {
+          "runs": 69,
+          "runtime_median_seconds": 0.500558,
+          "runtime_p90_seconds_nearest_rank": 0.500963,
+          "runtime_mean_seconds": 0.5005322608695653,
+          "ils_runs": 69,
+          "ils_iterations": 71,
+          "iterations_mean": 1.0289855072463767
+        },
+        "RC": {
+          "runs": 48,
+          "runtime_median_seconds": 0.5005265000000001,
+          "runtime_p90_seconds_nearest_rank": 0.500644,
+          "runtime_mean_seconds": 0.50047475,
+          "ils_runs": 48,
+          "ils_iterations": 50,
+          "iterations_mean": 1.0416666666666667
+        }
+      }
+    },
+    "cached": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": 2,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "cached",
+        "num_neighbours": null
+      },
+      "config_sha256": "9cb66bc4e34f3526423a8fc6e8ad3028cbe662de32f705502ffcbb2c3c63f117",
+      "code_sha256": "5d3f56a8df0d9ba91e368d7f3a64e9028fef5c9e1a9bdeff889848baf2b8ab27",
+      "runs": 168,
+      "comparison_vs_baseline": {
+        "better": 7,
+        "worse": 4,
+        "tie": 45,
+        "vehicles_better": 0,
+        "vehicles_worse": 0,
+        "vehicles_same": 56,
+        "same_vehicle_distance_better": 7,
+        "same_vehicle_distance_worse": 4,
+        "same_vehicle_distance_tie": 45
+      },
+      "runtime_and_iterations_by_family": {
+        "all": {
+          "runs": 168,
+          "runtime_median_seconds": 0.500558,
+          "runtime_p90_seconds_nearest_rank": 0.500988,
+          "runtime_mean_seconds": 0.5005569345238096,
+          "ils_runs": 168,
+          "ils_iterations": 200,
+          "iterations_mean": 1.1904761904761905
+        },
+        "C": {
+          "runs": 51,
+          "runtime_median_seconds": 0.50063,
+          "runtime_p90_seconds_nearest_rank": 0.501154,
+          "runtime_mean_seconds": 0.5006756078431372,
+          "ils_runs": 51,
+          "ils_iterations": 79,
+          "iterations_mean": 1.5490196078431373
+        },
+        "R": {
+          "runs": 69,
+          "runtime_median_seconds": 0.500535,
+          "runtime_p90_seconds_nearest_rank": 0.500934,
+          "runtime_mean_seconds": 0.5005262173913044,
+          "ils_runs": 69,
+          "ils_iterations": 73,
+          "iterations_mean": 1.0579710144927537
+        },
+        "RC": {
+          "runs": 48,
+          "runtime_median_seconds": 0.5005215000000001,
+          "runtime_p90_seconds_nearest_rank": 0.500626,
+          "runtime_mean_seconds": 0.500475,
+          "ils_runs": 48,
+          "ils_iterations": 48,
+          "iterations_mean": 1.0
+        }
+      }
+    },
+    "incremental": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": 2,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null
+      },
+      "config_sha256": "034a9f2ddc1163af93aedef194b85dba0d917316921d81894ea9f955e988b8de",
+      "code_sha256": "5d3f56a8df0d9ba91e368d7f3a64e9028fef5c9e1a9bdeff889848baf2b8ab27",
+      "runs": 168,
+      "comparison_vs_baseline": {
+        "better": 17,
+        "worse": 3,
+        "tie": 36,
+        "vehicles_better": 0,
+        "vehicles_worse": 0,
+        "vehicles_same": 56,
+        "same_vehicle_distance_better": 17,
+        "same_vehicle_distance_worse": 3,
+        "same_vehicle_distance_tie": 36
+      },
+      "runtime_and_iterations_by_family": {
+        "all": {
+          "runs": 168,
+          "runtime_median_seconds": 0.5005470000000001,
+          "runtime_p90_seconds_nearest_rank": 0.500972,
+          "runtime_mean_seconds": 0.5005398869047619,
+          "ils_runs": 168,
+          "ils_iterations": 250,
+          "iterations_mean": 1.4880952380952381
+        },
+        "C": {
+          "runs": 51,
+          "runtime_median_seconds": 0.500632,
+          "runtime_p90_seconds_nearest_rank": 0.501142,
+          "runtime_mean_seconds": 0.5007139411764706,
+          "ils_runs": 51,
+          "ils_iterations": 121,
+          "iterations_mean": 2.372549019607843
+        },
+        "R": {
+          "runs": 69,
+          "runtime_median_seconds": 0.500484,
+          "runtime_p90_seconds_nearest_rank": 0.500642,
+          "runtime_mean_seconds": 0.5004754347826087,
+          "ils_runs": 69,
+          "ils_iterations": 75,
+          "iterations_mean": 1.0869565217391304
+        },
+        "RC": {
+          "runs": 48,
+          "runtime_median_seconds": 0.500362,
+          "runtime_p90_seconds_nearest_rank": 0.500663,
+          "runtime_mean_seconds": 0.5004476041666667,
+          "ils_runs": 48,
+          "ils_iterations": 54,
+          "iterations_mean": 1.125
+        }
+      }
+    },
+    "n20": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": 2,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": 20
+      },
+      "config_sha256": "8bdcba27f35013acac39917d9deca95c4f3b8909144bcd1b328393b2f4b340fa",
+      "code_sha256": "5d3f56a8df0d9ba91e368d7f3a64e9028fef5c9e1a9bdeff889848baf2b8ab27",
+      "runs": 168,
+      "comparison_vs_baseline": {
+        "better": 10,
+        "worse": 11,
+        "tie": 35,
+        "vehicles_better": 0,
+        "vehicles_worse": 0,
+        "vehicles_same": 56,
+        "same_vehicle_distance_better": 10,
+        "same_vehicle_distance_worse": 11,
+        "same_vehicle_distance_tie": 35
+      },
+      "runtime_and_iterations_by_family": {
+        "all": {
+          "runs": 168,
+          "runtime_median_seconds": 0.5011155,
+          "runtime_p90_seconds_nearest_rank": 0.509959,
+          "runtime_mean_seconds": 0.5033815535714286,
+          "ils_runs": 80,
+          "ils_iterations": 166,
+          "iterations_mean": 0.9880952380952381
+        },
+        "C": {
+          "runs": 51,
+          "runtime_median_seconds": 0.501097,
+          "runtime_p90_seconds_nearest_rank": 0.516428,
+          "runtime_mean_seconds": 0.5046510588235293,
+          "ils_runs": 31,
+          "ils_iterations": 117,
+          "iterations_mean": 2.2941176470588234
+        },
+        "R": {
+          "runs": 69,
+          "runtime_median_seconds": 0.502237,
+          "runtime_p90_seconds_nearest_rank": 0.508949,
+          "runtime_mean_seconds": 0.5036881014492754,
+          "ils_runs": 24,
+          "ils_iterations": 24,
+          "iterations_mean": 0.34782608695652173
+        },
+        "RC": {
+          "runs": 48,
+          "runtime_median_seconds": 0.500388,
+          "runtime_p90_seconds_nearest_rank": 0.505075,
+          "runtime_mean_seconds": 0.5015920416666667,
+          "ils_runs": 25,
+          "ils_iterations": 25,
+          "iterations_mean": 0.5208333333333334
+        }
+      }
+    },
+    "n40": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": 2,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": 40
+      },
+      "config_sha256": "bfc53a57563f03cc026886fad87aa6f4a061d6391858b8ba0f958ac4b4f7a482",
+      "code_sha256": "5d3f56a8df0d9ba91e368d7f3a64e9028fef5c9e1a9bdeff889848baf2b8ab27",
+      "runs": 168,
+      "comparison_vs_baseline": {
+        "better": 8,
+        "worse": 12,
+        "tie": 36,
+        "vehicles_better": 0,
+        "vehicles_worse": 1,
+        "vehicles_same": 55,
+        "same_vehicle_distance_better": 8,
+        "same_vehicle_distance_worse": 11,
+        "same_vehicle_distance_tie": 36
+      },
+      "runtime_and_iterations_by_family": {
+        "all": {
+          "runs": 168,
+          "runtime_median_seconds": 0.501142,
+          "runtime_p90_seconds_nearest_rank": 0.508938,
+          "runtime_mean_seconds": 0.5035110714285714,
+          "ils_runs": 79,
+          "ils_iterations": 156,
+          "iterations_mean": 0.9285714285714286
+        },
+        "C": {
+          "runs": 51,
+          "runtime_median_seconds": 0.501069,
+          "runtime_p90_seconds_nearest_rank": 0.519105,
+          "runtime_mean_seconds": 0.5050077843137255,
+          "ils_runs": 31,
+          "ils_iterations": 108,
+          "iterations_mean": 2.1176470588235294
+        },
+        "R": {
+          "runs": 69,
+          "runtime_median_seconds": 0.503131,
+          "runtime_p90_seconds_nearest_rank": 0.508432,
+          "runtime_mean_seconds": 0.5037725217391305,
+          "ils_runs": 24,
+          "ils_iterations": 24,
+          "iterations_mean": 0.34782608695652173
+        },
+        "RC": {
+          "runs": 48,
+          "runtime_median_seconds": 0.500615,
+          "runtime_p90_seconds_nearest_rank": 0.504752,
+          "runtime_mean_seconds": 0.5015449791666667,
+          "ils_runs": 24,
+          "ils_iterations": 24,
+          "iterations_mean": 0.5
+        }
+      }
+    }
+  }
+}

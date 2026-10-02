@@ -1,0 +1,154 @@
+{
+  "code_sha256": "5d3f56a8df0d9ba91e368d7f3a64e9028fef5c9e1a9bdeff889848baf2b8ab27",
+  "independent_verified": 60,
+  "protocol": "local search only; fixed M7 saved start; first improvement; unlimited moves",
+  "seconds": 0.5,
+  "diagnostics_enabled": true,
+  "summary": {
+    "full": {
+      "C": {
+        "runs": 6,
+        "candidates": 44460,
+        "accepted": 18,
+        "seconds": 3.0004045000005135,
+        "candidates_per_second": 14818.002039389152,
+        "accepted_per_second": 5.9991911090644345,
+        "median_distance": 1810063.0
+      },
+      "R": {
+        "runs": 3,
+        "candidates": 27624,
+        "accepted": 12,
+        "seconds": 1.5001760999994076,
+        "candidates_per_second": 18413.838215400785,
+        "accepted_per_second": 7.999060910252296,
+        "median_distance": 1889243
+      },
+      "RC": {
+        "runs": 3,
+        "candidates": 22961,
+        "accepted": 9,
+        "seconds": 1.5002443999992465,
+        "candidates_per_second": 15304.839664798303,
+        "accepted_per_second": 5.999022559260691,
+        "median_distance": 2062674
+      }
+    },
+    "cached": {
+      "C": {
+        "runs": 6,
+        "candidates": 76168,
+        "accepted": 35,
+        "seconds": 3.0004181999993307,
+        "candidates_per_second": 25385.794553578227,
+        "accepted_per_second": 11.665040560015203,
+        "median_distance": 1784884.0
+      },
+      "R": {
+        "runs": 3,
+        "candidates": 45683,
+        "accepted": 16,
+        "seconds": 1.5002604999999676,
+        "candidates_per_second": 30450.045175488514,
+        "accepted_per_second": 10.664814543874444,
+        "median_distance": 1889172
+      },
+      "RC": {
+        "runs": 3,
+        "candidates": 39316,
+        "accepted": 15,
+        "seconds": 1.5002622000001793,
+        "candidates_per_second": 26206.085842858203,
+        "accepted_per_second": 9.998252305495804,
+        "median_distance": 2050047
+      }
+    },
+    "incremental": {
+      "C": {
+        "runs": 6,
+        "candidates": 230252,
+        "accepted": 91,
+        "seconds": 3.0002450000001772,
+        "candidates_per_second": 76744.39920739352,
+        "accepted_per_second": 30.33085631339928,
+        "median_distance": 1705852.0
+      },
+      "R": {
+        "runs": 3,
+        "candidates": 100332,
+        "accepted": 28,
+        "seconds": 1.5001749000002746,
+        "candidates_per_second": 66880.20176846156,
+        "accepted_per_second": 18.664490387084115,
+        "median_distance": 1869897
+      },
+      "RC": {
+        "runs": 3,
+        "candidates": 85970,
+        "accepted": 22,
+        "seconds": 1.5002056000002995,
+        "candidates_per_second": 57305.4786623799,
+        "accepted_per_second": 14.664656631061508,
+        "median_distance": 2033438
+      }
+    },
+    "n20": {
+      "C": {
+        "runs": 6,
+        "candidates": 162284,
+        "accepted": 142,
+        "seconds": 3.0004562000003716,
+        "candidates_per_second": 54086.44192172507,
+        "accepted_per_second": 47.32613660548766,
+        "median_distance": 1629492.0
+      },
+      "R": {
+        "runs": 3,
+        "candidates": 71030,
+        "accepted": 33,
+        "seconds": 1.5003182999998899,
+        "candidates_per_second": 47343.287087816774,
+        "accepted_per_second": 21.995332590425928,
+        "median_distance": 1862529
+      },
+      "RC": {
+        "runs": 3,
+        "candidates": 66017,
+        "accepted": 30,
+        "seconds": 1.5003208999987692,
+        "candidates_per_second": 44001.919855981585,
+        "accepted_per_second": 19.995722248503377,
+        "median_distance": 2020232
+      }
+    },
+    "n40": {
+      "C": {
+        "runs": 6,
+        "candidates": 172391,
+        "accepted": 105,
+        "seconds": 3.0007957999996506,
+        "candidates_per_second": 57448.42751380153,
+        "accepted_per_second": 34.99071812884176,
+        "median_distance": 1698466.0
+      },
+      "R": {
+        "runs": 3,
+        "candidates": 76132,
+        "accepted": 28,
+        "seconds": 1.5005799000009574,
+        "candidates_per_second": 50735.05249533959,
+        "accepted_per_second": 18.65945292215505,
+        "median_distance": 1869897
+      },
+      "RC": {
+        "runs": 3,
+        "candidates": 75991,
+        "accepted": 27,
+        "seconds": 1.5005222999998296,
+        "candidates_per_second": 50643.032762664465,
+        "accepted_per_second": 17.993734581620725,
+        "median_distance": 2022074
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "R105": {"vehicle_cap": 16, "source": "m7_own_confirmation_minimum"},
+  "RC207": {"vehicle_cap": 3, "source": "m7_verified_delivery_minimum"}
+}

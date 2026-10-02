@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "batch": "runs\\m7_diagnostics_default_seed012_0p5s\\balanced",
+  "runs": 12,
+  "independently_verified": 12,
+  "batch_sha256": "4d4bbc7aa506a46e263481c4a58d48f93bc11c6d8def162e4aab94f86af6f6af",
+  "code_sha256": "bcdbfecac731779090e3a398702ae4d335968003d643f03bf90430cd1a9ec707",
+  "runtime_median": 0.5005075999997644,
+  "runtime_max": 0.500540899999578,
+  "first_feasible_median": 0.07961630000045261,
+  "first_feasible_max": 0.10406590000002325,
+  "ils_runs": 12,
+  "ils_iterations": 28,
+  "environment": {
+    "python": "3.12.4",
+    "platform": "Windows-11-10.0.22621-SP0",
+    "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+    "cpu_count": 16
+  }
+}

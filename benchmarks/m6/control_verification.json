@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "batch": "runs\\m6_control_seed012_0p5s",
+  "runs": 168,
+  "independently_verified": 168,
+  "batch_sha256": "6f1c7ab7d095b231b6503f46ab6825c088bbfd3e8b3dc16edc6960fe6ddba806",
+  "code_sha256": "3db77f4aec675bd9467937da2dc168bbd3d4632dc8e14fbee006ca51dd7fbfc9",
+  "runtime_median": 0.5118335,
+  "runtime_max": 0.61625,
+  "first_feasible_median": 0.0812605,
+  "first_feasible_max": 0.220379,
+  "ils_runs": 46,
+  "ils_iterations": 88,
+  "environment": {
+    "python": "3.12.4",
+    "platform": "Windows-11-10.0.22621-SP0",
+    "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+    "cpu_count": 16
+  }
+}

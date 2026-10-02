@@ -1,0 +1,603 @@
+{
+  "vs_pyvrp": {
+    "ablation_baseline": {
+      "instances": 56,
+      "vehicle_worse": 17,
+      "vehicle_better": 0,
+      "pyvrp_no_feasible_best": 0,
+      "same_vehicle_count": 39,
+      "distance_gap_median_percent": 30.9811,
+      "distance_gap_p90_percent": 88.0718,
+      "families": {
+        "C": {
+          "instances": 17,
+          "vehicle_worse": 4,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 13,
+          "distance_gap_median_percent": 26.1482,
+          "distance_gap_p90_percent": 118.577
+        },
+        "R": {
+          "instances": 23,
+          "vehicle_worse": 7,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 16,
+          "distance_gap_median_percent": 32.05195,
+          "distance_gap_p90_percent": 77.2196
+        },
+        "RC": {
+          "instances": 16,
+          "vehicle_worse": 6,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 10,
+          "distance_gap_median_percent": 38.33295,
+          "distance_gap_p90_percent": 86.8496
+        }
+      }
+    },
+    "ablation_attempts10": {
+      "instances": 56,
+      "vehicle_worse": 15,
+      "vehicle_better": 0,
+      "pyvrp_no_feasible_best": 0,
+      "same_vehicle_count": 41,
+      "distance_gap_median_percent": 33.5469,
+      "distance_gap_p90_percent": 87.8469,
+      "families": {
+        "C": {
+          "instances": 17,
+          "vehicle_worse": 3,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 14,
+          "distance_gap_median_percent": 28.514049999999997,
+          "distance_gap_p90_percent": 118.8413
+        },
+        "R": {
+          "instances": 23,
+          "vehicle_worse": 7,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 16,
+          "distance_gap_median_percent": 32.05195,
+          "distance_gap_p90_percent": 77.2196
+        },
+        "RC": {
+          "instances": 16,
+          "vehicle_worse": 5,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 11,
+          "distance_gap_median_percent": 39.336,
+          "distance_gap_p90_percent": 86.8496
+        }
+      }
+    },
+    "ablation_reserve20": {
+      "instances": 56,
+      "vehicle_worse": 24,
+      "vehicle_better": 0,
+      "pyvrp_no_feasible_best": 0,
+      "same_vehicle_count": 32,
+      "distance_gap_median_percent": 32.24345,
+      "distance_gap_p90_percent": 91.0678,
+      "families": {
+        "C": {
+          "instances": 17,
+          "vehicle_worse": 6,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 11,
+          "distance_gap_median_percent": 30.8799,
+          "distance_gap_p90_percent": 118.8413
+        },
+        "R": {
+          "instances": 23,
+          "vehicle_worse": 9,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 14,
+          "distance_gap_median_percent": 32.05195,
+          "distance_gap_p90_percent": 69.3677
+        },
+        "RC": {
+          "instances": 16,
+          "vehicle_worse": 9,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 7,
+          "distance_gap_median_percent": 39.336,
+          "distance_gap_p90_percent": 91.0678
+        }
+      }
+    },
+    "ablation_moves8": {
+      "instances": 56,
+      "vehicle_worse": 18,
+      "vehicle_better": 0,
+      "pyvrp_no_feasible_best": 0,
+      "same_vehicle_count": 38,
+      "distance_gap_median_percent": 32.264,
+      "distance_gap_p90_percent": 88.0718,
+      "families": {
+        "C": {
+          "instances": 17,
+          "vehicle_worse": 5,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 12,
+          "distance_gap_median_percent": 28.514049999999997,
+          "distance_gap_p90_percent": 120.0244
+        },
+        "R": {
+          "instances": 23,
+          "vehicle_worse": 8,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 15,
+          "distance_gap_median_percent": 30.557,
+          "distance_gap_p90_percent": 77.2196
+        },
+        "RC": {
+          "instances": 16,
+          "vehicle_worse": 5,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 11,
+          "distance_gap_median_percent": 39.336,
+          "distance_gap_p90_percent": 86.8496
+        }
+      }
+    },
+    "ablation_removal2": {
+      "instances": 56,
+      "vehicle_worse": 13,
+      "vehicle_better": 0,
+      "pyvrp_no_feasible_best": 0,
+      "same_vehicle_count": 43,
+      "distance_gap_median_percent": 30.9811,
+      "distance_gap_p90_percent": 87.8469,
+      "families": {
+        "C": {
+          "instances": 17,
+          "vehicle_worse": 4,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 13,
+          "distance_gap_median_percent": 27.9881,
+          "distance_gap_p90_percent": 117.9783
+        },
+        "R": {
+          "instances": 23,
+          "vehicle_worse": 4,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 19,
+          "distance_gap_median_percent": 30.557,
+          "distance_gap_p90_percent": 77.2196
+        },
+        "RC": {
+          "instances": 16,
+          "vehicle_worse": 5,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 11,
+          "distance_gap_median_percent": 39.336,
+          "distance_gap_p90_percent": 86.8496
+        }
+      }
+    },
+    "ablation_restart5": {
+      "instances": 56,
+      "vehicle_worse": 17,
+      "vehicle_better": 0,
+      "pyvrp_no_feasible_best": 0,
+      "same_vehicle_count": 39,
+      "distance_gap_median_percent": 30.8799,
+      "distance_gap_p90_percent": 88.0718,
+      "families": {
+        "C": {
+          "instances": 17,
+          "vehicle_worse": 3,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 14,
+          "distance_gap_median_percent": 27.06815,
+          "distance_gap_p90_percent": 118.8413
+        },
+        "R": {
+          "instances": 23,
+          "vehicle_worse": 8,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 15,
+          "distance_gap_median_percent": 30.557,
+          "distance_gap_p90_percent": 77.2196
+        },
+        "RC": {
+          "instances": 16,
+          "vehicle_worse": 6,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 10,
+          "distance_gap_median_percent": 38.33295,
+          "distance_gap_p90_percent": 86.8496
+        }
+      }
+    },
+    "ablation_repair_due": {
+      "instances": 56,
+      "vehicle_worse": 13,
+      "vehicle_better": 0,
+      "pyvrp_no_feasible_best": 0,
+      "same_vehicle_count": 43,
+      "distance_gap_median_percent": 30.8799,
+      "distance_gap_p90_percent": 87.8469,
+      "families": {
+        "C": {
+          "instances": 17,
+          "vehicle_worse": 3,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 14,
+          "distance_gap_median_percent": 29.433999999999997,
+          "distance_gap_p90_percent": 116.0392
+        },
+        "R": {
+          "instances": 23,
+          "vehicle_worse": 4,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 19,
+          "distance_gap_median_percent": 24.1676,
+          "distance_gap_p90_percent": 77.2196
+        },
+        "RC": {
+          "instances": 16,
+          "vehicle_worse": 6,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 10,
+          "distance_gap_median_percent": 38.026650000000004,
+          "distance_gap_p90_percent": 86.8496
+        }
+      }
+    },
+    "ablation_repair_slack": {
+      "instances": 56,
+      "vehicle_worse": 18,
+      "vehicle_better": 0,
+      "pyvrp_no_feasible_best": 0,
+      "same_vehicle_count": 38,
+      "distance_gap_median_percent": 30.288,
+      "distance_gap_p90_percent": 88.0718,
+      "families": {
+        "C": {
+          "instances": 17,
+          "vehicle_worse": 7,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 10,
+          "distance_gap_median_percent": 29.61955,
+          "distance_gap_p90_percent": 116.0392
+        },
+        "R": {
+          "instances": 23,
+          "vehicle_worse": 4,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 19,
+          "distance_gap_median_percent": 29.6676,
+          "distance_gap_p90_percent": 77.2196
+        },
+        "RC": {
+          "instances": 16,
+          "vehicle_worse": 7,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 9,
+          "distance_gap_median_percent": 32.2672,
+          "distance_gap_p90_percent": 87.8469
+        }
+      }
+    },
+    "ablation_regret2": {
+      "instances": 56,
+      "vehicle_worse": 34,
+      "vehicle_better": 0,
+      "pyvrp_no_feasible_best": 0,
+      "same_vehicle_count": 22,
+      "distance_gap_median_percent": 40.318650000000005,
+      "distance_gap_p90_percent": 96.0162,
+      "families": {
+        "C": {
+          "instances": 17,
+          "vehicle_worse": 11,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 6,
+          "distance_gap_median_percent": 73.9236,
+          "distance_gap_p90_percent": 127.0065
+        },
+        "R": {
+          "instances": 23,
+          "vehicle_worse": 11,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 12,
+          "distance_gap_median_percent": 35.31455,
+          "distance_gap_p90_percent": 77.2196
+        },
+        "RC": {
+          "instances": 16,
+          "vehicle_worse": 12,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 4,
+          "distance_gap_median_percent": 53.30605,
+          "distance_gap_p90_percent": 87.8469
+        }
+      }
+    },
+    "ablation_construction_slack": {
+      "instances": 56,
+      "vehicle_worse": 18,
+      "vehicle_better": 0,
+      "pyvrp_no_feasible_best": 0,
+      "same_vehicle_count": 38,
+      "distance_gap_median_percent": 30.718449999999997,
+      "distance_gap_p90_percent": 94.6872,
+      "families": {
+        "C": {
+          "instances": 17,
+          "vehicle_worse": 5,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 12,
+          "distance_gap_median_percent": 29.797800000000002,
+          "distance_gap_p90_percent": 108.794
+        },
+        "R": {
+          "instances": 23,
+          "vehicle_worse": 8,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 15,
+          "distance_gap_median_percent": 24.8867,
+          "distance_gap_p90_percent": 66.7323
+        },
+        "RC": {
+          "instances": 16,
+          "vehicle_worse": 5,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 11,
+          "distance_gap_median_percent": 39.336,
+          "distance_gap_p90_percent": 93.0249
+        }
+      }
+    },
+    "confirmation_baseline": {
+      "instances": 56,
+      "vehicle_worse": 4,
+      "vehicle_better": 0,
+      "pyvrp_no_feasible_best": 0,
+      "same_vehicle_count": 52,
+      "distance_gap_median_percent": 27.194000000000003,
+      "distance_gap_p90_percent": 86.8496,
+      "families": {
+        "C": {
+          "instances": 17,
+          "vehicle_worse": 0,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 17,
+          "distance_gap_median_percent": 25.8284,
+          "distance_gap_p90_percent": 118.577
+        },
+        "R": {
+          "instances": 23,
+          "vehicle_worse": 2,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 21,
+          "distance_gap_median_percent": 27.6058,
+          "distance_gap_p90_percent": 63.9357
+        },
+        "RC": {
+          "instances": 16,
+          "vehicle_worse": 2,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 14,
+          "distance_gap_median_percent": 29.7907,
+          "distance_gap_p90_percent": 86.8496
+        }
+      }
+    },
+    "confirmation_candidate": {
+      "instances": 56,
+      "vehicle_worse": 5,
+      "vehicle_better": 0,
+      "pyvrp_no_feasible_best": 0,
+      "same_vehicle_count": 51,
+      "distance_gap_median_percent": 26.9846,
+      "distance_gap_p90_percent": 71.2478,
+      "families": {
+        "C": {
+          "instances": 17,
+          "vehicle_worse": 0,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 17,
+          "distance_gap_median_percent": 25.8284,
+          "distance_gap_p90_percent": 115.0796
+        },
+        "R": {
+          "instances": 23,
+          "vehicle_worse": 2,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 21,
+          "distance_gap_median_percent": 27.5939,
+          "distance_gap_p90_percent": 61.2807
+        },
+        "RC": {
+          "instances": 16,
+          "vehicle_worse": 3,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 13,
+          "distance_gap_median_percent": 28.8545,
+          "distance_gap_p90_percent": 63.6464
+        }
+      }
+    },
+    "initial_baseline": {
+      "instances": 56,
+      "vehicle_worse": 23,
+      "vehicle_better": 0,
+      "pyvrp_no_feasible_best": 0,
+      "same_vehicle_count": 33,
+      "distance_gap_median_percent": 30.9811,
+      "distance_gap_p90_percent": 88.0718,
+      "families": {
+        "C": {
+          "instances": 17,
+          "vehicle_worse": 5,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 12,
+          "distance_gap_median_percent": 28.514049999999997,
+          "distance_gap_p90_percent": 118.8413
+        },
+        "R": {
+          "instances": 23,
+          "vehicle_worse": 9,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 14,
+          "distance_gap_median_percent": 32.05195,
+          "distance_gap_p90_percent": 77.2196
+        },
+        "RC": {
+          "instances": 16,
+          "vehicle_worse": 9,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 7,
+          "distance_gap_median_percent": 39.336,
+          "distance_gap_p90_percent": 87.8469
+        }
+      }
+    },
+    "initial_candidate": {
+      "instances": 56,
+      "vehicle_worse": 20,
+      "vehicle_better": 0,
+      "pyvrp_no_feasible_best": 0,
+      "same_vehicle_count": 36,
+      "distance_gap_median_percent": 32.39895,
+      "distance_gap_p90_percent": 87.8751,
+      "families": {
+        "C": {
+          "instances": 17,
+          "vehicle_worse": 6,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 11,
+          "distance_gap_median_percent": 31.251,
+          "distance_gap_p90_percent": 115.8966
+        },
+        "R": {
+          "instances": 23,
+          "vehicle_worse": 7,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 16,
+          "distance_gap_median_percent": 25.2455,
+          "distance_gap_p90_percent": 74.4474
+        },
+        "RC": {
+          "instances": 16,
+          "vehicle_worse": 7,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 9,
+          "distance_gap_median_percent": 44.7823,
+          "distance_gap_p90_percent": 86.9992
+        }
+      }
+    },
+    "delivery_default": {
+      "instances": 56,
+      "vehicle_worse": 6,
+      "vehicle_better": 0,
+      "pyvrp_no_feasible_best": 0,
+      "same_vehicle_count": 50,
+      "distance_gap_median_percent": 28.10305,
+      "distance_gap_p90_percent": 74.4474,
+      "families": {
+        "C": {
+          "instances": 17,
+          "vehicle_worse": 0,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 17,
+          "distance_gap_median_percent": 26.1482,
+          "distance_gap_p90_percent": 115.8374
+        },
+        "R": {
+          "instances": 23,
+          "vehicle_worse": 3,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 20,
+          "distance_gap_median_percent": 29.353949999999998,
+          "distance_gap_p90_percent": 63.7153
+        },
+        "RC": {
+          "instances": 16,
+          "vehicle_worse": 3,
+          "vehicle_better": 0,
+          "pyvrp_no_feasible_best": 0,
+          "same_vehicle_count": 13,
+          "distance_gap_median_percent": 28.8956,
+          "distance_gap_p90_percent": 64.6803
+        }
+      }
+    }
+  },
+  "vs_historical_m6": {
+    "confirmation_baseline": {
+      "vehicle_improved": 0,
+      "vehicle_worse": 1,
+      "same_count_distance_better": 0,
+      "same_count_distance_worse": 4,
+      "same_count_distance_tie": 51,
+      "same_vehicle_distance_p90_percent_nearest_rank": 0.0,
+      "same_vehicle_distance_comparisons": 55
+    },
+    "confirmation_candidate": {
+      "vehicle_improved": 2,
+      "vehicle_worse": 2,
+      "same_count_distance_better": 32,
+      "same_count_distance_worse": 13,
+      "same_count_distance_tie": 7,
+      "same_vehicle_distance_p90_percent_nearest_rank": 4.685018183429169,
+      "same_vehicle_distance_comparisons": 52
+    },
+    "delivery_default": {
+      "vehicle_improved": 3,
+      "vehicle_worse": 2,
+      "same_count_distance_better": 25,
+      "same_count_distance_worse": 11,
+      "same_count_distance_tie": 15,
+      "same_vehicle_distance_p90_percent_nearest_rank": 4.103961729624651,
+      "same_vehicle_distance_comparisons": 51
+    }
+  }
+}

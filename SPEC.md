@@ -38,6 +38,8 @@
 
 示例仅说明结构，并非 C101 解。`routes` 不含仓库；`vehicles` 是非空路线数；`distance_ticks` 是精确的内部整数值，`distance` 等于它除以 1000；`feasible` 必须来自重新验证；`seed`、单线程数、首个可行解耗时、停止原因和总耗时记录实际运行。CLI 写入输入文件和求解器源码哈希。只有可行解才可输出为正式 `solution.json`。
 
+M6 增加可选诊断字段，不改变数值规则或解格式版本：`config` 保存完整求解配置，`vehicle_limit` 保存原始输入上限，`fleet.milestones` 保存减车进展。开启诊断时，`diagnostics` 包含 `schema_version=1` 和逐阶段统计 `phases`，同一统计另写 `diagnostics.csv`；批量额外写 `batch_diagnostics.csv`。阶段自身耗时排除子阶段，各阶段之和等于 `runtime_seconds`；包含子阶段的耗时只用于观察父阶段。验证器仍只读取 `routes`。字段定义见 [README.md](README.md#M6-分阶段诊断)。
+
 `routes.sol` 每条非空路线一行：`Route #1: 81 78 ...`，顺序从 1 开始；最后一行 `Cost: 828.937`，为总距离的千分位报告值。读取路线时，`Cost` 仅供人工参考，验证器必须忽略并重新计算。
 
 ## M0 基准

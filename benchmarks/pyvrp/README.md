@@ -6,7 +6,7 @@
 [`0p5s.csv`](results/0p5s.csv) 和 [`5s.csv`](results/5s.csv)，
 与自研 M5 的论文式 0.5 秒对照见
 [`0p5s_m5_comparison.csv`](results/0p5s_m5_comparison.csv)。
-`benchmarks/` 顶层只保留历史 M5 报告；本目录收纳 PyVRP 对照脚本、车辆上限快照和结果。
+`benchmarks/` 顶层保留 M5/M6 报告及诊断脚本；本目录收纳 PyVRP 对照脚本、车辆上限快照和结果。
 
 ## 文件分别做什么
 
@@ -15,7 +15,7 @@
 | `README.md` | 本说明书：运行命令、数据口径和字段解释 | 人工维护 |
 | [`caps.json`](caps.json) | 56 例的 PyVRP 可用车辆上限 `vehicle_cap`、上限来源 `source`，以及自研 M5 的最好车辆数和距离快照 | 实验配置；运行脚本只读取 |
 | [`run.py`](run.py) | 运行本地 PyVRP；核对输入、独立验证结果、按预算保存记录并生成汇总 | 运行时写入 `results/` |
-| [`compare.py`](compare.py) | 将自研 `batch_summary.csv` 与**相同预算、共同种子及车辆上限**的 PyVRP 原始记录比较，输出逐实例车辆数优先的 gap 表 | 仅在提供 `--out` 时写对照表 |
+| [`compare.py`](compare.py) | 核对自研 CSV 或历史 JSON 侧文件中的预算，再与**相同预算、共同种子及冻结车辆上限**的 PyVRP 原始记录比较，输出逐实例车辆数优先的 gap 表 | 仅在提供 `--out` 时写对照表 |
 | `results/0p5s_runs.csv`、`5s_runs.csv`、未来的 `60s_runs.csv` | 原始记录：每个实例、种子、时间预算、车辆上限各一行；含状态、实际车数、距离、耗时和校验结果 | `run.py` 追加，供续跑及 `compare.py` 使用 |
 | [`results/0p5s.csv`](results/0p5s.csv)、[`results/5s.csv`](results/5s.csv)、未来的 `results/60s.csv` | 阅读用成绩表：当前每实例一行，在已有种子中按实际车辆数、距离依次选最好可行解 | `run.py` 在相应预算完成后重建 |
 | [`results/0p5s_m5_comparison.csv`](results/0p5s_m5_comparison.csv) | 已保存的自研 M5 与 PyVRP 的 0.5 秒论文式对照；先比车辆数，仅同车数时算距离 gap | 过去用 `compare.py` 生成的历史快照 |
@@ -148,7 +148,9 @@ python -m vrptw batch .\data --seeds 0 --time-limit 60 --out .\runs\self_60s_see
 python .\benchmarks\pyvrp\compare.py --ours .\runs\self_60s_seed0\batch_summary.csv --budget 60 --out .\runs\self_60s_seed0\vs_pyvrp.csv
 ```
 
-只有**相同实例、相同预算、相同种子**的记录才应比较。对照脚本只匹配双方共有的种子，不会从自研批量 CSV 自动识别设定的 `--time-limit`；因此运行时务必按上面的预算配对。R103 等未找到可行解的情况会保留状态，不填无意义的距离 gap。对比脚本不会修改 PyVRP 原始基线。每轮新优化应使用新的自研 `runs/<实验名>` 目录，并以 0.5 秒档作为主要晋级依据。
+只有**相同实例、相同预算、相同种子**的记录才应比较。M6 起，对照脚本核对自研 CSV 中的预算；M5 历史 CSV 则读取同名 JSON 侧文件。双方仍只匹配共同种子，验收时增加 `--require-complete` 可要求自研每行都有对应基准。`--caps` 默认读取 `caps.json`；自研结果比冻结上限多用车时仍沿用原上限，更少车时才要求补跑新上限。R103 等未找到可行解的情况会保留状态，不填无意义的距离 gap。对比脚本不会修改 PyVRP 原始基线。每轮新优化应使用新的自研 `runs/<实验名>` 目录，并以 0.5 秒档作为主要晋级依据。
+
+M6 起，`run.py` 的新输出还保存每次调用的 `manifest-*.json`（配置、版本、源码/扩展和验证器哈希）及可行解的 `solutions/<预算>s/<实例>/seed-<种子>-cap-<上限>.json`。可用 `benchmarks/diagnose.py summarise --batch <自研批次目录> --pyvrp <新输出目录/0p5s_runs.csv> --out <验证目录>` 从双方原始路线再验证。历史原始 CSV 保留，不伪造缺失的路线或运行环境。M6 本次重跑的快照和环境搬迁后的启动方法见 [M6 报告](../M6_REPORT.md)。
 
 如果新批量实验把某个实例的最好车辆数降得更低，先在共同父目录运行：
 
