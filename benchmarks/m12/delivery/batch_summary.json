@@ -1,0 +1,62 @@
+{
+  "instances": 56,
+  "runs": 168,
+  "successful": 168,
+  "failed": 0,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "time_limit_seconds": 0.5,
+  "max_iterations": null,
+  "fleet_attempts_per_k": 100,
+  "max_moves": null,
+  "diagnostics_enabled": false,
+  "config": {
+    "seed": 0,
+    "max_iterations": null,
+    "time_limit_seconds": 0.5,
+    "fleet_attempts_per_k": 100,
+    "fleet_time_fraction": 0.75,
+    "fleet_strategy": "hybrid",
+    "fleet_repair_rounds": 5,
+    "fleet_related_count": 8,
+    "max_moves": null,
+    "construction_order": "due",
+    "repair_order": "due",
+    "repair_strategy": "cheapest",
+    "search_strategy": "first",
+    "operators": [
+      "relocate",
+      "swap",
+      "two_opt",
+      "two_opt_star"
+    ],
+    "remove_min": 3,
+    "remove_max": 8,
+    "restart_after": 20,
+    "diagnostics": false,
+    "evaluation_mode": "incremental",
+    "search_backend": "auto",
+    "num_neighbours": null,
+    "operator_schedule": "cyclic",
+    "infeasible_search": false,
+    "adaptive_penalties": true,
+    "penalty_update_interval": 10,
+    "penalty_target_feasible": 0.5,
+    "penalty_max_moves": 8
+  },
+  "input_format": "solomon_txt",
+  "threads": 1,
+  "numeric_rule": "solomon_exact_1000_v1",
+  "code_sha256": "ffd80526f613022a3ba48d295a353e9a1f516759a5474a53675463ce25283847",
+  "started_at_utc": "2026-10-09T16:41:15.563293+00:00",
+  "finished_at_utc": "2026-10-09T16:43:30.008132+00:00",
+  "environment": {
+    "python": "3.12.4",
+    "platform": "Windows-11-10.0.22621-SP0",
+    "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+    "cpu_count": 16
+  }
+}

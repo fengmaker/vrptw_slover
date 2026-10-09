@@ -1,0 +1,5 @@
+instance,family,python_vehicles,python_distance_ticks,python_best_seed,native_vehicles,native_distance_ticks,native_best_seed,result_vs_python,same_vehicle_distance_result,distance_delta_ticks
+C103,C,10,1688113,1,10,1045970,2,better,better,-642143
+C104,C,10,1436543,0,10,971804,1,better,better,-464739
+R101,R,20,1834798,1,20,1695037,1,better,better,-139761
+RC101,RC,16,1862359,2,16,1752460,2,better,better,-109899

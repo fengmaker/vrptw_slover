@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "instance": "C106",
+  "input_format": "solomon_txt",
+  "routes": [
+    [
+      5,
+      3,
+      7,
+      8,
+      10,
+      11,
+      9,
+      6,
+      4,
+      2,
+      1,
+      75
+    ],
+    [
+      20,
+      24,
+      25,
+      27,
+      29,
+      30,
+      28,
+      26,
+      23,
+      22,
+      21
+    ],
+    [
+      81,
+      78,
+      76,
+      71,
+      70,
+      73,
+      77,
+      79,
+      80,
+      47
+    ],
+    [
+      42,
+      57,
+      55,
+      54,
+      44,
+      46,
+      45,
+      48,
+      59,
+      49,
+      52
+    ],
+    [
+      98,
+      96,
+      95,
+      94,
+      92,
+      93,
+      97,
+      100,
+      34
+    ],
+    [
+      90,
+      87,
+      86,
+      83,
+      82,
+      84,
+      85,
+      88,
+      89,
+      91
+    ],
+    [
+      67,
+      65,
+      63,
+      62,
+      74,
+      72,
+      61,
+      64,
+      68,
+      66,
+      69
+    ],
+    [
+      13,
+      17,
+      18,
+      19,
+      15,
+      16,
+      14,
+      12,
+      99
+    ],
+    [
+      32,
+      33,
+      31,
+      35,
+      37,
+      38,
+      39,
+      36,
+      51,
+      50
+    ],
+    [
+      43,
+      41,
+      40,
+      53,
+      56,
+      58,
+      60
+    ]
+  ],
+  "vehicles": 10,
+  "distance_ticks": 1022288,
+  "distance": 1022.288,
+  "feasible": true,
+  "seed": 0,
+  "threads": 1,
+  "stop": {
+    "reason": "time_limit",
+    "max_iterations": null,
+    "time_limit_seconds": 0.5
+  },
+  "iterations": 2,
+  "first_feasible_seconds": 0.0679126000013639,
+  "runtime_seconds": 0.5003358000012668,
+  "numeric_rule": "solomon_exact_1000_v1",
+  "code_sha256": "153657d31d0a2c73de1efecde91d561f2bc3385b7604e2cb6ac55292ec1305ce",
+  "config": {
+    "seed": 0,
+    "max_iterations": null,
+    "time_limit_seconds": 0.5,
+    "fleet_attempts_per_k": 100,
+    "fleet_time_fraction": 0.75,
+    "fleet_strategy": "hybrid",
+    "fleet_repair_rounds": 5,
+    "fleet_related_count": 8,
+    "max_moves": null,
+    "construction_order": "due",
+    "repair_order": "due",
+    "repair_strategy": "cheapest",
+    "search_strategy": "first",
+    "operators": [
+      "relocate",
+      "swap",
+      "two_opt",
+      "two_opt_star"
+    ],
+    "remove_min": 3,
+    "remove_max": 8,
+    "restart_after": 20,
+    "diagnostics": false,
+    "evaluation_mode": "incremental",
+    "num_neighbours": null,
+    "operator_schedule": "cyclic",
+    "infeasible_search": true,
+    "adaptive_penalties": true,
+    "penalty_update_interval": 2,
+    "penalty_target_feasible": 0.5,
+    "penalty_max_moves": 8
+  },
+  "vehicle_limit": 25,
+  "input_sha256": "ec9b419bed53e9c607cce76e8c6bc59feb6e4d17646905601f008a4141ec7b40",
+  "fleet": {
+    "capacity_lower_bound": 10,
+    "reached_lower_bound": true,
+    "stop_reason": "lower_bound",
+    "attempts": [
+      {
+        "target": 11,
+        "trials": 1
+      },
+      {
+        "target": 10,
+        "trials": 11
+      }
+    ],
+    "milestones": [
+      {
+        "vehicles": 11,
+        "distance": 1084360,
+        "elapsed_seconds": 0.07528850000016973
+      },
+      {
+        "vehicles": 10,
+        "distance": 1155645,
+        "elapsed_seconds": 0.1537426000013511
+      }
+    ],
+    "targets": [
+      {
+        "target": 11,
+        "trials": 1,
+        "repair_rounds": 1,
+        "elapsed_seconds": 0.006993200000579236,
+        "first_feasible_seconds": 0.006993200000579236,
+        "status": "found"
+      },
+      {
+        "target": 10,
+        "trials": 11,
+        "repair_rounds": 31,
+        "elapsed_seconds": 0.07825950000005832,
+        "first_feasible_seconds": 0.07825950000005832,
+        "status": "found"
+      }
+    ]
+  },
+  "penalty_search": {
+    "schema_version": 1,
+    "weight_scale": 1000,
+    "adaptive": true,
+    "samples": 2,
+    "updates": 1,
+    "infeasible_candidates": 0,
+    "infeasible_current": 0,
+    "final_load_weight": 1853581,
+    "final_time_weight": 850
+  }
+}

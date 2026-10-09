@@ -1,0 +1,198 @@
+{
+  "solver": "gurobi",
+  "instance": "R112",
+  "budget_seconds": 5.0,
+  "seed": 0,
+  "vehicle_cap": 25,
+  "fixed_vehicle_cost": 11478876,
+  "status": "time_limit",
+  "feasible": true,
+  "vehicles": 14,
+  "distance_ticks": 1314338,
+  "distance": 1314.338,
+  "preparation_seconds": 0.9630293999944115,
+  "search_seconds": 5.006982500002778,
+  "solver_runtime_seconds": 5.006999969482422,
+  "validation_seconds": 0.0007145000054151751,
+  "total_seconds": 6.000637600001937,
+  "first_feasible_seconds": 1.8578132999973604,
+  "iterations": "",
+  "adapter_seconds": 5.999923099996522,
+  "postprocessing_seconds": 0.029911199999332894,
+  "input_sha256": "a0e93149d59d30c356619891d192e86d0f16c3158e1dac3bd9f23c6deb718271",
+  "source_sha256": "4ccf2642f91c10e5ef78d549cf8ed0088696fccc6f0da27cfce273e5cd458c2d",
+  "error": null,
+  "metadata_json": "{\"backend\": \"gurobi\", \"gurobi_version\": [13, 0, 0], \"vehicle_weight\": 11478876, \"max_vehicles\": 25, \"distance_upper_bound\": 11478875, \"objective_upper_bound\": 298450775, \"cold_start\": true, \"threads\": 1, \"seed\": 0, \"seed_supported\": true, \"mip_gap_target\": 0.0, \"variable_count\": 10311, \"constraint_count\": 29835, \"arc_count\": 10011, \"gurobi_status_code\": 9, \"status\": \"time_limit\", \"incumbent_count\": 10, \"node_count\": 1.0, \"iteration_count\": 1309.0, \"objective_bound\": 617296.0199797028, \"objective_bound_continuous\": 617296.0199797028, \"objective\": 162018602.0, \"scalar_objective\": 162018602, \"raw_objective_minus_integral_route_objective\": 0.0, \"mip_gap\": 0.9961899682359948}",
+  "solution_path": "results/5s/R112/gurobi-seed-0.json",
+  "response": {
+    "routes": [
+      [
+        8,
+        46,
+        45,
+        17,
+        84,
+        5
+      ],
+      [
+        31,
+        88,
+        32,
+        90,
+        63,
+        11,
+        19
+      ],
+      [
+        33,
+        51,
+        9,
+        81,
+        3,
+        77,
+        76,
+        50,
+        1
+      ],
+      [
+        35,
+        34,
+        78,
+        79,
+        29,
+        68,
+        80
+      ],
+      [
+        38,
+        14,
+        44,
+        86,
+        16,
+        99,
+        96,
+        97
+      ],
+      [
+        39,
+        67,
+        23,
+        56,
+        75,
+        74,
+        22,
+        41,
+        13
+      ],
+      [
+        59,
+        92,
+        61,
+        85,
+        98,
+        93,
+        94,
+        95
+      ],
+      [
+        60,
+        83,
+        18,
+        52,
+        89,
+        6
+      ],
+      [
+        62,
+        10,
+        70,
+        30,
+        20
+      ],
+      [
+        66,
+        65,
+        71
+      ],
+      [
+        69,
+        27,
+        28,
+        53,
+        58,
+        40,
+        26,
+        12
+      ],
+      [
+        73,
+        72,
+        21,
+        24,
+        55,
+        25,
+        4,
+        54
+      ],
+      [
+        82,
+        48,
+        7,
+        47,
+        36,
+        49,
+        64
+      ],
+      [
+        87,
+        2,
+        57,
+        15,
+        43,
+        42,
+        37,
+        100,
+        91
+      ]
+    ],
+    "status": "time_limit",
+    "preparation_seconds": 0.9630293999944115,
+    "search_seconds": 5.006982500002778,
+    "solver_runtime_seconds": 5.006999969482422,
+    "first_feasible_seconds": 1.8578132999973604,
+    "error": null,
+    "metadata": {
+      "backend": "gurobi",
+      "gurobi_version": [
+        13,
+        0,
+        0
+      ],
+      "vehicle_weight": 11478876,
+      "max_vehicles": 25,
+      "distance_upper_bound": 11478875,
+      "objective_upper_bound": 298450775,
+      "cold_start": true,
+      "threads": 1,
+      "seed": 0,
+      "seed_supported": true,
+      "mip_gap_target": 0.0,
+      "variable_count": 10311,
+      "constraint_count": 29835,
+      "arc_count": 10011,
+      "gurobi_status_code": 9,
+      "status": "time_limit",
+      "incumbent_count": 10,
+      "node_count": 1.0,
+      "iteration_count": 1309.0,
+      "objective_bound": 617296.0199797028,
+      "objective_bound_continuous": 617296.0199797028,
+      "objective": 162018602.0,
+      "scalar_objective": 162018602,
+      "raw_objective_minus_integral_route_objective": 0.0,
+      "mip_gap": 0.9961899682359948
+    },
+    "adapter_seconds": 5.999923099996522
+  },
+  "completed_at": "2026-10-09T17:23:53.871752+00:00"
+}

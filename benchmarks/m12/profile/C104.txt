@@ -1,0 +1,43 @@
+         972069 function calls (972066 primitive calls) in 0.398 seconds
+
+   Ordered by: cumulative time
+   List reduced from 104 to 35 due to restriction <35>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.501    0.501 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\solve.py:123(solve)
+      6/3    0.000    0.000    0.500    0.167 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\diagnostics.py:126(wrapped)
+        1    0.000    0.000    0.285    0.285 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\ils.py:84(run_ils)
+        1    0.008    0.008    0.268    0.268 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\local_search.py:272(improve)
+     8210    0.049    0.000    0.233    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\local_search.py:238(delta)
+        1    0.008    0.008    0.214    0.214 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\construct.py:24(construct)
+     6359    0.097    0.000    0.214    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\evaluate.py:62(evaluate_route)
+     6059    0.003    0.000    0.208    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\diagnostics.py:86(evaluate_route)
+    14640    0.071    0.000    0.112    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\route_cache.py:67(evaluate)
+     8233    0.021    0.000    0.029    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\local_search.py:53(apply_move)
+    14169    0.014    0.000    0.024    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\diagnostics.py:101(candidate_codes)
+   303393    0.023    0.000    0.023    0.000 {built-in method builtins.len}
+   120289    0.019    0.000    0.019    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\diagnostics.py:83(increment)
+    66452    0.011    0.000    0.016    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\problem.py:65(customer_count)
+        1    0.000    0.000    0.016    0.016 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\ils.py:50(_perturb)
+        1    0.001    0.001    0.016    0.016 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\fleet.py:49(insert_fixed)
+    98777    0.016    0.000    0.016    0.000 {built-in method builtins.max}
+       30    0.000    0.000    0.014    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\diagnostics.py:90(validate_solution)
+       30    0.003    0.000    0.014    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\evaluate.py:106(validate_solution)
+     8211    0.006    0.000    0.013    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\local_search.py:141(enumerate_moves)
+     5979    0.003    0.000    0.012    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\diagnostics.py:96(candidate)
+    88401    0.011    0.000    0.011    0.000 {method 'add' of 'set' objects}
+    83717    0.010    0.000    0.010    0.000 {method 'append' of 'list' objects}
+     8211    0.004    0.000    0.007    0.000 {built-in method builtins.any}
+    23143    0.004    0.000    0.004    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\local_search.py:116(<genexpr>)
+    22890    0.003    0.000    0.003    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\local_search.py:245(<genexpr>)
+    15027    0.003    0.000    0.003    0.000 {built-in method builtins.min}
+    22857    0.003    0.000    0.003    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\local_search.py:247(<genexpr>)
+    14641    0.002    0.000    0.002    0.000 {method 'update' of 'set' objects}
+     8706    0.001    0.000    0.001    0.000 {built-in method time.perf_counter}
+       23    0.000    0.000    0.001    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\local_search.py:227(update)
+       47    0.001    0.000    0.001    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\route_cache.py:30(__init__)
+     5558    0.001    0.000    0.001    0.000 {method 'insert' of 'list' objects}
+     5558    0.001    0.000    0.001    0.000 {method 'pop' of 'list' objects}
+     6016    0.001    0.000    0.001    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\evaluate.py:36(feasible)
+
+

@@ -1,0 +1,36 @@
+{
+  "formal_runs": 568,
+  "primary_runs": 448,
+  "primary_valid_solutions": 417,
+  "distance_runs": 112,
+  "distance_valid_solutions": 105,
+  "diagnostic_runs": 8,
+  "diagnostic_valid_solutions": 8,
+  "total_independently_valid_solutions": 530,
+  "invalid_routes": 0,
+  "focused_tests": {
+    "passed": 13,
+    "warnings": "3 OR-Tools SWIG deprecation warnings"
+  },
+  "hardware": {
+    "cpu": "AMD Ryzen 7 6800H with Radeon Graphics",
+    "cores": 8,
+    "logical_processors": 16,
+    "search_threads": 1
+  },
+  "discarded_batch": "runs/four_solver_seed0_0p5_5s: interrupted recorder v1, 115 records; excluded from all formal tables",
+  "gurobi_float_rule": "Preserve raw ObjVal and residual; score exact extracted routes via independent validator",
+  "canonical_reader_R101_check": {
+    "cap": 20,
+    "seed": 0,
+    "budgets": [
+      0.5,
+      5
+    ],
+    "feasible": [
+      false,
+      false
+    ],
+    "note": "PyVRP official exact reader also found no feasible solution; no infeasibility proof"
+  }
+}

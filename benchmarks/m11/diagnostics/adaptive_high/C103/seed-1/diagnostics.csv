@@ -1,0 +1,9 @@
+phase,elapsed_seconds,inclusive_seconds,calls,candidates,feasible_candidates,infeasible_candidates,route_evaluations,validation_calls,accepted,capacity_prefilter_skips,rejected_capacity,rejected_time_window,rejected_depot_close,rejected_empty_route,trials,failures,removed_customers,route_cache_builds,incremental_route_evaluations,reused_prefix_customers,reused_suffix_customers,neighbour_filtered,penalized_candidates,accepted_infeasible
+construction,0.08317870000064431,0.08317870000064431,1,5715,498,5217,5815,1,100,0,1514,5158,2749,0,0,0,0,0,0,0,0,0,0,0
+fleet_reduction,0.00018959999943035655,0.00018959999943035655,1,0,0,0,10,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+perturbation,0.0024361999985558214,0.0024361999985558214,1,0,0,0,440,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0
+repair,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+local_search,0.41315510000094946,0.41315510000094946,1,28060,19,28041,51543,3,50,0,0,0,0,84,0,0,0,0,0,0,0,0,27976,48
+ils_control,0.0009390000013809185,0.4165303000008862,1,0,0,0,10,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+validation,0.00035369999932299834,0.00035369999932299834,2,0,0,0,20,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+other,8.259999958681874e-05,8.259999958681874e-05,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

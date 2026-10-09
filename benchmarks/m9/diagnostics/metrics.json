@@ -1,0 +1,1481 @@
+{
+  "schema_version": 1,
+  "experiment": "D:\\AAA-OR-Route\\solver\\vrptw_solver\\runs\\m9_cyclic_representatives_seed012_0p5s",
+  "experiment_manifest_sha256": "cd8ab7bc2b68bc9ecbd967f89b62105db748e5e888aa881cbe41e9d1b2ff2203",
+  "independently_verified_runs": 72,
+  "comparison_references": [
+    "baseline",
+    "uncapped",
+    "cyclic"
+  ],
+  "variants": {
+    "baseline": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": 2,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": true,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null
+      },
+      "config_sha256": "48ac0271cddde8fe782f6ff477489e068d53d2af2b9728719ba8e5c76fc43a29",
+      "code_sha256": "5d3f56a8df0d9ba91e368d7f3a64e9028fef5c9e1a9bdeff889848baf2b8ab27",
+      "source": "m8_baseline",
+      "runs": 12,
+      "comparison_vs_reference": {
+        "baseline": {
+          "better": 0,
+          "worse": 0,
+          "tie": 4,
+          "vehicles_better": 0,
+          "vehicles_worse": 0,
+          "vehicles_same": 4,
+          "same_vehicle_distance_better": 0,
+          "same_vehicle_distance_worse": 0,
+          "same_vehicle_distance_tie": 4
+        },
+        "uncapped": {
+          "better": 3,
+          "worse": 1,
+          "tie": 0,
+          "vehicles_better": 0,
+          "vehicles_worse": 0,
+          "vehicles_same": 4,
+          "same_vehicle_distance_better": 3,
+          "same_vehicle_distance_worse": 1,
+          "same_vehicle_distance_tie": 0
+        },
+        "cyclic": {
+          "better": 1,
+          "worse": 3,
+          "tie": 0,
+          "vehicles_better": 0,
+          "vehicles_worse": 0,
+          "vehicles_same": 4,
+          "same_vehicle_distance_better": 1,
+          "same_vehicle_distance_worse": 3,
+          "same_vehicle_distance_tie": 0
+        }
+      },
+      "comparison_by_family": {
+        "baseline": {
+          "all": {
+            "better": 0,
+            "worse": 0,
+            "tie": 4,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 4,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 4
+          },
+          "C": {
+            "better": 0,
+            "worse": 0,
+            "tie": 2,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 2,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 2
+          },
+          "R": {
+            "better": 0,
+            "worse": 0,
+            "tie": 1,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 1
+          },
+          "RC": {
+            "better": 0,
+            "worse": 0,
+            "tie": 1,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 1
+          }
+        },
+        "uncapped": {
+          "all": {
+            "better": 3,
+            "worse": 1,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 4,
+            "same_vehicle_distance_better": 3,
+            "same_vehicle_distance_worse": 1,
+            "same_vehicle_distance_tie": 0
+          },
+          "C": {
+            "better": 2,
+            "worse": 0,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 2,
+            "same_vehicle_distance_better": 2,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 0
+          },
+          "R": {
+            "better": 1,
+            "worse": 0,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 1,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 0
+          },
+          "RC": {
+            "better": 0,
+            "worse": 1,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 1,
+            "same_vehicle_distance_tie": 0
+          }
+        },
+        "cyclic": {
+          "all": {
+            "better": 1,
+            "worse": 3,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 4,
+            "same_vehicle_distance_better": 1,
+            "same_vehicle_distance_worse": 3,
+            "same_vehicle_distance_tie": 0
+          },
+          "C": {
+            "better": 1,
+            "worse": 1,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 2,
+            "same_vehicle_distance_better": 1,
+            "same_vehicle_distance_worse": 1,
+            "same_vehicle_distance_tie": 0
+          },
+          "R": {
+            "better": 0,
+            "worse": 1,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 1,
+            "same_vehicle_distance_tie": 0
+          },
+          "RC": {
+            "better": 0,
+            "worse": 1,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 1,
+            "same_vehicle_distance_tie": 0
+          }
+        }
+      },
+      "runtime_and_iterations_by_family": {
+        "all": {
+          "runs": 12,
+          "runtime_median_seconds": 0.500515,
+          "runtime_p90_seconds_nearest_rank": 0.500585,
+          "runtime_mean_seconds": 0.5004985833333333,
+          "ils_runs": 12,
+          "ils_iterations": 64,
+          "iterations_mean": 5.333333333333333
+        },
+        "C": {
+          "runs": 6,
+          "runtime_median_seconds": 0.5004835000000001,
+          "runtime_p90_seconds_nearest_rank": 0.500585,
+          "runtime_mean_seconds": 0.5004708333333333,
+          "ils_runs": 6,
+          "ils_iterations": 56,
+          "iterations_mean": 9.333333333333334
+        },
+        "R": {
+          "runs": 3,
+          "runtime_median_seconds": 0.500525,
+          "runtime_p90_seconds_nearest_rank": 0.500602,
+          "runtime_mean_seconds": 0.5005449999999999,
+          "ils_runs": 3,
+          "ils_iterations": 4,
+          "iterations_mean": 1.3333333333333333
+        },
+        "RC": {
+          "runs": 3,
+          "runtime_median_seconds": 0.500508,
+          "runtime_p90_seconds_nearest_rank": 0.500561,
+          "runtime_mean_seconds": 0.5005076666666667,
+          "ils_runs": 3,
+          "ils_iterations": 4,
+          "iterations_mean": 1.3333333333333333
+        }
+      }
+    },
+    "uncapped": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": true,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null,
+        "operator_schedule": "fixed"
+      },
+      "config_sha256": "0428cfbf2bee55bd84c4b9fa40c5a318a60fac4f7f4b78e13b02304f53b7423e",
+      "code_sha256": "fb929496ff25d75a23a6c92e658e328e744854f9461343284195d63b3cc2e764",
+      "source": "m9",
+      "runs": 12,
+      "comparison_vs_reference": {
+        "baseline": {
+          "better": 1,
+          "worse": 3,
+          "tie": 0,
+          "vehicles_better": 0,
+          "vehicles_worse": 0,
+          "vehicles_same": 4,
+          "same_vehicle_distance_better": 1,
+          "same_vehicle_distance_worse": 3,
+          "same_vehicle_distance_tie": 0
+        },
+        "uncapped": {
+          "better": 0,
+          "worse": 0,
+          "tie": 4,
+          "vehicles_better": 0,
+          "vehicles_worse": 0,
+          "vehicles_same": 4,
+          "same_vehicle_distance_better": 0,
+          "same_vehicle_distance_worse": 0,
+          "same_vehicle_distance_tie": 4
+        },
+        "cyclic": {
+          "better": 0,
+          "worse": 4,
+          "tie": 0,
+          "vehicles_better": 0,
+          "vehicles_worse": 0,
+          "vehicles_same": 4,
+          "same_vehicle_distance_better": 0,
+          "same_vehicle_distance_worse": 4,
+          "same_vehicle_distance_tie": 0
+        }
+      },
+      "comparison_by_family": {
+        "baseline": {
+          "all": {
+            "better": 1,
+            "worse": 3,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 4,
+            "same_vehicle_distance_better": 1,
+            "same_vehicle_distance_worse": 3,
+            "same_vehicle_distance_tie": 0
+          },
+          "C": {
+            "better": 0,
+            "worse": 2,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 2,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 2,
+            "same_vehicle_distance_tie": 0
+          },
+          "R": {
+            "better": 0,
+            "worse": 1,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 1,
+            "same_vehicle_distance_tie": 0
+          },
+          "RC": {
+            "better": 1,
+            "worse": 0,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 1,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 0
+          }
+        },
+        "uncapped": {
+          "all": {
+            "better": 0,
+            "worse": 0,
+            "tie": 4,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 4,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 4
+          },
+          "C": {
+            "better": 0,
+            "worse": 0,
+            "tie": 2,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 2,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 2
+          },
+          "R": {
+            "better": 0,
+            "worse": 0,
+            "tie": 1,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 1
+          },
+          "RC": {
+            "better": 0,
+            "worse": 0,
+            "tie": 1,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 1
+          }
+        },
+        "cyclic": {
+          "all": {
+            "better": 0,
+            "worse": 4,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 4,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 4,
+            "same_vehicle_distance_tie": 0
+          },
+          "C": {
+            "better": 0,
+            "worse": 2,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 2,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 2,
+            "same_vehicle_distance_tie": 0
+          },
+          "R": {
+            "better": 0,
+            "worse": 1,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 1,
+            "same_vehicle_distance_tie": 0
+          },
+          "RC": {
+            "better": 0,
+            "worse": 1,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 1,
+            "same_vehicle_distance_tie": 0
+          }
+        }
+      },
+      "runtime_and_iterations_by_family": {
+        "all": {
+          "runs": 12,
+          "runtime_median_seconds": 0.500523,
+          "runtime_p90_seconds_nearest_rank": 0.500585,
+          "runtime_mean_seconds": 0.5005321666666667,
+          "ils_runs": 12,
+          "ils_iterations": 13,
+          "iterations_mean": 1.0833333333333333
+        },
+        "C": {
+          "runs": 6,
+          "runtime_median_seconds": 0.5005605,
+          "runtime_p90_seconds_nearest_rank": 0.500629,
+          "runtime_mean_seconds": 0.5005618333333334,
+          "ils_runs": 6,
+          "ils_iterations": 6,
+          "iterations_mean": 1.0
+        },
+        "R": {
+          "runs": 3,
+          "runtime_median_seconds": 0.500483,
+          "runtime_p90_seconds_nearest_rank": 0.500495,
+          "runtime_mean_seconds": 0.5004856666666667,
+          "ils_runs": 3,
+          "ils_iterations": 3,
+          "iterations_mean": 1.0
+        },
+        "RC": {
+          "runs": 3,
+          "runtime_median_seconds": 0.500516,
+          "runtime_p90_seconds_nearest_rank": 0.500578,
+          "runtime_mean_seconds": 0.5005193333333333,
+          "ils_runs": 3,
+          "ils_iterations": 4,
+          "iterations_mean": 1.3333333333333333
+        }
+      }
+    },
+    "cyclic": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": true,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic"
+      },
+      "config_sha256": "8f210b035a515932f7cc3d2196acc33ef79b0c0ffb15b463dbbfa311182548fc",
+      "code_sha256": "fb929496ff25d75a23a6c92e658e328e744854f9461343284195d63b3cc2e764",
+      "source": "m9",
+      "runs": 12,
+      "comparison_vs_reference": {
+        "baseline": {
+          "better": 3,
+          "worse": 1,
+          "tie": 0,
+          "vehicles_better": 0,
+          "vehicles_worse": 0,
+          "vehicles_same": 4,
+          "same_vehicle_distance_better": 3,
+          "same_vehicle_distance_worse": 1,
+          "same_vehicle_distance_tie": 0
+        },
+        "uncapped": {
+          "better": 4,
+          "worse": 0,
+          "tie": 0,
+          "vehicles_better": 0,
+          "vehicles_worse": 0,
+          "vehicles_same": 4,
+          "same_vehicle_distance_better": 4,
+          "same_vehicle_distance_worse": 0,
+          "same_vehicle_distance_tie": 0
+        },
+        "cyclic": {
+          "better": 0,
+          "worse": 0,
+          "tie": 4,
+          "vehicles_better": 0,
+          "vehicles_worse": 0,
+          "vehicles_same": 4,
+          "same_vehicle_distance_better": 0,
+          "same_vehicle_distance_worse": 0,
+          "same_vehicle_distance_tie": 4
+        }
+      },
+      "comparison_by_family": {
+        "baseline": {
+          "all": {
+            "better": 3,
+            "worse": 1,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 4,
+            "same_vehicle_distance_better": 3,
+            "same_vehicle_distance_worse": 1,
+            "same_vehicle_distance_tie": 0
+          },
+          "C": {
+            "better": 1,
+            "worse": 1,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 2,
+            "same_vehicle_distance_better": 1,
+            "same_vehicle_distance_worse": 1,
+            "same_vehicle_distance_tie": 0
+          },
+          "R": {
+            "better": 1,
+            "worse": 0,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 1,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 0
+          },
+          "RC": {
+            "better": 1,
+            "worse": 0,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 1,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 0
+          }
+        },
+        "uncapped": {
+          "all": {
+            "better": 4,
+            "worse": 0,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 4,
+            "same_vehicle_distance_better": 4,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 0
+          },
+          "C": {
+            "better": 2,
+            "worse": 0,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 2,
+            "same_vehicle_distance_better": 2,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 0
+          },
+          "R": {
+            "better": 1,
+            "worse": 0,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 1,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 0
+          },
+          "RC": {
+            "better": 1,
+            "worse": 0,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 1,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 0
+          }
+        },
+        "cyclic": {
+          "all": {
+            "better": 0,
+            "worse": 0,
+            "tie": 4,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 4,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 4
+          },
+          "C": {
+            "better": 0,
+            "worse": 0,
+            "tie": 2,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 2,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 2
+          },
+          "R": {
+            "better": 0,
+            "worse": 0,
+            "tie": 1,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 1
+          },
+          "RC": {
+            "better": 0,
+            "worse": 0,
+            "tie": 1,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 1
+          }
+        }
+      },
+      "runtime_and_iterations_by_family": {
+        "all": {
+          "runs": 12,
+          "runtime_median_seconds": 0.5005075,
+          "runtime_p90_seconds_nearest_rank": 0.500564,
+          "runtime_mean_seconds": 0.50052925,
+          "ils_runs": 12,
+          "ils_iterations": 13,
+          "iterations_mean": 1.0833333333333333
+        },
+        "C": {
+          "runs": 6,
+          "runtime_median_seconds": 0.5005305,
+          "runtime_p90_seconds_nearest_rank": 0.500858,
+          "runtime_mean_seconds": 0.5005674999999999,
+          "ils_runs": 6,
+          "ils_iterations": 6,
+          "iterations_mean": 1.0
+        },
+        "R": {
+          "runs": 3,
+          "runtime_median_seconds": 0.500508,
+          "runtime_p90_seconds_nearest_rank": 0.500515,
+          "runtime_mean_seconds": 0.5005066666666667,
+          "ils_runs": 3,
+          "ils_iterations": 3,
+          "iterations_mean": 1.0
+        },
+        "RC": {
+          "runs": 3,
+          "runtime_median_seconds": 0.500479,
+          "runtime_p90_seconds_nearest_rank": 0.500507,
+          "runtime_mean_seconds": 0.5004753333333333,
+          "ils_runs": 3,
+          "ils_iterations": 4,
+          "iterations_mean": 1.3333333333333333
+        }
+      }
+    },
+    "cyclic_single": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "exchange_pair_single",
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": true,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic"
+      },
+      "config_sha256": "6af026047a6c60f8763f17845a3d689ea6efb973b7755ca18e887a14c733ba5d",
+      "code_sha256": "fb929496ff25d75a23a6c92e658e328e744854f9461343284195d63b3cc2e764",
+      "source": "m9",
+      "runs": 12,
+      "comparison_vs_reference": {
+        "baseline": {
+          "better": 3,
+          "worse": 0,
+          "tie": 1,
+          "vehicles_better": 0,
+          "vehicles_worse": 0,
+          "vehicles_same": 4,
+          "same_vehicle_distance_better": 3,
+          "same_vehicle_distance_worse": 0,
+          "same_vehicle_distance_tie": 1
+        },
+        "uncapped": {
+          "better": 3,
+          "worse": 1,
+          "tie": 0,
+          "vehicles_better": 0,
+          "vehicles_worse": 0,
+          "vehicles_same": 4,
+          "same_vehicle_distance_better": 3,
+          "same_vehicle_distance_worse": 1,
+          "same_vehicle_distance_tie": 0
+        },
+        "cyclic": {
+          "better": 3,
+          "worse": 1,
+          "tie": 0,
+          "vehicles_better": 0,
+          "vehicles_worse": 0,
+          "vehicles_same": 4,
+          "same_vehicle_distance_better": 3,
+          "same_vehicle_distance_worse": 1,
+          "same_vehicle_distance_tie": 0
+        }
+      },
+      "comparison_by_family": {
+        "baseline": {
+          "all": {
+            "better": 3,
+            "worse": 0,
+            "tie": 1,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 4,
+            "same_vehicle_distance_better": 3,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 1
+          },
+          "C": {
+            "better": 2,
+            "worse": 0,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 2,
+            "same_vehicle_distance_better": 2,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 0
+          },
+          "R": {
+            "better": 1,
+            "worse": 0,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 1,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 0
+          },
+          "RC": {
+            "better": 0,
+            "worse": 0,
+            "tie": 1,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 1
+          }
+        },
+        "uncapped": {
+          "all": {
+            "better": 3,
+            "worse": 1,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 4,
+            "same_vehicle_distance_better": 3,
+            "same_vehicle_distance_worse": 1,
+            "same_vehicle_distance_tie": 0
+          },
+          "C": {
+            "better": 2,
+            "worse": 0,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 2,
+            "same_vehicle_distance_better": 2,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 0
+          },
+          "R": {
+            "better": 1,
+            "worse": 0,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 1,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 0
+          },
+          "RC": {
+            "better": 0,
+            "worse": 1,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 1,
+            "same_vehicle_distance_tie": 0
+          }
+        },
+        "cyclic": {
+          "all": {
+            "better": 3,
+            "worse": 1,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 4,
+            "same_vehicle_distance_better": 3,
+            "same_vehicle_distance_worse": 1,
+            "same_vehicle_distance_tie": 0
+          },
+          "C": {
+            "better": 2,
+            "worse": 0,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 2,
+            "same_vehicle_distance_better": 2,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 0
+          },
+          "R": {
+            "better": 1,
+            "worse": 0,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 1,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 0
+          },
+          "RC": {
+            "better": 0,
+            "worse": 1,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 1,
+            "same_vehicle_distance_tie": 0
+          }
+        }
+      },
+      "runtime_and_iterations_by_family": {
+        "all": {
+          "runs": 12,
+          "runtime_median_seconds": 0.50055,
+          "runtime_p90_seconds_nearest_rank": 0.500881,
+          "runtime_mean_seconds": 0.5006129166666667,
+          "ils_runs": 12,
+          "ils_iterations": 13,
+          "iterations_mean": 1.0833333333333333
+        },
+        "C": {
+          "runs": 6,
+          "runtime_median_seconds": 0.5005355,
+          "runtime_p90_seconds_nearest_rank": 0.500881,
+          "runtime_mean_seconds": 0.5005961666666666,
+          "ils_runs": 6,
+          "ils_iterations": 6,
+          "iterations_mean": 1.0
+        },
+        "R": {
+          "runs": 3,
+          "runtime_median_seconds": 0.500622,
+          "runtime_p90_seconds_nearest_rank": 0.500636,
+          "runtime_mean_seconds": 0.500603,
+          "ils_runs": 3,
+          "ils_iterations": 3,
+          "iterations_mean": 1.0
+        },
+        "RC": {
+          "runs": 3,
+          "runtime_median_seconds": 0.500549,
+          "runtime_p90_seconds_nearest_rank": 0.5009,
+          "runtime_mean_seconds": 0.5006563333333333,
+          "ils_runs": 3,
+          "ils_iterations": 4,
+          "iterations_mean": 1.3333333333333333
+        }
+      }
+    },
+    "cyclic_pairs": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "exchange_pairs",
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": true,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic"
+      },
+      "config_sha256": "18790c8ca04e398b716154644b8afc6a67dca2639022902b51932b6fedba6cb9",
+      "code_sha256": "fb929496ff25d75a23a6c92e658e328e744854f9461343284195d63b3cc2e764",
+      "source": "m9",
+      "runs": 12,
+      "comparison_vs_reference": {
+        "baseline": {
+          "better": 3,
+          "worse": 0,
+          "tie": 1,
+          "vehicles_better": 0,
+          "vehicles_worse": 0,
+          "vehicles_same": 4,
+          "same_vehicle_distance_better": 3,
+          "same_vehicle_distance_worse": 0,
+          "same_vehicle_distance_tie": 1
+        },
+        "uncapped": {
+          "better": 3,
+          "worse": 1,
+          "tie": 0,
+          "vehicles_better": 0,
+          "vehicles_worse": 0,
+          "vehicles_same": 4,
+          "same_vehicle_distance_better": 3,
+          "same_vehicle_distance_worse": 1,
+          "same_vehicle_distance_tie": 0
+        },
+        "cyclic": {
+          "better": 3,
+          "worse": 1,
+          "tie": 0,
+          "vehicles_better": 0,
+          "vehicles_worse": 0,
+          "vehicles_same": 4,
+          "same_vehicle_distance_better": 3,
+          "same_vehicle_distance_worse": 1,
+          "same_vehicle_distance_tie": 0
+        }
+      },
+      "comparison_by_family": {
+        "baseline": {
+          "all": {
+            "better": 3,
+            "worse": 0,
+            "tie": 1,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 4,
+            "same_vehicle_distance_better": 3,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 1
+          },
+          "C": {
+            "better": 2,
+            "worse": 0,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 2,
+            "same_vehicle_distance_better": 2,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 0
+          },
+          "R": {
+            "better": 1,
+            "worse": 0,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 1,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 0
+          },
+          "RC": {
+            "better": 0,
+            "worse": 0,
+            "tie": 1,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 1
+          }
+        },
+        "uncapped": {
+          "all": {
+            "better": 3,
+            "worse": 1,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 4,
+            "same_vehicle_distance_better": 3,
+            "same_vehicle_distance_worse": 1,
+            "same_vehicle_distance_tie": 0
+          },
+          "C": {
+            "better": 2,
+            "worse": 0,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 2,
+            "same_vehicle_distance_better": 2,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 0
+          },
+          "R": {
+            "better": 1,
+            "worse": 0,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 1,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 0
+          },
+          "RC": {
+            "better": 0,
+            "worse": 1,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 1,
+            "same_vehicle_distance_tie": 0
+          }
+        },
+        "cyclic": {
+          "all": {
+            "better": 3,
+            "worse": 1,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 4,
+            "same_vehicle_distance_better": 3,
+            "same_vehicle_distance_worse": 1,
+            "same_vehicle_distance_tie": 0
+          },
+          "C": {
+            "better": 2,
+            "worse": 0,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 2,
+            "same_vehicle_distance_better": 2,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 0
+          },
+          "R": {
+            "better": 1,
+            "worse": 0,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 1,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 0
+          },
+          "RC": {
+            "better": 0,
+            "worse": 1,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 1,
+            "same_vehicle_distance_tie": 0
+          }
+        }
+      },
+      "runtime_and_iterations_by_family": {
+        "all": {
+          "runs": 12,
+          "runtime_median_seconds": 0.5005255,
+          "runtime_p90_seconds_nearest_rank": 0.500614,
+          "runtime_mean_seconds": 0.50053675,
+          "ils_runs": 12,
+          "ils_iterations": 13,
+          "iterations_mean": 1.0833333333333333
+        },
+        "C": {
+          "runs": 6,
+          "runtime_median_seconds": 0.500518,
+          "runtime_p90_seconds_nearest_rank": 0.500543,
+          "runtime_mean_seconds": 0.5005081666666666,
+          "ils_runs": 6,
+          "ils_iterations": 6,
+          "iterations_mean": 1.0
+        },
+        "R": {
+          "runs": 3,
+          "runtime_median_seconds": 0.500614,
+          "runtime_p90_seconds_nearest_rank": 0.500763,
+          "runtime_mean_seconds": 0.5006243333333333,
+          "ils_runs": 3,
+          "ils_iterations": 3,
+          "iterations_mean": 1.0
+        },
+        "RC": {
+          "runs": 3,
+          "runtime_median_seconds": 0.500524,
+          "runtime_p90_seconds_nearest_rank": 0.500539,
+          "runtime_mean_seconds": 0.5005063333333334,
+          "ils_runs": 3,
+          "ils_iterations": 4,
+          "iterations_mean": 1.3333333333333333
+        }
+      }
+    },
+    "cyclic_combined": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate_pair",
+          "exchange_pair_single",
+          "exchange_pairs",
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": true,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic"
+      },
+      "config_sha256": "45b42c88195a9a8b2df9021bbb00e405f9edd44b982cee4d128a964518a87763",
+      "code_sha256": "fb929496ff25d75a23a6c92e658e328e744854f9461343284195d63b3cc2e764",
+      "source": "m9",
+      "runs": 12,
+      "comparison_vs_reference": {
+        "baseline": {
+          "better": 2,
+          "worse": 1,
+          "tie": 1,
+          "vehicles_better": 0,
+          "vehicles_worse": 0,
+          "vehicles_same": 4,
+          "same_vehicle_distance_better": 2,
+          "same_vehicle_distance_worse": 1,
+          "same_vehicle_distance_tie": 1
+        },
+        "uncapped": {
+          "better": 3,
+          "worse": 1,
+          "tie": 0,
+          "vehicles_better": 0,
+          "vehicles_worse": 0,
+          "vehicles_same": 4,
+          "same_vehicle_distance_better": 3,
+          "same_vehicle_distance_worse": 1,
+          "same_vehicle_distance_tie": 0
+        },
+        "cyclic": {
+          "better": 2,
+          "worse": 2,
+          "tie": 0,
+          "vehicles_better": 0,
+          "vehicles_worse": 0,
+          "vehicles_same": 4,
+          "same_vehicle_distance_better": 2,
+          "same_vehicle_distance_worse": 2,
+          "same_vehicle_distance_tie": 0
+        }
+      },
+      "comparison_by_family": {
+        "baseline": {
+          "all": {
+            "better": 2,
+            "worse": 1,
+            "tie": 1,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 4,
+            "same_vehicle_distance_better": 2,
+            "same_vehicle_distance_worse": 1,
+            "same_vehicle_distance_tie": 1
+          },
+          "C": {
+            "better": 1,
+            "worse": 1,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 2,
+            "same_vehicle_distance_better": 1,
+            "same_vehicle_distance_worse": 1,
+            "same_vehicle_distance_tie": 0
+          },
+          "R": {
+            "better": 1,
+            "worse": 0,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 1,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 0
+          },
+          "RC": {
+            "better": 0,
+            "worse": 0,
+            "tie": 1,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 1
+          }
+        },
+        "uncapped": {
+          "all": {
+            "better": 3,
+            "worse": 1,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 4,
+            "same_vehicle_distance_better": 3,
+            "same_vehicle_distance_worse": 1,
+            "same_vehicle_distance_tie": 0
+          },
+          "C": {
+            "better": 2,
+            "worse": 0,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 2,
+            "same_vehicle_distance_better": 2,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 0
+          },
+          "R": {
+            "better": 1,
+            "worse": 0,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 1,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 0
+          },
+          "RC": {
+            "better": 0,
+            "worse": 1,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 1,
+            "same_vehicle_distance_tie": 0
+          }
+        },
+        "cyclic": {
+          "all": {
+            "better": 2,
+            "worse": 2,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 4,
+            "same_vehicle_distance_better": 2,
+            "same_vehicle_distance_worse": 2,
+            "same_vehicle_distance_tie": 0
+          },
+          "C": {
+            "better": 1,
+            "worse": 1,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 2,
+            "same_vehicle_distance_better": 1,
+            "same_vehicle_distance_worse": 1,
+            "same_vehicle_distance_tie": 0
+          },
+          "R": {
+            "better": 1,
+            "worse": 0,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 1,
+            "same_vehicle_distance_worse": 0,
+            "same_vehicle_distance_tie": 0
+          },
+          "RC": {
+            "better": 0,
+            "worse": 1,
+            "tie": 0,
+            "vehicles_better": 0,
+            "vehicles_worse": 0,
+            "vehicles_same": 1,
+            "same_vehicle_distance_better": 0,
+            "same_vehicle_distance_worse": 1,
+            "same_vehicle_distance_tie": 0
+          }
+        }
+      },
+      "runtime_and_iterations_by_family": {
+        "all": {
+          "runs": 12,
+          "runtime_median_seconds": 0.500526,
+          "runtime_p90_seconds_nearest_rank": 0.500568,
+          "runtime_mean_seconds": 0.5005149166666667,
+          "ils_runs": 12,
+          "ils_iterations": 13,
+          "iterations_mean": 1.0833333333333333
+        },
+        "C": {
+          "runs": 6,
+          "runtime_median_seconds": 0.5004930000000001,
+          "runtime_p90_seconds_nearest_rank": 0.500568,
+          "runtime_mean_seconds": 0.5005003333333333,
+          "ils_runs": 6,
+          "ils_iterations": 6,
+          "iterations_mean": 1.0
+        },
+        "R": {
+          "runs": 3,
+          "runtime_median_seconds": 0.500539,
+          "runtime_p90_seconds_nearest_rank": 0.500569,
+          "runtime_mean_seconds": 0.5005453333333333,
+          "ils_runs": 3,
+          "ils_iterations": 3,
+          "iterations_mean": 1.0
+        },
+        "RC": {
+          "runs": 3,
+          "runtime_median_seconds": 0.500535,
+          "runtime_p90_seconds_nearest_rank": 0.500541,
+          "runtime_mean_seconds": 0.5005136666666666,
+          "ils_runs": 3,
+          "ils_iterations": 4,
+          "iterations_mean": 1.3333333333333333
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "python": "3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)]",
+  "pybind11": "3.0.1",
+  "setuptools": "75.6.0",
+  "native": {
+    "api_version": 1,
+    "build_info": "compiler=MSVC 195035722; cxx_standard=17; api_version=1",
+    "binary": "_native.cp312-win_amd64.pyd",
+    "binary_sha256": "604462f386c003e397cd55934c67735731d9683e762902ff4d23fad1f410c0bb"
+  },
+  "cpp_sha256": "6114cbe0c93ff48de76d74a5be17c84dffff07fbec6e241ebb1f21f8ba61c30a",
+  "setup_sha256": "1ea8ae1ae8b21d3b411b36e30eea3747cc5f30c8142ecfe7375929c1852618d6",
+  "command": "VRPTW_BUILD_NATIVE=1 python setup.py build_ext --inplace",
+  "compiler_flags": [
+    "/O2",
+    "/std:c++17"
+  ]
+}

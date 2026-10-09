@@ -1,0 +1,69 @@
+{
+  "instances": 4,
+  "instance_names": [
+    "C103",
+    "C104",
+    "R101",
+    "RC101"
+  ],
+  "runs": 12,
+  "successful": 12,
+  "failed": 0,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "time_limit_seconds": 0.5,
+  "max_iterations": null,
+  "fleet_attempts_per_k": 100,
+  "max_moves": null,
+  "diagnostics_enabled": true,
+  "config": {
+    "seed": 0,
+    "max_iterations": null,
+    "time_limit_seconds": 0.5,
+    "fleet_attempts_per_k": 100,
+    "fleet_time_fraction": 0.95,
+    "max_moves": null,
+    "construction_order": "due",
+    "repair_order": "due",
+    "repair_strategy": "cheapest",
+    "search_strategy": "first",
+    "operators": [
+      "exchange_pairs",
+      "relocate",
+      "swap",
+      "two_opt",
+      "two_opt_star"
+    ],
+    "remove_min": 3,
+    "remove_max": 8,
+    "restart_after": 20,
+    "diagnostics": true,
+    "evaluation_mode": "incremental",
+    "num_neighbours": null
+  },
+  "config_sha256": "5ff47b24db2843549b5dd4d1d62c469ee09229488034ecbdaa38077af663ac90",
+  "variant": "exchange_pairs",
+  "input_format": "solomon_txt",
+  "threads": 1,
+  "numeric_rule": "solomon_exact_1000_v1",
+  "code_sha256": "6d40142f96d4524ef3e9b8d0a5708a0555d3ad0d0e6f412e64400b4bafa02c44",
+  "runner_sha256": "479a1a5f090ae6655fa1de74caa23188728462d6790175409401f706defc950b",
+  "input_sha256": {
+    "C103": "a55cabf15e0da9d65696a5fb45c9852889479893f76f772a428ca15d1b415a51",
+    "C104": "fe333e81625ee5a75bb2ce98c2c9f356d07289237865b62a23ba2f32f0de5ee2",
+    "R101": "3f3655182bc0fe44ce5de65fdcd2ee2f9c7fb9ed055f923635151d9d6f76d3ed",
+    "RC101": "ef6893ffd9746ad96de8e4da6e64e2c4ba6e08a1c7eb9457276a9f1caf01ca12"
+  },
+  "started_at_utc": "2026-10-02T11:14:53.686543+00:00",
+  "finished_at_utc": "2026-10-02T11:15:30.463414+00:00",
+  "environment": {
+    "python": "3.12.4",
+    "platform": "Windows-11-10.0.22621-SP0",
+    "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+    "cpu_count": 16
+  },
+  "order": "left rotation by case_index modulo selected variants"
+}

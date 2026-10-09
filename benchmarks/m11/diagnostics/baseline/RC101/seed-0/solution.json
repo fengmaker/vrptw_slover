@@ -1,0 +1,501 @@
+{
+  "schema_version": 1,
+  "instance": "RC101",
+  "input_format": "solomon_txt",
+  "routes": [
+    [
+      65,
+      52,
+      99,
+      57,
+      86,
+      74,
+      58
+    ],
+    [
+      92,
+      33,
+      28,
+      30,
+      50,
+      91
+    ],
+    [
+      42,
+      44,
+      61,
+      81,
+      37,
+      35
+    ],
+    [
+      95,
+      62,
+      67,
+      71,
+      94,
+      96,
+      54,
+      93,
+      80
+    ],
+    [
+      83,
+      23,
+      21,
+      19,
+      18,
+      49,
+      89
+    ],
+    [
+      14,
+      47,
+      11,
+      15,
+      16,
+      9,
+      10
+    ],
+    [
+      64,
+      90,
+      20,
+      48,
+      24
+    ],
+    [
+      5,
+      45,
+      7,
+      6,
+      46,
+      3,
+      1,
+      4,
+      100,
+      70
+    ],
+    [
+      72,
+      39,
+      36,
+      40,
+      38,
+      41,
+      43
+    ],
+    [
+      63,
+      76,
+      85,
+      84,
+      56,
+      66
+    ],
+    [
+      59,
+      75,
+      87,
+      97,
+      13,
+      17
+    ],
+    [
+      31,
+      27,
+      29,
+      26,
+      34,
+      32
+    ],
+    [
+      82,
+      12,
+      8,
+      55
+    ],
+    [
+      51,
+      22,
+      77,
+      25
+    ],
+    [
+      69,
+      98,
+      88,
+      53,
+      78,
+      60
+    ],
+    [
+      2,
+      73,
+      79,
+      68
+    ]
+  ],
+  "vehicles": 16,
+  "distance_ticks": 1898749,
+  "distance": 1898.749,
+  "feasible": true,
+  "seed": 0,
+  "threads": 1,
+  "stop": {
+    "reason": "time_limit",
+    "max_iterations": null,
+    "time_limit_seconds": 0.5
+  },
+  "iterations": 1,
+  "first_feasible_seconds": 0.06248729999970237,
+  "runtime_seconds": 0.500468299998829,
+  "numeric_rule": "solomon_exact_1000_v1",
+  "code_sha256": "511c2848b32c09a5c9c593ffff57de54a48c9f7059d1758fa1e202016cdc779e",
+  "config": {
+    "seed": 0,
+    "max_iterations": null,
+    "time_limit_seconds": 0.5,
+    "fleet_attempts_per_k": 100,
+    "fleet_time_fraction": 0.75,
+    "fleet_strategy": "hybrid",
+    "fleet_repair_rounds": 5,
+    "fleet_related_count": 8,
+    "max_moves": null,
+    "construction_order": "due",
+    "repair_order": "due",
+    "repair_strategy": "cheapest",
+    "search_strategy": "first",
+    "operators": [
+      "relocate",
+      "swap",
+      "two_opt",
+      "two_opt_star"
+    ],
+    "remove_min": 3,
+    "remove_max": 8,
+    "restart_after": 20,
+    "diagnostics": true,
+    "evaluation_mode": "incremental",
+    "num_neighbours": null,
+    "operator_schedule": "cyclic",
+    "infeasible_search": false,
+    "adaptive_penalties": true,
+    "penalty_update_interval": 10,
+    "penalty_target_feasible": 0.5
+  },
+  "vehicle_limit": 25,
+  "input_sha256": "ef6893ffd9746ad96de8e4da6e64e2c4ba6e08a1c7eb9457276a9f1caf01ca12",
+  "fleet": {
+    "capacity_lower_bound": 9,
+    "reached_lower_bound": false,
+    "stop_reason": "fleet_budget",
+    "attempts": [
+      {
+        "target": 19,
+        "trials": 1
+      },
+      {
+        "target": 18,
+        "trials": 2
+      },
+      {
+        "target": 17,
+        "trials": 2
+      },
+      {
+        "target": 16,
+        "trials": 6
+      },
+      {
+        "target": 15,
+        "trials": 20
+      }
+    ],
+    "milestones": [
+      {
+        "vehicles": 19,
+        "distance": 2031958,
+        "elapsed_seconds": 0.07479479999892646
+      },
+      {
+        "vehicles": 18,
+        "distance": 2061853,
+        "elapsed_seconds": 0.08124279999901773
+      },
+      {
+        "vehicles": 17,
+        "distance": 2041527,
+        "elapsed_seconds": 0.08783979999861913
+      },
+      {
+        "vehicles": 16,
+        "distance": 1964874,
+        "elapsed_seconds": 0.1502835999999661
+      }
+    ],
+    "targets": [
+      {
+        "target": 19,
+        "trials": 1,
+        "repair_rounds": 1,
+        "elapsed_seconds": 0.011922400000912603,
+        "first_feasible_seconds": 0.011922400000912603,
+        "status": "found"
+      },
+      {
+        "target": 18,
+        "trials": 2,
+        "repair_rounds": 2,
+        "elapsed_seconds": 0.006263299999773153,
+        "first_feasible_seconds": 0.006263299999773153,
+        "status": "found"
+      },
+      {
+        "target": 17,
+        "trials": 2,
+        "repair_rounds": 2,
+        "elapsed_seconds": 0.006414299999960349,
+        "first_feasible_seconds": 0.006414299999960349,
+        "status": "found"
+      },
+      {
+        "target": 16,
+        "trials": 6,
+        "repair_rounds": 18,
+        "elapsed_seconds": 0.06225790000098641,
+        "first_feasible_seconds": 0.06225790000098641,
+        "status": "found"
+      },
+      {
+        "target": 15,
+        "trials": 20,
+        "repair_rounds": 60,
+        "elapsed_seconds": 0.2403415999997378,
+        "first_feasible_seconds": null,
+        "status": "time_limit"
+      }
+    ]
+  },
+  "diagnostics": {
+    "schema_version": 1,
+    "phases": [
+      {
+        "phase": "construction",
+        "elapsed_seconds": 0.062278999999762163,
+        "inclusive_seconds": 0.062278999999762163,
+        "calls": 1,
+        "candidates": 6468,
+        "feasible_candidates": 380,
+        "infeasible_candidates": 6088,
+        "route_evaluations": 6568,
+        "validation_calls": 1,
+        "accepted": 100,
+        "capacity_prefilter_skips": 0,
+        "rejected_capacity": 0,
+        "rejected_time_window": 6088,
+        "rejected_depot_close": 3291,
+        "rejected_empty_route": 0,
+        "trials": 0,
+        "failures": 0,
+        "removed_customers": 0,
+        "route_cache_builds": 0,
+        "incremental_route_evaluations": 0,
+        "reused_prefix_customers": 0,
+        "reused_suffix_customers": 0,
+        "neighbour_filtered": 0,
+        "penalized_candidates": 0,
+        "accepted_infeasible": 0
+      },
+      {
+        "phase": "fleet_reduction",
+        "elapsed_seconds": 0.04777040002591093,
+        "inclusive_seconds": 0.32817960000102175,
+        "calls": 1,
+        "candidates": 0,
+        "feasible_candidates": 0,
+        "infeasible_candidates": 0,
+        "route_evaluations": 412,
+        "validation_calls": 9,
+        "accepted": 0,
+        "capacity_prefilter_skips": 0,
+        "rejected_capacity": 0,
+        "rejected_time_window": 0,
+        "rejected_depot_close": 0,
+        "rejected_empty_route": 0,
+        "trials": 31,
+        "failures": 27,
+        "removed_customers": 624,
+        "route_cache_builds": 0,
+        "incremental_route_evaluations": 0,
+        "reused_prefix_customers": 0,
+        "reused_suffix_customers": 0,
+        "neighbour_filtered": 0,
+        "penalized_candidates": 0,
+        "accepted_infeasible": 0
+      },
+      {
+        "phase": "perturbation",
+        "elapsed_seconds": 7.019999975454994e-05,
+        "inclusive_seconds": 0.01049330000023474,
+        "calls": 1,
+        "candidates": 0,
+        "feasible_candidates": 0,
+        "infeasible_candidates": 0,
+        "route_evaluations": 0,
+        "validation_calls": 0,
+        "accepted": 0,
+        "capacity_prefilter_skips": 0,
+        "rejected_capacity": 0,
+        "rejected_time_window": 0,
+        "rejected_depot_close": 0,
+        "rejected_empty_route": 0,
+        "trials": 0,
+        "failures": 0,
+        "removed_customers": 6,
+        "route_cache_builds": 0,
+        "incremental_route_evaluations": 0,
+        "reused_prefix_customers": 0,
+        "reused_suffix_customers": 0,
+        "neighbour_filtered": 0,
+        "penalized_candidates": 0,
+        "accepted_infeasible": 0
+      },
+      {
+        "phase": "repair",
+        "elapsed_seconds": 0.290832299975591,
+        "inclusive_seconds": 0.290832299975591,
+        "calls": 84,
+        "candidates": 154563,
+        "feasible_candidates": 6956,
+        "infeasible_candidates": 147607,
+        "route_evaluations": 3233,
+        "validation_calls": 0,
+        "accepted": 1271,
+        "capacity_prefilter_skips": 195,
+        "rejected_capacity": 0,
+        "rejected_time_window": 147607,
+        "rejected_depot_close": 107352,
+        "rejected_empty_route": 0,
+        "trials": 0,
+        "failures": 0,
+        "removed_customers": 0,
+        "route_cache_builds": 2542,
+        "incremental_route_evaluations": 153888,
+        "reused_prefix_customers": 0,
+        "reused_suffix_customers": 0,
+        "neighbour_filtered": 0,
+        "penalized_candidates": 0,
+        "accepted_infeasible": 0
+      },
+      {
+        "phase": "local_search",
+        "elapsed_seconds": 0.09861690000070666,
+        "inclusive_seconds": 0.09861690000070666,
+        "calls": 1,
+        "candidates": 8337,
+        "feasible_candidates": 132,
+        "infeasible_candidates": 8205,
+        "route_evaluations": 16149,
+        "validation_calls": 10,
+        "accepted": 9,
+        "capacity_prefilter_skips": 0,
+        "rejected_capacity": 206,
+        "rejected_time_window": 8164,
+        "rejected_depot_close": 6931,
+        "rejected_empty_route": 41,
+        "trials": 0,
+        "failures": 0,
+        "removed_customers": 0,
+        "route_cache_builds": 32,
+        "incremental_route_evaluations": 15989,
+        "reused_prefix_customers": 47888,
+        "reused_suffix_customers": 41492,
+        "neighbour_filtered": 0,
+        "penalized_candidates": 0,
+        "accepted_infeasible": 0
+      },
+      {
+        "phase": "ils_control",
+        "elapsed_seconds": 0.0004619999999704305,
+        "inclusive_seconds": 0.10957220000091183,
+        "calls": 1,
+        "candidates": 0,
+        "feasible_candidates": 0,
+        "infeasible_candidates": 0,
+        "route_evaluations": 32,
+        "validation_calls": 2,
+        "accepted": 0,
+        "capacity_prefilter_skips": 0,
+        "rejected_capacity": 0,
+        "rejected_time_window": 0,
+        "rejected_depot_close": 0,
+        "rejected_empty_route": 0,
+        "trials": 0,
+        "failures": 0,
+        "removed_customers": 0,
+        "route_cache_builds": 0,
+        "incremental_route_evaluations": 0,
+        "reused_prefix_customers": 0,
+        "reused_suffix_customers": 0,
+        "neighbour_filtered": 0,
+        "penalized_candidates": 0,
+        "accepted_infeasible": 0
+      },
+      {
+        "phase": "validation",
+        "elapsed_seconds": 0.0003567000003386056,
+        "inclusive_seconds": 0.0003567000003386056,
+        "calls": 2,
+        "candidates": 0,
+        "feasible_candidates": 0,
+        "infeasible_candidates": 0,
+        "route_evaluations": 36,
+        "validation_calls": 2,
+        "accepted": 0,
+        "capacity_prefilter_skips": 0,
+        "rejected_capacity": 0,
+        "rejected_time_window": 0,
+        "rejected_depot_close": 0,
+        "rejected_empty_route": 0,
+        "trials": 0,
+        "failures": 0,
+        "removed_customers": 0,
+        "route_cache_builds": 0,
+        "incremental_route_evaluations": 0,
+        "reused_prefix_customers": 0,
+        "reused_suffix_customers": 0,
+        "neighbour_filtered": 0,
+        "penalized_candidates": 0,
+        "accepted_infeasible": 0
+      },
+      {
+        "phase": "other",
+        "elapsed_seconds": 8.07999967946671e-05,
+        "inclusive_seconds": 8.07999967946671e-05,
+        "calls": 0,
+        "candidates": 0,
+        "feasible_candidates": 0,
+        "infeasible_candidates": 0,
+        "route_evaluations": 0,
+        "validation_calls": 0,
+        "accepted": 0,
+        "capacity_prefilter_skips": 0,
+        "rejected_capacity": 0,
+        "rejected_time_window": 0,
+        "rejected_depot_close": 0,
+        "rejected_empty_route": 0,
+        "trials": 0,
+        "failures": 0,
+        "removed_customers": 0,
+        "route_cache_builds": 0,
+        "incremental_route_evaluations": 0,
+        "reused_prefix_customers": 0,
+        "reused_suffix_customers": 0,
+        "neighbour_filtered": 0,
+        "penalized_candidates": 0,
+        "accepted_infeasible": 0
+      }
+    ]
+  }
+}

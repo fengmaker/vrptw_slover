@@ -1,0 +1,3 @@
+# Python 3.12 comparison environment; PyVRP uses the existing local 3.13 build.
+ortools==9.15.6755
+gurobipy==13.0.0

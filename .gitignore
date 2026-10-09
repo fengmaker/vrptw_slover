@@ -1,10 +1,16 @@
 .venv/
+.venv-comparison/
 __pycache__/
 *.py[cod]
 *.egg-info/
 .pytest_cache/
+.pytest-tmp/
 build/
 dist/
 tests/.pytest-local/
 tests/.pytest-*/
 runs/
+*.pyd
+*.so
+# Keep frozen native binaries required by benchmark manifest verification.
+!benchmarks/**/source/**/_native*.pyd

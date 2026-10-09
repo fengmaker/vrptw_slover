@@ -1,0 +1,282 @@
+{
+  "schema_version": 1,
+  "instance": "R112",
+  "input_format": "solomon_txt",
+  "routes": [
+    [
+      95,
+      100,
+      91,
+      44,
+      16,
+      85,
+      99,
+      37,
+      59,
+      96
+    ],
+    [
+      31,
+      19,
+      36,
+      49,
+      64,
+      11,
+      62,
+      10
+    ],
+    [
+      2,
+      57,
+      41,
+      22,
+      75,
+      23,
+      67,
+      39,
+      56,
+      74
+    ],
+    [
+      52,
+      88,
+      7,
+      48,
+      47,
+      46,
+      82,
+      89,
+      70,
+      1
+    ],
+    [
+      28,
+      12,
+      76,
+      50,
+      3,
+      79,
+      78,
+      29,
+      24,
+      80,
+      68
+    ],
+    [
+      18,
+      8,
+      45,
+      17,
+      84,
+      5,
+      83,
+      60,
+      93
+    ],
+    [
+      27,
+      69,
+      30,
+      32,
+      90,
+      63,
+      20,
+      66,
+      35
+    ],
+    [
+      53,
+      40,
+      21,
+      73,
+      72,
+      4,
+      25,
+      55,
+      54
+    ],
+    [
+      33,
+      81,
+      9,
+      65,
+      71,
+      51,
+      34,
+      77
+    ],
+    [
+      61,
+      86,
+      38,
+      14,
+      43,
+      15,
+      26
+    ],
+    [
+      94,
+      6,
+      92,
+      98,
+      97,
+      87,
+      42,
+      13,
+      58
+    ]
+  ],
+  "vehicles": 11,
+  "distance_ticks": 1158070,
+  "distance": 1158.07,
+  "feasible": true,
+  "seed": 1,
+  "threads": 1,
+  "stop": {
+    "reason": "time_limit",
+    "max_iterations": null,
+    "time_limit_seconds": 0.5
+  },
+  "iterations": 3,
+  "first_feasible_seconds": 0.06227170000056503,
+  "runtime_seconds": 0.5003111000005447,
+  "numeric_rule": "solomon_exact_1000_v1",
+  "code_sha256": "153657d31d0a2c73de1efecde91d561f2bc3385b7604e2cb6ac55292ec1305ce",
+  "config": {
+    "seed": 1,
+    "max_iterations": null,
+    "time_limit_seconds": 0.5,
+    "fleet_attempts_per_k": 100,
+    "fleet_time_fraction": 0.75,
+    "fleet_strategy": "hybrid",
+    "fleet_repair_rounds": 5,
+    "fleet_related_count": 8,
+    "max_moves": null,
+    "construction_order": "due",
+    "repair_order": "due",
+    "repair_strategy": "cheapest",
+    "search_strategy": "first",
+    "operators": [
+      "relocate",
+      "swap",
+      "two_opt",
+      "two_opt_star"
+    ],
+    "remove_min": 3,
+    "remove_max": 8,
+    "restart_after": 20,
+    "diagnostics": false,
+    "evaluation_mode": "incremental",
+    "num_neighbours": null,
+    "operator_schedule": "cyclic",
+    "infeasible_search": true,
+    "adaptive_penalties": false,
+    "penalty_update_interval": 10,
+    "penalty_target_feasible": 0.5,
+    "penalty_max_moves": 8
+  },
+  "vehicle_limit": 25,
+  "input_sha256": "a0e93149d59d30c356619891d192e86d0f16c3158e1dac3bd9f23c6deb718271",
+  "fleet": {
+    "capacity_lower_bound": 8,
+    "reached_lower_bound": false,
+    "stop_reason": "fleet_budget",
+    "attempts": [
+      {
+        "target": 14,
+        "trials": 1
+      },
+      {
+        "target": 13,
+        "trials": 1
+      },
+      {
+        "target": 12,
+        "trials": 2
+      },
+      {
+        "target": 11,
+        "trials": 4
+      },
+      {
+        "target": 10,
+        "trials": 35
+      }
+    ],
+    "milestones": [
+      {
+        "vehicles": 14,
+        "distance": 1269491,
+        "elapsed_seconds": 0.06939860000056797
+      },
+      {
+        "vehicles": 13,
+        "distance": 1430041,
+        "elapsed_seconds": 0.0762840999996115
+      },
+      {
+        "vehicles": 12,
+        "distance": 1412845,
+        "elapsed_seconds": 0.08401609999964421
+      },
+      {
+        "vehicles": 11,
+        "distance": 1230389,
+        "elapsed_seconds": 0.11303009999937785
+      }
+    ],
+    "targets": [
+      {
+        "target": 14,
+        "trials": 1,
+        "repair_rounds": 1,
+        "elapsed_seconds": 0.006745600001522689,
+        "first_feasible_seconds": 0.006745600001522689,
+        "status": "found"
+      },
+      {
+        "target": 13,
+        "trials": 1,
+        "repair_rounds": 1,
+        "elapsed_seconds": 0.006706500000291271,
+        "first_feasible_seconds": 0.006706500000291271,
+        "status": "found"
+      },
+      {
+        "target": 12,
+        "trials": 2,
+        "repair_rounds": 2,
+        "elapsed_seconds": 0.0075539000008575385,
+        "first_feasible_seconds": 0.0075539000008575385,
+        "status": "found"
+      },
+      {
+        "target": 11,
+        "trials": 4,
+        "repair_rounds": 11,
+        "elapsed_seconds": 0.028831999999965774,
+        "first_feasible_seconds": 0.028831999999965774,
+        "status": "found"
+      },
+      {
+        "target": 10,
+        "trials": 35,
+        "repair_rounds": 103,
+        "elapsed_seconds": 0.27754579999964335,
+        "first_feasible_seconds": null,
+        "status": "time_limit"
+      }
+    ]
+  },
+  "penalty_search": {
+    "schema_version": 1,
+    "weight_scale": 1000,
+    "adaptive": false,
+    "samples": 3,
+    "updates": 0,
+    "infeasible_candidates": 2,
+    "infeasible_current": 2,
+    "final_load_weight": 2328646,
+    "final_time_weight": 1000
+  }
+}

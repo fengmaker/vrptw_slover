@@ -1,0 +1,200 @@
+{
+  "solver": "ortools",
+  "instance": "RC102",
+  "budget_seconds": 5.0,
+  "seed": 0,
+  "vehicle_cap": 25,
+  "fixed_vehicle_cost": 12651626,
+  "status": "found",
+  "feasible": true,
+  "vehicles": 15,
+  "distance_ticks": 1551995,
+  "distance": 1551.995,
+  "preparation_seconds": 0.00259129999903962,
+  "search_seconds": 5.000167999998666,
+  "solver_runtime_seconds": 5.0,
+  "validation_seconds": 0.0005148999989614822,
+  "total_seconds": 5.004433499998413,
+  "first_feasible_seconds": 0.02423129999806406,
+  "iterations": "",
+  "adapter_seconds": 5.0039185999994515,
+  "postprocessing_seconds": 0.001159300001745578,
+  "input_sha256": "36acd349d34a577c7fadd61f78517c2cb74bd06a490273800c288f341e5785a4",
+  "source_sha256": "4ccf2642f91c10e5ef78d549cf8ed0088696fccc6f0da27cfce273e5cd458c2d",
+  "error": "",
+  "metadata_json": "{\"ortools_version\": \"9.15.6755\", \"requested_seed\": 0, \"cp_solver_reseed_applied\": true, \"seed_api\": \"pywrapcp.Solver.ReSeed\", \"seed_semantics\": \"Applied to the underlying CP Solver RNG; RoutingSearchParameters has no random_seed field. This does not claim control over every routing-search randomness source.\", \"warm_start\": false, \"vehicle_limit\": 25, \"vehicle_fixed_cost\": 12651626, \"max_solution_distance_bound\": 12651625, \"objective_value\": 191326385, \"solver_assignment_objective\": 191326385, \"scalar_objective\": 191326385, \"objective_lower_bound\": 114324039, \"objective_gap_to_lower_bound\": 77002346, \"lower_bound_components\": {\"vehicles\": 9, \"distance_ticks\": 459405, \"distance_bound_method\": \"sum of each customer's minimum incoming arc\"}, \"routing_status_code\": 1, \"routing_status\": \"ROUTING_SUCCESS\", \"optimality_proven\": false, \"first_solution_strategy\": \"PARALLEL_CHEAPEST_INSERTION\", \"local_search_metaheuristic\": \"GUIDED_LOCAL_SEARCH\", \"search_workers\": 1, \"search_worker_setting\": \"Routing CP exposes no worker-count parameter; one CP search was run.\", \"search_time_limit_seconds\": 5.0, \"time_limit_scope\": \"SolveWithParameters call only; model preparation is separate\", \"first_feasible_seconds\": 0.02423129999806406, \"distance_ticks\": 1551995}",
+  "solution_path": "results/5s/RC102/ortools-seed-0.json",
+  "response": {
+    "routes": [
+      [
+        19,
+        23,
+        48,
+        18,
+        21,
+        25,
+        24,
+        83
+      ],
+      [
+        69,
+        98,
+        53,
+        78,
+        60,
+        100,
+        70
+      ],
+      [
+        88,
+        73,
+        79,
+        55,
+        68
+      ],
+      [
+        82,
+        99,
+        57,
+        74,
+        58,
+        59
+      ],
+      [
+        91,
+        95,
+        62,
+        67,
+        84,
+        56
+      ],
+      [
+        1,
+        3,
+        45,
+        5,
+        8,
+        7,
+        6,
+        46,
+        4,
+        2
+      ],
+      [
+        65,
+        52,
+        86,
+        87,
+        97,
+        75,
+        77
+      ],
+      [
+        39,
+        36,
+        71,
+        54
+      ],
+      [
+        64,
+        22,
+        49,
+        20,
+        66
+      ],
+      [
+        14,
+        47,
+        11,
+        15,
+        16,
+        9,
+        10,
+        13,
+        17,
+        12
+      ],
+      [
+        85,
+        63,
+        51,
+        76,
+        89
+      ],
+      [
+        94,
+        31,
+        29,
+        27,
+        26,
+        34,
+        93,
+        96
+      ],
+      [
+        42,
+        44,
+        40,
+        38,
+        41,
+        43,
+        35,
+        37,
+        72
+      ],
+      [
+        92,
+        33,
+        28,
+        30,
+        32,
+        50,
+        80
+      ],
+      [
+        61,
+        81,
+        90
+      ]
+    ],
+    "status": "found",
+    "preparation_seconds": 0.00259129999903962,
+    "search_seconds": 5.000167999998666,
+    "solver_runtime_seconds": 5.0,
+    "first_feasible_seconds": 0.02423129999806406,
+    "metadata": {
+      "ortools_version": "9.15.6755",
+      "requested_seed": 0,
+      "cp_solver_reseed_applied": true,
+      "seed_api": "pywrapcp.Solver.ReSeed",
+      "seed_semantics": "Applied to the underlying CP Solver RNG; RoutingSearchParameters has no random_seed field. This does not claim control over every routing-search randomness source.",
+      "warm_start": false,
+      "vehicle_limit": 25,
+      "vehicle_fixed_cost": 12651626,
+      "max_solution_distance_bound": 12651625,
+      "objective_value": 191326385,
+      "solver_assignment_objective": 191326385,
+      "scalar_objective": 191326385,
+      "objective_lower_bound": 114324039,
+      "objective_gap_to_lower_bound": 77002346,
+      "lower_bound_components": {
+        "vehicles": 9,
+        "distance_ticks": 459405,
+        "distance_bound_method": "sum of each customer's minimum incoming arc"
+      },
+      "routing_status_code": 1,
+      "routing_status": "ROUTING_SUCCESS",
+      "optimality_proven": false,
+      "first_solution_strategy": "PARALLEL_CHEAPEST_INSERTION",
+      "local_search_metaheuristic": "GUIDED_LOCAL_SEARCH",
+      "search_workers": 1,
+      "search_worker_setting": "Routing CP exposes no worker-count parameter; one CP search was run.",
+      "search_time_limit_seconds": 5.0,
+      "time_limit_scope": "SolveWithParameters call only; model preparation is separate",
+      "first_feasible_seconds": 0.02423129999806406,
+      "distance_ticks": 1551995
+    },
+    "adapter_seconds": 5.0039185999994515
+  },
+  "completed_at": "2026-10-09T17:29:08.959223+00:00"
+}

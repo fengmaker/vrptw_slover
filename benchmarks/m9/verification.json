@@ -1,0 +1,1268 @@
+{
+  "experiments": {
+    "ablation": {
+      "runs": 1008,
+      "verified": 1008
+    },
+    "confirmation": {
+      "runs": 1176,
+      "verified": 1176
+    },
+    "diagnostics": {
+      "runs": 72,
+      "verified": 72
+    },
+    "screen_diagnostics": {
+      "runs": 72,
+      "verified": 72
+    }
+  },
+  "batches": {
+    "ablation/baseline": {
+      "runs": 168,
+      "verified": 168,
+      "diagnostic_phases": 0,
+      "code_sha256": "5d3f56a8df0d9ba91e368d7f3a64e9028fef5c9e1a9bdeff889848baf2b8ab27",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": 2,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null
+      },
+      "pyvrp": {
+        "all": {
+          "instances": 56,
+          "same_vehicle_instances": 49,
+          "vehicles_worse": 7,
+          "gap_median_percent": 26.9743,
+          "gap_p90_percent": 77.2661
+        },
+        "C": {
+          "instances": 17,
+          "same_vehicle_instances": 17,
+          "vehicles_worse": 0,
+          "gap_median_percent": 22.1285,
+          "gap_p90_percent": 87.0019
+        },
+        "R": {
+          "instances": 23,
+          "same_vehicle_instances": 19,
+          "vehicles_worse": 4,
+          "gap_median_percent": 28.2542,
+          "gap_p90_percent": 74.4474
+        },
+        "RC": {
+          "instances": 16,
+          "same_vehicle_instances": 13,
+          "vehicles_worse": 3,
+          "gap_median_percent": 29.2864,
+          "gap_p90_percent": 64.6803
+        }
+      }
+    },
+    "ablation/uncapped": {
+      "runs": 168,
+      "verified": 168,
+      "diagnostic_phases": 0,
+      "code_sha256": "6d40142f96d4524ef3e9b8d0a5708a0555d3ad0d0e6f412e64400b4bafa02c44",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null
+      },
+      "pyvrp": {
+        "all": {
+          "instances": 56,
+          "same_vehicle_instances": 49,
+          "vehicles_worse": 7,
+          "gap_median_percent": 26.3957,
+          "gap_p90_percent": 87.0169
+        },
+        "C": {
+          "instances": 17,
+          "same_vehicle_instances": 17,
+          "vehicles_worse": 0,
+          "gap_median_percent": 21.7345,
+          "gap_p90_percent": 106.0089
+        },
+        "R": {
+          "instances": 23,
+          "same_vehicle_instances": 19,
+          "vehicles_worse": 4,
+          "gap_median_percent": 28.0801,
+          "gap_p90_percent": 74.4474
+        },
+        "RC": {
+          "instances": 16,
+          "same_vehicle_instances": 13,
+          "vehicles_worse": 3,
+          "gap_median_percent": 29.2864,
+          "gap_p90_percent": 87.0169
+        }
+      }
+    },
+    "ablation/relocate_pair": {
+      "runs": 168,
+      "verified": 168,
+      "diagnostic_phases": 0,
+      "code_sha256": "6d40142f96d4524ef3e9b8d0a5708a0555d3ad0d0e6f412e64400b4bafa02c44",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate_pair",
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null
+      },
+      "pyvrp": {
+        "all": {
+          "instances": 56,
+          "same_vehicle_instances": 49,
+          "vehicles_worse": 7,
+          "gap_median_percent": 28.6003,
+          "gap_p90_percent": 86.0786
+        },
+        "C": {
+          "instances": 17,
+          "same_vehicle_instances": 17,
+          "vehicles_worse": 0,
+          "gap_median_percent": 22.3638,
+          "gap_p90_percent": 110.9923
+        },
+        "R": {
+          "instances": 23,
+          "same_vehicle_instances": 19,
+          "vehicles_worse": 4,
+          "gap_median_percent": 29.9514,
+          "gap_p90_percent": 69.3212
+        },
+        "RC": {
+          "instances": 16,
+          "same_vehicle_instances": 13,
+          "vehicles_worse": 3,
+          "gap_median_percent": 29.2864,
+          "gap_p90_percent": 64.6803
+        }
+      }
+    },
+    "ablation/exchange_pair_single": {
+      "runs": 168,
+      "verified": 168,
+      "diagnostic_phases": 0,
+      "code_sha256": "6d40142f96d4524ef3e9b8d0a5708a0555d3ad0d0e6f412e64400b4bafa02c44",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "exchange_pair_single",
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null
+      },
+      "pyvrp": {
+        "all": {
+          "instances": 56,
+          "same_vehicle_instances": 49,
+          "vehicles_worse": 7,
+          "gap_median_percent": 25.9786,
+          "gap_p90_percent": 79.0325
+        },
+        "C": {
+          "instances": 17,
+          "same_vehicle_instances": 17,
+          "vehicles_worse": 0,
+          "gap_median_percent": 22.9068,
+          "gap_p90_percent": 107.5785
+        },
+        "R": {
+          "instances": 23,
+          "same_vehicle_instances": 19,
+          "vehicles_worse": 4,
+          "gap_median_percent": 31.1021,
+          "gap_p90_percent": 74.4474
+        },
+        "RC": {
+          "instances": 16,
+          "same_vehicle_instances": 13,
+          "vehicles_worse": 3,
+          "gap_median_percent": 29.2864,
+          "gap_p90_percent": 64.6803
+        }
+      }
+    },
+    "ablation/exchange_pairs": {
+      "runs": 168,
+      "verified": 168,
+      "diagnostic_phases": 0,
+      "code_sha256": "6d40142f96d4524ef3e9b8d0a5708a0555d3ad0d0e6f412e64400b4bafa02c44",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "exchange_pairs",
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null
+      },
+      "pyvrp": {
+        "all": {
+          "instances": 56,
+          "same_vehicle_instances": 49,
+          "vehicles_worse": 7,
+          "gap_median_percent": 26.462,
+          "gap_p90_percent": 74.4474
+        },
+        "C": {
+          "instances": 17,
+          "same_vehicle_instances": 17,
+          "vehicles_worse": 0,
+          "gap_median_percent": 23.0108,
+          "gap_p90_percent": 89.6782
+        },
+        "R": {
+          "instances": 23,
+          "same_vehicle_instances": 19,
+          "vehicles_worse": 4,
+          "gap_median_percent": 26.2139,
+          "gap_p90_percent": 74.4474
+        },
+        "RC": {
+          "instances": 16,
+          "same_vehicle_instances": 13,
+          "vehicles_worse": 3,
+          "gap_median_percent": 28.8282,
+          "gap_p90_percent": 64.6803
+        }
+      }
+    },
+    "ablation/combined": {
+      "runs": 168,
+      "verified": 168,
+      "diagnostic_phases": 0,
+      "code_sha256": "6d40142f96d4524ef3e9b8d0a5708a0555d3ad0d0e6f412e64400b4bafa02c44",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate_pair",
+          "exchange_pair_single",
+          "exchange_pairs",
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null
+      },
+      "pyvrp": {
+        "all": {
+          "instances": 56,
+          "same_vehicle_instances": 49,
+          "vehicles_worse": 7,
+          "gap_median_percent": 28.2939,
+          "gap_p90_percent": 86.0786
+        },
+        "C": {
+          "instances": 17,
+          "same_vehicle_instances": 17,
+          "vehicles_worse": 0,
+          "gap_median_percent": 24.8758,
+          "gap_p90_percent": 102.3609
+        },
+        "R": {
+          "instances": 23,
+          "same_vehicle_instances": 19,
+          "vehicles_worse": 4,
+          "gap_median_percent": 29.9514,
+          "gap_p90_percent": 74.4474
+        },
+        "RC": {
+          "instances": 16,
+          "same_vehicle_instances": 13,
+          "vehicles_worse": 3,
+          "gap_median_percent": 29.2864,
+          "gap_p90_percent": 64.6803
+        }
+      }
+    },
+    "confirmation/baseline": {
+      "runs": 168,
+      "verified": 168,
+      "diagnostic_phases": 0,
+      "code_sha256": "5d3f56a8df0d9ba91e368d7f3a64e9028fef5c9e1a9bdeff889848baf2b8ab27",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": 2,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null
+      },
+      "pyvrp": {
+        "all": {
+          "instances": 56,
+          "same_vehicle_instances": 50,
+          "vehicles_worse": 6,
+          "gap_median_percent": 26.9805,
+          "gap_p90_percent": 77.2196
+        },
+        "C": {
+          "instances": 17,
+          "same_vehicle_instances": 17,
+          "vehicles_worse": 0,
+          "gap_median_percent": 21.7345,
+          "gap_p90_percent": 87.5327
+        },
+        "R": {
+          "instances": 23,
+          "same_vehicle_instances": 20,
+          "vehicles_worse": 3,
+          "gap_median_percent": 28.016550000000002,
+          "gap_p90_percent": 63.7153
+        },
+        "RC": {
+          "instances": 16,
+          "same_vehicle_instances": 13,
+          "vehicles_worse": 3,
+          "gap_median_percent": 29.2864,
+          "gap_p90_percent": 64.6803
+        }
+      }
+    },
+    "confirmation/uncapped": {
+      "runs": 168,
+      "verified": 168,
+      "diagnostic_phases": 0,
+      "code_sha256": "fb929496ff25d75a23a6c92e658e328e744854f9461343284195d63b3cc2e764",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null,
+        "operator_schedule": "fixed"
+      },
+      "pyvrp": {
+        "all": {
+          "instances": 56,
+          "same_vehicle_instances": 50,
+          "vehicles_worse": 6,
+          "gap_median_percent": 26.685000000000002,
+          "gap_p90_percent": 73.2533
+        },
+        "C": {
+          "instances": 17,
+          "same_vehicle_instances": 17,
+          "vehicles_worse": 0,
+          "gap_median_percent": 21.7345,
+          "gap_p90_percent": 110.9779
+        },
+        "R": {
+          "instances": 23,
+          "same_vehicle_instances": 20,
+          "vehicles_worse": 3,
+          "gap_median_percent": 27.851599999999998,
+          "gap_p90_percent": 63.7153
+        },
+        "RC": {
+          "instances": 16,
+          "same_vehicle_instances": 13,
+          "vehicles_worse": 3,
+          "gap_median_percent": 29.2864,
+          "gap_p90_percent": 64.6803
+        }
+      }
+    },
+    "confirmation/exchange_pair_single": {
+      "runs": 168,
+      "verified": 168,
+      "diagnostic_phases": 0,
+      "code_sha256": "fb929496ff25d75a23a6c92e658e328e744854f9461343284195d63b3cc2e764",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "exchange_pair_single",
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null,
+        "operator_schedule": "fixed"
+      },
+      "pyvrp": {
+        "all": {
+          "instances": 56,
+          "same_vehicle_instances": 50,
+          "vehicles_worse": 6,
+          "gap_median_percent": 26.7922,
+          "gap_p90_percent": 79.0325
+        },
+        "C": {
+          "instances": 17,
+          "same_vehicle_instances": 17,
+          "vehicles_worse": 0,
+          "gap_median_percent": 22.9068,
+          "gap_p90_percent": 107.5785
+        },
+        "R": {
+          "instances": 23,
+          "same_vehicle_instances": 20,
+          "vehicles_worse": 3,
+          "gap_median_percent": 29.353949999999998,
+          "gap_p90_percent": 63.7153
+        },
+        "RC": {
+          "instances": 16,
+          "same_vehicle_instances": 13,
+          "vehicles_worse": 3,
+          "gap_median_percent": 29.2864,
+          "gap_p90_percent": 87.0169
+        }
+      }
+    },
+    "confirmation/cyclic": {
+      "runs": 168,
+      "verified": 168,
+      "diagnostic_phases": 0,
+      "code_sha256": "fb929496ff25d75a23a6c92e658e328e744854f9461343284195d63b3cc2e764",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic"
+      },
+      "pyvrp": {
+        "all": {
+          "instances": 56,
+          "same_vehicle_instances": 50,
+          "vehicles_worse": 6,
+          "gap_median_percent": 25.498800000000003,
+          "gap_p90_percent": 64.6803
+        },
+        "C": {
+          "instances": 17,
+          "same_vehicle_instances": 17,
+          "vehicles_worse": 0,
+          "gap_median_percent": 11.8377,
+          "gap_p90_percent": 69.8518
+        },
+        "R": {
+          "instances": 23,
+          "same_vehicle_instances": 20,
+          "vehicles_worse": 3,
+          "gap_median_percent": 26.1449,
+          "gap_p90_percent": 63.7153
+        },
+        "RC": {
+          "instances": 16,
+          "same_vehicle_instances": 13,
+          "vehicles_worse": 3,
+          "gap_median_percent": 28.2396,
+          "gap_p90_percent": 64.6803
+        }
+      }
+    },
+    "confirmation/cyclic_single": {
+      "runs": 168,
+      "verified": 168,
+      "diagnostic_phases": 0,
+      "code_sha256": "fb929496ff25d75a23a6c92e658e328e744854f9461343284195d63b3cc2e764",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "exchange_pair_single",
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic"
+      },
+      "pyvrp": {
+        "all": {
+          "instances": 56,
+          "same_vehicle_instances": 50,
+          "vehicles_worse": 6,
+          "gap_median_percent": 26.839799999999997,
+          "gap_p90_percent": 63.7153
+        },
+        "C": {
+          "instances": 17,
+          "same_vehicle_instances": 17,
+          "vehicles_worse": 0,
+          "gap_median_percent": 18.2705,
+          "gap_p90_percent": 55.5085
+        },
+        "R": {
+          "instances": 23,
+          "same_vehicle_instances": 20,
+          "vehicles_worse": 3,
+          "gap_median_percent": 29.353949999999998,
+          "gap_p90_percent": 63.7153
+        },
+        "RC": {
+          "instances": 16,
+          "same_vehicle_instances": 13,
+          "vehicles_worse": 3,
+          "gap_median_percent": 28.8956,
+          "gap_p90_percent": 64.6803
+        }
+      }
+    },
+    "confirmation/cyclic_pairs": {
+      "runs": 168,
+      "verified": 168,
+      "diagnostic_phases": 0,
+      "code_sha256": "fb929496ff25d75a23a6c92e658e328e744854f9461343284195d63b3cc2e764",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "exchange_pairs",
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic"
+      },
+      "pyvrp": {
+        "all": {
+          "instances": 56,
+          "same_vehicle_instances": 50,
+          "vehicles_worse": 6,
+          "gap_median_percent": 27.09205,
+          "gap_p90_percent": 63.7153
+        },
+        "C": {
+          "instances": 17,
+          "same_vehicle_instances": 17,
+          "vehicles_worse": 0,
+          "gap_median_percent": 12.94,
+          "gap_p90_percent": 57.5109
+        },
+        "R": {
+          "instances": 23,
+          "same_vehicle_instances": 20,
+          "vehicles_worse": 3,
+          "gap_median_percent": 27.915,
+          "gap_p90_percent": 63.7153
+        },
+        "RC": {
+          "instances": 16,
+          "same_vehicle_instances": 13,
+          "vehicles_worse": 3,
+          "gap_median_percent": 29.2864,
+          "gap_p90_percent": 64.6803
+        }
+      }
+    },
+    "confirmation/cyclic_combined": {
+      "runs": 168,
+      "verified": 168,
+      "diagnostic_phases": 0,
+      "code_sha256": "fb929496ff25d75a23a6c92e658e328e744854f9461343284195d63b3cc2e764",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate_pair",
+          "exchange_pair_single",
+          "exchange_pairs",
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic"
+      },
+      "pyvrp": {
+        "all": {
+          "instances": 56,
+          "same_vehicle_instances": 50,
+          "vehicles_worse": 6,
+          "gap_median_percent": 25.7118,
+          "gap_p90_percent": 64.6803
+        },
+        "C": {
+          "instances": 17,
+          "same_vehicle_instances": 17,
+          "vehicles_worse": 0,
+          "gap_median_percent": 21.5452,
+          "gap_p90_percent": 77.4572
+        },
+        "R": {
+          "instances": 23,
+          "same_vehicle_instances": 20,
+          "vehicles_worse": 3,
+          "gap_median_percent": 26.8156,
+          "gap_p90_percent": 63.7153
+        },
+        "RC": {
+          "instances": 16,
+          "same_vehicle_instances": 13,
+          "vehicles_worse": 3,
+          "gap_median_percent": 28.8956,
+          "gap_p90_percent": 64.6803
+        }
+      }
+    },
+    "diagnostics/baseline": {
+      "runs": 12,
+      "verified": 12,
+      "diagnostic_phases": 96,
+      "code_sha256": "5d3f56a8df0d9ba91e368d7f3a64e9028fef5c9e1a9bdeff889848baf2b8ab27",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": 2,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": true,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null
+      }
+    },
+    "diagnostics/uncapped": {
+      "runs": 12,
+      "verified": 12,
+      "diagnostic_phases": 96,
+      "code_sha256": "fb929496ff25d75a23a6c92e658e328e744854f9461343284195d63b3cc2e764",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": true,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null,
+        "operator_schedule": "fixed"
+      }
+    },
+    "diagnostics/cyclic": {
+      "runs": 12,
+      "verified": 12,
+      "diagnostic_phases": 96,
+      "code_sha256": "fb929496ff25d75a23a6c92e658e328e744854f9461343284195d63b3cc2e764",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": true,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic"
+      }
+    },
+    "diagnostics/cyclic_single": {
+      "runs": 12,
+      "verified": 12,
+      "diagnostic_phases": 96,
+      "code_sha256": "fb929496ff25d75a23a6c92e658e328e744854f9461343284195d63b3cc2e764",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "exchange_pair_single",
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": true,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic"
+      }
+    },
+    "diagnostics/cyclic_pairs": {
+      "runs": 12,
+      "verified": 12,
+      "diagnostic_phases": 96,
+      "code_sha256": "fb929496ff25d75a23a6c92e658e328e744854f9461343284195d63b3cc2e764",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "exchange_pairs",
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": true,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic"
+      }
+    },
+    "diagnostics/cyclic_combined": {
+      "runs": 12,
+      "verified": 12,
+      "diagnostic_phases": 96,
+      "code_sha256": "fb929496ff25d75a23a6c92e658e328e744854f9461343284195d63b3cc2e764",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate_pair",
+          "exchange_pair_single",
+          "exchange_pairs",
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": true,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic"
+      }
+    },
+    "screen_diagnostics/baseline": {
+      "runs": 12,
+      "verified": 12,
+      "diagnostic_phases": 96,
+      "code_sha256": "5d3f56a8df0d9ba91e368d7f3a64e9028fef5c9e1a9bdeff889848baf2b8ab27",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": 2,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": true,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null
+      }
+    },
+    "screen_diagnostics/uncapped": {
+      "runs": 12,
+      "verified": 12,
+      "diagnostic_phases": 96,
+      "code_sha256": "6d40142f96d4524ef3e9b8d0a5708a0555d3ad0d0e6f412e64400b4bafa02c44",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": true,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null
+      }
+    },
+    "screen_diagnostics/relocate_pair": {
+      "runs": 12,
+      "verified": 12,
+      "diagnostic_phases": 96,
+      "code_sha256": "6d40142f96d4524ef3e9b8d0a5708a0555d3ad0d0e6f412e64400b4bafa02c44",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate_pair",
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": true,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null
+      }
+    },
+    "screen_diagnostics/exchange_pair_single": {
+      "runs": 12,
+      "verified": 12,
+      "diagnostic_phases": 96,
+      "code_sha256": "6d40142f96d4524ef3e9b8d0a5708a0555d3ad0d0e6f412e64400b4bafa02c44",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "exchange_pair_single",
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": true,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null
+      }
+    },
+    "screen_diagnostics/exchange_pairs": {
+      "runs": 12,
+      "verified": 12,
+      "diagnostic_phases": 96,
+      "code_sha256": "6d40142f96d4524ef3e9b8d0a5708a0555d3ad0d0e6f412e64400b4bafa02c44",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "exchange_pairs",
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": true,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null
+      }
+    },
+    "screen_diagnostics/combined": {
+      "runs": 12,
+      "verified": 12,
+      "diagnostic_phases": 96,
+      "code_sha256": "6d40142f96d4524ef3e9b8d0a5708a0555d3ad0d0e6f412e64400b4bafa02c44",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate_pair",
+          "exchange_pair_single",
+          "exchange_pairs",
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": true,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null
+      }
+    },
+    "delivery": {
+      "runs": 168,
+      "verified": 168,
+      "code_sha256": "f5dbbefc3ae22bb6d00b5d163622c793b753a410a3f9c2988d5f6174cecde83a",
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic"
+      },
+      "runtime_median": 0.500448,
+      "runtime_max": 0.502038,
+      "first_feasible_median": 0.0860855,
+      "first_feasible_max": 0.235915,
+      "ils_runs": 168,
+      "ils_iterations": 175,
+      "pyvrp": {
+        "all": {
+          "instances": 56,
+          "same_vehicle_instances": 50,
+          "vehicles_worse": 6,
+          "gap_median_percent": 25.48625,
+          "gap_p90_percent": 64.6803
+        },
+        "C": {
+          "instances": 17,
+          "same_vehicle_instances": 17,
+          "vehicles_worse": 0,
+          "gap_median_percent": 15.7568,
+          "gap_p90_percent": 70.6799
+        },
+        "R": {
+          "instances": 23,
+          "same_vehicle_instances": 20,
+          "vehicles_worse": 3,
+          "gap_median_percent": 26.1449,
+          "gap_p90_percent": 63.7153
+        },
+        "RC": {
+          "instances": 16,
+          "same_vehicle_instances": 13,
+          "vehicles_worse": 3,
+          "gap_median_percent": 28.8545,
+          "gap_p90_percent": 64.6803
+        }
+      }
+    }
+  },
+  "pyvrp": {
+    "runs": 180,
+    "independently_verified": 173,
+    "not_found": 7,
+    "raw_sha256": "561ee35690287a2f9fec0e2ccbfe322b3c028040eefab68a6ca68728dd38e70b"
+  }
+}

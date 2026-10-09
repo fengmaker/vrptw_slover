@@ -1,0 +1,78 @@
+{
+  "R101": {
+    "vehicle_cap": 19,
+    "source": "M10_all_batches_frozen_request"
+  },
+  "R102": {
+    "vehicle_cap": 18,
+    "source": "M10_all_batches_frozen_request"
+  },
+  "R103": {
+    "vehicle_cap": 13,
+    "source": "M10_all_batches_frozen_request"
+  },
+  "R104": {
+    "vehicle_cap": 10,
+    "source": "M10_all_batches_frozen_request"
+  },
+  "R105": {
+    "vehicle_cap": 15,
+    "source": "M10_all_batches_frozen_request"
+  },
+  "R106": {
+    "vehicle_cap": 13,
+    "source": "M10_all_batches_frozen_request"
+  },
+  "R107": {
+    "vehicle_cap": 11,
+    "source": "M10_all_batches_frozen_request"
+  },
+  "R108": {
+    "vehicle_cap": 10,
+    "source": "M10_all_batches_frozen_request"
+  },
+  "R109": {
+    "vehicle_cap": 13,
+    "source": "M10_all_batches_frozen_request"
+  },
+  "R110": {
+    "vehicle_cap": 12,
+    "source": "M10_all_batches_frozen_request"
+  },
+  "R112": {
+    "vehicle_cap": 11,
+    "source": "M10_all_batches_frozen_request"
+  },
+  "R208": {
+    "vehicle_cap": 2,
+    "source": "M10_all_batches_frozen_request"
+  },
+  "RC101": {
+    "vehicle_cap": 16,
+    "source": "M10_all_batches_frozen_request"
+  },
+  "RC102": {
+    "vehicle_cap": 14,
+    "source": "M10_all_batches_frozen_request"
+  },
+  "RC105": {
+    "vehicle_cap": 14,
+    "source": "M10_all_batches_frozen_request"
+  },
+  "RC106": {
+    "vehicle_cap": 13,
+    "source": "M10_all_batches_frozen_request"
+  },
+  "RC107": {
+    "vehicle_cap": 13,
+    "source": "M10_all_batches_frozen_request"
+  },
+  "RC108": {
+    "vehicle_cap": 12,
+    "source": "M10_all_batches_frozen_request"
+  },
+  "RC207": {
+    "vehicle_cap": 3,
+    "source": "M10_all_batches_frozen_request"
+  }
+}

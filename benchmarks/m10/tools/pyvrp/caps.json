@@ -1,0 +1,338 @@
+{
+  "C101": {
+    "vehicle_cap": 10,
+    "source": "local_bks",
+    "ours_m5_best_vehicles": 10,
+    "ours_m5_best_distance_ticks": 828937
+  },
+  "C102": {
+    "vehicle_cap": 10,
+    "source": "local_bks",
+    "ours_m5_best_vehicles": 10,
+    "ours_m5_best_distance_ticks": 1187893
+  },
+  "C103": {
+    "vehicle_cap": 10,
+    "source": "local_bks",
+    "ours_m5_best_vehicles": 10,
+    "ours_m5_best_distance_ticks": 1809960
+  },
+  "C104": {
+    "vehicle_cap": 10,
+    "source": "local_bks",
+    "ours_m5_best_vehicles": 10,
+    "ours_m5_best_distance_ticks": 1832644
+  },
+  "C105": {
+    "vehicle_cap": 10,
+    "source": "local_bks",
+    "ours_m5_best_vehicles": 10,
+    "ours_m5_best_distance_ticks": 1039051
+  },
+  "C106": {
+    "vehicle_cap": 10,
+    "source": "local_bks",
+    "ours_m5_best_vehicles": 10,
+    "ours_m5_best_distance_ticks": 1057640
+  },
+  "C107": {
+    "vehicle_cap": 10,
+    "source": "local_bks",
+    "ours_m5_best_vehicles": 10,
+    "ours_m5_best_distance_ticks": 1037431
+  },
+  "C108": {
+    "vehicle_cap": 10,
+    "source": "local_bks",
+    "ours_m5_best_vehicles": 10,
+    "ours_m5_best_distance_ticks": 1310760
+  },
+  "C109": {
+    "vehicle_cap": 10,
+    "source": "local_bks",
+    "ours_m5_best_vehicles": 10,
+    "ours_m5_best_distance_ticks": 1609856
+  },
+  "C201": {
+    "vehicle_cap": 3,
+    "source": "local_bks",
+    "ours_m5_best_vehicles": 3,
+    "ours_m5_best_distance_ticks": 704252
+  },
+  "C202": {
+    "vehicle_cap": 3,
+    "source": "local_bks",
+    "ours_m5_best_vehicles": 3,
+    "ours_m5_best_distance_ticks": 746236
+  },
+  "C203": {
+    "vehicle_cap": 3,
+    "source": "local_bks",
+    "ours_m5_best_vehicles": 3,
+    "ours_m5_best_distance_ticks": 681508
+  },
+  "C204": {
+    "vehicle_cap": 3,
+    "source": "local_bks",
+    "ours_m5_best_vehicles": 3,
+    "ours_m5_best_distance_ticks": 743140
+  },
+  "C205": {
+    "vehicle_cap": 3,
+    "source": "local_bks",
+    "ours_m5_best_vehicles": 3,
+    "ours_m5_best_distance_ticks": 743690
+  },
+  "C206": {
+    "vehicle_cap": 3,
+    "source": "local_bks",
+    "ours_m5_best_vehicles": 3,
+    "ours_m5_best_distance_ticks": 683819
+  },
+  "C207": {
+    "vehicle_cap": 3,
+    "source": "local_bks",
+    "ours_m5_best_vehicles": 3,
+    "ours_m5_best_distance_ticks": 661621
+  },
+  "C208": {
+    "vehicle_cap": 3,
+    "source": "local_bks",
+    "ours_m5_best_vehicles": 3,
+    "ours_m5_best_distance_ticks": 717683
+  },
+  "R101": {
+    "vehicle_cap": 21,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 21,
+    "ours_m5_best_distance_ticks": 1948827
+  },
+  "R102": {
+    "vehicle_cap": 19,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 19,
+    "ours_m5_best_distance_ticks": 1744933
+  },
+  "R103": {
+    "vehicle_cap": 14,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 14,
+    "ours_m5_best_distance_ticks": 1546015
+  },
+  "R104": {
+    "vehicle_cap": 11,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 11,
+    "ours_m5_best_distance_ticks": 1241810
+  },
+  "R105": {
+    "vehicle_cap": 17,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 17,
+    "ours_m5_best_distance_ticks": 1683209
+  },
+  "R106": {
+    "vehicle_cap": 14,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 14,
+    "ours_m5_best_distance_ticks": 1545086
+  },
+  "R107": {
+    "vehicle_cap": 12,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 12,
+    "ours_m5_best_distance_ticks": 1479101
+  },
+  "R108": {
+    "vehicle_cap": 11,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 11,
+    "ours_m5_best_distance_ticks": 1274109
+  },
+  "R109": {
+    "vehicle_cap": 14,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 14,
+    "ours_m5_best_distance_ticks": 1458883
+  },
+  "R110": {
+    "vehicle_cap": 13,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 13,
+    "ours_m5_best_distance_ticks": 1463925
+  },
+  "R111": {
+    "vehicle_cap": 12,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 12,
+    "ours_m5_best_distance_ticks": 1453553
+  },
+  "R112": {
+    "vehicle_cap": 12,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 12,
+    "ours_m5_best_distance_ticks": 1508833
+  },
+  "R201": {
+    "vehicle_cap": 4,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 4,
+    "ours_m5_best_distance_ticks": 1534914
+  },
+  "R202": {
+    "vehicle_cap": 4,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 4,
+    "ours_m5_best_distance_ticks": 1622244
+  },
+  "R203": {
+    "vehicle_cap": 3,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 3,
+    "ours_m5_best_distance_ticks": 1300221
+  },
+  "R204": {
+    "vehicle_cap": 3,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 3,
+    "ours_m5_best_distance_ticks": 1331038
+  },
+  "R205": {
+    "vehicle_cap": 3,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 3,
+    "ours_m5_best_distance_ticks": 1303717
+  },
+  "R206": {
+    "vehicle_cap": 3,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 3,
+    "ours_m5_best_distance_ticks": 1533607
+  },
+  "R207": {
+    "vehicle_cap": 3,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 3,
+    "ours_m5_best_distance_ticks": 1035524
+  },
+  "R208": {
+    "vehicle_cap": 3,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 3,
+    "ours_m5_best_distance_ticks": 957965
+  },
+  "R209": {
+    "vehicle_cap": 3,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 3,
+    "ours_m5_best_distance_ticks": 1303297
+  },
+  "R210": {
+    "vehicle_cap": 3,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 3,
+    "ours_m5_best_distance_ticks": 1443660
+  },
+  "R211": {
+    "vehicle_cap": 3,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 3,
+    "ours_m5_best_distance_ticks": 1516434
+  },
+  "RC101": {
+    "vehicle_cap": 17,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 17,
+    "ours_m5_best_distance_ticks": 2197881
+  },
+  "RC102": {
+    "vehicle_cap": 15,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 15,
+    "ours_m5_best_distance_ticks": 1834933
+  },
+  "RC103": {
+    "vehicle_cap": 12,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 12,
+    "ours_m5_best_distance_ticks": 1731095
+  },
+  "RC104": {
+    "vehicle_cap": 11,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 11,
+    "ours_m5_best_distance_ticks": 1384807
+  },
+  "RC105": {
+    "vehicle_cap": 16,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 16,
+    "ours_m5_best_distance_ticks": 1901679
+  },
+  "RC106": {
+    "vehicle_cap": 15,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 15,
+    "ours_m5_best_distance_ticks": 1848588
+  },
+  "RC107": {
+    "vehicle_cap": 14,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 14,
+    "ours_m5_best_distance_ticks": 1714626
+  },
+  "RC108": {
+    "vehicle_cap": 13,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 13,
+    "ours_m5_best_distance_ticks": 1642483
+  },
+  "RC201": {
+    "vehicle_cap": 4,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 4,
+    "ours_m5_best_distance_ticks": 1837909
+  },
+  "RC202": {
+    "vehicle_cap": 4,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 4,
+    "ours_m5_best_distance_ticks": 1619243
+  },
+  "RC203": {
+    "vehicle_cap": 3,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 3,
+    "ours_m5_best_distance_ticks": 1437275
+  },
+  "RC204": {
+    "vehicle_cap": 3,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 3,
+    "ours_m5_best_distance_ticks": 1500593
+  },
+  "RC205": {
+    "vehicle_cap": 4,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 4,
+    "ours_m5_best_distance_ticks": 1828115
+  },
+  "RC206": {
+    "vehicle_cap": 4,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 4,
+    "ours_m5_best_distance_ticks": 1732495
+  },
+  "RC207": {
+    "vehicle_cap": 4,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 4,
+    "ours_m5_best_distance_ticks": 1907431
+  },
+  "RC208": {
+    "vehicle_cap": 3,
+    "source": "m5_best_of_seeds_0_1_2",
+    "ours_m5_best_vehicles": 3,
+    "ours_m5_best_distance_ticks": 1373172
+  }
+}

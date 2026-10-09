@@ -1,0 +1,5 @@
+iteration,current_vehicles,current_distance_ticks,candidate_vehicles,candidate_distance_ticks,candidate_feasible,best_vehicles,best_distance_ticks,accepted,event,elapsed_seconds,current_feasible,current_excess_load,current_time_warp,candidate_excess_load,candidate_time_warp,load_penalty,time_penalty,load_feasible_rate,time_feasible_rate,feasible_rate,penalty_updated,penalized_cost
+0,4,1907431,4,1907431,True,4,1907431,True,construction,0.156716,True,0,0,,,,,,,,False,
+1,4,1819027,4,1819027,False,4,1907431,True,candidate,0.450841,False,0,10469,0,10469,2594847,1000,1.0,0.0,0.0,False,1829496000
+2,4,1726510,4,1726510,False,4,1777431,True,best,0.476128,False,0,7241,0,7241,2205620,1250,1.0,0.0,0.0,True,1735561250
+3,4,1680038,4,1680038,True,4,1680038,True,best,0.500067,True,0,0,0,0,2205620,1250,1.0,1.0,1.0,False,1680038000

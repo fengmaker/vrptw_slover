@@ -1,0 +1,79 @@
+{
+  "ablation/baseline": {
+    "same_vehicles": 53,
+    "vehicles_more": 3,
+    "gap_median_percent": 21.0221,
+    "gap_p90_percent_nearest_rank": 57.8518,
+    "runtime_median_seconds": 0.5004365,
+    "runtime_max_seconds": 0.500704,
+    "first_feasible_median_seconds": 0.08022850000000001,
+    "first_feasible_max_seconds": 0.221197
+  },
+  "ablation/fixed_penalties": {
+    "same_vehicles": 53,
+    "vehicles_more": 3,
+    "gap_median_percent": 22.8836,
+    "gap_p90_percent_nearest_rank": 59.3857,
+    "runtime_median_seconds": 0.500312,
+    "runtime_max_seconds": 0.500524,
+    "first_feasible_median_seconds": 0.08007900000000001,
+    "first_feasible_max_seconds": 0.226454
+  },
+  "ablation/adaptive_penalties": {
+    "same_vehicles": 53,
+    "vehicles_more": 3,
+    "gap_median_percent": 22.8836,
+    "gap_p90_percent_nearest_rank": 59.3857,
+    "runtime_median_seconds": 0.500319,
+    "runtime_max_seconds": 0.500547,
+    "first_feasible_median_seconds": 0.08044000000000001,
+    "first_feasible_max_seconds": 0.222451
+  },
+  "ablation/adaptive_fast": {
+    "same_vehicles": 53,
+    "vehicles_more": 3,
+    "gap_median_percent": 22.5563,
+    "gap_p90_percent_nearest_rank": 59.772,
+    "runtime_median_seconds": 0.5003344999999999,
+    "runtime_max_seconds": 0.50054,
+    "first_feasible_median_seconds": 0.079579,
+    "first_feasible_max_seconds": 0.222431
+  },
+  "confirmation/baseline": {
+    "same_vehicles": 53,
+    "vehicles_more": 3,
+    "gap_median_percent": 21.8428,
+    "gap_p90_percent_nearest_rank": 63.9723,
+    "runtime_median_seconds": 0.5006045,
+    "runtime_max_seconds": 0.501416,
+    "first_feasible_median_seconds": 0.12092,
+    "first_feasible_max_seconds": 0.364216
+  },
+  "confirmation/adaptive_fast": {
+    "same_vehicles": 53,
+    "vehicles_more": 3,
+    "gap_median_percent": 23.6779,
+    "gap_p90_percent_nearest_rank": 64.6803,
+    "runtime_median_seconds": 0.5004495,
+    "runtime_max_seconds": 0.50101,
+    "first_feasible_median_seconds": 0.1238745,
+    "first_feasible_max_seconds": 0.37905
+  },
+  "delivery/": {
+    "same_vehicles": 53,
+    "vehicles_more": 3,
+    "gap_median_percent": 23.1035,
+    "gap_p90_percent_nearest_rank": 63.9723,
+    "runtime_median_seconds": 0.5006269999999999,
+    "runtime_max_seconds": 0.501195,
+    "first_feasible_median_seconds": 0.121591,
+    "first_feasible_max_seconds": 0.341563
+  },
+  "delivery_vs_confirmation_control": {
+    "fewer_vehicles": 0,
+    "more_vehicles": 0,
+    "better": 4,
+    "worse": 20,
+    "tie": 32
+  }
+}

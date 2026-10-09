@@ -1,0 +1,2 @@
+# Benchmark manifests hash exact bytes, including original line endings.
+benchmarks/** -text whitespace=cr-at-eol

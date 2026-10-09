@@ -1,0 +1,393 @@
+{
+  "schema_version": 1,
+  "experiment": "D:\\AAA-OR-Route\\solver\\vrptw_solver\\runs\\m10_diagnostics",
+  "experiment_manifest_sha256": "924a324c4d59d98343c133f70b7861af381198f4169a9b54554245e916fcf578",
+  "independently_verified_runs": 63,
+  "comparison_reference": "baseline",
+  "variants": {
+    "baseline": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": true,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic"
+      },
+      "config_sha256": "8f210b035a515932f7cc3d2196acc33ef79b0c0ffb15b463dbbfa311182548fc",
+      "code_sha256": "f5dbbefc3ae22bb6d00b5d163622c793b753a410a3f9c2988d5f6174cecde83a",
+      "source": "m9_baseline",
+      "runs": 21,
+      "comparison_vs_baseline": {
+        "better": 0,
+        "worse": 0,
+        "tie": 7,
+        "vehicles_better": 0,
+        "vehicles_worse": 0,
+        "vehicles_same": 7,
+        "same_vehicle_distance_better": 0,
+        "same_vehicle_distance_worse": 0,
+        "same_vehicle_distance_tie": 7
+      },
+      "comparison_by_family": {
+        "all": {
+          "better": 0,
+          "worse": 0,
+          "tie": 7,
+          "vehicles_better": 0,
+          "vehicles_worse": 0,
+          "vehicles_same": 7,
+          "same_vehicle_distance_better": 0,
+          "same_vehicle_distance_worse": 0,
+          "same_vehicle_distance_tie": 7
+        },
+        "C": {
+          "better": 0,
+          "worse": 0,
+          "tie": 2,
+          "vehicles_better": 0,
+          "vehicles_worse": 0,
+          "vehicles_same": 2,
+          "same_vehicle_distance_better": 0,
+          "same_vehicle_distance_worse": 0,
+          "same_vehicle_distance_tie": 2
+        },
+        "R": {
+          "better": 0,
+          "worse": 0,
+          "tie": 3,
+          "vehicles_better": 0,
+          "vehicles_worse": 0,
+          "vehicles_same": 3,
+          "same_vehicle_distance_better": 0,
+          "same_vehicle_distance_worse": 0,
+          "same_vehicle_distance_tie": 3
+        },
+        "RC": {
+          "better": 0,
+          "worse": 0,
+          "tie": 2,
+          "vehicles_better": 0,
+          "vehicles_worse": 0,
+          "vehicles_same": 2,
+          "same_vehicle_distance_better": 0,
+          "same_vehicle_distance_worse": 0,
+          "same_vehicle_distance_tie": 2
+        }
+      },
+      "runtime_and_iterations_by_family": {
+        "all": {
+          "runs": 21,
+          "runtime_median_seconds": 0.500449,
+          "runtime_p90_seconds_nearest_rank": 0.500479,
+          "runtime_mean_seconds": 0.5004465714285714,
+          "ils_runs": 21,
+          "ils_iterations": 22,
+          "iterations_mean": 1.0476190476190477
+        },
+        "C": {
+          "runs": 6,
+          "runtime_median_seconds": 0.500469,
+          "runtime_p90_seconds_nearest_rank": 0.500499,
+          "runtime_mean_seconds": 0.500471,
+          "ils_runs": 6,
+          "ils_iterations": 6,
+          "iterations_mean": 1.0
+        },
+        "R": {
+          "runs": 9,
+          "runtime_median_seconds": 0.500427,
+          "runtime_p90_seconds_nearest_rank": 0.500514,
+          "runtime_mean_seconds": 0.5004444444444444,
+          "ils_runs": 9,
+          "ils_iterations": 9,
+          "iterations_mean": 1.0
+        },
+        "RC": {
+          "runs": 6,
+          "runtime_median_seconds": 0.5004225,
+          "runtime_p90_seconds_nearest_rank": 0.500454,
+          "runtime_mean_seconds": 0.5004253333333333,
+          "ils_runs": 6,
+          "ils_iterations": 7,
+          "iterations_mean": 1.1666666666666667
+        }
+      }
+    },
+    "cached_reconstruct": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.95,
+        "fleet_strategy": "cached_reconstruct",
+        "fleet_repair_rounds": 5,
+        "fleet_related_count": 8,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": true,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic"
+      },
+      "config_sha256": "fe9e317dc0d5be18f5b0e1b43d42ceb7d8715a21a02cc6558344a1c24642fc50",
+      "code_sha256": "3356bdb31018267a03c9a865509206c85bc3fb0867b885cddddb15d2e448a902",
+      "source": "m10_candidate",
+      "runs": 21,
+      "comparison_vs_baseline": {
+        "better": 4,
+        "worse": 0,
+        "tie": 3,
+        "vehicles_better": 3,
+        "vehicles_worse": 0,
+        "vehicles_same": 4,
+        "same_vehicle_distance_better": 1,
+        "same_vehicle_distance_worse": 0,
+        "same_vehicle_distance_tie": 3
+      },
+      "comparison_by_family": {
+        "all": {
+          "better": 4,
+          "worse": 0,
+          "tie": 3,
+          "vehicles_better": 3,
+          "vehicles_worse": 0,
+          "vehicles_same": 4,
+          "same_vehicle_distance_better": 1,
+          "same_vehicle_distance_worse": 0,
+          "same_vehicle_distance_tie": 3
+        },
+        "C": {
+          "better": 0,
+          "worse": 0,
+          "tie": 2,
+          "vehicles_better": 0,
+          "vehicles_worse": 0,
+          "vehicles_same": 2,
+          "same_vehicle_distance_better": 0,
+          "same_vehicle_distance_worse": 0,
+          "same_vehicle_distance_tie": 2
+        },
+        "R": {
+          "better": 2,
+          "worse": 0,
+          "tie": 1,
+          "vehicles_better": 2,
+          "vehicles_worse": 0,
+          "vehicles_same": 1,
+          "same_vehicle_distance_better": 0,
+          "same_vehicle_distance_worse": 0,
+          "same_vehicle_distance_tie": 1
+        },
+        "RC": {
+          "better": 2,
+          "worse": 0,
+          "tie": 0,
+          "vehicles_better": 1,
+          "vehicles_worse": 0,
+          "vehicles_same": 1,
+          "same_vehicle_distance_better": 1,
+          "same_vehicle_distance_worse": 0,
+          "same_vehicle_distance_tie": 0
+        }
+      },
+      "runtime_and_iterations_by_family": {
+        "all": {
+          "runs": 21,
+          "runtime_median_seconds": 0.500431,
+          "runtime_p90_seconds_nearest_rank": 0.500476,
+          "runtime_mean_seconds": 0.5004544285714286,
+          "ils_runs": 21,
+          "ils_iterations": 23,
+          "iterations_mean": 1.0952380952380953
+        },
+        "C": {
+          "runs": 6,
+          "runtime_median_seconds": 0.500454,
+          "runtime_p90_seconds_nearest_rank": 0.500699,
+          "runtime_mean_seconds": 0.5004905000000001,
+          "ils_runs": 6,
+          "ils_iterations": 6,
+          "iterations_mean": 1.0
+        },
+        "R": {
+          "runs": 9,
+          "runtime_median_seconds": 0.500422,
+          "runtime_p90_seconds_nearest_rank": 0.50058,
+          "runtime_mean_seconds": 0.5004403333333333,
+          "ils_runs": 9,
+          "ils_iterations": 10,
+          "iterations_mean": 1.1111111111111112
+        },
+        "RC": {
+          "runs": 6,
+          "runtime_median_seconds": 0.5004390000000001,
+          "runtime_p90_seconds_nearest_rank": 0.500476,
+          "runtime_mean_seconds": 0.5004395,
+          "ils_runs": 6,
+          "ils_iterations": 7,
+          "iterations_mean": 1.1666666666666667
+        }
+      }
+    },
+    "hybrid_75": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.75,
+        "fleet_strategy": "hybrid",
+        "fleet_repair_rounds": 5,
+        "fleet_related_count": 8,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": true,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic"
+      },
+      "config_sha256": "9f6518e3e48e4394fc10b3465518456bce701f35ee16ca6af036477fbbd51c7a",
+      "code_sha256": "3356bdb31018267a03c9a865509206c85bc3fb0867b885cddddb15d2e448a902",
+      "source": "m10_candidate",
+      "runs": 21,
+      "comparison_vs_baseline": {
+        "better": 5,
+        "worse": 0,
+        "tie": 2,
+        "vehicles_better": 5,
+        "vehicles_worse": 0,
+        "vehicles_same": 2,
+        "same_vehicle_distance_better": 0,
+        "same_vehicle_distance_worse": 0,
+        "same_vehicle_distance_tie": 2
+      },
+      "comparison_by_family": {
+        "all": {
+          "better": 5,
+          "worse": 0,
+          "tie": 2,
+          "vehicles_better": 5,
+          "vehicles_worse": 0,
+          "vehicles_same": 2,
+          "same_vehicle_distance_better": 0,
+          "same_vehicle_distance_worse": 0,
+          "same_vehicle_distance_tie": 2
+        },
+        "C": {
+          "better": 0,
+          "worse": 0,
+          "tie": 2,
+          "vehicles_better": 0,
+          "vehicles_worse": 0,
+          "vehicles_same": 2,
+          "same_vehicle_distance_better": 0,
+          "same_vehicle_distance_worse": 0,
+          "same_vehicle_distance_tie": 2
+        },
+        "R": {
+          "better": 3,
+          "worse": 0,
+          "tie": 0,
+          "vehicles_better": 3,
+          "vehicles_worse": 0,
+          "vehicles_same": 0,
+          "same_vehicle_distance_better": 0,
+          "same_vehicle_distance_worse": 0,
+          "same_vehicle_distance_tie": 0
+        },
+        "RC": {
+          "better": 2,
+          "worse": 0,
+          "tie": 0,
+          "vehicles_better": 2,
+          "vehicles_worse": 0,
+          "vehicles_same": 0,
+          "same_vehicle_distance_better": 0,
+          "same_vehicle_distance_worse": 0,
+          "same_vehicle_distance_tie": 0
+        }
+      },
+      "runtime_and_iterations_by_family": {
+        "all": {
+          "runs": 21,
+          "runtime_median_seconds": 0.500463,
+          "runtime_p90_seconds_nearest_rank": 0.500479,
+          "runtime_mean_seconds": 0.5004605238095239,
+          "ils_runs": 21,
+          "ils_iterations": 21,
+          "iterations_mean": 1.0
+        },
+        "C": {
+          "runs": 6,
+          "runtime_median_seconds": 0.5004569999999999,
+          "runtime_p90_seconds_nearest_rank": 0.500468,
+          "runtime_mean_seconds": 0.5004563333333333,
+          "ils_runs": 6,
+          "ils_iterations": 6,
+          "iterations_mean": 1.0
+        },
+        "R": {
+          "runs": 9,
+          "runtime_median_seconds": 0.500463,
+          "runtime_p90_seconds_nearest_rank": 0.500514,
+          "runtime_mean_seconds": 0.5004624444444444,
+          "ils_runs": 9,
+          "ils_iterations": 9,
+          "iterations_mean": 1.0
+        },
+        "RC": {
+          "runs": 6,
+          "runtime_median_seconds": 0.5004675000000001,
+          "runtime_p90_seconds_nearest_rank": 0.500485,
+          "runtime_mean_seconds": 0.5004618333333334,
+          "ils_runs": 6,
+          "ils_iterations": 6,
+          "iterations_mean": 1.0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+solver,budget_seconds,run_count,feasible_true,feasible_false,feasible_unknown,status_counts_json
+ours,0.5,56,56,0,0,"{""feasible"": 56}"
+pyvrp,0.5,56,56,0,0,"{""feasible"": 56}"
+ortools,0.5,56,56,0,0,"{""found"": 56}"
+gurobi,0.5,56,27,29,0,"{""optimal"": 2, ""time_limit"": 54}"
+ours,5,56,56,0,0,"{""feasible"": 56}"
+pyvrp,5,56,56,0,0,"{""feasible"": 56}"
+ortools,5,56,56,0,0,"{""found"": 56}"
+gurobi,5,56,54,2,0,"{""optimal"": 3, ""time_limit"": 53}"

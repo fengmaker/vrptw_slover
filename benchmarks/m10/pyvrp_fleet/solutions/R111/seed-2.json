@@ -1,0 +1,151 @@
+{
+  "instance": "R111",
+  "seed": 2,
+  "budget_seconds": 0.5,
+  "fleet_time_fraction": 0.75,
+  "fleet_minimise_budget_seconds": 0.375,
+  "solve_budget_seconds": 0.11500130000058562,
+  "fleet_minimise_wall_seconds": 0.384998,
+  "solve_wall_seconds": 0.122706,
+  "total_solve_wall_seconds": 0.507766,
+  "initial_vehicle_cap": 13,
+  "cap_source": "deterministic_construct_due",
+  "reduced_vehicle_cap": 13,
+  "routes": [
+    [
+      73,
+      75,
+      23,
+      67,
+      39,
+      56,
+      55,
+      25,
+      54
+    ],
+    [
+      18,
+      45,
+      8,
+      60,
+      6
+    ],
+    [
+      95,
+      92,
+      98,
+      44,
+      14,
+      38,
+      86,
+      16,
+      91,
+      100,
+      37,
+      93
+    ],
+    [
+      27,
+      69,
+      88,
+      48,
+      82,
+      52
+    ],
+    [
+      42,
+      57,
+      15,
+      43,
+      41,
+      22,
+      74,
+      72,
+      58
+    ],
+    [
+      59,
+      85,
+      61,
+      84,
+      17,
+      5,
+      94,
+      13
+    ],
+    [
+      7,
+      19,
+      64,
+      49,
+      36,
+      47,
+      46,
+      83,
+      89
+    ],
+    [
+      50,
+      33,
+      81,
+      9,
+      35,
+      34,
+      3,
+      77
+    ],
+    [
+      62,
+      11,
+      63,
+      90,
+      32,
+      10,
+      31
+    ],
+    [
+      96,
+      99,
+      97,
+      87,
+      2,
+      21,
+      4,
+      26
+    ],
+    [
+      1,
+      30,
+      51,
+      71,
+      65,
+      66,
+      20,
+      70
+    ],
+    [
+      53,
+      40
+    ],
+    [
+      28,
+      76,
+      79,
+      78,
+      29,
+      24,
+      68,
+      80,
+      12
+    ]
+  ],
+  "vehicles": 13,
+  "distance_ticks": 1139735,
+  "numeric_rule": "solomon_exact_1000_v1",
+  "input_sha256": "3d94a73b1f2fe8aae4618b9d9ea254cff2e3924a6a841aa390096ec6c60f258d",
+  "solver_code_sha256": "3356bdb31018267a03c9a865509206c85bc3fb0867b885cddddb15d2e448a902",
+  "pyvrp_code_sha256": "6fd71826ecae172827414e5d363757d0f07acc6e2502001040cba9a8eed81f17",
+  "pyvrp_package_path": "D:\\AAA-OR-Route\\solver\\PyVRP-main\\pyvrp",
+  "script_sha256": "fd08bdb359bb7371bec5818b5b8b0fed52aa3d36a84af8506ed109ed33b121a8",
+  "config_sha256": "029d3463cc59df10cfaa996971ca05a1d7d3e041c3494b654913e35ab35edec4"
+}

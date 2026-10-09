@@ -1,0 +1,538 @@
+{
+  "schema_version": 1,
+  "experiment": "D:\\AAA-OR-Route\\solver\\vrptw_solver\\benchmarks\\m11\\ablation",
+  "experiment_manifest_sha256": "d7d47fffec19828c459650477cb2eed79021d4480117dc9b0318c7771fec578e",
+  "independently_verified_runs": 672,
+  "variants": {
+    "baseline": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.75,
+        "fleet_strategy": "hybrid",
+        "fleet_repair_rounds": 5,
+        "fleet_related_count": 8,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic",
+        "infeasible_search": false,
+        "adaptive_penalties": true,
+        "penalty_update_interval": 10,
+        "penalty_target_feasible": 0.5,
+        "penalty_max_moves": 8
+      },
+      "config_sha256": "b30f3eb99aa674c6696656b417bca3fea48cb5a37f6f0b55429d0a1c15549f4f",
+      "code_sha256": "153657d31d0a2c73de1efecde91d561f2bc3385b7604e2cb6ac55292ec1305ce",
+      "source": "m11_candidate",
+      "runs": 168,
+      "comparison_vs_baseline": {
+        "fewer_vehicles": 0,
+        "more_vehicles": 0,
+        "vehicles_same": 56,
+        "same_vehicle_distance_better": 0,
+        "same_vehicle_distance_worse": 0,
+        "same_vehicle_distance_tie": 56
+      },
+      "comparison_by_family": {
+        "all": {
+          "fewer_vehicles": 0,
+          "more_vehicles": 0,
+          "vehicles_same": 56,
+          "same_vehicle_distance_better": 0,
+          "same_vehicle_distance_worse": 0,
+          "same_vehicle_distance_tie": 56
+        },
+        "C": {
+          "fewer_vehicles": 0,
+          "more_vehicles": 0,
+          "vehicles_same": 17,
+          "same_vehicle_distance_better": 0,
+          "same_vehicle_distance_worse": 0,
+          "same_vehicle_distance_tie": 17
+        },
+        "R": {
+          "fewer_vehicles": 0,
+          "more_vehicles": 0,
+          "vehicles_same": 23,
+          "same_vehicle_distance_better": 0,
+          "same_vehicle_distance_worse": 0,
+          "same_vehicle_distance_tie": 23
+        },
+        "RC": {
+          "fewer_vehicles": 0,
+          "more_vehicles": 0,
+          "vehicles_same": 16,
+          "same_vehicle_distance_better": 0,
+          "same_vehicle_distance_worse": 0,
+          "same_vehicle_distance_tie": 16
+        }
+      },
+      "runtime_and_iterations_by_family": {
+        "all": {
+          "runs": 168,
+          "runtime_median_seconds": 0.5004365,
+          "runtime_p90_seconds_nearest_rank": 0.500477,
+          "runtime_mean_seconds": 0.5004390595238095,
+          "ils_runs": 168,
+          "ils_iterations": 177,
+          "iterations_mean": 1.0535714285714286
+        },
+        "C": {
+          "runs": 51,
+          "runtime_median_seconds": 0.500442,
+          "runtime_p90_seconds_nearest_rank": 0.500475,
+          "runtime_mean_seconds": 0.5004474901960785,
+          "ils_runs": 51,
+          "ils_iterations": 56,
+          "iterations_mean": 1.0980392156862746
+        },
+        "R": {
+          "runs": 69,
+          "runtime_median_seconds": 0.500433,
+          "runtime_p90_seconds_nearest_rank": 0.500468,
+          "runtime_mean_seconds": 0.5004338985507246,
+          "ils_runs": 69,
+          "ils_iterations": 71,
+          "iterations_mean": 1.0289855072463767
+        },
+        "RC": {
+          "runs": 48,
+          "runtime_median_seconds": 0.500442,
+          "runtime_p90_seconds_nearest_rank": 0.50048,
+          "runtime_mean_seconds": 0.5004375208333334,
+          "ils_runs": 48,
+          "ils_iterations": 50,
+          "iterations_mean": 1.0416666666666667
+        }
+      }
+    },
+    "fixed_penalties": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.75,
+        "fleet_strategy": "hybrid",
+        "fleet_repair_rounds": 5,
+        "fleet_related_count": 8,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic",
+        "infeasible_search": true,
+        "adaptive_penalties": false,
+        "penalty_update_interval": 10,
+        "penalty_target_feasible": 0.5,
+        "penalty_max_moves": 8
+      },
+      "config_sha256": "9af259c7c11070904d80dd5a1cf0aa0da21ced9d0dbd802897cb5a76fff6647c",
+      "code_sha256": "153657d31d0a2c73de1efecde91d561f2bc3385b7604e2cb6ac55292ec1305ce",
+      "source": "m11_candidate",
+      "runs": 168,
+      "comparison_vs_baseline": {
+        "fewer_vehicles": 0,
+        "more_vehicles": 0,
+        "vehicles_same": 56,
+        "same_vehicle_distance_better": 9,
+        "same_vehicle_distance_worse": 44,
+        "same_vehicle_distance_tie": 3
+      },
+      "comparison_by_family": {
+        "all": {
+          "fewer_vehicles": 0,
+          "more_vehicles": 0,
+          "vehicles_same": 56,
+          "same_vehicle_distance_better": 9,
+          "same_vehicle_distance_worse": 44,
+          "same_vehicle_distance_tie": 3
+        },
+        "C": {
+          "fewer_vehicles": 0,
+          "more_vehicles": 0,
+          "vehicles_same": 17,
+          "same_vehicle_distance_better": 6,
+          "same_vehicle_distance_worse": 10,
+          "same_vehicle_distance_tie": 1
+        },
+        "R": {
+          "fewer_vehicles": 0,
+          "more_vehicles": 0,
+          "vehicles_same": 23,
+          "same_vehicle_distance_better": 3,
+          "same_vehicle_distance_worse": 18,
+          "same_vehicle_distance_tie": 2
+        },
+        "RC": {
+          "fewer_vehicles": 0,
+          "more_vehicles": 0,
+          "vehicles_same": 16,
+          "same_vehicle_distance_better": 0,
+          "same_vehicle_distance_worse": 16,
+          "same_vehicle_distance_tie": 0
+        }
+      },
+      "runtime_and_iterations_by_family": {
+        "all": {
+          "runs": 168,
+          "runtime_median_seconds": 0.500312,
+          "runtime_p90_seconds_nearest_rank": 0.500359,
+          "runtime_mean_seconds": 0.5003188928571428,
+          "ils_runs": 168,
+          "ils_iterations": 423,
+          "iterations_mean": 2.517857142857143
+        },
+        "C": {
+          "runs": 51,
+          "runtime_median_seconds": 0.500308,
+          "runtime_p90_seconds_nearest_rank": 0.500337,
+          "runtime_mean_seconds": 0.5003110000000001,
+          "ils_runs": 51,
+          "ils_iterations": 153,
+          "iterations_mean": 3.0
+        },
+        "R": {
+          "runs": 69,
+          "runtime_median_seconds": 0.500313,
+          "runtime_p90_seconds_nearest_rank": 0.500369,
+          "runtime_mean_seconds": 0.5003253913043478,
+          "ils_runs": 69,
+          "ils_iterations": 155,
+          "iterations_mean": 2.246376811594203
+        },
+        "RC": {
+          "runs": 48,
+          "runtime_median_seconds": 0.5003195,
+          "runtime_p90_seconds_nearest_rank": 0.500354,
+          "runtime_mean_seconds": 0.5003179375,
+          "ils_runs": 48,
+          "ils_iterations": 115,
+          "iterations_mean": 2.3958333333333335
+        }
+      }
+    },
+    "adaptive_penalties": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.75,
+        "fleet_strategy": "hybrid",
+        "fleet_repair_rounds": 5,
+        "fleet_related_count": 8,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic",
+        "infeasible_search": true,
+        "adaptive_penalties": true,
+        "penalty_update_interval": 10,
+        "penalty_target_feasible": 0.5,
+        "penalty_max_moves": 8
+      },
+      "config_sha256": "0244e8dcb37436dea3ffae902c4faec9e36db3233d721500a9279a4ecd5f4d10",
+      "code_sha256": "153657d31d0a2c73de1efecde91d561f2bc3385b7604e2cb6ac55292ec1305ce",
+      "source": "m11_candidate",
+      "runs": 168,
+      "comparison_vs_baseline": {
+        "fewer_vehicles": 0,
+        "more_vehicles": 0,
+        "vehicles_same": 56,
+        "same_vehicle_distance_better": 9,
+        "same_vehicle_distance_worse": 44,
+        "same_vehicle_distance_tie": 3
+      },
+      "comparison_by_family": {
+        "all": {
+          "fewer_vehicles": 0,
+          "more_vehicles": 0,
+          "vehicles_same": 56,
+          "same_vehicle_distance_better": 9,
+          "same_vehicle_distance_worse": 44,
+          "same_vehicle_distance_tie": 3
+        },
+        "C": {
+          "fewer_vehicles": 0,
+          "more_vehicles": 0,
+          "vehicles_same": 17,
+          "same_vehicle_distance_better": 6,
+          "same_vehicle_distance_worse": 10,
+          "same_vehicle_distance_tie": 1
+        },
+        "R": {
+          "fewer_vehicles": 0,
+          "more_vehicles": 0,
+          "vehicles_same": 23,
+          "same_vehicle_distance_better": 3,
+          "same_vehicle_distance_worse": 18,
+          "same_vehicle_distance_tie": 2
+        },
+        "RC": {
+          "fewer_vehicles": 0,
+          "more_vehicles": 0,
+          "vehicles_same": 16,
+          "same_vehicle_distance_better": 0,
+          "same_vehicle_distance_worse": 16,
+          "same_vehicle_distance_tie": 0
+        }
+      },
+      "runtime_and_iterations_by_family": {
+        "all": {
+          "runs": 168,
+          "runtime_median_seconds": 0.500319,
+          "runtime_p90_seconds_nearest_rank": 0.500368,
+          "runtime_mean_seconds": 0.5003245238095237,
+          "ils_runs": 168,
+          "ils_iterations": 425,
+          "iterations_mean": 2.5297619047619047
+        },
+        "C": {
+          "runs": 51,
+          "runtime_median_seconds": 0.500314,
+          "runtime_p90_seconds_nearest_rank": 0.500343,
+          "runtime_mean_seconds": 0.5003203529411765,
+          "ils_runs": 51,
+          "ils_iterations": 154,
+          "iterations_mean": 3.019607843137255
+        },
+        "R": {
+          "runs": 69,
+          "runtime_median_seconds": 0.500316,
+          "runtime_p90_seconds_nearest_rank": 0.500368,
+          "runtime_mean_seconds": 0.500320768115942,
+          "ils_runs": 69,
+          "ils_iterations": 155,
+          "iterations_mean": 2.246376811594203
+        },
+        "RC": {
+          "runs": 48,
+          "runtime_median_seconds": 0.500326,
+          "runtime_p90_seconds_nearest_rank": 0.500395,
+          "runtime_mean_seconds": 0.5003343541666666,
+          "ils_runs": 48,
+          "ils_iterations": 116,
+          "iterations_mean": 2.4166666666666665
+        }
+      }
+    },
+    "adaptive_fast": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.75,
+        "fleet_strategy": "hybrid",
+        "fleet_repair_rounds": 5,
+        "fleet_related_count": 8,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic",
+        "infeasible_search": true,
+        "adaptive_penalties": true,
+        "penalty_update_interval": 2,
+        "penalty_target_feasible": 0.5,
+        "penalty_max_moves": 8
+      },
+      "config_sha256": "40e5b8c925f3a60b9d7498bb3c55bd818e35fb4f0e60f520f0bf55856338da33",
+      "code_sha256": "153657d31d0a2c73de1efecde91d561f2bc3385b7604e2cb6ac55292ec1305ce",
+      "source": "m11_candidate",
+      "runs": 168,
+      "comparison_vs_baseline": {
+        "fewer_vehicles": 0,
+        "more_vehicles": 0,
+        "vehicles_same": 56,
+        "same_vehicle_distance_better": 9,
+        "same_vehicle_distance_worse": 44,
+        "same_vehicle_distance_tie": 3
+      },
+      "comparison_by_family": {
+        "all": {
+          "fewer_vehicles": 0,
+          "more_vehicles": 0,
+          "vehicles_same": 56,
+          "same_vehicle_distance_better": 9,
+          "same_vehicle_distance_worse": 44,
+          "same_vehicle_distance_tie": 3
+        },
+        "C": {
+          "fewer_vehicles": 0,
+          "more_vehicles": 0,
+          "vehicles_same": 17,
+          "same_vehicle_distance_better": 5,
+          "same_vehicle_distance_worse": 11,
+          "same_vehicle_distance_tie": 1
+        },
+        "R": {
+          "fewer_vehicles": 0,
+          "more_vehicles": 0,
+          "vehicles_same": 23,
+          "same_vehicle_distance_better": 3,
+          "same_vehicle_distance_worse": 18,
+          "same_vehicle_distance_tie": 2
+        },
+        "RC": {
+          "fewer_vehicles": 0,
+          "more_vehicles": 0,
+          "vehicles_same": 16,
+          "same_vehicle_distance_better": 1,
+          "same_vehicle_distance_worse": 15,
+          "same_vehicle_distance_tie": 0
+        }
+      },
+      "runtime_and_iterations_by_family": {
+        "all": {
+          "runs": 168,
+          "runtime_median_seconds": 0.5003344999999999,
+          "runtime_p90_seconds_nearest_rank": 0.50039,
+          "runtime_mean_seconds": 0.5003419464285714,
+          "ils_runs": 168,
+          "ils_iterations": 419,
+          "iterations_mean": 2.494047619047619
+        },
+        "C": {
+          "runs": 51,
+          "runtime_median_seconds": 0.500329,
+          "runtime_p90_seconds_nearest_rank": 0.500366,
+          "runtime_mean_seconds": 0.5003360980392156,
+          "ils_runs": 51,
+          "ils_iterations": 151,
+          "iterations_mean": 2.9607843137254903
+        },
+        "R": {
+          "runs": 69,
+          "runtime_median_seconds": 0.500334,
+          "runtime_p90_seconds_nearest_rank": 0.500396,
+          "runtime_mean_seconds": 0.5003418115942029,
+          "ils_runs": 69,
+          "ils_iterations": 154,
+          "iterations_mean": 2.2318840579710146
+        },
+        "RC": {
+          "runs": 48,
+          "runtime_median_seconds": 0.5003475,
+          "runtime_p90_seconds_nearest_rank": 0.500398,
+          "runtime_mean_seconds": 0.5003483541666667,
+          "ils_runs": 48,
+          "ils_iterations": 114,
+          "iterations_mean": 2.375
+        }
+      }
+    }
+  },
+  "trajectory_by_variant": {
+    "baseline": {
+      "history_runs": 168,
+      "history_rows": 577,
+      "runs_with_current_feasibility": 168,
+      "current_infeasible_rows": 0,
+      "candidate_infeasible_rows": 0,
+      "penalty_update_rows": 0,
+      "mean_feasible_rate": null,
+      "mean_load_feasible_rate": null,
+      "mean_time_feasible_rate": null,
+      "median_final_load_penalty": null,
+      "median_final_time_penalty": null
+    },
+    "fixed_penalties": {
+      "history_runs": 168,
+      "history_rows": 823,
+      "runs_with_current_feasibility": 168,
+      "current_infeasible_rows": 322,
+      "candidate_infeasible_rows": 323,
+      "penalty_update_rows": 0,
+      "mean_feasible_rate": 0.23401253330331345,
+      "mean_load_feasible_rate": 0.8881787309092274,
+      "mean_time_feasible_rate": 0.2738010807159743,
+      "median_final_load_penalty": 2328646.0,
+      "median_final_time_penalty": 1000.0
+    },
+    "adaptive_penalties": {
+      "history_runs": 168,
+      "history_rows": 825,
+      "runs_with_current_feasibility": 168,
+      "current_infeasible_rows": 323,
+      "candidate_infeasible_rows": 325,
+      "penalty_update_rows": 2,
+      "mean_feasible_rate": 0.23169561157796453,
+      "mean_load_feasible_rate": 0.8857245564892624,
+      "mean_time_feasible_rate": 0.2724733893557423,
+      "median_final_load_penalty": 2328646.0,
+      "median_final_time_penalty": 1000.0
+    },
+    "adaptive_fast": {
+      "history_runs": 168,
+      "history_rows": 820,
+      "runs_with_current_feasibility": 168,
+      "current_infeasible_rows": 321,
+      "candidate_infeasible_rows": 323,
+      "penalty_update_rows": 170,
+      "mean_feasible_rate": 0.23031026252983294,
+      "mean_load_feasible_rate": 0.8735083532219571,
+      "mean_time_feasible_rate": 0.26968973747016706,
+      "median_final_load_penalty": 1979349.0,
+      "median_final_time_penalty": 1250.0
+    }
+  }
+}

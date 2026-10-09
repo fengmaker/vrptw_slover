@@ -1,0 +1,177 @@
+{
+  "solver": "pyvrp",
+  "instance": "R110",
+  "budget_seconds": 5.0,
+  "seed": 0,
+  "vehicle_cap": 25,
+  "fixed_vehicle_cost": 11478876,
+  "status": "feasible",
+  "feasible": true,
+  "vehicles": 14,
+  "distance_ticks": 1201092,
+  "distance": 1201.092,
+  "preparation_seconds": 0.001141300002927892,
+  "search_seconds": 5.006099699996412,
+  "solver_runtime_seconds": 4.996748599995044,
+  "validation_seconds": 0.0005210000017541461,
+  "total_seconds": 5.009365099998831,
+  "first_feasible_seconds": "",
+  "iterations": 812,
+  "adapter_seconds": 5.008844099997077,
+  "postprocessing_seconds": 0.001603099997737445,
+  "input_sha256": "14cb53cb99af61d3d708f07564b9a72d146e7c26b4f10507cfaf3bc828f34bfa",
+  "source_sha256": "4ccf2642f91c10e5ef78d549cf8ed0088696fccc6f0da27cfce273e5cd458c2d",
+  "error": "",
+  "metadata_json": "{\"version\": \"0.13.0a0\", \"algorithm\": \"local checkout IteratedLocalSearch\", \"time_limit_clock\": \"anchored before solve(), including initial solution and search setup\", \"seed_supported\": true, \"fixed_vehicle_cost\": 11478876, \"internal_feasible\": true, \"scalar_objective\": 161905356, \"internal_distance_ticks\": 1201092, \"internal_vehicles\": 14}",
+  "solution_path": "results/5s/R110/pyvrp-seed-0.json",
+  "response": {
+    "routes": [
+      [
+        5,
+        61,
+        16,
+        86,
+        38,
+        44,
+        91,
+        100,
+        13
+      ],
+      [
+        28,
+        76,
+        77,
+        3,
+        79,
+        50
+      ],
+      [
+        95,
+        59,
+        98,
+        85,
+        93,
+        99,
+        94,
+        6
+      ],
+      [
+        18,
+        7
+      ],
+      [
+        2,
+        57,
+        15,
+        43,
+        14,
+        37,
+        92
+      ],
+      [
+        53,
+        58,
+        87,
+        42,
+        97,
+        96
+      ],
+      [
+        41,
+        22,
+        75,
+        56,
+        23,
+        67,
+        39,
+        25,
+        55
+      ],
+      [
+        31,
+        70,
+        30,
+        71,
+        65,
+        35,
+        78,
+        68
+      ],
+      [
+        12,
+        80,
+        29,
+        34,
+        24,
+        54
+      ],
+      [
+        82,
+        47,
+        36,
+        49,
+        64,
+        11,
+        62
+      ],
+      [
+        27,
+        69,
+        51,
+        33,
+        81,
+        9,
+        20,
+        66,
+        1
+      ],
+      [
+        83,
+        84,
+        17,
+        8,
+        48,
+        46,
+        45,
+        60,
+        89
+      ],
+      [
+        40,
+        21,
+        73,
+        74,
+        72,
+        4,
+        26
+      ],
+      [
+        52,
+        88,
+        19,
+        63,
+        90,
+        32,
+        10
+      ]
+    ],
+    "status": "feasible",
+    "preparation_seconds": 0.001141300002927892,
+    "search_seconds": 5.006099699996412,
+    "solver_runtime_seconds": 4.996748599995044,
+    "iterations": 812,
+    "metadata": {
+      "version": "0.13.0a0",
+      "algorithm": "local checkout IteratedLocalSearch",
+      "time_limit_clock": "anchored before solve(), including initial solution and search setup",
+      "seed_supported": true,
+      "fixed_vehicle_cost": 11478876,
+      "internal_feasible": true,
+      "scalar_objective": 161905356,
+      "internal_distance_ticks": 1201092,
+      "internal_vehicles": 14
+    },
+    "adapter_seconds": 5.008844099997077
+  },
+  "completed_at": "2026-10-09T17:22:54.989611+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "R101": {
+    "vehicle_cap": 20,
+    "source": "M10_all_batches_frozen_request"
+  },
+  "R105": {
+    "vehicle_cap": 16,
+    "source": "M10_all_batches_frozen_request"
+  },
+  "RC106": {
+    "vehicle_cap": 14,
+    "source": "M10_all_batches_frozen_request"
+  }
+}

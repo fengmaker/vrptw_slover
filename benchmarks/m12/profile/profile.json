@@ -1,0 +1,394 @@
+{
+  "code_sha256": "153657d31d0a2c73de1efecde91d561f2bc3385b7604e2cb6ac55292ec1305ce",
+  "note": "cProfile and diagnostics change timing; scope diagnosis only",
+  "cases": [
+    {
+      "instance": "C103",
+      "runtime_seconds": 0.5010798000002978,
+      "iterations": 1,
+      "functions": [
+        {
+          "file": "route_cache.py",
+          "line": 67,
+          "function": "evaluate",
+          "calls": 15059,
+          "own_seconds": 0.07024760000000001,
+          "cumulative_seconds": 0.11093330000000001
+        },
+        {
+          "file": "local_search.py",
+          "line": 53,
+          "function": "apply_move",
+          "calls": 8037,
+          "own_seconds": 0.0193411,
+          "cumulative_seconds": 0.0270909
+        },
+        {
+          "file": "local_search.py",
+          "line": 141,
+          "function": "enumerate_moves",
+          "calls": 8015,
+          "own_seconds": 0.0060829000000000005,
+          "cumulative_seconds": 0.0131683
+        },
+        {
+          "file": "local_search.py",
+          "line": 238,
+          "function": "delta",
+          "calls": 8014,
+          "own_seconds": 0.0478842,
+          "cumulative_seconds": 0.22748120000000002
+        },
+        {
+          "file": "local_search.py",
+          "line": 272,
+          "function": "improve",
+          "calls": 1,
+          "own_seconds": 0.0076471,
+          "cumulative_seconds": 0.2629677
+        }
+      ],
+      "phases": [
+        {
+          "phase": "construction",
+          "seconds": 0.2190349000011338,
+          "candidates": 5715,
+          "accepted": 100
+        },
+        {
+          "phase": "fleet_reduction",
+          "seconds": 0.0004698999982792884,
+          "candidates": 0,
+          "accepted": 0
+        },
+        {
+          "phase": "perturbation",
+          "seconds": 0.00020180000137770548,
+          "candidates": 0,
+          "accepted": 0
+        },
+        {
+          "phase": "repair",
+          "seconds": 0.015966899998602457,
+          "candidates": 361,
+          "accepted": 6
+        },
+        {
+          "phase": "local_search",
+          "seconds": 0.26303159999952186,
+          "candidates": 8014,
+          "accepted": 23
+        },
+        {
+          "phase": "ils_control",
+          "seconds": 0.0010712000002968125,
+          "candidates": 0,
+          "accepted": 0
+        },
+        {
+          "phase": "validation",
+          "seconds": 0.0008519000039086677,
+          "candidates": 0,
+          "accepted": 0
+        },
+        {
+          "phase": "other",
+          "seconds": 0.0004515999971772544,
+          "candidates": 0,
+          "accepted": 0
+        }
+      ]
+    },
+    {
+      "instance": "C104",
+      "runtime_seconds": 0.5010417000012239,
+      "iterations": 1,
+      "functions": [
+        {
+          "file": "route_cache.py",
+          "line": 67,
+          "function": "evaluate",
+          "calls": 14640,
+          "own_seconds": 0.07106230000000001,
+          "cumulative_seconds": 0.1120899
+        },
+        {
+          "file": "local_search.py",
+          "line": 53,
+          "function": "apply_move",
+          "calls": 8233,
+          "own_seconds": 0.020510200000000003,
+          "cumulative_seconds": 0.029104400000000002
+        },
+        {
+          "file": "local_search.py",
+          "line": 141,
+          "function": "enumerate_moves",
+          "calls": 8211,
+          "own_seconds": 0.0058113,
+          "cumulative_seconds": 0.0129481
+        },
+        {
+          "file": "local_search.py",
+          "line": 238,
+          "function": "delta",
+          "calls": 8210,
+          "own_seconds": 0.049493,
+          "cumulative_seconds": 0.2333655
+        },
+        {
+          "file": "local_search.py",
+          "line": 272,
+          "function": "improve",
+          "calls": 1,
+          "own_seconds": 0.00772,
+          "cumulative_seconds": 0.26827870000000004
+        }
+      ],
+      "phases": [
+        {
+          "phase": "construction",
+          "seconds": 0.2142723999932059,
+          "candidates": 5575,
+          "accepted": 100
+        },
+        {
+          "phase": "fleet_reduction",
+          "seconds": 0.0005364999960875139,
+          "candidates": 0,
+          "accepted": 0
+        },
+        {
+          "phase": "perturbation",
+          "seconds": 0.0001748999929986894,
+          "candidates": 0,
+          "accepted": 0
+        },
+        {
+          "phase": "repair",
+          "seconds": 0.01566840000305092,
+          "candidates": 384,
+          "accepted": 6
+        },
+        {
+          "phase": "local_search",
+          "seconds": 0.26831779999338323,
+          "candidates": 8210,
+          "accepted": 23
+        },
+        {
+          "phase": "ils_control",
+          "seconds": 0.0011084000070695765,
+          "candidates": 0,
+          "accepted": 0
+        },
+        {
+          "phase": "validation",
+          "seconds": 0.0008453000045847148,
+          "candidates": 0,
+          "accepted": 0
+        },
+        {
+          "phase": "other",
+          "seconds": 0.00011800001084338874,
+          "candidates": 0,
+          "accepted": 0
+        }
+      ]
+    },
+    {
+      "instance": "R101",
+      "runtime_seconds": 0.5011291000046185,
+      "iterations": 1,
+      "functions": [
+        {
+          "file": "route_cache.py",
+          "line": 67,
+          "function": "evaluate",
+          "calls": 4548,
+          "own_seconds": 0.0163517,
+          "cumulative_seconds": 0.0258724
+        },
+        {
+          "file": "local_search.py",
+          "line": 53,
+          "function": "apply_move",
+          "calls": 2434,
+          "own_seconds": 0.005897800000000001,
+          "cumulative_seconds": 0.008439
+        },
+        {
+          "file": "local_search.py",
+          "line": 141,
+          "function": "enumerate_moves",
+          "calls": 2432,
+          "own_seconds": 0.0017326000000000002,
+          "cumulative_seconds": 0.0037222
+        },
+        {
+          "file": "local_search.py",
+          "line": 238,
+          "function": "delta",
+          "calls": 2431,
+          "own_seconds": 0.0144311,
+          "cumulative_seconds": 0.060694200000000004
+        },
+        {
+          "file": "local_search.py",
+          "line": 272,
+          "function": "improve",
+          "calls": 1,
+          "own_seconds": 0.0021833,
+          "cumulative_seconds": 0.069358
+        }
+      ],
+      "phases": [
+        {
+          "phase": "construction",
+          "seconds": 0.1410933999941335,
+          "candidates": 6754,
+          "accepted": 100
+        },
+        {
+          "phase": "fleet_reduction",
+          "seconds": 0.050014800021017436,
+          "candidates": 0,
+          "accepted": 0
+        },
+        {
+          "phase": "perturbation",
+          "seconds": 0.00016940000205067918,
+          "candidates": 0,
+          "accepted": 0
+        },
+        {
+          "phase": "repair",
+          "seconds": 0.23832479998236522,
+          "candidates": 44864,
+          "accepted": 403
+        },
+        {
+          "phase": "local_search",
+          "seconds": 0.06940960000065388,
+          "candidates": 2431,
+          "accepted": 3
+        },
+        {
+          "phase": "ils_control",
+          "seconds": 0.0010870999976759776,
+          "candidates": 0,
+          "accepted": 0
+        },
+        {
+          "phase": "validation",
+          "seconds": 0.0009006999971461482,
+          "candidates": 0,
+          "accepted": 0
+        },
+        {
+          "phase": "other",
+          "seconds": 0.00012930000957567245,
+          "candidates": 0,
+          "accepted": 0
+        }
+      ]
+    },
+    {
+      "instance": "RC101",
+      "runtime_seconds": 0.5015789999961271,
+      "iterations": 1,
+      "functions": [
+        {
+          "file": "route_cache.py",
+          "line": 67,
+          "function": "evaluate",
+          "calls": 3701,
+          "own_seconds": 0.0155014,
+          "cumulative_seconds": 0.024518500000000002
+        },
+        {
+          "file": "local_search.py",
+          "line": 53,
+          "function": "apply_move",
+          "calls": 1988,
+          "own_seconds": 0.004884,
+          "cumulative_seconds": 0.0066728
+        },
+        {
+          "file": "local_search.py",
+          "line": 141,
+          "function": "enumerate_moves",
+          "calls": 1985,
+          "own_seconds": 0.0017737,
+          "cumulative_seconds": 0.0036617000000000004
+        },
+        {
+          "file": "local_search.py",
+          "line": 238,
+          "function": "delta",
+          "calls": 1984,
+          "own_seconds": 0.0120038,
+          "cumulative_seconds": 0.053375900000000004
+        },
+        {
+          "file": "local_search.py",
+          "line": 272,
+          "function": "improve",
+          "calls": 1,
+          "own_seconds": 0.0018486000000000002,
+          "cumulative_seconds": 0.0622062
+        }
+      ],
+      "phases": [
+        {
+          "phase": "construction",
+          "seconds": 0.15513060000375845,
+          "candidates": 6468,
+          "accepted": 100
+        },
+        {
+          "phase": "fleet_reduction",
+          "seconds": 0.04447149998304667,
+          "candidates": 0,
+          "accepted": 0
+        },
+        {
+          "phase": "perturbation",
+          "seconds": 0.00025469999673077837,
+          "candidates": 0,
+          "accepted": 0
+        },
+        {
+          "phase": "repair",
+          "seconds": 0.2364933000135352,
+          "candidates": 40745,
+          "accepted": 430
+        },
+        {
+          "phase": "local_search",
+          "seconds": 0.06226579999929527,
+          "candidates": 1984,
+          "accepted": 4
+        },
+        {
+          "phase": "ils_control",
+          "seconds": 0.0015732000028947368,
+          "candidates": 0,
+          "accepted": 0
+        },
+        {
+          "phase": "validation",
+          "seconds": 0.0012205999955767766,
+          "candidates": 0,
+          "accepted": 0
+        },
+        {
+          "phase": "other",
+          "seconds": 0.00016930000128922984,
+          "candidates": 0,
+          "accepted": 0
+        }
+      ]
+    }
+  ]
+}

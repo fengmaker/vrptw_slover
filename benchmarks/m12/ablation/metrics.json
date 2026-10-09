@@ -1,0 +1,364 @@
+{
+  "schema_version": 1,
+  "experiment": "M12 paired Python/native search backend",
+  "independently_verified_runs": 336,
+  "paired_cases": 168,
+  "comparison_vs_python": {
+    "all": {
+      "cases": 168,
+      "better": 160,
+      "worse": 2,
+      "tie": 6,
+      "vehicles_better": 0,
+      "vehicles_worse": 1,
+      "vehicles_same": 167,
+      "same_vehicle_distance_delta_ticks": {
+        "count": 167,
+        "median": -143781.0,
+        "p90_nearest_rank": -41953.0,
+        "mean": -175806.1497005988
+      }
+    },
+    "C": {
+      "cases": 51,
+      "better": 47,
+      "worse": 0,
+      "tie": 4,
+      "vehicles_better": 0,
+      "vehicles_worse": 0,
+      "vehicles_same": 51,
+      "same_vehicle_distance_delta_ticks": {
+        "count": 51,
+        "median": -104702.0,
+        "p90_nearest_rank": -2640.0,
+        "mean": -182632.0
+      }
+    },
+    "R": {
+      "cases": 69,
+      "better": 65,
+      "worse": 2,
+      "tie": 2,
+      "vehicles_better": 0,
+      "vehicles_worse": 1,
+      "vehicles_same": 68,
+      "same_vehicle_distance_delta_ticks": {
+        "count": 68,
+        "median": -121223.0,
+        "p90_nearest_rank": -41567.0,
+        "mean": -125408.35294117648
+      }
+    },
+    "RC": {
+      "cases": 48,
+      "better": 48,
+      "worse": 0,
+      "tie": 0,
+      "vehicles_better": 0,
+      "vehicles_worse": 0,
+      "vehicles_same": 48,
+      "same_vehicle_distance_delta_ticks": {
+        "count": 48,
+        "median": -208914.5,
+        "p90_nearest_rank": -81570.0,
+        "mean": -239950.5625
+      }
+    }
+  },
+  "all_native_regressions": [
+    {
+      "instance": "R205",
+      "seed": 2,
+      "family": "R",
+      "python_vehicles": 3,
+      "python_distance_ticks": 1401461,
+      "native_vehicles": 4,
+      "native_distance_ticks": 1517119,
+      "vehicles_delta": 1,
+      "distance_delta_ticks": "",
+      "result_vs_python": "worse",
+      "same_vehicle_distance_result": "not_compared",
+      "is_regression": true
+    },
+    {
+      "instance": "R211",
+      "seed": 0,
+      "family": "R",
+      "python_vehicles": 3,
+      "python_distance_ticks": 1507631,
+      "native_vehicles": 3,
+      "native_distance_ticks": 1516434,
+      "vehicles_delta": 0,
+      "distance_delta_ticks": 8803,
+      "result_vs_python": "worse",
+      "same_vehicle_distance_result": "worse",
+      "is_regression": true
+    }
+  ],
+  "best_by_instance_native_regressions": [],
+  "variants": {
+    "python": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.75,
+        "fleet_strategy": "hybrid",
+        "fleet_repair_rounds": 5,
+        "fleet_related_count": 8,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "search_backend": "python",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic",
+        "infeasible_search": false,
+        "adaptive_penalties": true,
+        "penalty_update_interval": 10,
+        "penalty_target_feasible": 0.5,
+        "penalty_max_moves": 8
+      },
+      "config_sha256": "18b60bd1f8a3f3a3299830e92120a9841e4fb04a4b6fc31094cbf2c6e0a24ff8",
+      "code_sha256": "a5385b24e1b1e895647141e361fbfd125f69b22b8101a03a5bf03d0a059bf87a",
+      "binary_sha256": "604462f386c003e397cd55934c67735731d9683e762902ff4d23fad1f410c0bb",
+      "runs": 168,
+      "runtime_first_feasible_iterations_by_family": {
+        "all": {
+          "runs": 168,
+          "runtime_seconds": {
+            "count": 168,
+            "median": 0.500618,
+            "p90_nearest_rank": 0.500957,
+            "mean": 0.5006692797619048
+          },
+          "first_feasible_seconds": {
+            "count": 168,
+            "median": 0.146313,
+            "p90_nearest_rank": 0.301042,
+            "mean": 0.17924033928571428
+          },
+          "iterations": {
+            "count": 168,
+            "median": 1.0,
+            "p90_nearest_rank": 1.0,
+            "mean": 1.0476190476190477
+          },
+          "total_iterations": 176
+        },
+        "C": {
+          "runs": 51,
+          "runtime_seconds": {
+            "count": 51,
+            "median": 0.500611,
+            "p90_nearest_rank": 0.500955,
+            "mean": 0.5006563137254902
+          },
+          "first_feasible_seconds": {
+            "count": 51,
+            "median": 0.132693,
+            "p90_nearest_rank": 0.28295,
+            "mean": 0.18489245098039217
+          },
+          "iterations": {
+            "count": 51,
+            "median": 1.0,
+            "p90_nearest_rank": 1.0,
+            "mean": 1.0784313725490196
+          },
+          "total_iterations": 55
+        },
+        "R": {
+          "runs": 69,
+          "runtime_seconds": {
+            "count": 69,
+            "median": 0.500647,
+            "p90_nearest_rank": 0.50106,
+            "mean": 0.5007015652173913
+          },
+          "first_feasible_seconds": {
+            "count": 69,
+            "median": 0.151063,
+            "p90_nearest_rank": 0.322015,
+            "mean": 0.1927635072463768
+          },
+          "iterations": {
+            "count": 69,
+            "median": 1.0,
+            "p90_nearest_rank": 1.0,
+            "mean": 1.0289855072463767
+          },
+          "total_iterations": 71
+        },
+        "RC": {
+          "runs": 48,
+          "runtime_seconds": {
+            "count": 48,
+            "median": 0.500605,
+            "p90_nearest_rank": 0.500876,
+            "mean": 0.5006366458333333
+          },
+          "first_feasible_seconds": {
+            "count": 48,
+            "median": 0.158899,
+            "p90_nearest_rank": 0.222758,
+            "mean": 0.15379541666666666
+          },
+          "iterations": {
+            "count": 48,
+            "median": 1.0,
+            "p90_nearest_rank": 1.0,
+            "mean": 1.0416666666666667
+          },
+          "total_iterations": 50
+        }
+      },
+      "diagnostics_candidate_move_summary": null
+    },
+    "native": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.75,
+        "fleet_strategy": "hybrid",
+        "fleet_repair_rounds": 5,
+        "fleet_related_count": 8,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "search_backend": "native",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic",
+        "infeasible_search": false,
+        "adaptive_penalties": true,
+        "penalty_update_interval": 10,
+        "penalty_target_feasible": 0.5,
+        "penalty_max_moves": 8
+      },
+      "config_sha256": "e430e84b5044a1954983f6d380c1155f165e447205dd568d22a78596fa5f0602",
+      "code_sha256": "a5385b24e1b1e895647141e361fbfd125f69b22b8101a03a5bf03d0a059bf87a",
+      "binary_sha256": "604462f386c003e397cd55934c67735731d9683e762902ff4d23fad1f410c0bb",
+      "runs": 168,
+      "runtime_first_feasible_iterations_by_family": {
+        "all": {
+          "runs": 168,
+          "runtime_seconds": {
+            "count": 168,
+            "median": 0.500615,
+            "p90_nearest_rank": 0.501001,
+            "mean": 0.5006537083333333
+          },
+          "first_feasible_seconds": {
+            "count": 168,
+            "median": 0.1475715,
+            "p90_nearest_rank": 0.312862,
+            "mean": 0.18090769047619049
+          },
+          "iterations": {
+            "count": 168,
+            "median": 1.0,
+            "p90_nearest_rank": 9.0,
+            "mean": 2.880952380952381
+          },
+          "total_iterations": 484
+        },
+        "C": {
+          "runs": 51,
+          "runtime_seconds": {
+            "count": 51,
+            "median": 0.500537,
+            "p90_nearest_rank": 0.500958,
+            "mean": 0.5005355098039216
+          },
+          "first_feasible_seconds": {
+            "count": 51,
+            "median": 0.134834,
+            "p90_nearest_rank": 0.315324,
+            "mean": 0.18935086274509802
+          },
+          "iterations": {
+            "count": 51,
+            "median": 5.0,
+            "p90_nearest_rank": 15.0,
+            "mean": 7.019607843137255
+          },
+          "total_iterations": 358
+        },
+        "R": {
+          "runs": 69,
+          "runtime_seconds": {
+            "count": 69,
+            "median": 0.500638,
+            "p90_nearest_rank": 0.501131,
+            "mean": 0.5007295942028985
+          },
+          "first_feasible_seconds": {
+            "count": 69,
+            "median": 0.169482,
+            "p90_nearest_rank": 0.322707,
+            "mean": 0.19359995652173914
+          },
+          "iterations": {
+            "count": 69,
+            "median": 1.0,
+            "p90_nearest_rank": 1.0,
+            "mean": 1.0724637681159421
+          },
+          "total_iterations": 74
+        },
+        "RC": {
+          "runs": 48,
+          "runtime_seconds": {
+            "count": 48,
+            "median": 0.500631,
+            "p90_nearest_rank": 0.500911,
+            "mean": 0.5006702083333333
+          },
+          "first_feasible_seconds": {
+            "count": 48,
+            "median": 0.1581175,
+            "p90_nearest_rank": 0.224002,
+            "mean": 0.1536916875
+          },
+          "iterations": {
+            "count": 48,
+            "median": 1.0,
+            "p90_nearest_rank": 1.0,
+            "mean": 1.0833333333333333
+          },
+          "total_iterations": 52
+        }
+      },
+      "diagnostics_candidate_move_summary": null
+    }
+  },
+  "experiment_manifest_sha256": "1f7503d7c169b174941f70e959c2a6929390f3053e1f7d6864aa78d24427d4a4"
+}

@@ -1,0 +1,611 @@
+{
+  "schema_version": 1,
+  "experiment": "M12 paired Python/native search backend",
+  "status": "completed",
+  "started_at_utc": "2026-10-09T16:31:58.213132+00:00",
+  "finished_at_utc": "2026-10-09T16:32:11.388234+00:00",
+  "data_directory": "D:\\AAA-OR-Route\\solver\\vrptw_solver\\data",
+  "instances": [
+    "C103",
+    "C104",
+    "R101",
+    "RC101"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "time_limit_seconds": 0.5,
+  "max_iterations": null,
+  "threads": 1,
+  "diagnostics_enabled": true,
+  "numeric_rule": "solomon_exact_1000_v1",
+  "runner_sha256": "098324761bc56897af6cfff2ea96b02671851e5fbf3474aaec5f7b2395c8cbb9",
+  "input_sha256": {
+    "C103": "a55cabf15e0da9d65696a5fb45c9852889479893f76f772a428ca15d1b415a51",
+    "C104": "fe333e81625ee5a75bb2ce98c2c9f356d07289237865b62a23ba2f32f0de5ee2",
+    "R101": "3f3655182bc0fe44ce5de65fdcd2ee2f9c7fb9ed055f923635151d9d6f76d3ed",
+    "RC101": "ef6893ffd9746ad96de8e4da6e64e2c4ba6e08a1c7eb9457276a9f1caf01ca12"
+  },
+  "environment": {
+    "python": "3.12.4",
+    "platform": "Windows-11-10.0.22621-SP0",
+    "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+    "cpu_count": 16
+  },
+  "provenance_files": {
+    "provenance/benchmarks/m12_experiment.py": "098324761bc56897af6cfff2ea96b02671851e5fbf3474aaec5f7b2395c8cbb9",
+    "provenance/native/moves.cpp": "6114cbe0c93ff48de76d74a5be17c84dffff07fbec6e241ebb1f21f8ba61c30a",
+    "provenance/setup.py": "1ea8ae1ae8b21d3b411b36e30eea3747cc5f30c8142ecfe7375929c1852618d6",
+    "provenance/pyproject.toml": "d191c5934ee9e5ff5159912cff4ea4f843b36ca1a995f3e1f378680053c6892f"
+  },
+  "source": {
+    "sha256": "a5385b24e1b1e895647141e361fbfd125f69b22b8101a03a5bf03d0a059bf87a",
+    "package": "source/a5385b24e1b1e895647141e361fbfd125f69b22b8101a03a5bf03d0a059bf87a/vrptw",
+    "file_sha256": {
+      "__init__.py": "24fbd73d60ab61392e23536eef199bb3f9a08822af7e648ab6eb630972ae66e4",
+      "__main__.py": "cbff5854de83672e43badbdee38c7547599695cfda7811f5bcda97dcb2fd2966",
+      "_native.cp312-win_amd64.pyd": "604462f386c003e397cd55934c67735731d9683e762902ff4d23fad1f410c0bb",
+      "cli.py": "e6aed117f9b2485e6e2cd7cbc483bc5aca76d276f722c2970972a13cd7284e0b",
+      "construct.py": "4a5d81630b6e5e6cd5f4fbe74c01e1769fe461e60f1bcc22a400e8a7720e3f36",
+      "diagnostics.py": "2f6315e8e18816ac9db1b32f43512f547679a9d516eafd85809097e9c1756b8c",
+      "evaluate.py": "8eb713c447eeaa5a08acf8af470f6c144db7d029089f552a622fc5fffd9c5dc3",
+      "fleet.py": "622c1935a094375066dd7091e5b118e267179907c47afca1f1e6e2da31ce3a5b",
+      "ils.py": "467b4b593b7a443ba41d7d5d5c75934b888e024b2742abde492248ae26a8c9cd",
+      "infeasible_search.py": "4c38cb504d6c14b5d7a22788c71e8f7f6971de08bfc3eff6a48a08bd6a6746c0",
+      "local_search.py": "00a360bc9de66f8bcc767a8edda4124c030f88311c4a32c48e6411982fbeb24d",
+      "native_search.py": "78022237cfa2914ddc7b75c135bff606157ca921c769cb0796987fcb35fded11",
+      "neighbourhood.py": "1c7c2d659ad154fbb00e925338e2ab835fffa5173dfd5ed0a7d20592967c62ea",
+      "penalties.py": "dfb9b2fdf31512eddfefb98f7c02a83cd1961e0f6a5cc6ef3d13caeaeef96e7f",
+      "problem.py": "eb15a19069a50f8d5126b9b2ec8e1d144f1757fb4f8742ce7b003fdb618c8fab",
+      "report.py": "021c9c94287147f4fe6adf341e0ca7f9c2fc4365a980ba531956ccc0d2f873d2",
+      "route_cache.py": "5cbae8bdd5fcdc6e36d1056e9a5bcf381220ed7977a7b1ebdc051ea66b74fa50",
+      "solomon.py": "be9ec82788ae77be0c47e5d9577b7039506e08971b168023d0174541ed16565c",
+      "solve.py": "37bcba07390c89e2c2e1c781732b4156f1b8677878dba0c42feadf9c173a6012"
+    },
+    "module_alias": "m12_frozen_dc2ce238ade7",
+    "native_binary": "_native.cp312-win_amd64.pyd",
+    "native_binary_sha256": "604462f386c003e397cd55934c67735731d9683e762902ff4d23fad1f410c0bb",
+    "native_build": {
+      "api_version": 1,
+      "build_info": "compiler=MSVC 195035722; cxx_standard=17; api_version=1",
+      "binary": "_native.cp312-win_amd64.pyd",
+      "binary_sha256": "604462f386c003e397cd55934c67735731d9683e762902ff4d23fad1f410c0bb",
+      "compiler": {
+        "cc": null,
+        "cxx": null,
+        "platform": "win-amd64",
+        "python": "3.12.4",
+        "pybind11": null
+      }
+    }
+  },
+  "order": {
+    "case_definition": "sorted instance, then ascending seed",
+    "variant_rotation": "alternate Python/native first by case_index parity",
+    "variants": [
+      "python",
+      "native"
+    ],
+    "cases": [
+      {
+        "case_index": 0,
+        "instance": "C103",
+        "seed": 0,
+        "variants": [
+          "python",
+          "native"
+        ],
+        "results": {
+          "python": {
+            "status": "ok",
+            "verified": true,
+            "artifact": "python/C103/seed-0/solution.json",
+            "artifacts_sha256": {
+              "solution.json": "41528c6fb551219e732cf0e24da633c86a24f302408961156987a8dc80c61c31",
+              "routes.sol": "1ac30639fcc572d1a0968696f4d505a09fa66b2e41006efcb032d0ff3afcd46c",
+              "history.csv": "5a4bd0d32375bc225836096418fdb1221c163d4e7cab2233b369050f104e7eff",
+              "diagnostics.csv": "ef1dccd7ee04f668242f499f02810b6b3e2b03c8b95d79af15764af8da4875a4"
+            },
+            "error": ""
+          },
+          "native": {
+            "status": "ok",
+            "verified": true,
+            "artifact": "native/C103/seed-0/solution.json",
+            "artifacts_sha256": {
+              "solution.json": "c5aae1d17276f1a0b1579ad895929ab110c53cdc679230fda3922e7af0fb013d",
+              "routes.sol": "44e91e885f0613b7a025d210fe58077586a7471d5af2756253e7493f5e85a6da",
+              "history.csv": "5eff2f0c8de53d17f559fc34b6ad711268ae248a04081df0f9c3017e98e9c618",
+              "diagnostics.csv": "019836fb2087540c4099928e87598255302940f68b8c1940ebb43f317178103c"
+            },
+            "error": ""
+          }
+        }
+      },
+      {
+        "case_index": 1,
+        "instance": "C103",
+        "seed": 1,
+        "variants": [
+          "native",
+          "python"
+        ],
+        "results": {
+          "native": {
+            "status": "ok",
+            "verified": true,
+            "artifact": "native/C103/seed-1/solution.json",
+            "artifacts_sha256": {
+              "solution.json": "11770323fde734ea5192e11c0bcacf0b3ec35e14c6919c830c9dfc9682a75402",
+              "routes.sol": "a6ff94617b6d7368ec579fe55a52b5d99a07b588ebe118a4936107392fc34ea8",
+              "history.csv": "c4461050c2f6ede9e72a7fc30484fb73fe514038f3e2bd2523bdc6f31eec8fa0",
+              "diagnostics.csv": "36ba40f472661345861cc94b8f3f8331cb34b641b8a3e9d1ed4c60dfbc8a049e"
+            },
+            "error": ""
+          },
+          "python": {
+            "status": "ok",
+            "verified": true,
+            "artifact": "python/C103/seed-1/solution.json",
+            "artifacts_sha256": {
+              "solution.json": "1699e357ba4c8fce5191705cebabb56ab7df2e867ab3f4dba640f889efeb621c",
+              "routes.sol": "051afa7ced813b2496eb6050840c119bd53feb61e4cba909407f5f320fc1cf7f",
+              "history.csv": "e8e8bcf81fad1bf8f8eda2a4b3e54d502b0c244bea9de92b6a30dc428d3b1fab",
+              "diagnostics.csv": "2b9152f4993d67b4375076838e7e4a1eac65b76333f752fc5c3d622686059a09"
+            },
+            "error": ""
+          }
+        }
+      },
+      {
+        "case_index": 2,
+        "instance": "C103",
+        "seed": 2,
+        "variants": [
+          "python",
+          "native"
+        ],
+        "results": {
+          "python": {
+            "status": "ok",
+            "verified": true,
+            "artifact": "python/C103/seed-2/solution.json",
+            "artifacts_sha256": {
+              "solution.json": "d925526734debee4ba8d183d4d196682bcce4e8643f134b89b2b3b4906dcbde1",
+              "routes.sol": "051afa7ced813b2496eb6050840c119bd53feb61e4cba909407f5f320fc1cf7f",
+              "history.csv": "2823284fea4b50f8f1ee1640966ecbfae9c68300df4f6fb71a38cf2c5788bf2e",
+              "diagnostics.csv": "27cc281eb17ee45d10027489f28d67aed9366ac88728bc4207018fc3c5cd82e8"
+            },
+            "error": ""
+          },
+          "native": {
+            "status": "ok",
+            "verified": true,
+            "artifact": "native/C103/seed-2/solution.json",
+            "artifacts_sha256": {
+              "solution.json": "0d08f6c00aa051e58793665c8b80d358b0e5b6a5c860eb3dba1b20dc68273350",
+              "routes.sol": "e4b47cc7c10865d4376fac6e37841b7a5692d1b024fcc41e796c26d3ecb74f46",
+              "history.csv": "0e12b04cfa9c193fcfb9b97d2aaa5a009323949fc14b70f1d2e7257ae364a1b3",
+              "diagnostics.csv": "1db6d273ed005d176056459b07564c1e7759402c945a83dcbe43f1f4c920249e"
+            },
+            "error": ""
+          }
+        }
+      },
+      {
+        "case_index": 3,
+        "instance": "C104",
+        "seed": 0,
+        "variants": [
+          "native",
+          "python"
+        ],
+        "results": {
+          "native": {
+            "status": "ok",
+            "verified": true,
+            "artifact": "native/C104/seed-0/solution.json",
+            "artifacts_sha256": {
+              "solution.json": "af340513af8acb4eca8f72eaed8f0f0a3e6413efb2a9faea6eb25be6c6e17ebb",
+              "routes.sol": "a3ba8d995a2f32ae98e875f76cc560a054959306a6a067304a5fb4e76fe02993",
+              "history.csv": "3d6b87499a0046fe2b2ffeb826f0eacad5ba5621f578ca10c4d2b60799e5bef3",
+              "diagnostics.csv": "8d234d15fa0078f664a8fa5340d6050d4042273579c1ea7c28162b1ce282e7fb"
+            },
+            "error": ""
+          },
+          "python": {
+            "status": "ok",
+            "verified": true,
+            "artifact": "python/C104/seed-0/solution.json",
+            "artifacts_sha256": {
+              "solution.json": "8e976fc30d350a1f205105fd88570ea709d454b2f24e319527d1d02db437ed66",
+              "routes.sol": "b505449ab6392c87576421825c99fa659f76ad985ab2b8b29a99b5cc217f7e48",
+              "history.csv": "bfafb6189e58b96b9ec9ecef13b5e7a70c45760ac1a5ca951111ad1e49b02cca",
+              "diagnostics.csv": "631b4d93b35f70510a8cd8b9f2cb1b5567c538502b53c06fff6038ee2fe283ec"
+            },
+            "error": ""
+          }
+        }
+      },
+      {
+        "case_index": 4,
+        "instance": "C104",
+        "seed": 1,
+        "variants": [
+          "python",
+          "native"
+        ],
+        "results": {
+          "python": {
+            "status": "ok",
+            "verified": true,
+            "artifact": "python/C104/seed-1/solution.json",
+            "artifacts_sha256": {
+              "solution.json": "4d8cc06a7620cad42a8551924114c92dbcad27d94c226979cb0b65b8dd033fcd",
+              "routes.sol": "05dfe921c3ea0e63a1041e0ec4a559cdb9370aa498fef451397d0e57ba327001",
+              "history.csv": "5bb5ad3871074b1b351aea83f5f5d35c5583ddd8a74fddbae9b2f4778c0d3be1",
+              "diagnostics.csv": "44060a8d02a66548ed16eb86300ce6322863d44846e234be85c4a23194be5c19"
+            },
+            "error": ""
+          },
+          "native": {
+            "status": "ok",
+            "verified": true,
+            "artifact": "native/C104/seed-1/solution.json",
+            "artifacts_sha256": {
+              "solution.json": "baa419a4d3489096a740ae7965dc4305843849ef6f89fe79628710b47c039953",
+              "routes.sol": "1035352edf26abbfa1d191f07eda8d6ef054aa85e6b22a774088d33966c22ee4",
+              "history.csv": "868e50dfa7388b48570b479b18a7d4c1053c894426298ef785b27c7fc6f89b8f",
+              "diagnostics.csv": "e75ac5a407e2fd61d30c40d46be7a7529cabe3d4dba72f976a878e6764a62723"
+            },
+            "error": ""
+          }
+        }
+      },
+      {
+        "case_index": 5,
+        "instance": "C104",
+        "seed": 2,
+        "variants": [
+          "native",
+          "python"
+        ],
+        "results": {
+          "native": {
+            "status": "ok",
+            "verified": true,
+            "artifact": "native/C104/seed-2/solution.json",
+            "artifacts_sha256": {
+              "solution.json": "f6671d37061cd98936aa3f1353b40816fdf2606b2a8c747ea2a25a0977c97e2f",
+              "routes.sol": "be7ece3250efa9d24d1c9a5b28f1a1f43b1f50fa63cb6a9f0f63407a222b31d7",
+              "history.csv": "9bc23c48c86cb7c7e6d2832b1886e6447d4c232865a6af42174386065383fb50",
+              "diagnostics.csv": "bd20f52583cd5995df10ed6c5652715f448a43bbefe49a90df2669af3d063261"
+            },
+            "error": ""
+          },
+          "python": {
+            "status": "ok",
+            "verified": true,
+            "artifact": "python/C104/seed-2/solution.json",
+            "artifacts_sha256": {
+              "solution.json": "27e0af4479b7578d9c632543f97c68b78901777712e52f27bca77579209f451e",
+              "routes.sol": "709ff6b482176692873a35dd69f77b1153427164ff0c102d47ecbfc19462234d",
+              "history.csv": "233df46acb76cb6c4183c9dfa624e0ff02c3d8711d02792a7a7b53e7818f0105",
+              "diagnostics.csv": "a0ec91a2d8a1e81696944eec49e65ad042ce192e4bdb56bf5bf401b54c937c67"
+            },
+            "error": ""
+          }
+        }
+      },
+      {
+        "case_index": 6,
+        "instance": "R101",
+        "seed": 0,
+        "variants": [
+          "python",
+          "native"
+        ],
+        "results": {
+          "python": {
+            "status": "ok",
+            "verified": true,
+            "artifact": "python/R101/seed-0/solution.json",
+            "artifacts_sha256": {
+              "solution.json": "703549549ad413ca173cb5bf3588c9fd67eb6297c9b4759457fcfdbdbb710acf",
+              "routes.sol": "fdfb99ff72612a11d311f8baa1c915b58204422ade20f92fef6d793a58bb9a57",
+              "history.csv": "8c24d1b9c90716ffd6be5808ac16739db0ffc48164411fe071cccf51aa2c6ab1",
+              "diagnostics.csv": "08143b9ccd08a629362605e87d424f9a2f48b949fb49504ea4072bb155a413cc"
+            },
+            "error": ""
+          },
+          "native": {
+            "status": "ok",
+            "verified": true,
+            "artifact": "native/R101/seed-0/solution.json",
+            "artifacts_sha256": {
+              "solution.json": "aae966fc70120e7a6121396747b78ebc8f21d4d87dbe00b5b47bd85ea791d621",
+              "routes.sol": "bdfc1fbe4a2e1c720d47e27cf5156ebfb58ed14c0ed9fb3ac2618c3b05780ca5",
+              "history.csv": "9772a3f7365468eea40d3308f40aa230273a39dd34e6ed4c6e330bd03eda081f",
+              "diagnostics.csv": "ca964b37670693d387c2f8b91c53cfd209b4df76d5791a69113f8ae8bce9a31b"
+            },
+            "error": ""
+          }
+        }
+      },
+      {
+        "case_index": 7,
+        "instance": "R101",
+        "seed": 1,
+        "variants": [
+          "native",
+          "python"
+        ],
+        "results": {
+          "native": {
+            "status": "ok",
+            "verified": true,
+            "artifact": "native/R101/seed-1/solution.json",
+            "artifacts_sha256": {
+              "solution.json": "e5e6f7604bc5371891fb2caf0b03c2ddadbf0cf5c322a358f4cb159c711eacb1",
+              "routes.sol": "4a1588f48bf854211d759ee10a70633dda85ba73960c339fb4f84a6faa90e67a",
+              "history.csv": "97443e60f41894f00286b70c95aa07d90b6aae5c5f6da834993918691a1010f8",
+              "diagnostics.csv": "d7680eb6278cf63244649bebd18b35a6b0f0852a30d9a0d2e546dbd379a2814a"
+            },
+            "error": ""
+          },
+          "python": {
+            "status": "ok",
+            "verified": true,
+            "artifact": "python/R101/seed-1/solution.json",
+            "artifacts_sha256": {
+              "solution.json": "96ec7e288f8af97b966ea82fbd387142a7d9f0685be0358d217f18f52fb1fba4",
+              "routes.sol": "3ddb4d78a7366379261fadf6a165378d62270f120428558f02b839e08dbf5345",
+              "history.csv": "b6de617be1396cd947fd7ae614f9cc18447db6e15150aba33d238a7e8b345dd3",
+              "diagnostics.csv": "368d89d587c7662985476e22c09373f572892608e3c9f8853201d4873fc10f16"
+            },
+            "error": ""
+          }
+        }
+      },
+      {
+        "case_index": 8,
+        "instance": "R101",
+        "seed": 2,
+        "variants": [
+          "python",
+          "native"
+        ],
+        "results": {
+          "python": {
+            "status": "ok",
+            "verified": true,
+            "artifact": "python/R101/seed-2/solution.json",
+            "artifacts_sha256": {
+              "solution.json": "ac864e78106c6ae48d824de8db93f23d6b73057ea1d404327d993a14bcd070ac",
+              "routes.sol": "3776a14caaaddf8dd946c9de123ead09c1d2741079ca27ad9a46e1e826475594",
+              "history.csv": "abee164a5a92f649baa2e748d67b994979175f72c42bf197cd6abfc821223833",
+              "diagnostics.csv": "06ce79ddd24e04b6389eb663fed0bbf95d998c3c7b9ec83ff54a35503b5fc317"
+            },
+            "error": ""
+          },
+          "native": {
+            "status": "ok",
+            "verified": true,
+            "artifact": "native/R101/seed-2/solution.json",
+            "artifacts_sha256": {
+              "solution.json": "ddfff7ac1c2afb38eb3ea697450f47beb8464742e09462fa11485d9420963d0f",
+              "routes.sol": "a4c0d5a3798fc83397d50c8d5133a5bd5ea7124c1b24182c1a7427b5d9ba3321",
+              "history.csv": "cb38d05e322289f36095f5820f28788381fc43dcc3ff5037de58321f7eb3cbec",
+              "diagnostics.csv": "f8125389fd2ff2f1d67c2de93f71b2b8deae8568f0808cdf5a327e98b6e3462a"
+            },
+            "error": ""
+          }
+        }
+      },
+      {
+        "case_index": 9,
+        "instance": "RC101",
+        "seed": 0,
+        "variants": [
+          "native",
+          "python"
+        ],
+        "results": {
+          "native": {
+            "status": "ok",
+            "verified": true,
+            "artifact": "native/RC101/seed-0/solution.json",
+            "artifacts_sha256": {
+              "solution.json": "e0766b34664a20760eb12bb81ff4a032d37e8f5346def00f9880ac8c674a7462",
+              "routes.sol": "1e58b83a991c324cc9e8d2bf626597555b619d2c520ce795c93a77dc72f29c38",
+              "history.csv": "f602b21869d8aac35202a82202cc9ad18347dafae7b05837ac5c2cd8ffe7063e",
+              "diagnostics.csv": "01f0a44c2ccc9efba136014be5822c60f0f05f26b555dbc35a7dc9ab48ec4fd9"
+            },
+            "error": ""
+          },
+          "python": {
+            "status": "ok",
+            "verified": true,
+            "artifact": "python/RC101/seed-0/solution.json",
+            "artifacts_sha256": {
+              "solution.json": "4b31777b220a63c1f1586e82ea1abe464dbdba7d8b295232811d6fbf12e0bff8",
+              "routes.sol": "4399634d30e3eeaf7dffca0a12b9bf68beb41b308046ab40dc3d8ea90d5e6f01",
+              "history.csv": "64d3720f190e9a56915cd658344c0310beeb35b1e9e9a0308b9a8e761763f9c5",
+              "diagnostics.csv": "d1d5139c5cbda1bfd86f1dbc827831b6f1e1f033b901b6bc5b2b22ffe016c908"
+            },
+            "error": ""
+          }
+        }
+      },
+      {
+        "case_index": 10,
+        "instance": "RC101",
+        "seed": 1,
+        "variants": [
+          "python",
+          "native"
+        ],
+        "results": {
+          "python": {
+            "status": "ok",
+            "verified": true,
+            "artifact": "python/RC101/seed-1/solution.json",
+            "artifacts_sha256": {
+              "solution.json": "3e92e989d7a90ab6129cdd8d040fe52e0d31b5e9eff484d78b138a30d3c7d3d5",
+              "routes.sol": "45d024071b3477edc384498709e9231a4b23e671ddb9a30bc3becd828b1117dd",
+              "history.csv": "0bc755b00596a22b0eff3a234994a467f1f17e71ca108e8aaacd5802945c13fa",
+              "diagnostics.csv": "3b37c26e0befe4b3e441b83652883946b3b371f65d97fc89280cdcb7c76b56e5"
+            },
+            "error": ""
+          },
+          "native": {
+            "status": "ok",
+            "verified": true,
+            "artifact": "native/RC101/seed-1/solution.json",
+            "artifacts_sha256": {
+              "solution.json": "99814faace013dcafd4d52533361c3f985d50dcfa9c156de2f3a0e2052053cb8",
+              "routes.sol": "1558a2f1deefc15fd2307b9464ebdac3c089b03fec7652e3f2e213bbe32f91d2",
+              "history.csv": "d72662ded9e703809271074ccd33e0c01b2fead18000ffaf0fa9bf258131b17c",
+              "diagnostics.csv": "90ef4e2fb566cfbfa10637a3504ff4e0f7dbd2b46fef01fd4aba08ce41827608"
+            },
+            "error": ""
+          }
+        }
+      },
+      {
+        "case_index": 11,
+        "instance": "RC101",
+        "seed": 2,
+        "variants": [
+          "native",
+          "python"
+        ],
+        "results": {
+          "native": {
+            "status": "ok",
+            "verified": true,
+            "artifact": "native/RC101/seed-2/solution.json",
+            "artifacts_sha256": {
+              "solution.json": "e4ba83213f79d22386a426095e11caf32c79a77fd3533cb153df6b752bbaebd7",
+              "routes.sol": "7e0384b5d5164c55a743fc02695b637503a634022ec97208c5234df1b1f79280",
+              "history.csv": "cd37c1e8bba396a0bc7722d2329d3f48ae2592925065d7ad314bbbcd4a54e951",
+              "diagnostics.csv": "ddd05a3949b79897ab92b1a10a6aa20b6c438622ec236fa626b17b32503f6a18"
+            },
+            "error": ""
+          },
+          "python": {
+            "status": "ok",
+            "verified": true,
+            "artifact": "python/RC101/seed-2/solution.json",
+            "artifacts_sha256": {
+              "solution.json": "abf2188dfe5be614d2793c709a6f41f756310511c2149feda6192a7750fa8cc3",
+              "routes.sol": "53c3e024cc296b6a814e7af9a7d85f9ba1d8455f446ba90c3c99c396b274a30f",
+              "history.csv": "31431cb2b144d5ccef8dcc1d813d594ea8b940f3c5556d658fbb09e51a22a895",
+              "diagnostics.csv": "71aa107e7513e78bce5a64b7ba06c9fc912464d4a67871a1b5d0025e15422bc2"
+            },
+            "error": ""
+          }
+        }
+      }
+    ]
+  },
+  "variants": {
+    "python": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.75,
+        "fleet_strategy": "hybrid",
+        "fleet_repair_rounds": 5,
+        "fleet_related_count": 8,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": true,
+        "evaluation_mode": "incremental",
+        "search_backend": "python",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic",
+        "infeasible_search": false,
+        "adaptive_penalties": true,
+        "penalty_update_interval": 10,
+        "penalty_target_feasible": 0.5,
+        "penalty_max_moves": 8
+      },
+      "config_sha256": "cc00cb0e419bee0986c4a337562fc24ba3c4f0b6a164ec0bd640d09b425fc300",
+      "code_sha256": "a5385b24e1b1e895647141e361fbfd125f69b22b8101a03a5bf03d0a059bf87a",
+      "binary_sha256": "604462f386c003e397cd55934c67735731d9683e762902ff4d23fad1f410c0bb",
+      "status": "completed",
+      "runs": 12,
+      "successful": 12,
+      "failed": 0,
+      "independently_verified": 12,
+      "batch_summary_csv_sha256": "9b713fa10e88c4a5e7eceae75c12ce416f45e22c0b6f5b6260e98bc8ab0371df",
+      "batch_summary_json_sha256": "ee3ef48226f0e4f68f4d45affa1ab0d7446e00d7125b109b785ab2196e904f36"
+    },
+    "native": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.75,
+        "fleet_strategy": "hybrid",
+        "fleet_repair_rounds": 5,
+        "fleet_related_count": 8,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": true,
+        "evaluation_mode": "incremental",
+        "search_backend": "native",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic",
+        "infeasible_search": false,
+        "adaptive_penalties": true,
+        "penalty_update_interval": 10,
+        "penalty_target_feasible": 0.5,
+        "penalty_max_moves": 8
+      },
+      "config_sha256": "df0cf93d549ebe44a8637d979bbccda9f97af3c8417fcb12d8d620452a60d80c",
+      "code_sha256": "a5385b24e1b1e895647141e361fbfd125f69b22b8101a03a5bf03d0a059bf87a",
+      "binary_sha256": "604462f386c003e397cd55934c67735731d9683e762902ff4d23fad1f410c0bb",
+      "status": "completed",
+      "runs": 12,
+      "successful": 12,
+      "failed": 0,
+      "independently_verified": 12,
+      "batch_summary_csv_sha256": "3b1f758b29cecad0a38ad92c6cb9a94bcf5292ae1e1bae918e4f4044e98f20c6",
+      "batch_summary_json_sha256": "c08f42a0f9451f9dc6d78e4cfcaecad026eb876fced232101e82457c605e345b"
+    }
+  },
+  "total_runs": 24,
+  "independently_verified": 24,
+  "diagnostics_sha256": "89cf33a79843e06dee45c7f19836de73bd536ee9b4db4a9dc421e5acbf91ec2f"
+}

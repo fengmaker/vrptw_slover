@@ -1,0 +1,484 @@
+{
+  "schema_version": 1,
+  "experiment": "M12 paired Python/native search backend",
+  "independently_verified_runs": 24,
+  "paired_cases": 12,
+  "comparison_vs_python": {
+    "all": {
+      "cases": 12,
+      "better": 12,
+      "worse": 0,
+      "tie": 0,
+      "vehicles_better": 0,
+      "vehicles_worse": 0,
+      "vehicles_same": 12,
+      "same_vehicle_distance_delta_ticks": {
+        "count": 12,
+        "median": -317403.0,
+        "p90_nearest_rank": -109899.0,
+        "mean": -331494.6666666667
+      }
+    },
+    "C": {
+      "cases": 6,
+      "better": 6,
+      "worse": 0,
+      "tie": 0,
+      "vehicles_better": 0,
+      "vehicles_worse": 0,
+      "vehicles_same": 6,
+      "same_vehicle_distance_delta_ticks": {
+        "count": 6,
+        "median": -500150.5,
+        "p90_nearest_rank": -391321.0,
+        "mean": -515133.3333333333
+      }
+    },
+    "R": {
+      "cases": 3,
+      "better": 3,
+      "worse": 0,
+      "tie": 0,
+      "vehicles_better": 0,
+      "vehicles_worse": 0,
+      "vehicles_same": 3,
+      "same_vehicle_distance_delta_ticks": {
+        "count": 3,
+        "median": -139761.0,
+        "p90_nearest_rank": -102591.0,
+        "mean": -130084.33333333333
+      }
+    },
+    "RC": {
+      "cases": 3,
+      "better": 3,
+      "worse": 0,
+      "tie": 0,
+      "vehicles_better": 0,
+      "vehicles_worse": 0,
+      "vehicles_same": 3,
+      "same_vehicle_distance_delta_ticks": {
+        "count": 3,
+        "median": -143499.0,
+        "p90_nearest_rank": -109899.0,
+        "mean": -165627.66666666666
+      }
+    }
+  },
+  "all_native_regressions": [],
+  "best_by_instance_native_regressions": [],
+  "variants": {
+    "python": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.75,
+        "fleet_strategy": "hybrid",
+        "fleet_repair_rounds": 5,
+        "fleet_related_count": 8,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": true,
+        "evaluation_mode": "incremental",
+        "search_backend": "python",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic",
+        "infeasible_search": false,
+        "adaptive_penalties": true,
+        "penalty_update_interval": 10,
+        "penalty_target_feasible": 0.5,
+        "penalty_max_moves": 8
+      },
+      "config_sha256": "cc00cb0e419bee0986c4a337562fc24ba3c4f0b6a164ec0bd640d09b425fc300",
+      "code_sha256": "a5385b24e1b1e895647141e361fbfd125f69b22b8101a03a5bf03d0a059bf87a",
+      "binary_sha256": "604462f386c003e397cd55934c67735731d9683e762902ff4d23fad1f410c0bb",
+      "runs": 12,
+      "runtime_first_feasible_iterations_by_family": {
+        "all": {
+          "runs": 12,
+          "runtime_seconds": {
+            "count": 12,
+            "median": 0.5005170000000001,
+            "p90_nearest_rank": 0.500817,
+            "mean": 0.5006040833333333
+          },
+          "first_feasible_seconds": {
+            "count": 12,
+            "median": 0.091438,
+            "p90_nearest_rank": 0.124995,
+            "mean": 0.09695208333333333
+          },
+          "iterations": {
+            "count": 12,
+            "median": 1.0,
+            "p90_nearest_rank": 1.0,
+            "mean": 1.0
+          },
+          "total_iterations": 12
+        },
+        "C": {
+          "runs": 6,
+          "runtime_seconds": {
+            "count": 6,
+            "median": 0.5004565000000001,
+            "p90_nearest_rank": 0.500616,
+            "mean": 0.5004803333333333
+          },
+          "first_feasible_seconds": {
+            "count": 6,
+            "median": 0.090134,
+            "p90_nearest_rank": 0.124995,
+            "mean": 0.0962555
+          },
+          "iterations": {
+            "count": 6,
+            "median": 1.0,
+            "p90_nearest_rank": 1.0,
+            "mean": 1.0
+          },
+          "total_iterations": 6
+        },
+        "R": {
+          "runs": 3,
+          "runtime_seconds": {
+            "count": 3,
+            "median": 0.500817,
+            "p90_nearest_rank": 0.501184,
+            "mean": 0.5008929999999999
+          },
+          "first_feasible_seconds": {
+            "count": 3,
+            "median": 0.091841,
+            "p90_nearest_rank": 0.130111,
+            "mean": 0.10169133333333334
+          },
+          "iterations": {
+            "count": 3,
+            "median": 1.0,
+            "p90_nearest_rank": 1.0,
+            "mean": 1.0
+          },
+          "total_iterations": 3
+        },
+        "RC": {
+          "runs": 3,
+          "runtime_seconds": {
+            "count": 3,
+            "median": 0.500519,
+            "p90_nearest_rank": 0.500654,
+            "mean": 0.5005626666666667
+          },
+          "first_feasible_seconds": {
+            "count": 3,
+            "median": 0.091382,
+            "p90_nearest_rank": 0.099202,
+            "mean": 0.09360600000000001
+          },
+          "iterations": {
+            "count": 3,
+            "median": 1.0,
+            "p90_nearest_rank": 1.0,
+            "mean": 1.0
+          },
+          "total_iterations": 3
+        }
+      },
+      "diagnostics_candidate_move_summary": {
+        "all": {
+          "runs": 12,
+          "phase_counter_totals": {
+            "candidates": 901488,
+            "feasible_candidates": 45696,
+            "infeasible_candidates": 855792,
+            "accepted": 6697,
+            "route_evaluations": 528521,
+            "calls": 440,
+            "trials": 131,
+            "failures": 112
+          },
+          "history_event_counts": {
+            "construction": 12,
+            "best": 12,
+            "fleet": 19
+          }
+        },
+        "C": {
+          "runs": 6,
+          "phase_counter_totals": {
+            "candidates": 232261,
+            "feasible_candidates": 15522,
+            "infeasible_candidates": 216739,
+            "accepted": 932,
+            "route_evaluations": 404308,
+            "calls": 48,
+            "trials": 0,
+            "failures": 0
+          },
+          "history_event_counts": {
+            "construction": 6,
+            "best": 6
+          }
+        },
+        "R": {
+          "runs": 3,
+          "phase_counter_totals": {
+            "candidates": 302000,
+            "feasible_candidates": 13698,
+            "infeasible_candidates": 288302,
+            "accepted": 2640,
+            "route_evaluations": 58199,
+            "calls": 180,
+            "trials": 59,
+            "failures": 51
+          },
+          "history_event_counts": {
+            "construction": 3,
+            "fleet": 8,
+            "best": 3
+          }
+        },
+        "RC": {
+          "runs": 3,
+          "phase_counter_totals": {
+            "candidates": 367227,
+            "feasible_candidates": 16476,
+            "infeasible_candidates": 350751,
+            "accepted": 3125,
+            "route_evaluations": 66014,
+            "calls": 212,
+            "trials": 72,
+            "failures": 61
+          },
+          "history_event_counts": {
+            "construction": 3,
+            "fleet": 11,
+            "best": 3
+          }
+        }
+      }
+    },
+    "native": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 0.5,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.75,
+        "fleet_strategy": "hybrid",
+        "fleet_repair_rounds": 5,
+        "fleet_related_count": 8,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": true,
+        "evaluation_mode": "incremental",
+        "search_backend": "native",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic",
+        "infeasible_search": false,
+        "adaptive_penalties": true,
+        "penalty_update_interval": 10,
+        "penalty_target_feasible": 0.5,
+        "penalty_max_moves": 8
+      },
+      "config_sha256": "df0cf93d549ebe44a8637d979bbccda9f97af3c8417fcb12d8d620452a60d80c",
+      "code_sha256": "a5385b24e1b1e895647141e361fbfd125f69b22b8101a03a5bf03d0a059bf87a",
+      "binary_sha256": "604462f386c003e397cd55934c67735731d9683e762902ff4d23fad1f410c0bb",
+      "runs": 12,
+      "runtime_first_feasible_iterations_by_family": {
+        "all": {
+          "runs": 12,
+          "runtime_seconds": {
+            "count": 12,
+            "median": 0.5006145,
+            "p90_nearest_rank": 0.50072,
+            "mean": 0.5005948333333333
+          },
+          "first_feasible_seconds": {
+            "count": 12,
+            "median": 0.0911575,
+            "p90_nearest_rank": 0.125355,
+            "mean": 0.09537166666666667
+          },
+          "iterations": {
+            "count": 12,
+            "median": 1.5,
+            "p90_nearest_rank": 13.0,
+            "mean": 5.583333333333333
+          },
+          "total_iterations": 67
+        },
+        "C": {
+          "runs": 6,
+          "runtime_seconds": {
+            "count": 6,
+            "median": 0.500467,
+            "p90_nearest_rank": 0.500651,
+            "mean": 0.5004968333333334
+          },
+          "first_feasible_seconds": {
+            "count": 6,
+            "median": 0.08602599999999999,
+            "p90_nearest_rank": 0.125355,
+            "mean": 0.0928775
+          },
+          "iterations": {
+            "count": 6,
+            "median": 11.5,
+            "p90_nearest_rank": 19.0,
+            "mean": 10.0
+          },
+          "total_iterations": 60
+        },
+        "R": {
+          "runs": 3,
+          "runtime_seconds": {
+            "count": 3,
+            "median": 0.500711,
+            "p90_nearest_rank": 0.50072,
+            "mean": 0.5007053333333333
+          },
+          "first_feasible_seconds": {
+            "count": 3,
+            "median": 0.093109,
+            "p90_nearest_rank": 0.128986,
+            "mean": 0.10313299999999999
+          },
+          "iterations": {
+            "count": 3,
+            "median": 1.0,
+            "p90_nearest_rank": 1.0,
+            "mean": 1.0
+          },
+          "total_iterations": 3
+        },
+        "RC": {
+          "runs": 3,
+          "runtime_seconds": {
+            "count": 3,
+            "median": 0.500647,
+            "p90_nearest_rank": 0.500812,
+            "mean": 0.5006803333333333
+          },
+          "first_feasible_seconds": {
+            "count": 3,
+            "median": 0.092027,
+            "p90_nearest_rank": 0.094433,
+            "mean": 0.09259866666666666
+          },
+          "iterations": {
+            "count": 3,
+            "median": 1.0,
+            "p90_nearest_rank": 2.0,
+            "mean": 1.3333333333333333
+          },
+          "total_iterations": 4
+        }
+      },
+      "diagnostics_candidate_move_summary": {
+        "all": {
+          "runs": 12,
+          "phase_counter_totals": {
+            "candidates": 4661772,
+            "feasible_candidates": 316329,
+            "infeasible_candidates": 4345443,
+            "accepted": 7497,
+            "route_evaluations": 7795906,
+            "calls": 579,
+            "trials": 126,
+            "failures": 108
+          },
+          "history_event_counts": {
+            "construction": 12,
+            "best": 16,
+            "candidate": 50,
+            "repair_failed": 1,
+            "fleet": 19
+          }
+        },
+        "C": {
+          "runs": 6,
+          "phase_counter_totals": {
+            "candidates": 3443508,
+            "feasible_candidates": 277072,
+            "infeasible_candidates": 3166436,
+            "accepted": 1889,
+            "route_evaluations": 6512638,
+            "calls": 209,
+            "trials": 0,
+            "failures": 1
+          },
+          "history_event_counts": {
+            "construction": 6,
+            "best": 10,
+            "candidate": 49,
+            "repair_failed": 1
+          }
+        },
+        "R": {
+          "runs": 3,
+          "phase_counter_totals": {
+            "candidates": 560426,
+            "feasible_candidates": 18756,
+            "infeasible_candidates": 541670,
+            "accepted": 2583,
+            "route_evaluations": 594615,
+            "calls": 170,
+            "trials": 57,
+            "failures": 49
+          },
+          "history_event_counts": {
+            "construction": 3,
+            "fleet": 8,
+            "best": 3
+          }
+        },
+        "RC": {
+          "runs": 3,
+          "phase_counter_totals": {
+            "candidates": 657838,
+            "feasible_candidates": 20501,
+            "infeasible_candidates": 637337,
+            "accepted": 3025,
+            "route_evaluations": 688653,
+            "calls": 200,
+            "trials": 69,
+            "failures": 58
+          },
+          "history_event_counts": {
+            "construction": 3,
+            "fleet": 11,
+            "best": 3,
+            "candidate": 1
+          }
+        }
+      }
+    }
+  },
+  "experiment_manifest_sha256": "b58d1fa639bde1551a638f4d52458d5f590a7aaac90161ac4d490460a51195bb"
+}

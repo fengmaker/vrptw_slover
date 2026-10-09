@@ -1,0 +1,5 @@
+instance,ours_vehicles,pyvrp_vehicles,vehicle_gap,ours_distance,pyvrp_distance,distance_gap,distance_gap_percent,winner,budget_seconds,seeds_compared,vehicle_cap,ours_feasible_runs,pyvrp_feasible_runs,ours_best_seed,pyvrp_best_seed
+C103,10,10,0,1045.970,828.065,217.905,26.315,pyvrp,0.5,0;1;2,10,3,3,2,0
+C104,10,10,0,971.804,824.776,147.028,17.8264,pyvrp,0.5,0;1;2,10,3,3,1,0
+R101,20,20,0,1695.037,1683.319,11.718,0.6961,pyvrp,0.5,0;1;2,20,3,1,1,1
+RC101,16,16,0,1752.460,1706.812,45.648,2.6745,pyvrp,0.5,0;1;2,16,3,2,2,1

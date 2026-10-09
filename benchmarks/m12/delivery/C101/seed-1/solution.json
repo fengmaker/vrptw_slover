@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "instance": "C101",
+  "input_format": "solomon_txt",
+  "routes": [
+    [
+      13,
+      17,
+      18,
+      19,
+      15,
+      16,
+      14,
+      12
+    ],
+    [
+      67,
+      65,
+      63,
+      62,
+      74,
+      72,
+      61,
+      64,
+      68,
+      66,
+      69
+    ],
+    [
+      98,
+      96,
+      95,
+      94,
+      92,
+      93,
+      97,
+      100,
+      99
+    ],
+    [
+      5,
+      3,
+      7,
+      8,
+      10,
+      11,
+      9,
+      6,
+      4,
+      2,
+      1,
+      75
+    ],
+    [
+      20,
+      24,
+      25,
+      27,
+      29,
+      30,
+      28,
+      26,
+      23,
+      22,
+      21
+    ],
+    [
+      81,
+      78,
+      76,
+      71,
+      70,
+      73,
+      77,
+      79,
+      80
+    ],
+    [
+      57,
+      55,
+      54,
+      53,
+      56,
+      58,
+      60,
+      59
+    ],
+    [
+      43,
+      42,
+      41,
+      40,
+      44,
+      46,
+      45,
+      48,
+      51,
+      50,
+      52,
+      49,
+      47
+    ],
+    [
+      32,
+      33,
+      31,
+      35,
+      37,
+      38,
+      39,
+      36,
+      34
+    ],
+    [
+      90,
+      87,
+      86,
+      83,
+      82,
+      84,
+      85,
+      88,
+      89,
+      91
+    ]
+  ],
+  "vehicles": 10,
+  "distance_ticks": 828937,
+  "distance": 828.937,
+  "feasible": true,
+  "seed": 1,
+  "threads": 1,
+  "stop": {
+    "reason": "time_limit",
+    "max_iterations": null,
+    "time_limit_seconds": 0.5
+  },
+  "iterations": 23,
+  "first_feasible_seconds": 0.07017159999668365,
+  "runtime_seconds": 0.5004371999966679,
+  "numeric_rule": "solomon_exact_1000_v1",
+  "code_sha256": "ffd80526f613022a3ba48d295a353e9a1f516759a5474a53675463ce25283847",
+  "config": {
+    "seed": 1,
+    "max_iterations": null,
+    "time_limit_seconds": 0.5,
+    "fleet_attempts_per_k": 100,
+    "fleet_time_fraction": 0.75,
+    "fleet_strategy": "hybrid",
+    "fleet_repair_rounds": 5,
+    "fleet_related_count": 8,
+    "max_moves": null,
+    "construction_order": "due",
+    "repair_order": "due",
+    "repair_strategy": "cheapest",
+    "search_strategy": "first",
+    "operators": [
+      "relocate",
+      "swap",
+      "two_opt",
+      "two_opt_star"
+    ],
+    "remove_min": 3,
+    "remove_max": 8,
+    "restart_after": 20,
+    "diagnostics": false,
+    "evaluation_mode": "incremental",
+    "search_backend": "auto",
+    "num_neighbours": null,
+    "operator_schedule": "cyclic",
+    "infeasible_search": false,
+    "adaptive_penalties": true,
+    "penalty_update_interval": 10,
+    "penalty_target_feasible": 0.5,
+    "penalty_max_moves": 8
+  },
+  "vehicle_limit": 25,
+  "input_sha256": "a6da75152d182d60ecd2c6f854296f5be452f92282d096adebcf5d99a7f16516",
+  "fleet": {
+    "capacity_lower_bound": 10,
+    "reached_lower_bound": true,
+    "stop_reason": "lower_bound",
+    "attempts": [
+      {
+        "target": 11,
+        "trials": 1
+      },
+      {
+        "target": 10,
+        "trials": 1
+      }
+    ],
+    "milestones": [
+      {
+        "vehicles": 11,
+        "distance": 865820,
+        "elapsed_seconds": 0.07841670000198064
+      },
+      {
+        "vehicles": 10,
+        "distance": 828937,
+        "elapsed_seconds": 0.08469579999655252
+      }
+    ],
+    "targets": [
+      {
+        "target": 11,
+        "trials": 1,
+        "repair_rounds": 1,
+        "elapsed_seconds": 0.007859299999836367,
+        "first_feasible_seconds": 0.007859299999836367,
+        "status": "found"
+      },
+      {
+        "target": 10,
+        "trials": 1,
+        "repair_rounds": 1,
+        "elapsed_seconds": 0.006087900001148228,
+        "first_feasible_seconds": 0.006087900001148228,
+        "status": "found"
+      }
+    ]
+  },
+  "search_backend": "native",
+  "native": {
+    "api_version": 1,
+    "build_info": "compiler=MSVC 195035722; cxx_standard=17; api_version=1",
+    "binary": "_native.cp312-win_amd64.pyd",
+    "binary_sha256": "604462f386c003e397cd55934c67735731d9683e762902ff4d23fad1f410c0bb"
+  }
+}

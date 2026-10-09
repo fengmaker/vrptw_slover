@@ -1,0 +1,78 @@
+{
+  "instances": 7,
+  "instance_names": [
+    "C103",
+    "C104",
+    "R101",
+    "R109",
+    "R112",
+    "RC101",
+    "RC107"
+  ],
+  "runs": 21,
+  "successful": 21,
+  "failed": 0,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "time_limit_seconds": 0.5,
+  "max_iterations": null,
+  "fleet_attempts_per_k": 100,
+  "max_moves": null,
+  "diagnostics_enabled": true,
+  "config": {
+    "seed": 0,
+    "max_iterations": null,
+    "time_limit_seconds": 0.5,
+    "fleet_attempts_per_k": 100,
+    "fleet_time_fraction": 0.95,
+    "fleet_strategy": "cached_reconstruct",
+    "fleet_repair_rounds": 5,
+    "fleet_related_count": 8,
+    "max_moves": null,
+    "construction_order": "due",
+    "repair_order": "due",
+    "repair_strategy": "cheapest",
+    "search_strategy": "first",
+    "operators": [
+      "relocate",
+      "swap",
+      "two_opt",
+      "two_opt_star"
+    ],
+    "remove_min": 3,
+    "remove_max": 8,
+    "restart_after": 20,
+    "diagnostics": true,
+    "evaluation_mode": "incremental",
+    "num_neighbours": null,
+    "operator_schedule": "cyclic"
+  },
+  "config_sha256": "fe9e317dc0d5be18f5b0e1b43d42ceb7d8715a21a02cc6558344a1c24642fc50",
+  "variant": "cached_reconstruct",
+  "input_format": "solomon_txt",
+  "threads": 1,
+  "numeric_rule": "solomon_exact_1000_v1",
+  "code_sha256": "3356bdb31018267a03c9a865509206c85bc3fb0867b885cddddb15d2e448a902",
+  "runner_sha256": "288cc30b7c309faa52f00670e728599bf8a2f2f3c06ea6778ef5eb2c808d951a",
+  "input_sha256": {
+    "C103": "a55cabf15e0da9d65696a5fb45c9852889479893f76f772a428ca15d1b415a51",
+    "C104": "fe333e81625ee5a75bb2ce98c2c9f356d07289237865b62a23ba2f32f0de5ee2",
+    "R101": "3f3655182bc0fe44ce5de65fdcd2ee2f9c7fb9ed055f923635151d9d6f76d3ed",
+    "R109": "4ef24030e8c48de5f85dcd90c5739186004fc8dec87533b6467013cf996f4777",
+    "R112": "a0e93149d59d30c356619891d192e86d0f16c3158e1dac3bd9f23c6deb718271",
+    "RC101": "ef6893ffd9746ad96de8e4da6e64e2c4ba6e08a1c7eb9457276a9f1caf01ca12",
+    "RC107": "fff3fd68d110671ed442575f07cc547291586f30b00c5f73934d521d31311582"
+  },
+  "started_at_utc": "2026-10-02T15:31:52.098420+00:00",
+  "finished_at_utc": "2026-10-02T15:32:25.647340+00:00",
+  "environment": {
+    "python": "3.12.4",
+    "platform": "Windows-11-10.0.22621-SP0",
+    "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+    "cpu_count": 16
+  },
+  "order": "left rotation by case_index modulo selected variants"
+}

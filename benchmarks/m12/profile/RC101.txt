@@ -1,0 +1,43 @@
+         1155155 function calls (1155129 primitive calls) in 0.435 seconds
+
+   Ordered by: cumulative time
+   List reduced from 140 to 35 due to restriction <35>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.502    0.502 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\solve.py:123(solve)
+     29/3    0.001    0.000    0.500    0.167 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\diagnostics.py:126(wrapped)
+        1    0.000    0.000    0.258    0.258 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\fleet.py:448(minimise_fleet)
+       23    0.009    0.000    0.213    0.009 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\fleet.py:299(_repair_partial)
+     8530    0.083    0.000    0.175    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\fleet.py:249(_insertion_choice)
+     8645    0.081    0.000    0.172    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\evaluate.py:62(evaluate_route)
+     8149    0.004    0.000    0.168    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\diagnostics.py:86(evaluate_route)
+        1    0.008    0.008    0.155    0.155 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\construct.py:24(construct)
+        5    0.000    0.000    0.144    0.029 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\fleet.py:407(_try_route_removal)
+        6    0.000    0.000    0.112    0.019 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\fleet.py:200(try_fleet)
+        1    0.000    0.000    0.087    0.087 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\ils.py:84(run_ils)
+    49197    0.040    0.000    0.067    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\diagnostics.py:101(candidate_codes)
+        1    0.002    0.002    0.062    0.062 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\local_search.py:272(improve)
+     1984    0.012    0.000    0.053    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\local_search.py:238(delta)
+   238691    0.036    0.000    0.036    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\diagnostics.py:83(increment)
+      801    0.001    0.000    0.026    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\fleet.py:322(make_cache)
+     3701    0.016    0.000    0.025    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\route_cache.py:67(evaluate)
+        1    0.000    0.000    0.023    0.023 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\ils.py:50(_perturb)
+        1    0.001    0.001    0.023    0.023 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\fleet.py:49(insert_fixed)
+        6    0.003    0.001    0.021    0.004 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\fleet.py:182(_spatial_seeds)
+   128939    0.020    0.000    0.020    0.000 {built-in method builtins.max}
+    16174    0.010    0.000    0.019    0.000 {built-in method builtins.min}
+       12    0.001    0.000    0.017    0.001 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\fleet.py:373(_related_remove)
+   127127    0.016    0.000    0.016    0.000 {method 'add' of 'set' objects}
+   179920    0.015    0.000    0.015    0.000 {built-in method builtins.len}
+     1534    0.005    0.000    0.015    0.000 {built-in method builtins.sorted}
+     7200    0.003    0.000    0.014    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\diagnostics.py:96(candidate)
+    45057    0.008    0.000    0.011    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\problem.py:65(customer_count)
+      825    0.008    0.000    0.011    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\route_cache.py:30(__init__)
+       17    0.000    0.000    0.009    0.001 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\diagnostics.py:90(validate_solution)
+       17    0.002    0.000    0.009    0.001 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\evaluate.py:106(validate_solution)
+    91600    0.008    0.000    0.008    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\fleet.py:190(<genexpr>)
+    68640    0.008    0.000    0.008    0.000 {method 'append' of 'list' objects}
+    52170    0.007    0.000    0.007    0.000 {built-in method time.perf_counter}
+     1988    0.005    0.000    0.007    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\local_search.py:53(apply_move)
+
+

@@ -1,0 +1,274 @@
+{
+  "solver": "ours",
+  "instance": "R112",
+  "budget_seconds": 5.0,
+  "seed": 0,
+  "vehicle_cap": 25,
+  "fixed_vehicle_cost": 11478876,
+  "status": "feasible",
+  "feasible": true,
+  "vehicles": 11,
+  "distance_ticks": 993495,
+  "distance": 993.495,
+  "preparation_seconds": 5.5999997130129486e-05,
+  "search_seconds": 5.000831500001368,
+  "solver_runtime_seconds": 5.000776300003054,
+  "validation_seconds": 0.0004991000023437664,
+  "total_seconds": 5.002080200007185,
+  "first_feasible_seconds": 0.09711729999980889,
+  "iterations": 77,
+  "adapter_seconds": 5.001581100004842,
+  "postprocessing_seconds": 0.0006936000063433312,
+  "input_sha256": "a0e93149d59d30c356619891d192e86d0f16c3158e1dac3bd9f23c6deb718271",
+  "source_sha256": "4ccf2642f91c10e5ef78d549cf8ed0088696fccc6f0da27cfce273e5cd458c2d",
+  "error": "",
+  "metadata_json": "{\"config\": {\"seed\": 0, \"max_iterations\": null, \"time_limit_seconds\": 5.0, \"fleet_attempts_per_k\": 100, \"fleet_time_fraction\": 0.75, \"fleet_strategy\": \"hybrid\", \"fleet_repair_rounds\": 5, \"fleet_related_count\": 8, \"max_moves\": null, \"construction_order\": \"due\", \"repair_order\": \"due\", \"repair_strategy\": \"cheapest\", \"search_strategy\": \"first\", \"operators\": [\"relocate\", \"swap\", \"two_opt\", \"two_opt_star\"], \"remove_min\": 3, \"remove_max\": 8, \"restart_after\": 20, \"diagnostics\": false, \"evaluation_mode\": \"incremental\", \"search_backend\": \"native\", \"num_neighbours\": null, \"operator_schedule\": \"cyclic\", \"infeasible_search\": false, \"adaptive_penalties\": true, \"penalty_update_interval\": 10, \"penalty_target_feasible\": 0.5, \"penalty_max_moves\": 8}, \"backend\": \"native\", \"native\": {\"api_version\": 1, \"build_info\": \"compiler=MSVC 195035722; cxx_standard=17; api_version=1\", \"binary\": \"_native.cp312-win_amd64.pyd\", \"binary_sha256\": \"604462f386c003e397cd55934c67735731d9683e762902ff4d23fad1f410c0bb\"}, \"stop_reason\": \"time_limit\", \"initial_distance_ticks\": 2198359, \"fleet\": {\"lower_bound\": 8, \"stop_reason\": \"target_not_found\", \"targets\": [{\"target\": 14, \"trials\": 1, \"repair_rounds\": 1, \"elapsed_seconds\": 0.010894400002143811, \"first_feasible_seconds\": 0.010894400002143811, \"status\": \"found\"}, {\"target\": 13, \"trials\": 1, \"repair_rounds\": 1, \"elapsed_seconds\": 0.010610900004394352, \"first_feasible_seconds\": 0.010610900004394352, \"status\": \"found\"}, {\"target\": 12, \"trials\": 2, \"repair_rounds\": 2, \"elapsed_seconds\": 0.010896100000536535, \"first_feasible_seconds\": 0.010896100000536535, \"status\": \"found\"}, {\"target\": 11, \"trials\": 48, \"repair_rounds\": 144, \"elapsed_seconds\": 0.6532253999976092, \"first_feasible_seconds\": 0.6532253999976092, \"status\": \"found\"}, {\"target\": 10, \"trials\": 100, \"repair_rounds\": 300, \"elapsed_seconds\": 1.3767702999975882, \"first_feasible_seconds\": null, \"status\": \"not_found\"}]}, \"milestones\": [{\"vehicles\": 14, \"distance\": 1526351, \"elapsed_seconds\": 0.10856820000481093}, {\"vehicles\": 13, \"distance\": 1534215, \"elapsed_seconds\": 0.11945679999917047}, {\"vehicles\": 12, \"distance\": 1561118, \"elapsed_seconds\": 0.13062860000354704}, {\"vehicles\": 11, \"distance\": 1359760, \"elapsed_seconds\": 0.7841354999982286}]}",
+  "solution_path": "results/5s/R112/ours-seed-0.json",
+  "response": {
+    "routes": [
+      [
+        31,
+        88,
+        62,
+        19,
+        11,
+        64,
+        49,
+        36,
+        47,
+        48
+      ],
+      [
+        6,
+        96,
+        94
+      ],
+      [
+        27,
+        69,
+        51,
+        30,
+        32,
+        90,
+        63,
+        10,
+        70,
+        50
+      ],
+      [
+        2,
+        41,
+        22,
+        75,
+        56,
+        23,
+        67,
+        39,
+        25,
+        55,
+        54
+      ],
+      [
+        53,
+        40,
+        21,
+        73,
+        74,
+        72,
+        4,
+        26
+      ],
+      [
+        95,
+        99,
+        61,
+        16,
+        86,
+        38,
+        44,
+        14,
+        37,
+        97,
+        13
+      ],
+      [
+        87,
+        42,
+        43,
+        15,
+        57,
+        58
+      ],
+      [
+        28,
+        76,
+        33,
+        81,
+        9,
+        35,
+        71,
+        65,
+        66,
+        20,
+        1
+      ],
+      [
+        59,
+        92,
+        98,
+        100,
+        91,
+        85,
+        93,
+        5,
+        84,
+        17,
+        45,
+        60,
+        89
+      ],
+      [
+        52,
+        7,
+        82,
+        46,
+        8,
+        83,
+        18
+      ],
+      [
+        12,
+        24,
+        29,
+        34,
+        78,
+        79,
+        3,
+        77,
+        68,
+        80
+      ]
+    ],
+    "status": "feasible",
+    "preparation_seconds": 5.5999997130129486e-05,
+    "search_seconds": 5.000831500001368,
+    "solver_runtime_seconds": 5.000776300003054,
+    "first_feasible_seconds": 0.09711729999980889,
+    "iterations": 77,
+    "metadata": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 5.0,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.75,
+        "fleet_strategy": "hybrid",
+        "fleet_repair_rounds": 5,
+        "fleet_related_count": 8,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "search_backend": "native",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic",
+        "infeasible_search": false,
+        "adaptive_penalties": true,
+        "penalty_update_interval": 10,
+        "penalty_target_feasible": 0.5,
+        "penalty_max_moves": 8
+      },
+      "backend": "native",
+      "native": {
+        "api_version": 1,
+        "build_info": "compiler=MSVC 195035722; cxx_standard=17; api_version=1",
+        "binary": "_native.cp312-win_amd64.pyd",
+        "binary_sha256": "604462f386c003e397cd55934c67735731d9683e762902ff4d23fad1f410c0bb"
+      },
+      "stop_reason": "time_limit",
+      "initial_distance_ticks": 2198359,
+      "fleet": {
+        "lower_bound": 8,
+        "stop_reason": "target_not_found",
+        "targets": [
+          {
+            "target": 14,
+            "trials": 1,
+            "repair_rounds": 1,
+            "elapsed_seconds": 0.010894400002143811,
+            "first_feasible_seconds": 0.010894400002143811,
+            "status": "found"
+          },
+          {
+            "target": 13,
+            "trials": 1,
+            "repair_rounds": 1,
+            "elapsed_seconds": 0.010610900004394352,
+            "first_feasible_seconds": 0.010610900004394352,
+            "status": "found"
+          },
+          {
+            "target": 12,
+            "trials": 2,
+            "repair_rounds": 2,
+            "elapsed_seconds": 0.010896100000536535,
+            "first_feasible_seconds": 0.010896100000536535,
+            "status": "found"
+          },
+          {
+            "target": 11,
+            "trials": 48,
+            "repair_rounds": 144,
+            "elapsed_seconds": 0.6532253999976092,
+            "first_feasible_seconds": 0.6532253999976092,
+            "status": "found"
+          },
+          {
+            "target": 10,
+            "trials": 100,
+            "repair_rounds": 300,
+            "elapsed_seconds": 1.3767702999975882,
+            "first_feasible_seconds": null,
+            "status": "not_found"
+          }
+        ]
+      },
+      "milestones": [
+        {
+          "vehicles": 14,
+          "distance": 1526351,
+          "elapsed_seconds": 0.10856820000481093
+        },
+        {
+          "vehicles": 13,
+          "distance": 1534215,
+          "elapsed_seconds": 0.11945679999917047
+        },
+        {
+          "vehicles": 12,
+          "distance": 1561118,
+          "elapsed_seconds": 0.13062860000354704
+        },
+        {
+          "vehicles": 11,
+          "distance": 1359760,
+          "elapsed_seconds": 0.7841354999982286
+        }
+      ]
+    },
+    "adapter_seconds": 5.001581100004842
+  },
+  "completed_at": "2026-10-09T17:23:58.891169+00:00"
+}

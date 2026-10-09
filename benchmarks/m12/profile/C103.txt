@@ -1,0 +1,43 @@
+         946056 function calls (946049 primitive calls) in 0.398 seconds
+
+   Ordered by: cumulative time
+   List reduced from 107 to 35 due to restriction <35>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.501    0.501 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\solve.py:123(solve)
+      6/3    0.000    0.000    0.500    0.167 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\diagnostics.py:126(wrapped)
+        1    0.000    0.000    0.280    0.280 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\ils.py:84(run_ils)
+        1    0.008    0.008    0.263    0.263 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\local_search.py:272(improve)
+     8014    0.048    0.000    0.227    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\local_search.py:238(delta)
+        1    0.009    0.009    0.219    0.219 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\construct.py:24(construct)
+     6476    0.100    0.000    0.217    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\evaluate.py:62(evaluate_route)
+     6176    0.004    0.000    0.211    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\diagnostics.py:86(evaluate_route)
+    15059    0.070    0.000    0.111    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\route_cache.py:67(evaluate)
+     8037    0.019    0.000    0.027    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\local_search.py:53(apply_move)
+    14090    0.015    0.000    0.024    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\diagnostics.py:101(candidate_codes)
+   275980    0.021    0.000    0.021    0.000 {built-in method builtins.len}
+   122851    0.019    0.000    0.019    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\diagnostics.py:83(increment)
+   103996    0.017    0.000    0.017    0.000 {built-in method builtins.max}
+        1    0.000    0.000    0.016    0.016 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\ils.py:50(_perturb)
+        1    0.001    0.001    0.016    0.016 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\fleet.py:49(insert_fixed)
+    61248    0.011    0.000    0.015    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\problem.py:65(customer_count)
+       30    0.000    0.000    0.015    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\diagnostics.py:90(validate_solution)
+       30    0.003    0.000    0.014    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\evaluate.py:106(validate_solution)
+     6127    0.003    0.000    0.013    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\diagnostics.py:96(candidate)
+     8015    0.006    0.000    0.013    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\local_search.py:141(enumerate_moves)
+    91994    0.012    0.000    0.012    0.000 {method 'add' of 'set' objects}
+    81714    0.010    0.000    0.010    0.000 {method 'append' of 'list' objects}
+     8015    0.004    0.000    0.006    0.000 {built-in method builtins.any}
+    23428    0.004    0.000    0.004    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\local_search.py:116(<genexpr>)
+    23175    0.003    0.000    0.003    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\local_search.py:245(<genexpr>)
+    15431    0.003    0.000    0.003    0.000 {built-in method builtins.min}
+    23096    0.002    0.000    0.002    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\local_search.py:247(<genexpr>)
+    15060    0.002    0.000    0.002    0.000 {method 'update' of 'set' objects}
+     8487    0.001    0.000    0.001    0.000 {built-in method time.perf_counter}
+       23    0.000    0.000    0.001    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\local_search.py:227(update)
+       45    0.001    0.000    0.001    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\route_cache.py:30(__init__)
+     6131    0.001    0.000    0.001    0.000 D:\AAA-OR-Route\solver\vrptw_solver\src\vrptw\evaluate.py:36(feasible)
+     3457    0.001    0.000    0.001    0.000 {method 'insert' of 'list' objects}
+     3457    0.001    0.000    0.001    0.000 {method 'pop' of 'list' objects}
+
+

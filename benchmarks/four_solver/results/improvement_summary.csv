@@ -1,0 +1,5 @@
+solver,instance_count,fewer_vehicles_at_5s,same_vehicles_shorter_distance_at_5s,same_vehicles_longer_distance_at_5s,more_vehicles_at_5s,feasible_only_at_5s,lost_feasibility_at_5s,same_lexicographic_result,no_feasible_solution_at_either_budget,same_vehicle_distance_improvement_median_percent,same_vehicle_distance_improvement_p90_percent
+ours,56,11,39,0,0,0,0,6,0,9.146656218765328,26.1093896385549
+pyvrp,56,0,0,1,0,0,0,55,0,0.0,0.0
+ortools,56,15,26,0,0,0,0,15,0,1.5746263595165573,8.249934226744752
+gurobi,56,25,0,0,0,27,0,2,2,0.0,0.0

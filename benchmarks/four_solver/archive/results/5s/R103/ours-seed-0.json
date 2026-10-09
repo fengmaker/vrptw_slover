@@ -1,0 +1,227 @@
+{
+  "solver": "ours",
+  "instance": "R103",
+  "budget_seconds": 5.0,
+  "seed": 0,
+  "vehicle_cap": 25,
+  "fixed_vehicle_cost": 11478876,
+  "status": "feasible",
+  "feasible": true,
+  "vehicles": 14,
+  "distance_ticks": 1270753,
+  "distance": 1270.753,
+  "preparation_seconds": 5.0499998906161636e-05,
+  "search_seconds": 5.00085869999748,
+  "solver_runtime_seconds": 5.000802100003057,
+  "validation_seconds": 0.0004972999959136359,
+  "total_seconds": 5.00237379999453,
+  "first_feasible_seconds": 0.10384960000374122,
+  "iterations": 92,
+  "adapter_seconds": 5.001876499998616,
+  "postprocessing_seconds": 0.0009673000022303313,
+  "input_sha256": "1f833e8648ba39e0edc76754fb49e81777a7175cf7b084c3f60a12607bfb3991",
+  "source_sha256": "4ccf2642f91c10e5ef78d549cf8ed0088696fccc6f0da27cfce273e5cd458c2d",
+  "error": "",
+  "metadata_json": "{\"config\": {\"seed\": 0, \"max_iterations\": null, \"time_limit_seconds\": 5.0, \"fleet_attempts_per_k\": 100, \"fleet_time_fraction\": 0.75, \"fleet_strategy\": \"hybrid\", \"fleet_repair_rounds\": 5, \"fleet_related_count\": 8, \"max_moves\": null, \"construction_order\": \"due\", \"repair_order\": \"due\", \"repair_strategy\": \"cheapest\", \"search_strategy\": \"first\", \"operators\": [\"relocate\", \"swap\", \"two_opt\", \"two_opt_star\"], \"remove_min\": 3, \"remove_max\": 8, \"restart_after\": 20, \"diagnostics\": false, \"evaluation_mode\": \"incremental\", \"search_backend\": \"native\", \"num_neighbours\": null, \"operator_schedule\": \"cyclic\", \"infeasible_search\": false, \"adaptive_penalties\": true, \"penalty_update_interval\": 10, \"penalty_target_feasible\": 0.5, \"penalty_max_moves\": 8}, \"backend\": \"native\", \"native\": {\"api_version\": 1, \"build_info\": \"compiler=MSVC 195035722; cxx_standard=17; api_version=1\", \"binary\": \"_native.cp312-win_amd64.pyd\", \"binary_sha256\": \"604462f386c003e397cd55934c67735731d9683e762902ff4d23fad1f410c0bb\"}, \"stop_reason\": \"time_limit\", \"initial_distance_ticks\": 1546015, \"fleet\": {\"lower_bound\": 8, \"stop_reason\": \"target_not_found\", \"targets\": [{\"target\": 13, \"trials\": 100, \"repair_rounds\": 300, \"elapsed_seconds\": 1.080671199997596, \"first_feasible_seconds\": null, \"status\": \"not_found\"}]}, \"milestones\": []}",
+  "solution_path": "results/5s/R103/ours-seed-0.json",
+  "response": {
+    "routes": [
+      [
+        92,
+        42,
+        15,
+        41,
+        2,
+        58
+      ],
+      [
+        45,
+        44,
+        38,
+        86,
+        16,
+        14,
+        43,
+        57
+      ],
+      [
+        6,
+        59,
+        98,
+        85,
+        91,
+        100,
+        37
+      ],
+      [
+        50,
+        33,
+        3,
+        76,
+        79,
+        29,
+        24,
+        68,
+        80,
+        12
+      ],
+      [
+        36,
+        64,
+        49,
+        47,
+        48,
+        82,
+        18
+      ],
+      [
+        40,
+        53
+      ],
+      [
+        71,
+        65,
+        78,
+        34,
+        35,
+        81,
+        77,
+        28
+      ],
+      [
+        31,
+        62,
+        88,
+        8,
+        46,
+        83,
+        5,
+        60,
+        89
+      ],
+      [
+        52,
+        7,
+        19,
+        11,
+        63,
+        10,
+        90,
+        32,
+        70
+      ],
+      [
+        96,
+        99,
+        84,
+        17,
+        61,
+        93
+      ],
+      [
+        94,
+        95,
+        97,
+        87,
+        13
+      ],
+      [
+        27,
+        69,
+        30,
+        9,
+        66,
+        20,
+        51,
+        1
+      ],
+      [
+        26,
+        39,
+        23,
+        67,
+        55,
+        4,
+        25,
+        54
+      ],
+      [
+        73,
+        22,
+        75,
+        56,
+        74,
+        72,
+        21
+      ]
+    ],
+    "status": "feasible",
+    "preparation_seconds": 5.0499998906161636e-05,
+    "search_seconds": 5.00085869999748,
+    "solver_runtime_seconds": 5.000802100003057,
+    "first_feasible_seconds": 0.10384960000374122,
+    "iterations": 92,
+    "metadata": {
+      "config": {
+        "seed": 0,
+        "max_iterations": null,
+        "time_limit_seconds": 5.0,
+        "fleet_attempts_per_k": 100,
+        "fleet_time_fraction": 0.75,
+        "fleet_strategy": "hybrid",
+        "fleet_repair_rounds": 5,
+        "fleet_related_count": 8,
+        "max_moves": null,
+        "construction_order": "due",
+        "repair_order": "due",
+        "repair_strategy": "cheapest",
+        "search_strategy": "first",
+        "operators": [
+          "relocate",
+          "swap",
+          "two_opt",
+          "two_opt_star"
+        ],
+        "remove_min": 3,
+        "remove_max": 8,
+        "restart_after": 20,
+        "diagnostics": false,
+        "evaluation_mode": "incremental",
+        "search_backend": "native",
+        "num_neighbours": null,
+        "operator_schedule": "cyclic",
+        "infeasible_search": false,
+        "adaptive_penalties": true,
+        "penalty_update_interval": 10,
+        "penalty_target_feasible": 0.5,
+        "penalty_max_moves": 8
+      },
+      "backend": "native",
+      "native": {
+        "api_version": 1,
+        "build_info": "compiler=MSVC 195035722; cxx_standard=17; api_version=1",
+        "binary": "_native.cp312-win_amd64.pyd",
+        "binary_sha256": "604462f386c003e397cd55934c67735731d9683e762902ff4d23fad1f410c0bb"
+      },
+      "stop_reason": "time_limit",
+      "initial_distance_ticks": 1546015,
+      "fleet": {
+        "lower_bound": 8,
+        "stop_reason": "target_not_found",
+        "targets": [
+          {
+            "target": 13,
+            "trials": 100,
+            "repair_rounds": 300,
+            "elapsed_seconds": 1.080671199997596,
+            "first_feasible_seconds": null,
+            "status": "not_found"
+          }
+        ]
+      },
+      "milestones": []
+    },
+    "adapter_seconds": 5.001876499998616
+  },
+  "completed_at": "2026-10-09T17:20:14.846802+00:00"
+}

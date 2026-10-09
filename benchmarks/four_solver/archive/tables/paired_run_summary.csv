@@ -1,0 +1,3 @@
+budget_seconds,paired_run_count,both_feasible_count,ours_vehicle_better_count,ours_vehicle_equal_count,ours_vehicle_worse_count,same_vehicle_distance_gap_count,same_vehicle_distance_gap_median_percent,same_vehicle_distance_gap_p90_percent
+0.5,56,56,28,24,4,24,7.78414246278828,45.48047523778458
+5,56,56,32,24,0,24,0.060780188373332766,4.129869445040653

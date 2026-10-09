@@ -1,0 +1,20 @@
+{
+  "instance": "R101",
+  "budget_seconds": 5.0,
+  "seed": 0,
+  "vehicle_cap": 20,
+  "status": "no_feasible_solution",
+  "feasible": false,
+  "vehicles": null,
+  "distance_ticks": null,
+  "distance": null,
+  "ours_vehicles": 20,
+  "ours_distance_ticks": 1653810,
+  "preparation_seconds": 0.0019339999998919666,
+  "search_seconds": 5.001338799993391,
+  "solver_runtime_seconds": 4.99032669999724,
+  "iterations": 2662,
+  "input_sha256": "3f3655182bc0fe44ce5de65fdcd2ee2f9c7fb9ed055f923635151d9d6f76d3ed",
+  "routes": null,
+  "solution_path": "solutions/5s/R101-seed-0.json"
+}

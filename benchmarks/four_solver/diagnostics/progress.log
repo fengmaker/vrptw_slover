@@ -1,0 +1,8 @@
+C103 0.5s K=10 D=1226.43 iterations=16
+C103 5s K=10 D=1071.717 iterations=237
+C104 0.5s K=10 D=1045.222 iterations=11
+C104 5s K=10 D=904.859 iterations=204
+R101 0.5s K=21 D=1699.017 iterations=1
+R101 5s K=20 D=1653.81 iterations=58
+RC101 0.5s K=16 D=1781.132 iterations=1
+RC101 5s K=16 D=1707.734 iterations=80

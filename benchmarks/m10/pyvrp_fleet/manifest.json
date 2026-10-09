@@ -1,0 +1,1628 @@
+{
+  "status": "completed",
+  "started_at_utc": "2026-10-02T15:33:44.142878+00:00",
+  "python_version": "3.13.5",
+  "platform": "Windows-11-10.0.22621-SP0",
+  "pyvrp_version": "0.13.0a0",
+  "numeric_rule": "solomon_exact_1000_v1",
+  "config": {
+    "instances": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "R101",
+      "R102",
+      "R103",
+      "R104",
+      "R105",
+      "R106",
+      "R107",
+      "R108",
+      "R109",
+      "R110",
+      "R111",
+      "R112",
+      "R201",
+      "R202",
+      "R203",
+      "R204",
+      "R205",
+      "R206",
+      "R207",
+      "R208",
+      "R209",
+      "R210",
+      "R211",
+      "RC101",
+      "RC102",
+      "RC103",
+      "RC104",
+      "RC105",
+      "RC106",
+      "RC107",
+      "RC108",
+      "RC201",
+      "RC202",
+      "RC203",
+      "RC204",
+      "RC205",
+      "RC206",
+      "RC207",
+      "RC208"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "budget_seconds": 0.5,
+    "fleet_time_fraction": 0.75,
+    "initial_cap_policy": "deterministic_construct_due",
+    "caps": {
+      "C101": {
+        "initial_vehicle_cap": 12,
+        "deterministic_construct_due_cap": 12,
+        "source": "deterministic_construct_due"
+      },
+      "C102": {
+        "initial_vehicle_cap": 10,
+        "deterministic_construct_due_cap": 10,
+        "source": "deterministic_construct_due"
+      },
+      "C103": {
+        "initial_vehicle_cap": 10,
+        "deterministic_construct_due_cap": 10,
+        "source": "deterministic_construct_due"
+      },
+      "C104": {
+        "initial_vehicle_cap": 10,
+        "deterministic_construct_due_cap": 10,
+        "source": "deterministic_construct_due"
+      },
+      "C105": {
+        "initial_vehicle_cap": 11,
+        "deterministic_construct_due_cap": 11,
+        "source": "deterministic_construct_due"
+      },
+      "C106": {
+        "initial_vehicle_cap": 12,
+        "deterministic_construct_due_cap": 12,
+        "source": "deterministic_construct_due"
+      },
+      "C107": {
+        "initial_vehicle_cap": 11,
+        "deterministic_construct_due_cap": 11,
+        "source": "deterministic_construct_due"
+      },
+      "C108": {
+        "initial_vehicle_cap": 11,
+        "deterministic_construct_due_cap": 11,
+        "source": "deterministic_construct_due"
+      },
+      "C109": {
+        "initial_vehicle_cap": 10,
+        "deterministic_construct_due_cap": 10,
+        "source": "deterministic_construct_due"
+      },
+      "C201": {
+        "initial_vehicle_cap": 3,
+        "deterministic_construct_due_cap": 3,
+        "source": "deterministic_construct_due"
+      },
+      "C202": {
+        "initial_vehicle_cap": 3,
+        "deterministic_construct_due_cap": 3,
+        "source": "deterministic_construct_due"
+      },
+      "C203": {
+        "initial_vehicle_cap": 4,
+        "deterministic_construct_due_cap": 4,
+        "source": "deterministic_construct_due"
+      },
+      "C204": {
+        "initial_vehicle_cap": 4,
+        "deterministic_construct_due_cap": 4,
+        "source": "deterministic_construct_due"
+      },
+      "C205": {
+        "initial_vehicle_cap": 4,
+        "deterministic_construct_due_cap": 4,
+        "source": "deterministic_construct_due"
+      },
+      "C206": {
+        "initial_vehicle_cap": 4,
+        "deterministic_construct_due_cap": 4,
+        "source": "deterministic_construct_due"
+      },
+      "C207": {
+        "initial_vehicle_cap": 4,
+        "deterministic_construct_due_cap": 4,
+        "source": "deterministic_construct_due"
+      },
+      "C208": {
+        "initial_vehicle_cap": 4,
+        "deterministic_construct_due_cap": 4,
+        "source": "deterministic_construct_due"
+      },
+      "R101": {
+        "initial_vehicle_cap": 23,
+        "deterministic_construct_due_cap": 23,
+        "source": "deterministic_construct_due"
+      },
+      "R102": {
+        "initial_vehicle_cap": 20,
+        "deterministic_construct_due_cap": 20,
+        "source": "deterministic_construct_due"
+      },
+      "R103": {
+        "initial_vehicle_cap": 14,
+        "deterministic_construct_due_cap": 14,
+        "source": "deterministic_construct_due"
+      },
+      "R104": {
+        "initial_vehicle_cap": 12,
+        "deterministic_construct_due_cap": 12,
+        "source": "deterministic_construct_due"
+      },
+      "R105": {
+        "initial_vehicle_cap": 18,
+        "deterministic_construct_due_cap": 18,
+        "source": "deterministic_construct_due"
+      },
+      "R106": {
+        "initial_vehicle_cap": 16,
+        "deterministic_construct_due_cap": 16,
+        "source": "deterministic_construct_due"
+      },
+      "R107": {
+        "initial_vehicle_cap": 14,
+        "deterministic_construct_due_cap": 14,
+        "source": "deterministic_construct_due"
+      },
+      "R108": {
+        "initial_vehicle_cap": 13,
+        "deterministic_construct_due_cap": 13,
+        "source": "deterministic_construct_due"
+      },
+      "R109": {
+        "initial_vehicle_cap": 19,
+        "deterministic_construct_due_cap": 19,
+        "source": "deterministic_construct_due"
+      },
+      "R110": {
+        "initial_vehicle_cap": 15,
+        "deterministic_construct_due_cap": 15,
+        "source": "deterministic_construct_due"
+      },
+      "R111": {
+        "initial_vehicle_cap": 13,
+        "deterministic_construct_due_cap": 13,
+        "source": "deterministic_construct_due"
+      },
+      "R112": {
+        "initial_vehicle_cap": 15,
+        "deterministic_construct_due_cap": 15,
+        "source": "deterministic_construct_due"
+      },
+      "R201": {
+        "initial_vehicle_cap": 5,
+        "deterministic_construct_due_cap": 5,
+        "source": "deterministic_construct_due"
+      },
+      "R202": {
+        "initial_vehicle_cap": 4,
+        "deterministic_construct_due_cap": 4,
+        "source": "deterministic_construct_due"
+      },
+      "R203": {
+        "initial_vehicle_cap": 3,
+        "deterministic_construct_due_cap": 3,
+        "source": "deterministic_construct_due"
+      },
+      "R204": {
+        "initial_vehicle_cap": 3,
+        "deterministic_construct_due_cap": 3,
+        "source": "deterministic_construct_due"
+      },
+      "R205": {
+        "initial_vehicle_cap": 4,
+        "deterministic_construct_due_cap": 4,
+        "source": "deterministic_construct_due"
+      },
+      "R206": {
+        "initial_vehicle_cap": 3,
+        "deterministic_construct_due_cap": 3,
+        "source": "deterministic_construct_due"
+      },
+      "R207": {
+        "initial_vehicle_cap": 4,
+        "deterministic_construct_due_cap": 4,
+        "source": "deterministic_construct_due"
+      },
+      "R208": {
+        "initial_vehicle_cap": 3,
+        "deterministic_construct_due_cap": 3,
+        "source": "deterministic_construct_due"
+      },
+      "R209": {
+        "initial_vehicle_cap": 4,
+        "deterministic_construct_due_cap": 4,
+        "source": "deterministic_construct_due"
+      },
+      "R210": {
+        "initial_vehicle_cap": 3,
+        "deterministic_construct_due_cap": 3,
+        "source": "deterministic_construct_due"
+      },
+      "R211": {
+        "initial_vehicle_cap": 3,
+        "deterministic_construct_due_cap": 3,
+        "source": "deterministic_construct_due"
+      },
+      "RC101": {
+        "initial_vehicle_cap": 20,
+        "deterministic_construct_due_cap": 20,
+        "source": "deterministic_construct_due"
+      },
+      "RC102": {
+        "initial_vehicle_cap": 17,
+        "deterministic_construct_due_cap": 17,
+        "source": "deterministic_construct_due"
+      },
+      "RC103": {
+        "initial_vehicle_cap": 13,
+        "deterministic_construct_due_cap": 13,
+        "source": "deterministic_construct_due"
+      },
+      "RC104": {
+        "initial_vehicle_cap": 14,
+        "deterministic_construct_due_cap": 14,
+        "source": "deterministic_construct_due"
+      },
+      "RC105": {
+        "initial_vehicle_cap": 17,
+        "deterministic_construct_due_cap": 17,
+        "source": "deterministic_construct_due"
+      },
+      "RC106": {
+        "initial_vehicle_cap": 18,
+        "deterministic_construct_due_cap": 18,
+        "source": "deterministic_construct_due"
+      },
+      "RC107": {
+        "initial_vehicle_cap": 17,
+        "deterministic_construct_due_cap": 17,
+        "source": "deterministic_construct_due"
+      },
+      "RC108": {
+        "initial_vehicle_cap": 15,
+        "deterministic_construct_due_cap": 15,
+        "source": "deterministic_construct_due"
+      },
+      "RC201": {
+        "initial_vehicle_cap": 5,
+        "deterministic_construct_due_cap": 5,
+        "source": "deterministic_construct_due"
+      },
+      "RC202": {
+        "initial_vehicle_cap": 5,
+        "deterministic_construct_due_cap": 5,
+        "source": "deterministic_construct_due"
+      },
+      "RC203": {
+        "initial_vehicle_cap": 5,
+        "deterministic_construct_due_cap": 5,
+        "source": "deterministic_construct_due"
+      },
+      "RC204": {
+        "initial_vehicle_cap": 3,
+        "deterministic_construct_due_cap": 3,
+        "source": "deterministic_construct_due"
+      },
+      "RC205": {
+        "initial_vehicle_cap": 5,
+        "deterministic_construct_due_cap": 5,
+        "source": "deterministic_construct_due"
+      },
+      "RC206": {
+        "initial_vehicle_cap": 5,
+        "deterministic_construct_due_cap": 5,
+        "source": "deterministic_construct_due"
+      },
+      "RC207": {
+        "initial_vehicle_cap": 4,
+        "deterministic_construct_due_cap": 4,
+        "source": "deterministic_construct_due"
+      },
+      "RC208": {
+        "initial_vehicle_cap": 4,
+        "deterministic_construct_due_cap": 4,
+        "source": "deterministic_construct_due"
+      }
+    },
+    "pyvrp_pipeline": [
+      "minimise_fleet",
+      "solve_reduced_data"
+    ],
+    "budget_policy": "remaining_total_budget_for_final_solve",
+    "fleet_minimise_result_semantics": "vehicle_type_cap_only; no feasible route is carried into final solve",
+    "conversion_round_func": "exact",
+    "numeric_rule": "solomon_exact_1000_v1"
+  },
+  "config_sha256": "029d3463cc59df10cfaa996971ca05a1d7d3e041c3494b654913e35ab35edec4",
+  "source_hashes": {
+    "solver_code_sha256": "3356bdb31018267a03c9a865509206c85bc3fb0867b885cddddb15d2e448a902",
+    "pyvrp_code_sha256": "6fd71826ecae172827414e5d363757d0f07acc6e2502001040cba9a8eed81f17",
+    "script_sha256": "fd08bdb359bb7371bec5818b5b8b0fed52aa3d36a84af8506ed109ed33b121a8"
+  },
+  "pyvrp_package_path": "D:\\AAA-OR-Route\\solver\\PyVRP-main\\pyvrp",
+  "input_sha256": {
+    "C101": "a6da75152d182d60ecd2c6f854296f5be452f92282d096adebcf5d99a7f16516",
+    "C102": "f89a0e2a760cc7448a4ca72b88e5b29b94d64b5548f3320f42a6230025ead653",
+    "C103": "a55cabf15e0da9d65696a5fb45c9852889479893f76f772a428ca15d1b415a51",
+    "C104": "fe333e81625ee5a75bb2ce98c2c9f356d07289237865b62a23ba2f32f0de5ee2",
+    "C105": "9a877a3a6fb922e7ad9297cc0308bc8a5652cb1495a0228ee6b81b2d938aa29f",
+    "C106": "ec9b419bed53e9c607cce76e8c6bc59feb6e4d17646905601f008a4141ec7b40",
+    "C107": "cb3cdc10d812fa17370eb52cb753b6b0574426dc6fabeb8b9076ed750ddf05ca",
+    "C108": "b8c7e48f292b66b283d8e71511e3a4eccaa4c4bc66b9313c399e73b0226f5953",
+    "C109": "72d8489e14bf1bb18456f0b21b01110506cbcc2354719dae8481b480150f142a",
+    "C201": "d8d9834087ae2326fa23a8510533060233dc9fb481873be60956eb26a880ad63",
+    "C202": "dfc8ecad79f6c7ffb096cd36994143569f0babe284d5ad194683271d81063772",
+    "C203": "2b79eea2962a848cb29f6153d4fb4ae725d35507686d937da6643b33fcd85062",
+    "C204": "4331b2744d34e32c2987e3fe8a82b782a2039d757d2aac818f7e0fd21117bfb4",
+    "C205": "15be2bb8c3e4ad99a79d1e7ee0472223feb95a4f423d010e032bda0a87266ca5",
+    "C206": "745b6c7042707ffbbfc4d681ee02a84431425f1dfb3c8aa85ecf003fec8f7e53",
+    "C207": "a33f03570a944c8a6d185fd6a173e66c68e67c399a4958b2d5b6d49533ace4a4",
+    "C208": "1c2f2381b8743680dbeb34322869cbf5a6cdd8c281f4bcffdb99b533e601874b",
+    "R101": "3f3655182bc0fe44ce5de65fdcd2ee2f9c7fb9ed055f923635151d9d6f76d3ed",
+    "R102": "eeb23171b7e4fbfc80bf000ca770329109900fbd7273fa8b9d1f95b7dfe683c3",
+    "R103": "1f833e8648ba39e0edc76754fb49e81777a7175cf7b084c3f60a12607bfb3991",
+    "R104": "dd087124311d91facd81736debbfc7d0f351d27942917e2d76cbafd01e6183b7",
+    "R105": "ff1a614f8458d6339b3f54d8e4ca2dcf0a35c96012f477f6a819ae481de85ca4",
+    "R106": "31b8783d177f0fbe1c84b8f085fbf28b1989a80e4c00f49f5654ebef99835e97",
+    "R107": "dba2b257a1d43d7c78d5e3a9f09091a2b125d3fbec78c0c8a1782add669a1275",
+    "R108": "65cae09f4099b7e70d2b723e0e3a30aa1494c75a367bb894a3fd13241ee639d4",
+    "R109": "4ef24030e8c48de5f85dcd90c5739186004fc8dec87533b6467013cf996f4777",
+    "R110": "14cb53cb99af61d3d708f07564b9a72d146e7c26b4f10507cfaf3bc828f34bfa",
+    "R111": "3d94a73b1f2fe8aae4618b9d9ea254cff2e3924a6a841aa390096ec6c60f258d",
+    "R112": "a0e93149d59d30c356619891d192e86d0f16c3158e1dac3bd9f23c6deb718271",
+    "R201": "0be960ec998fff2cab0bdbcc5194c617e5ca0a79c82c5b32b1d4bd98b2cae210",
+    "R202": "1f7761bb33e9dd0c94837b32c72280296ffc283dba997379c7ad75ce00dffc8d",
+    "R203": "38c484db31bd7452a94d533e26a2348ef598df600b79d061d9ddc1c61466a731",
+    "R204": "5349e37d8df99bcbee1efa2e970d2662b5265e5f82fc609343a6af0a60257abf",
+    "R205": "1996bf8f10716fb8cfc1a585206a6a6e566f32347c1bb8f36c75ed6c887f77e3",
+    "R206": "c8754a0319264d076c038b1bf023c8c4710e8895fe3e03f485e9ae249f32fe43",
+    "R207": "52dc8eebba43fdc67ca9aadab228b75a297acb55a87db3e4748e82f623e3cbe6",
+    "R208": "7b4a95d500af9329dd08791d39898a619faec0f8fac039d57373e761545b980d",
+    "R209": "5b74156d032babcff853ccc693f94463eca8333cd425aa99a39ed996f6258933",
+    "R210": "4e5772f109fb6183e6a648d6a1edaba3435438c2dc11c42da370fecf7bdf3a14",
+    "R211": "2965507e467a2f92acd59035975910e36ae11e4f49590d4c7d20a883939227ad",
+    "RC101": "ef6893ffd9746ad96de8e4da6e64e2c4ba6e08a1c7eb9457276a9f1caf01ca12",
+    "RC102": "36acd349d34a577c7fadd61f78517c2cb74bd06a490273800c288f341e5785a4",
+    "RC103": "00f384138274d5d2bff5c41601db17cc4ad0cfc6315c27e223d4477bf435cc2d",
+    "RC104": "d150b2d61049a488fb89a2320c197d81a7ef9a1864abbbaea1d13a2b451253ee",
+    "RC105": "b9e912625c1ed80d2f565e0799ade2f4b17bf4f95056322ca23f1a21b37e7a49",
+    "RC106": "bf016ffc567af2d108570357daf1d0cabb7f680c0bd977d2e4366787683fdbaf",
+    "RC107": "fff3fd68d110671ed442575f07cc547291586f30b00c5f73934d521d31311582",
+    "RC108": "006bc8817bf09f9a8c66af8d6f088bdec239b2eb435556e9d11193cf456f7aeb",
+    "RC201": "288836e2d8c2ace83ebbff77e03ac8cdffc574fc134cade21ef92713f8c52d44",
+    "RC202": "5a1dee2017ab0ca4fe280b392678c96e8b5bc71f22d02c8058fbde7c4cfebcf4",
+    "RC203": "4adcb362c23df91f14b828d4964e9383ffb02ee74217afc2d84571f83ed91f8b",
+    "RC204": "11e827eab51a959ebab66344e7b7cfd1aeed895287653b36a72c86a4440ecd77",
+    "RC205": "c061d306cf42310b0f3ca15612089f6c5a8d5604c0733bf26852477c787662c9",
+    "RC206": "5203aecf67c84df49e152645312a837ffefde529314ff892ca061538816e43a9",
+    "RC207": "5cab65f99b350cdb8fb1c4d0a12dde85eb4ff6a6d6daf292b182cb73de9a8b63",
+    "RC208": "3d67d2a8e2758a324643f5d6c6ca87e8c56435273eaa04be33f213bb991f1f28"
+  },
+  "conversion_checked_with": "benchmarks/pyvrp/run.py:_check_same_problem",
+  "cases": [
+    {
+      "instance": "C101",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/C101/seed-0.json",
+      "artifact_sha256": "702e217674f40d9ac3a64f5c59dbaccf4af2ac088d039ffdd5a87f3925861d44"
+    },
+    {
+      "instance": "C101",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/C101/seed-1.json",
+      "artifact_sha256": "c6f4f8bd105611dd3fbeb5b4c993f84f91684b765493955505eb1bf55e380e0b"
+    },
+    {
+      "instance": "C101",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/C101/seed-2.json",
+      "artifact_sha256": "b45bff9d9627547aeb513f3cc06681bdd0bd0b8c8c44ca45fb8e3c0ce24b5202"
+    },
+    {
+      "instance": "C102",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/C102/seed-0.json",
+      "artifact_sha256": "66553f29f7c4c51edd3006b6583431b10842b1da29e1102164dd4ba2ff803301"
+    },
+    {
+      "instance": "C102",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/C102/seed-1.json",
+      "artifact_sha256": "2dbc2b39d8a89772646f9798bdcb2d869f846ed68e48b5ca5045c27a8d478610"
+    },
+    {
+      "instance": "C102",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/C102/seed-2.json",
+      "artifact_sha256": "9d63a5642f6d49d39a152ca6c03e419f5a37f506d4a0ca651f671a3414964617"
+    },
+    {
+      "instance": "C103",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/C103/seed-0.json",
+      "artifact_sha256": "8b1b2aa9f4a39cd68025be55c46e5b3f32d9f98e54369d75adb38c7027844264"
+    },
+    {
+      "instance": "C103",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/C103/seed-1.json",
+      "artifact_sha256": "95a5495a0e39c51ca2413a0f54ef1095e3600b7facabd6c77812588d0ac1a1d0"
+    },
+    {
+      "instance": "C103",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/C103/seed-2.json",
+      "artifact_sha256": "0c6a2af48bc7efa73e1b641e385ac1f3c7d54bc329471cecc6ce2fad97e2d512"
+    },
+    {
+      "instance": "C104",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/C104/seed-0.json",
+      "artifact_sha256": "d06e8dd823abef5ba3b9621c24997bd12a09f977101596f8cbd8037c397696b8"
+    },
+    {
+      "instance": "C104",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/C104/seed-1.json",
+      "artifact_sha256": "250d896138a5f65967f172b28ecf8b1b2935376727fd37893ab762a127be23bd"
+    },
+    {
+      "instance": "C104",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/C104/seed-2.json",
+      "artifact_sha256": "da92490a9c5433ae9fd2a0873a23acdd8dcfb50e90eecbb2a42ba35f7b44712a"
+    },
+    {
+      "instance": "C105",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/C105/seed-0.json",
+      "artifact_sha256": "9ada63f14b87e08773bee84bc87f0e40d3f3981a8eab36bfc926e5a3fc05fbfb"
+    },
+    {
+      "instance": "C105",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/C105/seed-1.json",
+      "artifact_sha256": "94529260f122b25953494898281f93d99e27fb6ffaec1aa357f0f8b9876365e2"
+    },
+    {
+      "instance": "C105",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/C105/seed-2.json",
+      "artifact_sha256": "c2410daee54c95d13ce46ea52b022d0f1fd3a79ba1992ecbc18b27d4806781a9"
+    },
+    {
+      "instance": "C106",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/C106/seed-0.json",
+      "artifact_sha256": "3fed9a4944a7021a80b9407ac576a92377a91d57b9d35e21f329b1e83bdf99a4"
+    },
+    {
+      "instance": "C106",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/C106/seed-1.json",
+      "artifact_sha256": "468c9b45dcca609024f0b0d4597b94577fedcc10deea84d24ecd56528985941d"
+    },
+    {
+      "instance": "C106",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/C106/seed-2.json",
+      "artifact_sha256": "e12afc7927aeebf4adfd754ccc7150c7f3a2690554ede581ca8ae64913deb11c"
+    },
+    {
+      "instance": "C107",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/C107/seed-0.json",
+      "artifact_sha256": "692087f83bf09885e97fe7afd6c53697293362ebbe6c6d95ee0374498df10c53"
+    },
+    {
+      "instance": "C107",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/C107/seed-1.json",
+      "artifact_sha256": "985522106055ba28e621f80429e622279e51abb1a4eef83d9d9cb4b73291abad"
+    },
+    {
+      "instance": "C107",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/C107/seed-2.json",
+      "artifact_sha256": "ea903a6b7971d26541ec05928bc194f613669c074c42d220603b82ff66a386e7"
+    },
+    {
+      "instance": "C108",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/C108/seed-0.json",
+      "artifact_sha256": "702455539878d28303e8c3fc9ced5755385bc6155c3e5deed097f0f293da53e0"
+    },
+    {
+      "instance": "C108",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/C108/seed-1.json",
+      "artifact_sha256": "fbf1a1f01a9d2e7052bf6f3ccc30d405d13b8483a1f7e4e1ac01c208f7f3a1a1"
+    },
+    {
+      "instance": "C108",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/C108/seed-2.json",
+      "artifact_sha256": "0df494b26ebe21b9d2c88b55eabc4f31f8874f3f76430160fcd863bf21439df4"
+    },
+    {
+      "instance": "C109",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/C109/seed-0.json",
+      "artifact_sha256": "5eed2a4e516e854d35183a709dcdb5259094742637af2e637525657dd5a994a4"
+    },
+    {
+      "instance": "C109",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/C109/seed-1.json",
+      "artifact_sha256": "5ff81fbb51842c9789622eb263647192a3d1645351a1542558a85fc77492d1e9"
+    },
+    {
+      "instance": "C109",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/C109/seed-2.json",
+      "artifact_sha256": "247f66efd4eb986d3d7e41f8401a9464463d917a50933e7d72b3f001a8c4f9f8"
+    },
+    {
+      "instance": "C201",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/C201/seed-0.json",
+      "artifact_sha256": "36dd6d1eb378fb60c7fdb5e56a83e6c4a8b6ce03f8bfb284c90f5de5c9ddc319"
+    },
+    {
+      "instance": "C201",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/C201/seed-1.json",
+      "artifact_sha256": "3f437d093ad36812bef7c4a99bfa11562a24ad381705707264aaf33ce49a51a9"
+    },
+    {
+      "instance": "C201",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/C201/seed-2.json",
+      "artifact_sha256": "ede607b16a0b295918ca9240a81363c721b2edc9402475fd5ea053c18afe1f3e"
+    },
+    {
+      "instance": "C202",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/C202/seed-0.json",
+      "artifact_sha256": "8f00b666cc7cebed67692c0f7984ca41023cdd744471e043d5cd80544450bb4d"
+    },
+    {
+      "instance": "C202",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/C202/seed-1.json",
+      "artifact_sha256": "5a5522ec36855dcb39e46283d55bec507648916fb1763924d2ed87571010c89f"
+    },
+    {
+      "instance": "C202",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/C202/seed-2.json",
+      "artifact_sha256": "2627ada372fbbec7d3aef0b203546f5e0233f1536ddeb3df0a0c9d5461f8c860"
+    },
+    {
+      "instance": "C203",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/C203/seed-0.json",
+      "artifact_sha256": "a64684acbf688df8f815958c89f198c427569445f2d47f5764c7a889d15608f1"
+    },
+    {
+      "instance": "C203",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/C203/seed-1.json",
+      "artifact_sha256": "9fd623e7ec838a0826285d306a1ac83d0e288ad5011763cfd8181d47ddb8a36b"
+    },
+    {
+      "instance": "C203",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/C203/seed-2.json",
+      "artifact_sha256": "a37b28489e3ea7feb1f7b23ddb39cad1583bc42e4e2c8031dba9f00fa4d3a4a9"
+    },
+    {
+      "instance": "C204",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/C204/seed-0.json",
+      "artifact_sha256": "7eac6d8c3838f87426e3a577365b80ecf7eb683a54fa767e33b22a3749eb1dad"
+    },
+    {
+      "instance": "C204",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/C204/seed-1.json",
+      "artifact_sha256": "b518970218fed5eefdbe3d35010fe9ab477bd02375cefe4aafa116ff243916d8"
+    },
+    {
+      "instance": "C204",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/C204/seed-2.json",
+      "artifact_sha256": "e4ed6514cbc418ddb072722af1337b039e286133e5e21298a445e0361113ef38"
+    },
+    {
+      "instance": "C205",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/C205/seed-0.json",
+      "artifact_sha256": "cef085508c53a46f5934c78163b7d2c3b6d3d62436e855c2b8679b8b6799f8fb"
+    },
+    {
+      "instance": "C205",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/C205/seed-1.json",
+      "artifact_sha256": "06cd6803ac86ce5f88e0d54df8aa0b20756eab3624b5deb815ee61d3a74eff5f"
+    },
+    {
+      "instance": "C205",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/C205/seed-2.json",
+      "artifact_sha256": "8bbd3e92b8695e06d027ee2fe91c59a31e14e0710746046af92fcb543480a78c"
+    },
+    {
+      "instance": "C206",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/C206/seed-0.json",
+      "artifact_sha256": "3fb336031fcf60ac78e117c2786d9645d94b8b591467c19b5ec0b57aea1a1c2a"
+    },
+    {
+      "instance": "C206",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/C206/seed-1.json",
+      "artifact_sha256": "7b50fc6e6825b877c11d73514b8e68a586809e5d4b9e1b6fd3eba6ce47144915"
+    },
+    {
+      "instance": "C206",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/C206/seed-2.json",
+      "artifact_sha256": "e432b9a297fac5204b06d963d39243c1d6b86846a3aee2e8d2b09930b8c87e60"
+    },
+    {
+      "instance": "C207",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/C207/seed-0.json",
+      "artifact_sha256": "78eeddd96f2f7cd9cae45f07a884c597be239b96b871c62667c904d6e32c50b6"
+    },
+    {
+      "instance": "C207",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/C207/seed-1.json",
+      "artifact_sha256": "27a569cbfc862a75fb2fd378e966cb562fa464feeb24fc25679f7ec1c8c0cb63"
+    },
+    {
+      "instance": "C207",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/C207/seed-2.json",
+      "artifact_sha256": "ae51a27d72af7c68a25ecbeeb2c59f94015e43dddef221b8592d3658e7adb1cd"
+    },
+    {
+      "instance": "C208",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/C208/seed-0.json",
+      "artifact_sha256": "3521a3719d0ab889d8a5317b83bf47484945f476badc8555196f875225171bfc"
+    },
+    {
+      "instance": "C208",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/C208/seed-1.json",
+      "artifact_sha256": "dd0986f2ac2f4c4037b5a8897bdbacb0d5b26bad0525cdba3eadb32473a97e72"
+    },
+    {
+      "instance": "C208",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/C208/seed-2.json",
+      "artifact_sha256": "ca6ae275c65ae862a6ba74856346edb2674922fe97485f83ee244e8e8a4cc454"
+    },
+    {
+      "instance": "R101",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/R101/seed-0.json",
+      "artifact_sha256": "2450d7261ed65277da8d2faa7e956b06e213ac5901d38201070879ed895c3c52"
+    },
+    {
+      "instance": "R101",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/R101/seed-1.json",
+      "artifact_sha256": "4dd134482ebecdf635266e47ce1a666c85068ee8999a4e64430917a52ccaac61"
+    },
+    {
+      "instance": "R101",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/R101/seed-2.json",
+      "artifact_sha256": "b6ec4c5a217527d3a49a14e95e714ef65d12012c5772a71b42da9d38cfc73467"
+    },
+    {
+      "instance": "R102",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/R102/seed-0.json",
+      "artifact_sha256": "bc010f4f6af9326472f4b14e7b25eeb8d353a2398325018d2f791cbcb28e83b1"
+    },
+    {
+      "instance": "R102",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/R102/seed-1.json",
+      "artifact_sha256": "f319452a86edd97ea3de5c24e6afc08dc01b0b18237d73225f9b15016799ddbb"
+    },
+    {
+      "instance": "R102",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/R102/seed-2.json",
+      "artifact_sha256": "6c15c5db423f630da65c3c414edc12d799e27b545b6b7f3d50c3a217ab0b7698"
+    },
+    {
+      "instance": "R103",
+      "seed": 0,
+      "status": "not_found",
+      "artifact": null,
+      "artifact_sha256": null
+    },
+    {
+      "instance": "R103",
+      "seed": 1,
+      "status": "not_found",
+      "artifact": null,
+      "artifact_sha256": null
+    },
+    {
+      "instance": "R103",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/R103/seed-2.json",
+      "artifact_sha256": "46c5084ea963bac75bf5943ddae1771ac77918cf5698900dd892ca2f096147c7"
+    },
+    {
+      "instance": "R104",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/R104/seed-0.json",
+      "artifact_sha256": "d7dcc37da885aeaedfa40c67e0da0d5123e505ec94983ad7d27f50ab8d4d6b0d"
+    },
+    {
+      "instance": "R104",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/R104/seed-1.json",
+      "artifact_sha256": "62fe513e9e550a5c1b655f91e4ed03a3762729884c85ac3eca13bed43e823405"
+    },
+    {
+      "instance": "R104",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/R104/seed-2.json",
+      "artifact_sha256": "33574612b61901bb0b006520ec9c817b496444039406e8514d655d31f43453ea"
+    },
+    {
+      "instance": "R105",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/R105/seed-0.json",
+      "artifact_sha256": "3ef50dc584ca428b751d2f57cd935e5aef83f03bc5cea955035739a6139e714e"
+    },
+    {
+      "instance": "R105",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/R105/seed-1.json",
+      "artifact_sha256": "41ca4e59d332807a2f058663a104e07c72065dfb0119431dd101c62ef1c96014"
+    },
+    {
+      "instance": "R105",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/R105/seed-2.json",
+      "artifact_sha256": "0a042f915e5db34f2e7e35aaae6dbd1528be284abf2d250d90a6c1430be6343d"
+    },
+    {
+      "instance": "R106",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/R106/seed-0.json",
+      "artifact_sha256": "146b4676540b3a027318a1be3211c707c93483ba2a14f35a4305926c2dc02831"
+    },
+    {
+      "instance": "R106",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/R106/seed-1.json",
+      "artifact_sha256": "aaf69da1b694e59e1aae17dbdcf5768ce8d26c478dd017bddfdd480634866d3d"
+    },
+    {
+      "instance": "R106",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/R106/seed-2.json",
+      "artifact_sha256": "f7028756fce6d9402318671aff4a8eaaa24f510f8c4aa2b7a9ef7ddb004cf292"
+    },
+    {
+      "instance": "R107",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/R107/seed-0.json",
+      "artifact_sha256": "b8a7133d2b125fb3c252cc7644c22ff317e9c116cc451310c9a21a64e686d558"
+    },
+    {
+      "instance": "R107",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/R107/seed-1.json",
+      "artifact_sha256": "dc177f1e7d278f5baed43f888e646e1af25fd3159df7ff6398ed8a20189678ed"
+    },
+    {
+      "instance": "R107",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/R107/seed-2.json",
+      "artifact_sha256": "8c8ee975e71aafb015618a56f142464e1f09a0cec467d92dcd154875d005fa1b"
+    },
+    {
+      "instance": "R108",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/R108/seed-0.json",
+      "artifact_sha256": "d9f57cf0ca8f2a376fa3ca4e684f9f3b361d870edbcf4e2662c6ff39ce2b8e85"
+    },
+    {
+      "instance": "R108",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/R108/seed-1.json",
+      "artifact_sha256": "d627ef4cb52dd5258d28f12da038cec3a629bfc2a22361eefa03798884fe45b0"
+    },
+    {
+      "instance": "R108",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/R108/seed-2.json",
+      "artifact_sha256": "2e855d492576f06331a1b8fecf06601993fff435e72674c8f006d9ad6070018d"
+    },
+    {
+      "instance": "R109",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/R109/seed-0.json",
+      "artifact_sha256": "c20e0005885fc02128d2ad3e81713c66842afba5276bf6c6414cdae3188d7a24"
+    },
+    {
+      "instance": "R109",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/R109/seed-1.json",
+      "artifact_sha256": "18e9c43de69ec0293c77c43f4eeb46e465f9bd0cb58a9fa437af44ab8dc91d8e"
+    },
+    {
+      "instance": "R109",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/R109/seed-2.json",
+      "artifact_sha256": "7c48689d5799844ac031546e77954a674a19e7171fe4962a71b197eda0ffb55e"
+    },
+    {
+      "instance": "R110",
+      "seed": 0,
+      "status": "not_found",
+      "artifact": null,
+      "artifact_sha256": null
+    },
+    {
+      "instance": "R110",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/R110/seed-1.json",
+      "artifact_sha256": "023a824d71983bc8717fcd078af40064d1f64da6bf639f9c47f71bf64289d1a8"
+    },
+    {
+      "instance": "R110",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/R110/seed-2.json",
+      "artifact_sha256": "4162a4f7a6d19ec7bd7eb9ca45a123451c959c7fda47d27773cffdeaeb8c4a0a"
+    },
+    {
+      "instance": "R111",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/R111/seed-0.json",
+      "artifact_sha256": "02223c46987d61d1c0b99b515fccbc5c71d431a6b76b8316581029ae4bb45f49"
+    },
+    {
+      "instance": "R111",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/R111/seed-1.json",
+      "artifact_sha256": "8120808e91a182d8df8e1e87a3271ab4cf06a59e683093d5d4bae59b0a9580d0"
+    },
+    {
+      "instance": "R111",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/R111/seed-2.json",
+      "artifact_sha256": "ac0565bd6c376c62e414aa4d2ab4f802a7303eb3ab062ed7a7a9870d497c8dae"
+    },
+    {
+      "instance": "R112",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/R112/seed-0.json",
+      "artifact_sha256": "8af2c011c6059424d3fa679cbf54aacf480857f449ef4ca5833062ca555c1d6d"
+    },
+    {
+      "instance": "R112",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/R112/seed-1.json",
+      "artifact_sha256": "799261e7653c0d7e9bd1cd1154e4ac0cde5b2e93e73bc67354fa62580dfe28d7"
+    },
+    {
+      "instance": "R112",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/R112/seed-2.json",
+      "artifact_sha256": "9a56841286e66c4fba5437544fbc8bc70a65368d131427849afb39bd2c7e5175"
+    },
+    {
+      "instance": "R201",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/R201/seed-0.json",
+      "artifact_sha256": "34ba8fcf4f6bf7174d1b141391cb7d49dfc23b12c1e42e1f42aee033b324f731"
+    },
+    {
+      "instance": "R201",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/R201/seed-1.json",
+      "artifact_sha256": "543b6c22d2b0ededd71ee0c38c405a370be13833631b63496829e546fc5b0010"
+    },
+    {
+      "instance": "R201",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/R201/seed-2.json",
+      "artifact_sha256": "4f0832db08b3b84d9803eb4ae18322b42ab0fc6de45cbe3e4b56f752359f75b9"
+    },
+    {
+      "instance": "R202",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/R202/seed-0.json",
+      "artifact_sha256": "063034b9de1031f9c5ce7fdd4bab52d40364d0d3fcf3f469eaf2cc84def0296f"
+    },
+    {
+      "instance": "R202",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/R202/seed-1.json",
+      "artifact_sha256": "273c2ccfd3ace8d63072ba28c8fd31236392caa05a679f3e02d21e21c2ad5f74"
+    },
+    {
+      "instance": "R202",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/R202/seed-2.json",
+      "artifact_sha256": "24e5a20528a35d524ca5370a99b5805e4a4a52080e33538fa4c638bf2ee74986"
+    },
+    {
+      "instance": "R203",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/R203/seed-0.json",
+      "artifact_sha256": "1ee90cb9f9fc0c1ac6c74f2c06653f25ec1921a15806dc69f92f2cf279fd74e9"
+    },
+    {
+      "instance": "R203",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/R203/seed-1.json",
+      "artifact_sha256": "87ecaa9db4feb8dc11fd9e5715e2b3a8707b835fcfed19f75323f5cf1fac89cd"
+    },
+    {
+      "instance": "R203",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/R203/seed-2.json",
+      "artifact_sha256": "0808378fb441df63b00705fe15b86eb3c4dea33047621fd842d890e27eb4ec24"
+    },
+    {
+      "instance": "R204",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/R204/seed-0.json",
+      "artifact_sha256": "8c14851eda154c913842a5d79d53e65ffbffa86dbe2a6e295039d906152a0df1"
+    },
+    {
+      "instance": "R204",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/R204/seed-1.json",
+      "artifact_sha256": "8036a638b49f20dcf1e67569e2eed673a550508db09cad5eac93ff0f5176fa10"
+    },
+    {
+      "instance": "R204",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/R204/seed-2.json",
+      "artifact_sha256": "354597603e772301388224d09fe584f8061aadb97fda738e3ee08c6b3109feb8"
+    },
+    {
+      "instance": "R205",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/R205/seed-0.json",
+      "artifact_sha256": "394e8ecafdd9ed6e798c5e5c2dc21490673e1a0932ac39d54437a6281b79b13e"
+    },
+    {
+      "instance": "R205",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/R205/seed-1.json",
+      "artifact_sha256": "6f7692fd091d8ded4d4e4fc8beec86bb930d9226d0c6d42a0bc240b2a80941a4"
+    },
+    {
+      "instance": "R205",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/R205/seed-2.json",
+      "artifact_sha256": "facd4b8fddf4dfeb3dad97196400a716fa7a58e7890f55f5f89ef54c6d30f90c"
+    },
+    {
+      "instance": "R206",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/R206/seed-0.json",
+      "artifact_sha256": "9838010b6c7a625a17f307e2fea375273b3f9a0692c82300b315bc29ff153ce3"
+    },
+    {
+      "instance": "R206",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/R206/seed-1.json",
+      "artifact_sha256": "6e34fd5801e3207c6b4384f51440c53708c713fad761d0c7ccbaeb50680e467f"
+    },
+    {
+      "instance": "R206",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/R206/seed-2.json",
+      "artifact_sha256": "20ebaeeb883732e9a635e29a9bebc24faf669cb8765af465710199264dd1b903"
+    },
+    {
+      "instance": "R207",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/R207/seed-0.json",
+      "artifact_sha256": "b48edf519fc904e76e29698e515522e22e87ef9f12bbe2d955fae1c7d38caedc"
+    },
+    {
+      "instance": "R207",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/R207/seed-1.json",
+      "artifact_sha256": "ec711685c5a4cb580a2a6a28ece7695e46374a4e76a103ae5f671068e67b6839"
+    },
+    {
+      "instance": "R207",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/R207/seed-2.json",
+      "artifact_sha256": "8637fe7b857796390ef336962936f4727bd5730253860a62b5ac44ee79e80048"
+    },
+    {
+      "instance": "R208",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/R208/seed-0.json",
+      "artifact_sha256": "ba8bd35ba1fae96f1ace532ee7afdaa6b6b6fff747a107136432448bbcaac9ea"
+    },
+    {
+      "instance": "R208",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/R208/seed-1.json",
+      "artifact_sha256": "214bfac22fd131fe6687ad637fa488974ad3b9de8281191a7623ba4068405599"
+    },
+    {
+      "instance": "R208",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/R208/seed-2.json",
+      "artifact_sha256": "c6db667e78205cf0c8548d0dcb7e5e901f56f8cca56a7a1dcd73a82c20c8560b"
+    },
+    {
+      "instance": "R209",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/R209/seed-0.json",
+      "artifact_sha256": "c28771694e6bb627ec43df3f0dd8df53702fea71de0de8d9aadcb1fde7e22069"
+    },
+    {
+      "instance": "R209",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/R209/seed-1.json",
+      "artifact_sha256": "100e4a93daf15925ed1ad1746dde1616e712af54ac9b29752608a9cc6c65397d"
+    },
+    {
+      "instance": "R209",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/R209/seed-2.json",
+      "artifact_sha256": "1fe890321c28e99bc0d64c328415faf6b1c4328cd421ba738ca4c950d307dc05"
+    },
+    {
+      "instance": "R210",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/R210/seed-0.json",
+      "artifact_sha256": "16c9009b2c201f2ee3676c615fc8750e0c9131f8b9e6a878a0fbd8a1a59d47f3"
+    },
+    {
+      "instance": "R210",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/R210/seed-1.json",
+      "artifact_sha256": "8ec3335e5f0d483e59c979c313f9492fcc5b8f9aa89710c291f6bdec671975e3"
+    },
+    {
+      "instance": "R210",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/R210/seed-2.json",
+      "artifact_sha256": "a0a771cc8057a43ccae6d83e9ba8a93de055458f4e407ef25bb6dd16e377e921"
+    },
+    {
+      "instance": "R211",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/R211/seed-0.json",
+      "artifact_sha256": "3ea6032d0a49cd2878205267c5cc7ae23f91f887cd67f6963724a566957b46e4"
+    },
+    {
+      "instance": "R211",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/R211/seed-1.json",
+      "artifact_sha256": "dcd7a3cb2bad185edf7fd11e1bcfab3e95190459ab7cd8372209a051b8371ad1"
+    },
+    {
+      "instance": "R211",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/R211/seed-2.json",
+      "artifact_sha256": "791f73f5209f5ad8e2c6c5242ff08f79b3b6075e5c145af5700c6770e0658af2"
+    },
+    {
+      "instance": "RC101",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/RC101/seed-0.json",
+      "artifact_sha256": "10c3244ae366d1faa14bc226048125a5ee5461a4282383c81f3c8dfba940a7d9"
+    },
+    {
+      "instance": "RC101",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/RC101/seed-1.json",
+      "artifact_sha256": "448ca16c4690fd4a4806d6d0897f9a7bce49c0978a05b269a58f29ce0fed8034"
+    },
+    {
+      "instance": "RC101",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/RC101/seed-2.json",
+      "artifact_sha256": "78159caedcab7a2da17c666bbb8102ab377b06d35285962c01fcc2910f76a46e"
+    },
+    {
+      "instance": "RC102",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/RC102/seed-0.json",
+      "artifact_sha256": "e5238936f282b1e12931222b7692e52d3f51d26bb37efc174ef5ad53c35b893b"
+    },
+    {
+      "instance": "RC102",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/RC102/seed-1.json",
+      "artifact_sha256": "c23f53a5468fbca27827a2fb3b7ca4b95349da881498531cbbb3925c76a4f030"
+    },
+    {
+      "instance": "RC102",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/RC102/seed-2.json",
+      "artifact_sha256": "5c2cde52e5469be8a5e797e9d89396909db1f983ba5fbc4daa18a199b00e8bcf"
+    },
+    {
+      "instance": "RC103",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/RC103/seed-0.json",
+      "artifact_sha256": "d98b7e8e63ca2169cbf5f05c4bc9eb26ed138ab7300cd296f162bb3ed23a764a"
+    },
+    {
+      "instance": "RC103",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/RC103/seed-1.json",
+      "artifact_sha256": "49d9cb6436fece4ecd5e805729a29d2eb50c9bb31376af49607cb902d366d817"
+    },
+    {
+      "instance": "RC103",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/RC103/seed-2.json",
+      "artifact_sha256": "525613e792e4d116f02f6f2551b931ddea74b99f6b9235def71807bbb4c091a9"
+    },
+    {
+      "instance": "RC104",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/RC104/seed-0.json",
+      "artifact_sha256": "74305bbd32866decf29ffc0c3a321834e62728445100d49e57c7129393c29ac1"
+    },
+    {
+      "instance": "RC104",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/RC104/seed-1.json",
+      "artifact_sha256": "9e1e48b016735e311e85ef21619a96dbb9a09364227be00ddef4752ff4653405"
+    },
+    {
+      "instance": "RC104",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/RC104/seed-2.json",
+      "artifact_sha256": "6485b669ed4af1af380fbfec2a0dc0e1694a4f2ed99148a5735262885fe34ae0"
+    },
+    {
+      "instance": "RC105",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/RC105/seed-0.json",
+      "artifact_sha256": "a3dce7e0f0f83eaed9912aae3f121e7f05499a87b92d19bdb2108a4c47611bed"
+    },
+    {
+      "instance": "RC105",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/RC105/seed-1.json",
+      "artifact_sha256": "131319835afa6264d177db0bde64d188040ec23c0a0499416bca0999787876d1"
+    },
+    {
+      "instance": "RC105",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/RC105/seed-2.json",
+      "artifact_sha256": "21b3afff412d31d374fc4e43526726b03abac4cbdc2df48618b8b5618c2af57a"
+    },
+    {
+      "instance": "RC106",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/RC106/seed-0.json",
+      "artifact_sha256": "b45e60b27707788e4dd1d57a6dd19e018139e097907fbb1b48dbe4831d0a907b"
+    },
+    {
+      "instance": "RC106",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/RC106/seed-1.json",
+      "artifact_sha256": "7c4c4fe11da39efe793d255b42cb3dbffeec90dedc229af026ef888c2a6253a4"
+    },
+    {
+      "instance": "RC106",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/RC106/seed-2.json",
+      "artifact_sha256": "191b566f760dae2856b2113ebbf558c9c53e7db28c6f7283f652ab73033352de"
+    },
+    {
+      "instance": "RC107",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/RC107/seed-0.json",
+      "artifact_sha256": "7c71c0b0ff327bacbdbfa15475fe6df42b6150c75b67dc88beb441de6e91d3da"
+    },
+    {
+      "instance": "RC107",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/RC107/seed-1.json",
+      "artifact_sha256": "3d5a4c4483057aecc251fab277634cd383bb97b389da2a57fefdc058c0d4487e"
+    },
+    {
+      "instance": "RC107",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/RC107/seed-2.json",
+      "artifact_sha256": "582137d2d578bb7219c88e1c572d4083e850c5151bd925f71ff17ff9717c4533"
+    },
+    {
+      "instance": "RC108",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/RC108/seed-0.json",
+      "artifact_sha256": "99ef9e1132fac8c0a5dd4f9e75dcc8e081e738fec4ade59888be5d4dacd3767d"
+    },
+    {
+      "instance": "RC108",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/RC108/seed-1.json",
+      "artifact_sha256": "2116fca35f9de6dad741ef1f00deefeaca72a6ce7fa8dca9eff8c33b0034ce75"
+    },
+    {
+      "instance": "RC108",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/RC108/seed-2.json",
+      "artifact_sha256": "601c57503922346bc8c58ddc8a855f491ae18cf91262d3c9bd1ce8d8dee51146"
+    },
+    {
+      "instance": "RC201",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/RC201/seed-0.json",
+      "artifact_sha256": "1ccee3dc3336548cb8ef229b3710e01db614b4650da1fede4f2b23e0418e8021"
+    },
+    {
+      "instance": "RC201",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/RC201/seed-1.json",
+      "artifact_sha256": "491a46c0c6c4a86b552d05b0480a4f9a32694cf1cf0f9b4e2f945c778a045821"
+    },
+    {
+      "instance": "RC201",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/RC201/seed-2.json",
+      "artifact_sha256": "9daec8122ef0be49be186f3a31293910a28ffe2041869a5f45843d393271d29c"
+    },
+    {
+      "instance": "RC202",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/RC202/seed-0.json",
+      "artifact_sha256": "2e21feb94a8e4152817faa8f5e06aa224a8f1b4a05ca6f95d80b3757ad8bb555"
+    },
+    {
+      "instance": "RC202",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/RC202/seed-1.json",
+      "artifact_sha256": "fbfbd3813a5cab2084f7250aa8d223142ddb4507eef12f41ea13d8706d490a29"
+    },
+    {
+      "instance": "RC202",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/RC202/seed-2.json",
+      "artifact_sha256": "fa72eca6fe65f37ee366ea70619904155749457d8f27708ac1a0cdd57e4ba937"
+    },
+    {
+      "instance": "RC203",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/RC203/seed-0.json",
+      "artifact_sha256": "2aff6f018fb33877429f5f45c665aae353b3c704afa869964a413d12789bd907"
+    },
+    {
+      "instance": "RC203",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/RC203/seed-1.json",
+      "artifact_sha256": "2013bb09da3364540b9b7dd4c46a3ebd632d24a264683c7239ccacb909aa05f7"
+    },
+    {
+      "instance": "RC203",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/RC203/seed-2.json",
+      "artifact_sha256": "3d4b13439e5b365038a78cacec77563633f104ccf6800d5d306b9497f84779c5"
+    },
+    {
+      "instance": "RC204",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/RC204/seed-0.json",
+      "artifact_sha256": "dc1752ee007842e40eb063182b58c6d2baf3527e8f0902d8eb0c451b5b1ff73b"
+    },
+    {
+      "instance": "RC204",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/RC204/seed-1.json",
+      "artifact_sha256": "2109089a98680087fa777005c9ebfcf674e9cacd1a67e1c2d6e376b952293f69"
+    },
+    {
+      "instance": "RC204",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/RC204/seed-2.json",
+      "artifact_sha256": "43112ee0b394f613222dba78f8d0c0d26419d362e9bd5e99bbc9c99d331794ab"
+    },
+    {
+      "instance": "RC205",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/RC205/seed-0.json",
+      "artifact_sha256": "550a8131e1b18eddfdff224c6d48a2c5449a0a055ef897c9beed4eaf808943f7"
+    },
+    {
+      "instance": "RC205",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/RC205/seed-1.json",
+      "artifact_sha256": "520169aad1454ccc748882022e5240f154fe3557fda4b84d45723ff01713be32"
+    },
+    {
+      "instance": "RC205",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/RC205/seed-2.json",
+      "artifact_sha256": "e86a50ad4309a0d820dde4bd43560acb3b7c4743267e0fb89d48d1fc57076a11"
+    },
+    {
+      "instance": "RC206",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/RC206/seed-0.json",
+      "artifact_sha256": "323e9a45e1392a3cc042940877e320a9f4a9fdd2285e4aade27a9a2d91139d61"
+    },
+    {
+      "instance": "RC206",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/RC206/seed-1.json",
+      "artifact_sha256": "21787be96784afdbcac330abf00cdc11e36422742118a279219883262474d1ac"
+    },
+    {
+      "instance": "RC206",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/RC206/seed-2.json",
+      "artifact_sha256": "fcf7e332308a18f18f11cf3ad4396f2f3bf9c628610d033e4c78005a64623066"
+    },
+    {
+      "instance": "RC207",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/RC207/seed-0.json",
+      "artifact_sha256": "8ee4a8ed1f85662049182d7bbd7f9097cc45b03ce561a539d3857075bbf46880"
+    },
+    {
+      "instance": "RC207",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/RC207/seed-1.json",
+      "artifact_sha256": "8622c29997e1485a3b21f08760769508fcdb879cf493a5956abc2ef1f08e19ce"
+    },
+    {
+      "instance": "RC207",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/RC207/seed-2.json",
+      "artifact_sha256": "4cf36eee0fc946c541268c43d3fe36b1ec6a9c83857ce5c647d3f8808127eaac"
+    },
+    {
+      "instance": "RC208",
+      "seed": 0,
+      "status": "ok",
+      "artifact": "solutions/RC208/seed-0.json",
+      "artifact_sha256": "97c2f2d4cc0e2b7a2342afdbdf572f15922624c4faf9d847aad56e6472ea3774"
+    },
+    {
+      "instance": "RC208",
+      "seed": 1,
+      "status": "ok",
+      "artifact": "solutions/RC208/seed-1.json",
+      "artifact_sha256": "11e5b9729771453547d492284331c11df7e7df91ee53edb8550347dcac52aa9a"
+    },
+    {
+      "instance": "RC208",
+      "seed": 2,
+      "status": "ok",
+      "artifact": "solutions/RC208/seed-2.json",
+      "artifact_sha256": "f4b71b357c88a5d7148a6ee3672915f35bf87580103c64bb71dc3226a1029ce5"
+    }
+  ],
+  "counts": {
+    "ok": 165,
+    "not_found": 3,
+    "errors": 0,
+    "validation_mismatch": 0,
+    "by_status": {
+      "ok": 165,
+      "not_found": 3
+    }
+  },
+  "artifacts": {
+    "runs_csv": {
+      "path": "runs.csv",
+      "sha256": "d9f5941b54ec4378e0994e8023123c417532337d2b0bc90c1c5f1b43824a99f6"
+    }
+  },
+  "runs_sha256": "d9f5941b54ec4378e0994e8023123c417532337d2b0bc90c1c5f1b43824a99f6",
+  "finished_at_utc": "2026-10-02T15:35:12.748459+00:00"
+}
